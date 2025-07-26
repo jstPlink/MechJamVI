@@ -594,16 +594,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyMaterial: {fileID: 2100000, guid: d7aa183419117f346a27c809590557d7, type: 2}
   allyMaterial: {fileID: 2100000, guid: c869952065cb3db468194cc749dfbd3b, type: 2}
-  timeForCapture: 100
-  timeLeftForCapture: 100
-  timeToSubtractEnemy: 1
-  timeToSubtractPlayer: 1
+  timeForCapture: 20
+  timeLeftForCapture: 20
+  timeToSubtractEnemyXTick: 4
+  timeToSubtractPlayerXTick: 4
+  tickTime: 1
   Lights:
-  - {fileID: 1056070545280636967}
-  - {fileID: 4630472073068179602}
-  - {fileID: 3354754567939935131}
-  - {fileID: 6156903722867255967}
   - {fileID: 7996248014311429054}
+  - {fileID: 6156903722867255967}
+  - {fileID: 3354754567939935131}
+  - {fileID: 4630472073068179602}
+  - {fileID: 1056070545280636967}
   _status: 0
   _owner: 0
   _isThereEnemy: 0
@@ -611,6 +612,7 @@ MonoBehaviour:
   enemyLights: 0
   allyLights: 0
   _isTherePlayer: 0
+  canModifyTime: 1
   _timeXLight: 0
 --- !u!135 &2890891388657194812
 SphereCollider:
@@ -631,7 +633,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.5
+  m_Radius: 50
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6545464525184762188
 GameObject:

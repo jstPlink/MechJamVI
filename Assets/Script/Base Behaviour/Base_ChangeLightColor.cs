@@ -10,8 +10,9 @@ public class Base_ChangeLightColor : MonoBehaviour
     [Header(" -- Time --")]
     [SerializeField] private float timeForCapture;
     [SerializeField] private float timeLeftForCapture;
-    [SerializeField] private float timeToSubtractEnemy;
-    [SerializeField] private float timeToSubtractPlayer;
+    [SerializeField] private float timeToSubtractEnemyXTick;
+    [SerializeField] private float timeToSubtractPlayerXTick;
+    [SerializeField] private float tickTime;
     [Header(" -- Lights --")]
     [SerializeField] private MeshRenderer[] Lights;
     public enum Status : byte
@@ -29,6 +30,7 @@ public class Base_ChangeLightColor : MonoBehaviour
     [SerializeField] private byte enemyLights = 0;
     [SerializeField] private byte allyLights = 0;
     [SerializeField] private bool _isTherePlayer;
+    [SerializeField] private bool canModifyTime;
     [SerializeField] private float _timeXLight;
 
     private void Start()
@@ -66,6 +68,10 @@ public class Base_ChangeLightColor : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             _isTherePlayer = false;
+            if (_isThereEnemy == true)
+            {
+                _status = Status.Contested;
+            }
         }
         if (other.CompareTag("Enemy"))
         {
@@ -83,45 +89,62 @@ public class Base_ChangeLightColor : MonoBehaviour
         if (_status == Status.Contested)//Se la base è contestata
         {
             int lightNumber = (int)Mathf.Ceil(timeLeftForCapture / _timeXLight)-1;
+            if (lightNumber < 0)
+            {
+                lightNumber = 0;
+            }
 
             if (_isTherePlayer == false && _isThereEnemy == true)// Se non c'è il player, allora il nemico la può conquistare
             {
-                if (_owner == Status.Ally)
+                if (canModifyTime)
                 {
-                    if (timeLeftForCapture <= 0)
+                    canModifyTime = false;
+                    if (_owner == Status.Ally)
                     {
-                        _owner = Status.Enemy;
-                        timeLeftForCapture = timeForCapture;
+                        if (timeLeftForCapture <= 0)
+                        {
+                            _owner = Status.Enemy;
+                            _status = Status.Enemy;
+                            timeLeftForCapture = timeForCapture;
+                            canModifyTime = true;
+                        }
+                        else
+                        {
+                            StartCoroutine(SubtractTime(timeToSubtractEnemyXTick));
+                        }
                     }
                     else
                     {
-                        StartCoroutine(SubtractTime(timeToSubtractEnemy));
+                        StartCoroutine(AddTime(timeToSubtractEnemyXTick));
                     }
                 }
-                else
-                {
-                    StartCoroutine(AddTime(timeToSubtractEnemy));
-                }
-                Lights[lightNumber].material = enemyMaterial;
+                    Lights[lightNumber].material = enemyMaterial;
             }
             if (_isTherePlayer == true)// Se  c'è il player, allora può conquistare
             {
-                float timeToSuttractPlayerWithEnemy = timeToSubtractPlayer * (1 / (1 + enemyCounter)); //Il tempo è influenzato in % dal numero di nemici presenti
-                if (_owner == Status.Enemy)
+                float timeToSuttractPlayerWithEnemy = timeToSubtractPlayerXTick * (1f / (1f + enemyCounter)); //Il tempo è influenzato in % dal numero di nemici presenti
+                Debug.Log(timeToSuttractPlayerWithEnemy);
+                if (canModifyTime)
                 {
-                    if (timeLeftForCapture <= 0)
+                    canModifyTime = false;
+                    if (_owner == Status.Enemy)
                     {
-                        _owner = Status.Ally;
-                        timeLeftForCapture = timeForCapture;
+                        if (timeLeftForCapture <= 0)
+                        {
+                            _owner = Status.Ally;
+                            _status = Status.Ally;
+                            timeLeftForCapture = timeForCapture;
+                            canModifyTime = true;
+                        }
+                        else
+                        {
+                            StartCoroutine(SubtractTime(timeToSuttractPlayerWithEnemy));
+                        }
                     }
                     else
                     {
-                        StartCoroutine(SubtractTime(timeToSuttractPlayerWithEnemy));
+                        StartCoroutine(AddTime(timeToSuttractPlayerWithEnemy));
                     }
-                }
-                else
-                {
-                    StartCoroutine(AddTime(timeToSuttractPlayerWithEnemy));
                 }
                 Lights[lightNumber].material = allyMaterial;
             }
@@ -132,16 +155,18 @@ public class Base_ChangeLightColor : MonoBehaviour
 
     private IEnumerator SubtractTime(float timeToSubtract)
     {
-        yield return new WaitForSeconds(timeToSubtract);
+        yield return new WaitForSeconds(tickTime);
         timeLeftForCapture -= timeToSubtract;
+        canModifyTime = true;
     }
     private IEnumerator AddTime(float timeToAdd)
     {
-        yield return new WaitForSeconds(timeToAdd);
+        yield return new WaitForSeconds(tickTime);
         timeLeftForCapture += timeToAdd;
         if (timeLeftForCapture > timeForCapture)
         {
             timeLeftForCapture = timeForCapture;
         }
+        canModifyTime = true;
     }
 }
