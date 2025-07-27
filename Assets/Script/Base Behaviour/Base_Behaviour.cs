@@ -4,24 +4,34 @@ using System.Collections;
 public class Base_Behaviour : MonoBehaviour
 {
     [Header(" ## Configuration ##")]
+    [Header(" -- Pointer --")]
+    [SerializeField] private GameManager _gm;
     [Header(" -- Material --")]
     [SerializeField] private Material enemyMaterial;
     [SerializeField] private Material allyMaterial;
     [Header(" -- Time --")]
+    [Tooltip("Regulate the ammount of time needed for capture a base")]
     [SerializeField] private float timeForCapture;
     [SerializeField] private float timeLeftForCapture;
+    [Tooltip("Regulate ammount of time to subtract from 'time left for capture' for enemies")]
     [SerializeField] private float timeToSubtractEnemyXTick;
+    [Tooltip("Regulate ammount of time to subtract from 'time left for capture' for Player. Please note that every minion divide this value")]
     [SerializeField] private float timeToSubtractPlayerXTick;
-    [SerializeField] private float tickTime;
     [Header(" -- Lights --")]
+    [Tooltip("Pointer for the beacon`s lights. Top most is the first captured")]
     [SerializeField] private MeshRenderer[] Lights;
     [Header(" -- Resource --")]
+    [Tooltip("Regulate the ammount of resource generated from this base")]
     [SerializeField] private float resourceGenAmmount;
     [SerializeField] private bool canGenerateResource;
     [Header(" -- Project Drop --")]
+    [Tooltip("If enabled drop project")]
     [SerializeField] private bool haveProject;
+    [Tooltip("Attach here the right Drop Variants")]
     [SerializeField] private GameObject dropPrefab;
+    [Tooltip("Transform where spawn drops")]
     [SerializeField] private Transform spawnPointProject;
+    [Tooltip("Drop push force")]
     [SerializeField] private float pulseForce;
 
 
@@ -50,6 +60,21 @@ public class Base_Behaviour : MonoBehaviour
     public void ChangeStatus(Status newStatus)
     {
         _status = newStatus;
+    }
+
+    public Status GetStatus()
+    {
+        return _status;
+    }
+
+    public float GetResourceAmmount()
+    {
+        return resourceGenAmmount;
+    }
+
+    public bool CanGenerateResource()
+    {
+        return canGenerateResource;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -116,6 +141,7 @@ public class Base_Behaviour : MonoBehaviour
                             timeLeftForCapture = timeForCapture;
                             canModifyTime = true;
                             canGenerateResource = false;
+                            _gm.totalResourceXTick -= resourceGenAmmount;
                         }
                         else
                         {
@@ -145,6 +171,7 @@ public class Base_Behaviour : MonoBehaviour
                             timeLeftForCapture = timeForCapture;
                             canModifyTime = true;
                             canGenerateResource = true;
+                            _gm.totalResourceXTick += resourceGenAmmount;
                             if (haveProject == true)
                             {
                                 haveProject = false;
@@ -172,13 +199,13 @@ public class Base_Behaviour : MonoBehaviour
 
     private IEnumerator SubtractTime(float timeToSubtract)
     {
-        yield return new WaitForSeconds(tickTime);
+        yield return new WaitForSeconds(_gm.tickTimer);
         timeLeftForCapture -= timeToSubtract;
         canModifyTime = true;
     }
     private IEnumerator AddTime(float timeToAdd)
     {
-        yield return new WaitForSeconds(tickTime);
+        yield return new WaitForSeconds(_gm.tickTimer);
         timeLeftForCapture += timeToAdd;
         if (timeLeftForCapture > timeForCapture)
         {
