@@ -93,6 +93,7 @@ public class Base_Behaviour : MonoBehaviour
         //Se la base è nemica e il player entra o Se la base è alleata e un nemico entra allora cambio stato
         {
             ChangeStatus(Status.Contested);
+            _gm.somethingChanged = true;
         }
     }
 
@@ -104,6 +105,7 @@ public class Base_Behaviour : MonoBehaviour
             if (_isThereEnemy == true)
             {
                 _status = Status.Contested;
+                _gm.somethingChanged = true;
             }
         }
         if (other.CompareTag("Enemy"))
@@ -138,6 +140,7 @@ public class Base_Behaviour : MonoBehaviour
                         {
                             _owner = Status.Enemy;
                             _status = Status.Enemy;
+                            _gm.somethingChanged = true;
                             timeLeftForCapture = timeForCapture;
                             canModifyTime = true;
                             canGenerateResource = false;
@@ -168,6 +171,7 @@ public class Base_Behaviour : MonoBehaviour
                         {
                             _owner = Status.Ally;
                             _status = Status.Ally;
+                            _gm.somethingChanged = true;
                             timeLeftForCapture = timeForCapture;
                             canModifyTime = true;
                             canGenerateResource = true;
