@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class Base_ChangeLightColor : MonoBehaviour
+public class Base_Behaviour : MonoBehaviour
 {
     [Header(" ## Configuration ##")]
     [Header(" -- Material --")]
@@ -15,6 +15,16 @@ public class Base_ChangeLightColor : MonoBehaviour
     [SerializeField] private float tickTime;
     [Header(" -- Lights --")]
     [SerializeField] private MeshRenderer[] Lights;
+    [Header(" -- Resource --")]
+    [SerializeField] private float resourceGenAmmount;
+    [SerializeField] private bool canGenerateResource;
+    [Header(" -- Project Drop --")]
+    [SerializeField] private bool haveProject;
+    [SerializeField] private GameObject dropPrefab;
+    [SerializeField] private Transform spawnPointProject;
+    [SerializeField] private float pulseForce;
+
+
     public enum Status : byte
     {
         Enemy = 0,
@@ -27,8 +37,6 @@ public class Base_ChangeLightColor : MonoBehaviour
     [SerializeField] private Status _owner;
     [SerializeField] private bool _isThereEnemy;
     [SerializeField] private byte enemyCounter = 0;
-    [SerializeField] private byte enemyLights = 0;
-    [SerializeField] private byte allyLights = 0;
     [SerializeField] private bool _isTherePlayer;
     [SerializeField] private bool canModifyTime;
     [SerializeField] private float _timeXLight;
@@ -107,6 +115,7 @@ public class Base_ChangeLightColor : MonoBehaviour
                             _status = Status.Enemy;
                             timeLeftForCapture = timeForCapture;
                             canModifyTime = true;
+                            canGenerateResource = false;
                         }
                         else
                         {
@@ -135,6 +144,14 @@ public class Base_ChangeLightColor : MonoBehaviour
                             _status = Status.Ally;
                             timeLeftForCapture = timeForCapture;
                             canModifyTime = true;
+                            canGenerateResource = true;
+                            if (haveProject == true)
+                            {
+                                haveProject = false;
+                                GameObject pj = Instantiate(dropPrefab, spawnPointProject.position, Quaternion.identity);
+                                Rigidbody rb = pj.GetComponent<Rigidbody>();
+                                rb.AddForce((Vector3.up + Vector3.back) * pulseForce, ForceMode.Impulse);
+                            }
                         }
                         else
                         {
