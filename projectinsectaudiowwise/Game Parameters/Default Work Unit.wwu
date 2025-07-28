@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{2776FCC4-2BF5-4920-A960-29689E030F7E}" SchemaVersion="123">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{2776FCC4-2BF5-4920-A960-29689E030F7E}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="CameraDistance" ID="{C8144563-DBF2-42BB-B8C0-9006AADF189C}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>
