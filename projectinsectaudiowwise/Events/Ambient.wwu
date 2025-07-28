@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{ED1F6747-AA19-44F8-80EA-FF742D677ECB}" SchemaVersion="123">
+	<Events>
+		<WorkUnit Name="Ambient" ID="{ED1F6747-AA19-44F8-80EA-FF742D677ECB}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Background" ID="{A1C89894-6146-41DD-82DF-1D7675172567}" ShortID="834502657">
+					<ChildrenList>
+						<Event Name="Ambient_Background" ID="{0632D8D0-0560-48BB-A7D1-09D8F4F6D66F}">
+							<ChildrenList>
+								<Action Name="" ID="{38E8E612-B2AD-4F0F-82C9-A48ED70BF11F}" ShortID="1049796181">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ambience" ID="{3BEB802C-40A8-4853-8010-02B31961D66B}" WorkUnitID="{7614687E-3D82-4EB2-B47D-1E571500C7E2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{69B1B5E1-F169-4B30-8782-BC2B6167691B}" ShortID="867437756">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ambience" ID="{3BEB802C-40A8-4853-8010-02B31961D66B}" WorkUnitID="{7614687E-3D82-4EB2-B47D-1E571500C7E2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Emitters" ID="{0C676EF8-5DC7-44CD-A7ED-6C9248643387}" ShortID="1022800934"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

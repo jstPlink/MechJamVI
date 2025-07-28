@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{3BA79CA0-CF79-4285-B72E-8F261F961920}" SchemaVersion="123">
+	<Events>
+		<WorkUnit Name="UI" ID="{3BA79CA0-CF79-4285-B72E-8F261F961920}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Generic" ID="{E6867D77-0FD9-4A1A-80E2-B7BDFA536FD6}" ShortID="857840789">
+					<ChildrenList>
+						<Event Name="UI_Button_Click" ID="{C47D20E6-AB7A-4EA5-AD0C-60F0359FE3A3}">
+							<ChildrenList>
+								<Action Name="" ID="{7FD55DCA-8579-4EE0-AEA8-372B324F7946}" ShortID="201314968">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Button_Click" ID="{FAED9D3C-0A6B-4891-A277-95156572EC2B}" WorkUnitID="{6726047F-A115-4747-A3EB-754F447B6465}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="UI_Button_Back" ID="{60F219A9-3D5A-4E1C-8AC8-10B7DEE7301E}">
+							<ChildrenList>
+								<Action Name="" ID="{773626A7-0813-4D2E-A334-30520FD0917F}" ShortID="118941050">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Button_Back" ID="{D2A1E961-115A-4492-93B2-C5A25B974726}" WorkUnitID="{6726047F-A115-4747-A3EB-754F447B6465}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="UI_Button_Denied" ID="{5015B647-36F4-4B70-9BB7-D6AE3B173F02}">
+							<ChildrenList>
+								<Action Name="" ID="{54DCF459-1585-439D-9443-8C68150FD384}" ShortID="834057134">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Button_Denied" ID="{E64B35EF-1AA4-466A-B175-2E8B1BCB0FC9}" WorkUnitID="{6726047F-A115-4747-A3EB-754F447B6465}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="UI_Button_StartGame" ID="{47D1696A-42DD-4F2F-A16C-7710C2B2670D}">
+							<ChildrenList>
+								<Action Name="" ID="{6D9A6638-B5F0-4177-8D2B-76474A9E084D}" ShortID="506870016">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="StartGame" ID="{85491A86-31B1-4309-8ECB-54E95A5BA3B8}" WorkUnitID="{6726047F-A115-4747-A3EB-754F447B6465}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Maintenance" ID="{F18BF4D2-95E4-45C9-A14D-4E1433242D47}" ShortID="592220359">
+					<ChildrenList>
+						<Event Name="UI_Maintenance_Repair" ID="{9F24FB75-8B03-4009-AE60-C03E863CCDF5}">
+							<ChildrenList>
+								<Action Name="" ID="{A4CB9DB5-B35F-4DAB-BC55-F665BD3754FD}" ShortID="635538555">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Repair" ID="{CB4BFC61-340A-4AA0-B589-5C37E66F43BA}" WorkUnitID="{6726047F-A115-4747-A3EB-754F447B6465}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{A14055C6-2715-4604-AAB2-058FB53505BA}" ShortID="331998040">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Repair" ID="{CB4BFC61-340A-4AA0-B589-5C37E66F43BA}" WorkUnitID="{6726047F-A115-4747-A3EB-754F447B6465}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="UI_Maintenance_PowerUp" ID="{660FC6E9-2ADA-4BF8-AF8F-0793B77E2A1F}">
+							<ChildrenList>
+								<Action Name="" ID="{8269910E-FBB3-4995-BC52-CC001D136384}" ShortID="595199428">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Powerup_BP" ID="{DF95B82E-6442-42D1-BAFF-B9815AC352B3}" WorkUnitID="{6726047F-A115-4747-A3EB-754F447B6465}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="UI_Maintenance_Noise" ID="{BC86BE63-F437-4F56-9553-99DA92E587A9}">
+							<ChildrenList>
+								<Action Name="" ID="{64873938-5B5A-48C0-8BC8-6D6C8275637B}" ShortID="23814002">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Screen_Noise" ID="{18210B4F-0ACD-4A38-9666-E6D18DE397A9}" WorkUnitID="{6726047F-A115-4747-A3EB-754F447B6465}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{A309E8E4-2DF8-4BEF-8837-C6B82D5151AE}" ShortID="321066834">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Screen_Noise" ID="{18210B4F-0ACD-4A38-9666-E6D18DE397A9}" WorkUnitID="{6726047F-A115-4747-A3EB-754F447B6465}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="UI_Maintenance_Open" ID="{90B07C2A-7454-488B-8508-0D7580F278AB}">
+							<ChildrenList>
+								<Action Name="" ID="{43C51237-B6F2-4600-B3F7-7C7E3D2AF8D9}" ShortID="743071172">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Screen_Open" ID="{233CB37F-F568-4A40-AC88-83D0E75AD455}" WorkUnitID="{6726047F-A115-4747-A3EB-754F447B6465}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="UI_Maintenance_Close" ID="{09D16669-4263-4829-AA9E-0DE4FDEA9625}">
+							<ChildrenList>
+								<Action Name="" ID="{318B0EEE-4E40-40FB-A191-ECC5F4CDFB43}" ShortID="172834273">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Screen_Close" ID="{9DE74771-82F1-4C5F-A14F-F71A2BC1C507}" WorkUnitID="{6726047F-A115-4747-A3EB-754F447B6465}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Mission" ID="{F6407411-7625-49EC-B413-FF585EE0A4E5}" ShortID="208337968">
+					<ChildrenList>
+						<Event Name="UI_Mission_TargetPopUp" ID="{F33D96A2-8A80-4AB5-9374-D9B34C8BC43D}">
+							<ChildrenList>
+								<Action Name="" ID="{C1F305A3-320E-459C-9139-FB188FE285F7}" ShortID="931132217">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="TargetPopUp" ID="{C23270CF-B861-4871-8635-0FEF4C066DD1}" WorkUnitID="{6726047F-A115-4747-A3EB-754F447B6465}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

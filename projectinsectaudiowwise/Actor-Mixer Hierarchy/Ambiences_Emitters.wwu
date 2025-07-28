@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{D77BABA5-C254-4C0B-A8ED-AC37C4EC68F7}" SchemaVersion="123" RootDocumentID="{1355577E-AE4B-414F-BC05-0F4EA7E8ED25}" ParentDocumentID="{261ADBD3-7157-48AA-9ECF-E34886FC1D96}">
+	<AudioObjects>
+		<WorkUnit Name="Ambiences_Emitters" ID="{D77BABA5-C254-4C0B-A8ED-AC37C4EC68F7}" OwnerID="{D32563BE-2CD0-493A-A7DE-C9E7A93A8699}" PersistMode="Nested">
+			<ChildrenList>
+				<ActorMixer Name="Emitters" ID="{BC7E826A-C05E-4067-85BC-FD1B578133E3}" ShortID="80504830">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="EnergyField" ID="{880B061B-A840-430A-8538-C5E5BAA65041}" ShortID="711419452">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>15</Value>
+									</ValueList>
+								</Property>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>20</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Ambience_Emitters_Large_5_50" ID="{B5ABA2BA-8AB4-48BA-9D54-19B9F0CA3208}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Particle Scanner Loop" ID="{AEDD8424-5006-444E-A467-3AC201C0D5DB}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.587537694833218"/>
+										<Property Name="TrimEnd" Type="Real64" Value="1.53232192390318"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Particle Scanner Loop.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1010170936"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Particle Scanner Loop" ID="{AEDD8424-5006-444E-A467-3AC201C0D5DB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

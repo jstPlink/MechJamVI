@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9DE6AD18-984A-48F3-8936-80564C9B4AFA}" SchemaVersion="123">
+	<SoundcasterSessions>
+		<WorkUnit Name="Default Work Unit" ID="{9DE6AD18-984A-48F3-8936-80564C9B4AFA}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="UI" ID="{02F0A69C-5FCA-42BD-A0D5-561742F7B88C}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Button_Back" ID="{D2A1E961-115A-4492-93B2-C5A25B974726}" WorkUnitID="{6726047F-A115-4747-A3EB-754F447B6465}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Screen_Open" ID="{233CB37F-F568-4A40-AC88-83D0E75AD455}" WorkUnitID="{6726047F-A115-4747-A3EB-754F447B6465}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Ambient_Nature" ID="{003FA1A6-4F0E-4E6D-9BE7-663AFD28EA98}" WorkUnitID="{7614687E-3D82-4EB2-B47D-1E571500C7E2}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Button_Click" ID="{FAED9D3C-0A6B-4891-A277-95156572EC2B}" WorkUnitID="{6726047F-A115-4747-A3EB-754F447B6465}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Powerup_BP" ID="{DF95B82E-6442-42D1-BAFF-B9815AC352B3}" WorkUnitID="{6726047F-A115-4747-A3EB-754F447B6465}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Ambient_Battlefield" ID="{D5437843-E7F5-4760-86B6-CC6B5AC62A2A}" WorkUnitID="{7614687E-3D82-4EB2-B47D-1E571500C7E2}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Button_Denied" ID="{E64B35EF-1AA4-466A-B175-2E8B1BCB0FC9}" WorkUnitID="{6726047F-A115-4747-A3EB-754F447B6465}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Screen_Close" ID="{9DE74771-82F1-4C5F-A14F-F71A2BC1C507}" WorkUnitID="{6726047F-A115-4747-A3EB-754F447B6465}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="TargetPopUp" ID="{C23270CF-B861-4871-8635-0FEF4C066DD1}" WorkUnitID="{6726047F-A115-4747-A3EB-754F447B6465}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Screen_Noise" ID="{18210B4F-0ACD-4A38-9666-E6D18DE397A9}" WorkUnitID="{6726047F-A115-4747-A3EB-754F447B6465}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Repair" ID="{CB4BFC61-340A-4AA0-B589-5C37E66F43BA}" WorkUnitID="{6726047F-A115-4747-A3EB-754F447B6465}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundcasterSessions>
+</WwiseDocument>

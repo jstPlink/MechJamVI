@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{6726047F-A115-4747-A3EB-754F447B6465}" SchemaVersion="123" RootDocumentID="{1355577E-AE4B-414F-BC05-0F4EA7E8ED25}" ParentDocumentID="{1355577E-AE4B-414F-BC05-0F4EA7E8ED25}">
+	<AudioObjects>
+		<WorkUnit Name="UI" ID="{6726047F-A115-4747-A3EB-754F447B6465}" OwnerID="{4261A44C-0A5E-4B03-8F5B-A40E6E68EC87}" PersistMode="Nested">
+			<ChildrenList>
+				<ActorMixer Name="Button" ID="{6B379C9A-76C8-4015-8D5F-0A4975E2FE72}" ShortID="846882736">
+					<PropertyList>
+						<Property Name="OverrideConversion" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="UI_General" ID="{C90BF1B7-302B-427A-BD89-987738D3AAD5}" WorkUnitID="{02C56FBA-37F0-481A-9AF2-FCA6DF6512EE}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Button_Click" ID="{FAED9D3C-0A6B-4891-A277-95156572EC2B}" ShortID="638394244">
+							<PropertyList>
+								<Property Name="OverrideConversion" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<Custom>
+										<Conversion Name="Conversion Settings (Custom)" ID="{8E7A4717-395E-484C-9522-F55EDF390BCD}">
+											<PropertyList>
+												<Property Name="Channels" Type="int32">
+													<ValueList>
+														<Value Platform="Mac">4</Value>
+														<Value Platform="Windows">4</Value>
+														<Value Platform="Web">4</Value>
+													</ValueList>
+												</Property>
+												<Property Name="LRMix" Type="Real64">
+													<ValueList>
+														<Value Platform="Mac">0</Value>
+														<Value Platform="Windows">0</Value>
+														<Value Platform="Web">0</Value>
+													</ValueList>
+												</Property>
+												<Property Name="MaxSampleRate" Type="int32">
+													<ValueList>
+														<Value Platform="Mac">48000</Value>
+														<Value Platform="Windows">48000</Value>
+														<Value Platform="Web">48000</Value>
+													</ValueList>
+												</Property>
+												<Property Name="MinSampleRate" Type="int32">
+													<ValueList>
+														<Value Platform="Mac">0</Value>
+														<Value Platform="Windows">0</Value>
+														<Value Platform="Web">0</Value>
+													</ValueList>
+												</Property>
+												<Property Name="SampleRate" Type="int32">
+													<ValueList>
+														<Value Platform="Mac">0</Value>
+														<Value Platform="Windows">0</Value>
+														<Value Platform="Web">0</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ConversionPluginInfoList>
+												<ConversionPluginInfo Platform="Mac">
+													<ConversionPlugin Name="" ID="{10370A92-8417-4A85-BDB4-C691B571925D}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+												</ConversionPluginInfo>
+												<ConversionPluginInfo Platform="Windows">
+													<ConversionPlugin Name="" ID="{0CFAD940-C38C-492A-8EE1-281C7A3B9A03}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+												</ConversionPluginInfo>
+												<ConversionPluginInfo Platform="Web">
+													<ConversionPlugin Name="" ID="{6529866F-3842-4EB2-8347-8E4DA6A46500}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+												</ConversionPluginInfo>
+											</ConversionPluginInfoList>
+										</Conversion>
+									</Custom>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="FUI Button Beep Stereo-1" ID="{726B19DB-0E55-4781-87A9-05EB5E3AB4C3}">
+									<Language>SFX</Language>
+									<AudioFile>FUI Button Beep Stereo-1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="121838931"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="FUI Button Beep Stereo-1" ID="{726B19DB-0E55-4781-87A9-05EB5E3AB4C3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Button_Back" ID="{D2A1E961-115A-4492-93B2-C5A25B974726}" ShortID="351258419">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="FUI Button Toggle Mechanical" ID="{CE8C74C6-E368-43C6-9622-5D9CD16FC7F8}">
+									<Language>SFX</Language>
+									<AudioFile>FUI Button Toggle Mechanical.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="159409977"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="FUI Button Toggle Mechanical" ID="{CE8C74C6-E368-43C6-9622-5D9CD16FC7F8}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Button_Denied" ID="{E64B35EF-1AA4-466A-B175-2E8B1BCB0FC9}" ShortID="856494672">
+							<PropertyList>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverrideConversion" Type="bool" Value="True"/>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<Custom>
+										<Conversion Name="Conversion Settings (Custom)" ID="{6107D25C-E168-4DB0-95B7-C21F73D5D0CA}">
+											<PropertyList>
+												<Property Name="Channels" Type="int32">
+													<ValueList>
+														<Value Platform="Mac">4</Value>
+														<Value Platform="Windows">4</Value>
+														<Value Platform="Web">4</Value>
+													</ValueList>
+												</Property>
+												<Property Name="LRMix" Type="Real64">
+													<ValueList>
+														<Value Platform="Mac">0</Value>
+														<Value Platform="Windows">0</Value>
+														<Value Platform="Web">0</Value>
+													</ValueList>
+												</Property>
+												<Property Name="MaxSampleRate" Type="int32">
+													<ValueList>
+														<Value Platform="Mac">48000</Value>
+														<Value Platform="Windows">48000</Value>
+														<Value Platform="Web">48000</Value>
+													</ValueList>
+												</Property>
+												<Property Name="MinSampleRate" Type="int32">
+													<ValueList>
+														<Value Platform="Mac">0</Value>
+														<Value Platform="Windows">0</Value>
+														<Value Platform="Web">0</Value>
+													</ValueList>
+												</Property>
+												<Property Name="SampleRate" Type="int32">
+													<ValueList>
+														<Value Platform="Mac">0</Value>
+														<Value Platform="Windows">0</Value>
+														<Value Platform="Web">0</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ConversionPluginInfoList>
+												<ConversionPluginInfo Platform="Mac">
+													<ConversionPlugin Name="" ID="{27107ACC-BDC7-4C17-A199-A8C295B4C987}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+												</ConversionPluginInfo>
+												<ConversionPluginInfo Platform="Windows">
+													<ConversionPlugin Name="" ID="{91FCCDA6-F7DE-432A-9B5C-6FD70385DE5D}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+												</ConversionPluginInfo>
+												<ConversionPluginInfo Platform="Web">
+													<ConversionPlugin Name="" ID="{B70747E1-FD2C-4B31-92DD-77F4DDF908FA}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+												</ConversionPluginInfo>
+											</ConversionPluginInfoList>
+										</Conversion>
+									</Custom>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Error Triplet-1" ID="{B64FEB1B-D56D-4FE7-936F-BDA005912830}">
+									<Language>SFX</Language>
+									<AudioFile>Error Triplet-1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="78534883"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Error Triplet-1" ID="{B64FEB1B-D56D-4FE7-936F-BDA005912830}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="Maintenance_Screen" ID="{66516E04-C035-4065-899E-4318D21DA376}" ShortID="479337139">
+					<PropertyList>
+						<Property Name="OverrideConversion" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="UI_General" ID="{C90BF1B7-302B-427A-BD89-987738D3AAD5}" WorkUnitID="{02C56FBA-37F0-481A-9AF2-FCA6DF6512EE}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Screen_Open" ID="{233CB37F-F568-4A40-AC88-83D0E75AD455}" ShortID="895026731">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Holographic Screen Appear" ID="{A349931D-D35C-4AD5-AECE-363B425FA02E}">
+									<Language>SFX</Language>
+									<AudioFile>Holographic Screen Appear.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="499224237"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Holographic Screen Appear" ID="{A349931D-D35C-4AD5-AECE-363B425FA02E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Screen_Close" ID="{9DE74771-82F1-4C5F-A14F-F71A2BC1C507}" ShortID="731399244">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Holographic Pad Motion-1" ID="{2A2BC91D-7332-4277-AC16-497E947AEBC5}">
+									<Language>SFX</Language>
+									<AudioFile>Holographic Pad Motion-1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="164404195"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Holographic Pad Motion-1" ID="{2A2BC91D-7332-4277-AC16-497E947AEBC5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<RandomSequenceContainer Name="Powerup_BP" ID="{DF95B82E-6442-42D1-BAFF-B9815AC352B3}" ShortID="616039032">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="FUI Holo Mechanism Activate-1" ID="{A765E6EC-C0AD-4A41-B249-6C9684288EEE}" ShortID="924949426">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FUI Holo Mechanism Activate-1" ID="{A371DC95-71D2-4230-A5F7-5E567893943D}">
+											<Language>SFX</Language>
+											<AudioFile>FUI Holo Mechanism Activate-1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="650576443"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FUI Holo Mechanism Activate-1" ID="{A371DC95-71D2-4230-A5F7-5E567893943D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FUI Holo Mechanism Activate" ID="{99CE1729-BC71-4533-BCDD-0DD261980519}" ShortID="142913892">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FUI Holo Mechanism Activate" ID="{4B369874-3392-4904-B8C9-002719E860C6}">
+											<Language>SFX</Language>
+											<AudioFile>FUI Holo Mechanism Activate.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="153090760"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FUI Holo Mechanism Activate" ID="{4B369874-3392-4904-B8C9-002719E860C6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<Sound Name="Screen_Noise" ID="{18210B4F-0ACD-4A38-9666-E6D18DE397A9}" ShortID="289379746">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>42</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>2400</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Disk Noise Loop-1" ID="{9592D8B0-2A1B-4A53-84BB-21930656EE03}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Disk Noise Loop-1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="370360480"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Disk Noise Loop-1" ID="{9592D8B0-2A1B-4A53-84BB-21930656EE03}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Repair" ID="{CB4BFC61-340A-4AA0-B589-5C37E66F43BA}" ShortID="1019402670">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Data Jumble Loop" ID="{BCA906A2-6350-42FC-8021-D7CC2BB1E4B9}">
+									<Language>SFX</Language>
+									<AudioFile>Data Jumble Loop.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="848998426"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Data Jumble Loop" ID="{BCA906A2-6350-42FC-8021-D7CC2BB1E4B9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="StartGame" ID="{A039EDC3-0E39-461F-A47F-202316DF3E03}" ShortID="543485299">
+					<PropertyList>
+						<Property Name="OverrideConversion" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="UI_General" ID="{C90BF1B7-302B-427A-BD89-987738D3AAD5}" WorkUnitID="{02C56FBA-37F0-481A-9AF2-FCA6DF6512EE}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="StartGame" ID="{85491A86-31B1-4309-8ECB-54E95A5BA3B8}" ShortID="548308406">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Old Hologram Activation Rumble" ID="{D8A61524-C4CB-4048-8D3C-2A4ED48EB646}">
+									<Language>SFX</Language>
+									<AudioFile>Old Hologram Activation Rumble.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="226300041"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Old Hologram Activation Rumble" ID="{D8A61524-C4CB-4048-8D3C-2A4ED48EB646}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="TargetPopUp" ID="{BC26CF35-9FDF-47CB-94FB-0D48024FD3FC}" ShortID="1042129558">
+					<PropertyList>
+						<Property Name="OverrideConversion" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="UI_General" ID="{C90BF1B7-302B-427A-BD89-987738D3AAD5}" WorkUnitID="{02C56FBA-37F0-481A-9AF2-FCA6DF6512EE}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="TargetPopUp" ID="{C23270CF-B861-4871-8635-0FEF4C066DD1}" ShortID="504594377">
+							<PropertyList>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-1200</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{375B3EE5-5CC8-47B5-9F08-A3A2FC691341}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="50"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Compact Alarm Beep Loop" ID="{884AA8E2-3D00-467A-83F7-E9424BD06D85}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.00975142741814639"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.654232129568666"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Compact Alarm Beep Loop.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="64498864"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Compact Alarm Beep Loop" ID="{884AA8E2-3D00-467A-83F7-E9424BD06D85}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
