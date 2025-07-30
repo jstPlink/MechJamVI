@@ -5,7 +5,7 @@ public class Base_Behaviour : MonoBehaviour
 {
     [Header(" ## Configuration ##")]
     [Header(" -- Pointer --")]
-    [SerializeField] private GameManager _gm;
+    private GameManager _gm;
     [Header(" -- Material --")]
     [SerializeField] private Material enemyMaterial;
     [SerializeField] private Material allyMaterial;
@@ -55,6 +55,8 @@ public class Base_Behaviour : MonoBehaviour
     {
         timeLeftForCapture = timeForCapture;
         _timeXLight = timeForCapture / Lights.Length;
+
+        _gm = FindAnyObjectByType<GameManager>();
     }
 
     public void ChangeStatus(Status newStatus)

@@ -5403,7 +5403,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4650734998387958559, guid: a4a5a89ba1b716b4fa3a79474e9a5292, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 25.36238
+      value: 149.8
       objectReference: {fileID: 0}
     - target: {fileID: 4650734998387958559, guid: a4a5a89ba1b716b4fa3a79474e9a5292, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5411,7 +5411,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4650734998387958559, guid: a4a5a89ba1b716b4fa3a79474e9a5292, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.62
+      value: -2.5
       objectReference: {fileID: 0}
     - target: {fileID: 4650734998387958559, guid: a4a5a89ba1b716b4fa3a79474e9a5292, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7229,6 +7229,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 614035923594332870, guid: 9f06ad1b2cbba7b46a1432f4fc73c608, type: 3}
+      propertyPath: timeForCapture
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 614035923594332870, guid: 9f06ad1b2cbba7b46a1432f4fc73c608, type: 3}
+      propertyPath: timeLeftForCapture
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 3687918123263426058, guid: 9f06ad1b2cbba7b46a1432f4fc73c608, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -7274,7 +7282,11 @@ PrefabInstance:
       value: Beacon
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6159708040707440364, guid: 9f06ad1b2cbba7b46a1432f4fc73c608, type: 3}
+    - {fileID: 3189902143137073776, guid: 9f06ad1b2cbba7b46a1432f4fc73c608, type: 3}
+    - {fileID: 5219360959213954866, guid: 9f06ad1b2cbba7b46a1432f4fc73c608, type: 3}
+    - {fileID: 7825515950213991021, guid: 9f06ad1b2cbba7b46a1432f4fc73c608, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f06ad1b2cbba7b46a1432f4fc73c608, type: 3}
@@ -13613,11 +13625,11 @@ PrefabInstance:
       objectReference: {fileID: 2061108997}
     - target: {fileID: 8791274877796153203, guid: 5e1bff75215b1974c9f72de1982e9e0e, type: 3}
       propertyPath: movementSpeed
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 8791274877796153203, guid: 5e1bff75215b1974c9f72de1982e9e0e, type: 3}
       propertyPath: rotationSpeed
-      value: 0.2
+      value: 2500
       objectReference: {fileID: 0}
     - target: {fileID: 8791274877796153203, guid: 5e1bff75215b1974c9f72de1982e9e0e, type: 3}
       propertyPath: playerCameraContainer
@@ -16079,12 +16091,8 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 9181407521145735555, guid: d4377a7b96366ed47a817de0d855aa2e, type: 3}
-      propertyPath: 'bases.Array.data[0]'
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 9181407521145735555, guid: d4377a7b96366ed47a817de0d855aa2e, type: 3}
-      propertyPath: 'bases.Array.data[1]'
-      value: 
+      propertyPath: bases.Array.size
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9181407521145735555, guid: d4377a7b96366ed47a817de0d855aa2e, type: 3}
       propertyPath: basesMapPin.Array.size

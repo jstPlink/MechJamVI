@@ -39,9 +39,7 @@ public class Minion : Enemy
 
 
             // LOGICA IA MINION
-
-
-            if (agent.isOnNavMesh) agent.SetDestination(player.transform.position);
+            if (agent.isOnNavMesh) agent.SetDestination(GameManager.GetClosestBase(gameObject.transform));
 
 
             // Il ciclo continua automaticamente con un nuovo timer

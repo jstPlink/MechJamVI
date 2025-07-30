@@ -734,7 +734,7 @@ MonoBehaviour:
   _gm: {fileID: 0}
   enemyMaterial: {fileID: 2100000, guid: d7aa183419117f346a27c809590557d7, type: 2}
   allyMaterial: {fileID: 2100000, guid: c869952065cb3db468194cc749dfbd3b, type: 2}
-  timeForCapture: 20
+  timeForCapture: 3
   timeLeftForCapture: 20
   timeToSubtractEnemyXTick: 4
   timeToSubtractPlayerXTick: 4
