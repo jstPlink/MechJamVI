@@ -11,9 +11,6 @@ public class Spawner : MonoBehaviour
     public Vector2 spawnTimeRange = new Vector2(2f,2f);
     public float spawnInterval = 3f;
 
-    [Header("Condizione di spawn")]
-    public bool canSpawn = true;
-
     private Coroutine spawnCoroutine;
 
     void Start()

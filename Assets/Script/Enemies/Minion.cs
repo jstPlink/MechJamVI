@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Minion : Enemy
 {
@@ -7,6 +8,19 @@ public class Minion : Enemy
     private bool isDying = false;
 
     Spawner mySpawner;
+
+
+    NavMeshAgent agent;
+
+    void Start()
+    {
+        agent = GetComponent<NavMeshAgent>();
+        GameObject player = GameObject.FindWithTag("Player");
+        agent.SetDestination(player.transform.position);
+    }
+
+
+
 
     void Update()
     {
