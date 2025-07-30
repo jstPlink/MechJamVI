@@ -13,6 +13,8 @@ public class look : MonoBehaviour
     public Transform playerCamera;
     public Transform target;
 
+    public float xDegree;
+
     private void OnEnable()
     {
         //Quando l`oggetto è attivo abilito il controllo degli input
@@ -35,10 +37,19 @@ public class look : MonoBehaviour
         cameraLookAxis = new Vector3(_lookAction.ReadValue<Vector2>().y, 0, 0);
         containerLookAxis.y = Mathf.Clamp(containerLookAxis.y, -1f, 1f);
         cameraLookAxis.x = Mathf.Clamp(cameraLookAxis.x, -1f, 1f);
-        //Debug.Log("DELTA POINTER: " + _lookAction.ReadValue<Vector2>());
-        //transform.Rotate(containerLookAxis * horizontalRotationSpeed * Time.deltaTime);
-        playerCamera.Rotate(cameraLookAxis * verticalRotationSpeed * Time.deltaTime);
-        transform.RotateAround(target.position, Vector3.up , containerLookAxis.y * horizontalRotationSpeed * Time.deltaTime);
+
+        float yAngle = containerLookAxis.y * horizontalRotationSpeed * Time.deltaTime;
+        float xAngle = cameraLookAxis.x * verticalRotationSpeed * Time.deltaTime;
+        transform.RotateAround(target.position, Vector3.up, yAngle);
+        float x = playerCamera.eulerAngles.x + xAngle;
+        Debug.Log("Angle X : " + Mathf.Abs(normalizeRotation(x)));
+        Debug.Log("xAngle : " + xAngle);
+        Debug.Log("camera X : " + playerCamera.eulerAngles.x);
+        if (Mathf.Abs(normalizeRotation(x)) < xDegree)
+        {
+            playerCamera.RotateAround(target.position, Vector3.right, xAngle);
+        }
+        
         
         //playerCamera.RotateAround(transform.position, cameraLookAxis, horizontalRotationSpeed * Time.deltaTime);
 
@@ -46,6 +57,18 @@ public class look : MonoBehaviour
 
 
 
+    }
+
+
+    private float normalizeRotation(float angle)
+    {
+        float y = angle;
+        if (y > 180)
+        {
+            y -= 360;
+            Debug.Log(y + ": NORMALIZED");
+        }
+        return angle;
     }
 
     private void Update()
