@@ -40,15 +40,17 @@ public class SimpleMovement : MonoBehaviour
 
     void HandleMovement()
     {
-        readedMoveAxis = _moveAction.ReadValue<Vector2>() * movementSpeed;
+        readedMoveAxis = _moveAction.ReadValue<Vector2>();
         moveAxis = new Vector3(readedMoveAxis.x, 0, readedMoveAxis.y);
-        // Debug.Log("MoveAxis: " + moveAxis);
+        moveAxis = Vector3.ClampMagnitude(moveAxis, 1f);
+        //Debug.Log("MoveAxis: " + moveAxis);
         if (moveAxis != Vector3.zero)
         {
-            transform.forward = playerCameraContainer.transform.forward;
+            //transform.forward = playerCameraContainer.transform.forward;
+            transform.forward = moveAxis;
         }
-        Vector3 motion = moveAxis.z * transform.forward + (gravity*Vector3.up) + moveAxis.x * transform.right;
-        _CC.Move(motion * Time.deltaTime);
+        Vector3 motion = moveAxis.z * playerCameraContainer.forward + (gravity*Vector3.up) + moveAxis.x * playerCameraContainer.right;
+        _CC.Move(motion * Time.deltaTime * movementSpeed);
     }
 
     private void Update()

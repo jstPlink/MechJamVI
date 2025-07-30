@@ -8,9 +8,10 @@ public class look : MonoBehaviour
     public float horizontalRotationSpeed;
     public float verticalRotationSpeed;
     private InputAction _lookAction;
-    private Vector3 containerLookAxis;
-    private Vector3 cameraLookAxis;
     public Transform playerCamera;
+    public Transform target;
+
+    public float xDegree;
 
     private void OnEnable()
     {
@@ -30,10 +31,42 @@ public class look : MonoBehaviour
 
     private void HandleLook()
     {
-        containerLookAxis = new Vector3(0, _lookAction.ReadValue<Vector2>().x, 0);
-        cameraLookAxis = new Vector3(_lookAction.ReadValue<Vector2>().y, 0, 0);
-        transform.Rotate(containerLookAxis * horizontalRotationSpeed * Time.deltaTime);
-        playerCamera.Rotate(cameraLookAxis * verticalRotationSpeed * Time.deltaTime);
+        float containerLookAxis = _lookAction.ReadValue<Vector2>().x;
+        float cameraLookAxis = _lookAction.ReadValue<Vector2>().y;
+        containerLookAxis = Mathf.Clamp(containerLookAxis, -1f, 1f);
+        cameraLookAxis = Mathf.Clamp(cameraLookAxis, -1f, 1f);
+
+        float yAngle = containerLookAxis * horizontalRotationSpeed * Time.deltaTime;
+        float xAngle = cameraLookAxis * verticalRotationSpeed * Time.deltaTime;
+        float x = playerCamera.eulerAngles.x + xAngle;
+        Debug.Log("Angle Normalized X : " + Mathf.Abs(normalizeRotation(x)));
+        Debug.Log("xAngle : " + xAngle);
+        Debug.Log("Player Camera X : " + playerCamera.eulerAngles.x);
+        transform.RotateAround(target.position, Vector3.up, yAngle);
+        if (Mathf.Abs(normalizeRotation(x)) < xDegree)
+        {
+            playerCamera.RotateAround(target.position, playerCamera.right, xAngle);
+        }
+        
+        
+        //playerCamera.RotateAround(transform.position, cameraLookAxis, horizontalRotationSpeed * Time.deltaTime);
+
+
+
+
+
+    }
+
+
+    private float normalizeRotation(float angle)
+    {
+        float y = angle;
+        if (y > 180)
+        {
+            y -= 360;
+            Debug.Log(y + ": NORMALIZED");
+        }
+        return y;
     }
 
     private void Update()
