@@ -39,9 +39,9 @@ public class look : MonoBehaviour
         float yAngle = containerLookAxis * horizontalRotationSpeed * Time.deltaTime;
         float xAngle = cameraLookAxis * verticalRotationSpeed * Time.deltaTime;
         float x = playerCamera.eulerAngles.x + xAngle;
-        Debug.Log("Angle Normalized X : " + Mathf.Abs(normalizeRotation(x)));
-        Debug.Log("xAngle : " + xAngle);
-        Debug.Log("Player Camera X : " + playerCamera.eulerAngles.x);
+        //Debug.Log("Angle Normalized X : " + Mathf.Abs(normalizeRotation(x)));
+        //Debug.Log("xAngle : " + xAngle);
+        //Debug.Log("Player Camera X : " + playerCamera.eulerAngles.x);
         transform.RotateAround(target.position, Vector3.up, yAngle);
         if (Mathf.Abs(normalizeRotation(x)) < xDegree)
         {
@@ -64,7 +64,7 @@ public class look : MonoBehaviour
         if (y > 180)
         {
             y -= 360;
-            Debug.Log(y + ": NORMALIZED");
+            //Debug.Log(y + ": NORMALIZED");
         }
         return y;
     }

@@ -161,7 +161,7 @@ public class Base_Behaviour : MonoBehaviour
             if (_isTherePlayer == true)// Se  c'è il player, allora può conquistare
             {
                 float timeToSuttractPlayerWithEnemy = timeToSubtractPlayerXTick * (1f / (1f + enemyCounter)); //Il tempo è influenzato in % dal numero di nemici presenti
-                Debug.Log(timeToSuttractPlayerWithEnemy);
+                //Debug.Log(timeToSuttractPlayerWithEnemy);
                 if (canModifyTime)
                 {
                     canModifyTime = false;

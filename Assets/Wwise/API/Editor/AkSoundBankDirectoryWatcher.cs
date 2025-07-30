@@ -108,7 +108,7 @@ namespace Wwise.API.Editor.SoundBankDirectoryWatcher.Common
 						userWarning = "Ensure that the SoundBanks Path in the Integration Settings matches the Root Output Path in the Wwise Project Settings on the SoundBanks tab, then regenerate the SoundBanks.";
 					}
 
-					UnityEngine.Debug.LogError("WwiseUnity: Cannot find ProjectInfo.json at " + filename + ". " + userWarning);
+					// UnityEngine.Debug.LogError("WwiseUnity: Cannot find ProjectInfo.json at " + filename + ". " + userWarning);
 				}
 				s_lastSoundBankDirectoryUpdate = time;
 				forceUpdate = false;
