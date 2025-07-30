@@ -42,7 +42,7 @@ public class SimpleMovement : MonoBehaviour
     {
         readedMoveAxis = _moveAction.ReadValue<Vector2>() * movementSpeed;
         moveAxis = new Vector3(readedMoveAxis.x, 0, readedMoveAxis.y);
-        Debug.Log("MoveAxis: " + moveAxis);
+        // Debug.Log("MoveAxis: " + moveAxis);
         if (moveAxis != Vector3.zero)
         {
             transform.forward = playerCameraContainer.transform.forward;
