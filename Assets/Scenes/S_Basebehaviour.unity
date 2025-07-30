@@ -1584,11 +1584,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 278775162398614279, guid: 5cf09c57b11123542b67c231650d28f7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.4000001
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 278775162398614279, guid: 5cf09c57b11123542b67c231650d28f7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.0010004
+      value: 9.8
       objectReference: {fileID: 0}
     - target: {fileID: 278775162398614279, guid: 5cf09c57b11123542b67c231650d28f7, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1650,6 +1650,34 @@ PrefabInstance:
       propertyPath: horizontalRotationSpeed
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 2017936896856306284, guid: 5cf09c57b11123542b67c231650d28f7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 2017936896856306284, guid: 5cf09c57b11123542b67c231650d28f7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.285
+      objectReference: {fileID: 0}
+    - target: {fileID: 2017936896856306284, guid: 5cf09c57b11123542b67c231650d28f7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2017936896856306284, guid: 5cf09c57b11123542b67c231650d28f7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2017936896856306284, guid: 5cf09c57b11123542b67c231650d28f7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2017936896856306284, guid: 5cf09c57b11123542b67c231650d28f7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2017936896856306284, guid: 5cf09c57b11123542b67c231650d28f7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5497155300421698340, guid: 5cf09c57b11123542b67c231650d28f7, type: 3}
       propertyPath: m_Name
       value: CameraContainer
@@ -1660,6 +1688,14 @@ PrefabInstance:
       objectReference: {fileID: 1725182782}
     - target: {fileID: 8952954195554875239, guid: 5cf09c57b11123542b67c231650d28f7, type: 3}
       propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8952954195554875239, guid: 5cf09c57b11123542b67c231650d28f7, type: 3}
+      propertyPath: deltaDistance.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8952954195554875239, guid: 5cf09c57b11123542b67c231650d28f7, type: 3}
+      propertyPath: deltaDistance.z
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
