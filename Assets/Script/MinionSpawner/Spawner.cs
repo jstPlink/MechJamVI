@@ -5,10 +5,10 @@ public class Spawner : MonoBehaviour
 {
     [Header("Prefab e punto di spawn")]
     public GameObject minion;
-    Minion myMinion;
+    [HideInInspector] public Minion myMinion;
 
     [Header("Tempi di spawn")]
-    public Vector2 spawnTimeRange = new Vector2(2f,2f);
+    Vector2 spawnTimeRange = new Vector2(10f, 20f);
     public float spawnInterval = 3f;
 
     private Coroutine spawnCoroutine;
