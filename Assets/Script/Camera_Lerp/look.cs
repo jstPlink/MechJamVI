@@ -11,6 +11,7 @@ public class look : MonoBehaviour
     private Vector3 containerLookAxis;
     private Vector3 cameraLookAxis;
     public Transform playerCamera;
+    public Transform target;
 
     private void OnEnable()
     {
@@ -32,8 +33,19 @@ public class look : MonoBehaviour
     {
         containerLookAxis = new Vector3(0, _lookAction.ReadValue<Vector2>().x, 0);
         cameraLookAxis = new Vector3(_lookAction.ReadValue<Vector2>().y, 0, 0);
-        transform.Rotate(containerLookAxis * horizontalRotationSpeed * Time.deltaTime);
+        containerLookAxis.y = Mathf.Clamp(containerLookAxis.y, -1f, 1f);
+        cameraLookAxis.x = Mathf.Clamp(cameraLookAxis.x, -1f, 1f);
+        //Debug.Log("DELTA POINTER: " + _lookAction.ReadValue<Vector2>());
+        //transform.Rotate(containerLookAxis * horizontalRotationSpeed * Time.deltaTime);
         playerCamera.Rotate(cameraLookAxis * verticalRotationSpeed * Time.deltaTime);
+        transform.RotateAround(target.position, Vector3.up , containerLookAxis.y * horizontalRotationSpeed * Time.deltaTime);
+        
+        //playerCamera.RotateAround(transform.position, cameraLookAxis, horizontalRotationSpeed * Time.deltaTime);
+
+
+
+
+
     }
 
     private void Update()

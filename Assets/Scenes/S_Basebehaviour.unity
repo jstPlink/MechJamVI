@@ -1618,6 +1618,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 292341775460589654, guid: 5cf09c57b11123542b67c231650d28f7, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1725182782}
+    - target: {fileID: 292341775460589654, guid: 5cf09c57b11123542b67c231650d28f7, type: 3}
+      propertyPath: verticalRotationSpeed
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 292341775460589654, guid: 5cf09c57b11123542b67c231650d28f7, type: 3}
+      propertyPath: horizontalRotationSpeed
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 5497155300421698340, guid: 5cf09c57b11123542b67c231650d28f7, type: 3}
       propertyPath: m_Name
       value: CameraContainer
