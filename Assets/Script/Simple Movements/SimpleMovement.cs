@@ -16,6 +16,9 @@ public class SimpleMovement : MonoBehaviour
     private CharacterController _CC;
     private Vector2 readedMoveAxis;
     private Vector3 moveAxis;
+    Animator animator;
+
+    public float rotationSpeed;
 
     private void OnEnable()
     {
@@ -34,6 +37,7 @@ public class SimpleMovement : MonoBehaviour
         _moveAction = InputSystem.actions.FindAction("Move");
         _jumpAction = InputSystem.actions.FindAction("Jump");
         _CC = GetComponent<CharacterController>();
+        animator = GetComponentInChildren<Animator>();
     }
 
     
@@ -48,15 +52,16 @@ public class SimpleMovement : MonoBehaviour
 
         Vector3 inputDir = flatForward * moveAxis.y + flatRight * moveAxis.x;
 
-      
         if (inputDir.sqrMagnitude > 0.001f)
         {
-            // rotazione istantanea
-            transform.rotation = Quaternion.LookRotation(inputDir);
-            /* Vedete voi cosa preferite
-             * rotazione graduale:
-             * transform.rotation = Quaternion.Slerp(transform.rotation,Quaternion.LookRotation(inputDir), Time.deltaTime * rotationSpeed);
-             */
+            transform.rotation = Quaternion.Slerp(transform.rotation,Quaternion.LookRotation(inputDir), Time.deltaTime * rotationSpeed);
+
+            // Attiva il layer della corsa (es. blend weight a 1)
+            animator.SetLayerWeight(animator.GetLayerIndex("WalkLayer"), inputDir.sqrMagnitude);
+        }
+        else {
+            // Disattiva o riduci il blend quando non ti muovi
+            animator.SetLayerWeight(animator.GetLayerIndex("WalkLayer"), 0f);
         }
 
         Vector3 velocity = inputDir * movementSpeed + Vector3.up * gravity;

@@ -28,6 +28,10 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         bases = FindObjectsByType<Base_Behaviour>(FindObjectsSortMode.None);
+
+        // Lock and hide cursor
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
 
