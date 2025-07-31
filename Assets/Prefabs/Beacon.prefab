@@ -731,10 +731,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd75e9257de85f44c8939740cff12e05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gm: {fileID: 0}
   enemyMaterial: {fileID: 2100000, guid: d7aa183419117f346a27c809590557d7, type: 2}
   allyMaterial: {fileID: 2100000, guid: c869952065cb3db468194cc749dfbd3b, type: 2}
-  timeForCapture: 3
+  timeForCapture: 20
   timeLeftForCapture: 20
   timeToSubtractEnemyXTick: 4
   timeToSubtractPlayerXTick: 4
@@ -744,7 +743,7 @@ MonoBehaviour:
   - {fileID: 3354754567939935131}
   - {fileID: 4630472073068179602}
   - {fileID: 1056070545280636967}
-  resourceGenAmmount: 100
+  resourceGenAmmount: 150
   canGenerateResource: 0
   haveProject: 1
   dropPrefab: {fileID: 1102664358604211652, guid: f4dd470fd501c1f4d9a908dd9367f440, type: 3}
