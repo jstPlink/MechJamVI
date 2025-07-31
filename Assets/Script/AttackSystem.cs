@@ -10,102 +10,86 @@ public class AttackSystem : MonoBehaviour
     Animator animator;
 
     // ROBE COMBO
-    public float comboResetTime = 1.0f; // Tempo max tra un attacco e l'altro
-    public float attackDuration = 0.5f; // Durata di un attacco
-
-    private enum AttackState { Idle, Attacking, WaitingForNextInput }
-    private AttackState currentState = AttackState.Idle;
-
-    private Queue<float> inputBuffer = new Queue<float>();
-    private int comboStep = 0;
-    private float lastInputTime;
 
 
+    bool canAttack = true;
+
+    int comboStep = 1;
+
+    public float firstAttackDuration = 1f;
+    public float secondAttackDuration = 1f; // Quanto tempo ha il player per inserire il colpo successivo
+    public float comboInputWindow = 0.7f; // Quanto tempo ha il player per inserire il colpo successivo
 
 
-    void Start()
+
+    private void Start()
     {
         animator = GetComponentInChildren<Animator>();
         attackAction = InputSystem.actions.FindAction("Attack");
     }
 
+
     void Update()
     {
-        
-        float isAttacking = attackAction.ReadValue<float>();
-        animator.SetBool("attack1", isAttacking > 0 ? true : false);
-        
-
-        // Lettura input e buffering
-        if (isAttacking > 0) // Sostituisci con l'input desiderato
+        if (canAttack)
         {
-            if (inputBuffer.Count < 3)
-                inputBuffer.Enqueue(Time.time);
-        }
+            if (attackAction.ReadValue<float>() > 0)
+            {
+                print("CLICK" + comboStep);
 
-        switch (currentState)
-        {
-            case AttackState.Idle:
-                if (inputBuffer.Count > 0)
-                    StartCoroutine(HandleAttack());
-                break;
-
-            case AttackState.WaitingForNextInput:
-                if (Time.time - lastInputTime > comboResetTime)
-                {
-                    ResetCombo();
-                }
-                else if (inputBuffer.Count > 0)
-                {
-                    StartCoroutine(HandleAttack());
-                }
-                break;
+                comboStep = comboStep < 4 ? comboStep++ : 0;
+                canAttack = false;
+                SetComboState(comboStep);
+                StartCoroutine(WaitForAttack(comboStep == 1 ? firstAttackDuration : secondAttackDuration));
+            }
         }
     }
 
-
-    IEnumerator HandleAttack()
+    IEnumerator WaitForAttack(float timeToWait)
     {
-        currentState = AttackState.Attacking;
-        float inputTime = inputBuffer.Dequeue();
-        lastInputTime = Time.time;
+        yield return new WaitForSeconds(timeToWait);
 
-        comboStep++;
-        PlayAttackAnimation(comboStep);
+        // riattiva input combo per breve tempo
+        canAttack = true;
 
-        yield return new WaitForSeconds(attackDuration);
-
-        if (comboStep >= 3)
+        /*
+        float timer = 0f;
+        while (timer < comboInputWindow)
         {
-            ResetCombo();
-        }
-        else
-        {
-            currentState = AttackState.WaitingForNextInput;
-        }
-    }
+            timer += Time.deltaTime;
+            // VERIFICA SE ARRIVANO INPUT PER CONTINUARE LA COMBO
+            // if (attackAction.ReadValue<float>() > 0) break;
 
-    void ResetCombo()
-    {
+            yield return null;
+        }
+        */
+
+        // REST COMBO STEP PERCHè NON CI SONO STATI INPUT?
         comboStep = 0;
-        inputBuffer.Clear();
-        currentState = AttackState.Idle;-+
     }
 
-    void PlayAttackAnimation(int step)
+    void SetComboState(int curComboStep)
     {
-        // Qui puoi chiamare l'animator o effetti
-        switch (step)
+        switch (curComboStep)
         {
             case 1:
                 Debug.Log("Attacco 1");
+                animator.SetTrigger("Attack1");
                 break;
             case 2:
                 Debug.Log("Attacco 2");
+                animator.SetTrigger("Attack2");
                 break;
             case 3:
-                Debug.Log("Attacco finale potente!");
+                Debug.Log("Attacco finale");
+                animator.SetTrigger("Attack3");
                 break;
         }
+    }
+
+    public void EnableHitTrigger(int newState)
+    {
+
+        print("ASDRUBALE");
     }
 }

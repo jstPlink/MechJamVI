@@ -51,7 +51,7 @@ public class SimpleMovement : MonoBehaviour
         Vector3 flatRight = Vector3.ProjectOnPlane(playerCameraContainer.right, Vector3.up).normalized;
 
         Vector3 inputDir = flatForward * moveAxis.y + flatRight * moveAxis.x;
-
+        
         if (inputDir.sqrMagnitude > 0.001f)
         {
             transform.rotation = Quaternion.Slerp(transform.rotation,Quaternion.LookRotation(inputDir), Time.deltaTime * rotationSpeed);
