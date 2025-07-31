@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 4156817696914484470}
   serializedVersion: 2
   m_LocalRotation: {x: 0.009094081, y: -0, z: -0, w: 0.9999587}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 2.3, z: -6.52}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -196,7 +196,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5497155300421698340}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 58.4, y: 1.4000001, z: 5.0010004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -232,6 +232,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _IAA: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-  horizontalRotationSpeed: 10
-  verticalRotationSpeed: 10
+  horizontalRotationSpeed: 100
+  verticalRotationSpeed: 100
   playerCamera: {fileID: 2017936896856306284}
+  target: {fileID: 0}
+  xDegree: 20

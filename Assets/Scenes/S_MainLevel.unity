@@ -5119,14 +5119,6 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 2066002705}
-    - target: {fileID: 2017936896856306284, guid: 5cf09c57b11123542b67c231650d28f7, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2017936896856306284, guid: 5cf09c57b11123542b67c231650d28f7, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -6.52
-      objectReference: {fileID: 0}
     - target: {fileID: 5497155300421698340, guid: 5cf09c57b11123542b67c231650d28f7, type: 3}
       propertyPath: m_Name
       value: CameraContainer
@@ -5135,6 +5127,14 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 2066002705}
+    - target: {fileID: 8952954195554875239, guid: 5cf09c57b11123542b67c231650d28f7, type: 3}
+      propertyPath: deltaDistance.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8952954195554875239, guid: 5cf09c57b11123542b67c231650d28f7, type: 3}
+      propertyPath: deltaDistance.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13623,14 +13623,6 @@ PrefabInstance:
       propertyPath: playerCamera
       value: 
       objectReference: {fileID: 2061108997}
-    - target: {fileID: 8791274877796153203, guid: 5e1bff75215b1974c9f72de1982e9e0e, type: 3}
-      propertyPath: movementSpeed
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 8791274877796153203, guid: 5e1bff75215b1974c9f72de1982e9e0e, type: 3}
-      propertyPath: rotationSpeed
-      value: 2500
-      objectReference: {fileID: 0}
     - target: {fileID: 8791274877796153203, guid: 5e1bff75215b1974c9f72de1982e9e0e, type: 3}
       propertyPath: playerCameraContainer
       value: 

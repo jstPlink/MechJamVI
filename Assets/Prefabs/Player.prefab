@@ -290,7 +290,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _IAA: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   gravity: -9.81
-  movementSpeed: 10
-  rotationSpeed: 0.1
+  movementSpeed: 30
   playerCameraContainer: {fileID: 0}
   playerCamera: {fileID: 0}

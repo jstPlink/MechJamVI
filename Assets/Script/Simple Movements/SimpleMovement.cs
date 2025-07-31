@@ -10,9 +10,7 @@ public class SimpleMovement : MonoBehaviour
     public float gravity;
 
     [SerializeField] private float movementSpeed;
-    [SerializeField] private float rotationSpeed;
     [SerializeField] private Transform playerCameraContainer;
-    [SerializeField] private Transform playerCamera;
     private InputAction _moveAction;
     private InputAction _jumpAction;
     private CharacterController _CC;
@@ -38,21 +36,32 @@ public class SimpleMovement : MonoBehaviour
         _CC = GetComponent<CharacterController>();
     }
 
+    
+
     void HandleMovement()
     {
         readedMoveAxis = _moveAction.ReadValue<Vector2>();
-        moveAxis = new Vector3(readedMoveAxis.x, 0, readedMoveAxis.y);
-        moveAxis = Vector3.ClampMagnitude(moveAxis, 1f);
-        //Debug.Log("MoveAxis: " + moveAxis);
-        if (moveAxis != Vector3.zero)
-        {
-            //transform.forward = playerCameraContainer.transform.forward;
-            transform.forward = moveAxis;
-        }
-        Vector3 motion = moveAxis.z * playerCameraContainer.forward + (gravity*Vector3.up) + moveAxis.x * playerCameraContainer.right;
-        _CC.Move(motion * Time.deltaTime * movementSpeed);
-    }
+        moveAxis = Vector2.ClampMagnitude(readedMoveAxis, 1f);
 
+        Vector3 flatForward = Vector3.ProjectOnPlane(playerCameraContainer.forward, Vector3.up).normalized;
+        Vector3 flatRight = Vector3.ProjectOnPlane(playerCameraContainer.right, Vector3.up).normalized;
+
+        Vector3 inputDir = flatForward * moveAxis.y + flatRight * moveAxis.x;
+
+      
+        if (inputDir.sqrMagnitude > 0.001f)
+        {
+            // rotazione istantanea
+            transform.rotation = Quaternion.LookRotation(inputDir);
+            /* Vedete voi cosa preferite
+             * rotazione graduale:
+             * transform.rotation = Quaternion.Slerp(transform.rotation,Quaternion.LookRotation(inputDir), Time.deltaTime * rotationSpeed);
+             */
+        }
+
+        Vector3 velocity = inputDir * movementSpeed + Vector3.up * gravity;
+        _CC.Move(velocity * Time.deltaTime);
+    }
     private void Update()
     {
         HandleMovement();
