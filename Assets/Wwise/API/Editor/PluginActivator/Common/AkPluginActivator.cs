@@ -286,7 +286,7 @@ public class AkPluginActivator : UnityEditor.AssetPostprocessor
 		AssetDatabase.StopAssetEditing();
 		if (changedSomeAssets)
 		{
-			Debug.Log("WwiseUnity: Plugins successfully activated for " + EditorConfiguration + " in Editor.");
+			// Debug.Log("WwiseUnity: Plugins successfully activated for " + EditorConfiguration + " in Editor.");
 			AssetDatabase.Refresh();
 		}
 

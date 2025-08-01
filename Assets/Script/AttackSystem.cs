@@ -10,11 +10,8 @@ public class AttackSystem : MonoBehaviour
     Animator animator;
 
     // ROBE COMBO
-
-
     bool canAttack = true;
-
-    int comboStep = 1;
+    int comboStep = 0;
 
     public float firstAttackDuration = 1f;
     public float secondAttackDuration = 1f; // Quanto tempo ha il player per inserire il colpo successivo
@@ -22,74 +19,40 @@ public class AttackSystem : MonoBehaviour
 
 
 
-    private void Start()
-    {
+    private void Start() {
         animator = GetComponentInChildren<Animator>();
         attackAction = InputSystem.actions.FindAction("Attack");
     }
 
 
-    void Update()
-    {
-        if (canAttack)
-        {
-            if (attackAction.ReadValue<float>() > 0)
-            {
-                print("CLICK" + comboStep);
-
-                comboStep = comboStep < 4 ? comboStep++ : 0;
+    void Update() {
+        if (canAttack) {
+            if (attackAction.ReadValue<float>() > 0) {
                 canAttack = false;
+                comboStep++;
                 SetComboState(comboStep);
-                StartCoroutine(WaitForAttack(comboStep == 1 ? firstAttackDuration : secondAttackDuration));
             }
         }
     }
 
-    IEnumerator WaitForAttack(float timeToWait)
-    {
-        yield return new WaitForSeconds(timeToWait);
 
-        // riattiva input combo per breve tempo
+    public void SetGoState() {
+        animator.SetBool("go", false);
+    }
+
+    // Viene chiamato dall'animazione per avvisare che puo attaccare di nuovo
+    public void ResetAttackState()
+    {   
         canAttack = true;
-
-        /*
-        float timer = 0f;
-        while (timer < comboInputWindow)
-        {
-            timer += Time.deltaTime;
-            // VERIFICA SE ARRIVANO INPUT PER CONTINUARE LA COMBO
-            // if (attackAction.ReadValue<float>() > 0) break;
-
-            yield return null;
-        }
-        */
-
-        // REST COMBO STEP PERCHè NON CI SONO STATI INPUT?
-        comboStep = 0;
     }
 
-    void SetComboState(int curComboStep)
-    {
-        switch (curComboStep)
-        {
-            case 1:
-                Debug.Log("Attacco 1");
-                animator.SetTrigger("Attack1");
-                break;
-            case 2:
-                Debug.Log("Attacco 2");
-                animator.SetTrigger("Attack2");
-                break;
-            case 3:
-                Debug.Log("Attacco finale");
-                animator.SetTrigger("Attack3");
-                break;
-        }
-    }
+    // Viene chiamato dal codice per aumentare la combo e passare ad un nuovo stato
+    public void SetComboState(int newState) {
 
-    public void EnableHitTrigger(int newState)
-    {
-
-        print("ASDRUBALE");
+        comboStep = newState;
+        animator.SetInteger("comboState", comboStep);
+        
+        // fai partire l'animazione
+        animator.SetBool("go", true);
     }
 }
