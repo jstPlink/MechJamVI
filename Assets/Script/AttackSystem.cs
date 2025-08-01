@@ -10,102 +10,43 @@ public class AttackSystem : MonoBehaviour
     Animator animator;
 
     // ROBE COMBO
-    public float comboResetTime = 1.0f; // Tempo max tra un attacco e l'altro
-    public float attackDuration = 0.5f; // Durata di un attacco
-
-    private enum AttackState { Idle, Attacking, WaitingForNextInput }
-    private AttackState currentState = AttackState.Idle;
-
-    private Queue<float> inputBuffer = new Queue<float>();
-    private int comboStep = 0;
-    private float lastInputTime;
+    public bool canAttack = true;
+    public int comboStep = 0;
 
 
 
 
-    void Start()
-    {
+    private void Start() {
         animator = GetComponentInChildren<Animator>();
         attackAction = InputSystem.actions.FindAction("Attack");
     }
 
-    void Update()
-    {
-        
-        float isAttacking = attackAction.ReadValue<float>();
-        animator.SetBool("attack1", isAttacking > 0 ? true : false);
-        
 
-        // Lettura input e buffering
-        if (isAttacking > 0) // Sostituisci con l'input desiderato
-        {
-            if (inputBuffer.Count < 3)
-                inputBuffer.Enqueue(Time.time);
-        }
-
-        switch (currentState)
-        {
-            case AttackState.Idle:
-                if (inputBuffer.Count > 0)
-                    StartCoroutine(HandleAttack());
-                break;
-
-            case AttackState.WaitingForNextInput:
-                if (Time.time - lastInputTime > comboResetTime)
-                {
-                    ResetCombo();
-                }
-                else if (inputBuffer.Count > 0)
-                {
-                    StartCoroutine(HandleAttack());
-                }
-                break;
+    void Update() {
+        if (canAttack) {
+            if (attackAction.ReadValue<float>() > 0) {
+                canAttack = false;
+                IncremenetCombo();
+            }
         }
     }
 
 
-    IEnumerator HandleAttack()
-    {
-        currentState = AttackState.Attacking;
-        float inputTime = inputBuffer.Dequeue();
-        lastInputTime = Time.time;
 
+    // Viene chiamato dall'animazione per avvisare che puo attaccare di nuovo
+    public void ResetAttackState() {   
+        canAttack = true;
+    }
+
+    // Viene chiamato dal codice per aumentare la combo e passare ad un nuovo stato
+    public void IncremenetCombo() {
         comboStep++;
-        PlayAttackAnimation(comboStep);
-
-        yield return new WaitForSeconds(attackDuration);
-
-        if (comboStep >= 3)
-        {
-            ResetCombo();
-        }
-        else
-        {
-            currentState = AttackState.WaitingForNextInput;
-        }
+        animator.SetInteger("comboStep", comboStep);
     }
 
-    void ResetCombo()
-    {
+    public void ResetCombo() {
         comboStep = 0;
-        inputBuffer.Clear();
-        currentState = AttackState.Idle;
-    }
-
-    void PlayAttackAnimation(int step)
-    {
-        // Qui puoi chiamare l'animator o effetti
-        switch (step)
-        {
-            case 1:
-                Debug.Log("Attacco 1");
-                break;
-            case 2:
-                Debug.Log("Attacco 2");
-                break;
-            case 3:
-                Debug.Log("Attacco finale potente!");
-                break;
-        }
+        canAttack = true;
+        animator.SetInteger("comboStep", comboStep);
     }
 }
