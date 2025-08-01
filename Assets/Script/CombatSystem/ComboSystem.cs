@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 using System.Collections.Generic;
 
 
-public class AttackSystem : MonoBehaviour
+public class ComboSystem : MonoBehaviour
 {
     InputAction attackAction;
     Animator animator;

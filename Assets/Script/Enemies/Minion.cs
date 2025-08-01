@@ -31,7 +31,7 @@ public class Minion : Enemy
 
     IEnumerator TickLoop()
     {
-        while (true)
+        while (this != null)
         {
             // Attesa con tempo casuale tra min e max
             float waitTime = Random.Range(intervalRange.x, intervalRange.y);
@@ -47,29 +47,9 @@ public class Minion : Enemy
         }
     }
 
-
-
-
     public override void CustomUpdate()
     {
         base.CustomUpdate();
-
-    }
-
-
-
-    void Update()
-    {
-        timer += Time.deltaTime;
-
-        if (!isDying && timer >= lifetime)
-        {
-            isDying = true;
-
-            if (mySpawner) mySpawner.SetMinion();
-            // Chiama la funzione prima della distruzione
-            Destroy(gameObject);  // Distrugge il GameObject
-        }
     }
 
     public void SetMySpawner(GameObject newSpawner)

@@ -118,8 +118,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4650734998387958559}
   - component: {fileID: 2627598584277863725}
+  - component: {fileID: 9064611559906778761}
+  - component: {fileID: 3642316531567327757}
   - component: {fileID: 8241396972743653112}
-  - component: {fileID: 384088914349405655}
+  - component: {fileID: 7986780745610247117}
   m_Layer: 0
   m_Name: Minion
   m_TagString: Enemy
@@ -166,6 +168,54 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!54 &9064611559906778761
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7259482422449819446}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!135 &3642316531567327757
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7259482422449819446}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 2
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!114 &8241396972743653112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,20 +229,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 40
---- !u!114 &384088914349405655
+--- !u!114 &7986780745610247117
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7259482422449819446}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96709c1f3ea3d48458c433ec9ec40543, type: 3}
+  m_Script: {fileID: 11500000, guid: 93023f4d1297ea14ba5611534b0c4bfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gravity: -9.81
-  verticalVelocity: 0
+  health: 100
 --- !u!1001 &2150993855430290057
 PrefabInstance:
   m_ObjectHideFlags: 0
