@@ -12,7 +12,7 @@ public class Health : MonoBehaviour
         health -= damageAmount;
 
 
-        print("CurHealth: " + health);
+        // print("CurHealth: " + health);
         if (health <= 0) {
             OnDeath();
         }

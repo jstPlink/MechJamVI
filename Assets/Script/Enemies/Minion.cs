@@ -5,9 +5,6 @@ using System.Collections.Generic;
 
 public class Minion : Enemy
 {
-    public float lifetime = 5f;
-    private float timer = 0f;
-    private bool isDying = false;
     GameObject player;
 
     Spawner mySpawner;
@@ -31,20 +28,17 @@ public class Minion : Enemy
 
     IEnumerator TickLoop()
     {
-        while (this != null)
-        {
-            // Attesa con tempo casuale tra min e max
-            float waitTime = Random.Range(intervalRange.x, intervalRange.y);
-            yield return new WaitForSeconds(waitTime);
+        // Attesa con tempo casuale tra min e max
+        float waitTime = Random.Range(intervalRange.x, intervalRange.y);
+        yield return new WaitForSeconds(waitTime);
 
 
-            // LOGICA IA MINION
-            if (agent.isOnNavMesh) agent.SetDestination(GameManager.GetClosestBase(gameObject.transform));
+        // LOGICA IA MINION
+        if (agent.isOnNavMesh) agent.SetDestination(GameManager.GetClosestBase(gameObject.transform));
 
 
-            // Il ciclo continua automaticamente con un nuovo timer
-            StartCoroutine(TickLoop());
-        }
+        // Il ciclo continua automaticamente con un nuovo timer
+        StartCoroutine(TickLoop());
     }
 
     public override void CustomUpdate()
