@@ -10,12 +10,9 @@ public class AttackSystem : MonoBehaviour
     Animator animator;
 
     // ROBE COMBO
-    bool canAttack = true;
-    int comboStep = 0;
+    public bool canAttack = true;
+    public int comboStep = 0;
 
-    public float firstAttackDuration = 1f;
-    public float secondAttackDuration = 1f; // Quanto tempo ha il player per inserire il colpo successivo
-    public float comboInputWindow = 0.7f; // Quanto tempo ha il player per inserire il colpo successivo
 
 
 
@@ -29,30 +26,27 @@ public class AttackSystem : MonoBehaviour
         if (canAttack) {
             if (attackAction.ReadValue<float>() > 0) {
                 canAttack = false;
-                comboStep++;
-                SetComboState(comboStep);
+                IncremenetCombo();
             }
         }
     }
 
 
-    public void SetGoState() {
-        animator.SetBool("go", false);
-    }
 
     // Viene chiamato dall'animazione per avvisare che puo attaccare di nuovo
-    public void ResetAttackState()
-    {   
+    public void ResetAttackState() {   
         canAttack = true;
     }
 
     // Viene chiamato dal codice per aumentare la combo e passare ad un nuovo stato
-    public void SetComboState(int newState) {
+    public void IncremenetCombo() {
+        comboStep++;
+        animator.SetInteger("comboStep", comboStep);
+    }
 
-        comboStep = newState;
-        animator.SetInteger("comboState", comboStep);
-        
-        // fai partire l'animazione
-        animator.SetBool("go", true);
+    public void ResetCombo() {
+        comboStep = 0;
+        canAttack = true;
+        animator.SetInteger("comboStep", comboStep);
     }
 }
