@@ -89,7 +89,7 @@ public class AttackSystem : MonoBehaviour
     {
         comboStep = 0;
         inputBuffer.Clear();
-        currentState = AttackState.Idle;-+
+        currentState = AttackState.Idle;
     }
 
     void PlayAttackAnimation(int step)
