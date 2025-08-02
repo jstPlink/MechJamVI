@@ -24,10 +24,16 @@ public class GameManager : MonoBehaviour
     [SerializeField] private bool canAdd = true;
     [SerializeField] public bool somethingChanged = true;
 
+    static GameObject player;
+
 
     private void Start()
     {
         bases = FindObjectsByType<Base_Behaviour>(FindObjectsSortMode.None);
+
+        player = FindFirstObjectByType<SimpleMovement>().gameObject;
+
+        print(player);
 
         // Lock and hide cursor
         Cursor.lockState = CursorLockMode.Locked;
@@ -83,12 +89,14 @@ public class GameManager : MonoBehaviour
         Base_Behaviour closestBase = null;
         float thresholdDistance = Mathf.Infinity;
 
+        // cerca tra le basi il punto piu vicino
         foreach (Base_Behaviour tmpBase in bases)
         {
-            if (tmpBase == null) continue; // per sicurezza
-
-            if (tmpBase.GetStatus() == Base_Behaviour.Status.Contested || tmpBase.GetStatus() == Base_Behaviour.Status.Ally)
+            // Verifica che sia contestata o di un alleato
+            if (tmpBase._status == Base_Behaviour.Status.Contested || tmpBase._status == Base_Behaviour.Status.Ally)
             {
+                if (tmpBase._isTherePlayer) return player.transform.position;
+
                 float distance = Vector3.Distance(enemyPosition.position, tmpBase.transform.position);
                 if (distance < thresholdDistance)
                 {
@@ -97,15 +105,11 @@ public class GameManager : MonoBehaviour
                 }
             }
         }
+        if (closestBase == null) return player.transform.position;
 
 
-        // Genera un punto in coordinate polari
-        float angolo = Random.Range(0f, 2f * Mathf.PI);
-        float distanza = Mathf.Sqrt(Random.Range(0f, 1f)) * 50f;
-
-        float x = Mathf.Cos(angolo) * distanza;
-        float z = Mathf.Sin(angolo) * distanza;
-
-        return new Vector3(closestBase.transform.position.x + x, closestBase.transform.position.y, closestBase.transform.position.z + z);
+        // Genera un punto casuale all'interno della base
+        Vector3 targetLoc = Random.insideUnitCircle * closestBase.GetComponent<SphereCollider>().radius;
+        return targetLoc;
     }
 }

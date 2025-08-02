@@ -21,23 +21,18 @@ public class Minion : Enemy
     }
 
 
-
     IEnumerator TickLoop()
     {
-        // Attesa con tempo casuale tra min e max
-        float waitTime = Random.Range(intervalRange.x, intervalRange.y);
-        yield return new WaitForSeconds(waitTime);
-
-        // LOGICA IA MINION
-        if (health > 0 && agent.isOnNavMesh && gameObject != null)
+        while (health > 0)
         {
-            agent.SetDestination(GameManager.GetClosestBase(gameObject.transform));
+            Vector3 newDestination = GameManager.GetClosestBase(gameObject.transform);
+            agent.SetDestination(newDestination);
             animator.SetFloat("speed", agent.velocity.magnitude);
-        }
-        else yield return null;
 
-        // Il ciclo continua automaticamente con un nuovo timer
-        StartCoroutine(TickLoop());
+            yield return new WaitForSeconds(Random.Range(intervalRange.x, intervalRange.y));
+        }
+
+        yield break;
     }
 
 
@@ -53,6 +48,7 @@ public class Minion : Enemy
     {
         base.OnDeath();
 
+        StopAllCoroutines();
         agent.Stop();
         animator.SetBool("dead", true);
     }
