@@ -60,7 +60,7 @@ public class Minion : Enemy
                 agent.Stop();
             }
 
-            animator.SetFloat("speed", agent.velocity.magnitude)
+            animator.SetFloat("speed", agent.velocity.magnitude);
 
             yield return new WaitForSeconds(Random.Range(intervalRange.x, intervalRange.y));
         }
