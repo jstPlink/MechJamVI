@@ -193,7 +193,7 @@ public class Base_Behaviour : MonoBehaviour
                     }
                     else
                     {
-                        StartCoroutine(AddTime(timeToSuttractPlayerWithEnemy));
+                        StartCoroutine(AddTime(timeToSubtractEnemyXTick));
                     }
                 }
                 Lights[lightNumber].material = allyMaterial;

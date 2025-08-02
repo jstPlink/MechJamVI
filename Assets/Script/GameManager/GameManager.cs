@@ -93,8 +93,6 @@ public class GameManager : MonoBehaviour
             // Verifica che sia contestata o di un alleato
             if (tmpBase._status == Base_Behaviour.Status.Contested || tmpBase._status == Base_Behaviour.Status.Ally)
             {
-                if (tmpBase._isTherePlayer) return player.transform.position;
-
                 float distance = Vector3.Distance(enemyPosition.position, tmpBase.transform.position);
                 if (distance < thresholdDistance)
                 {
@@ -105,9 +103,9 @@ public class GameManager : MonoBehaviour
         }
         if (closestBase == null) return player.transform.position;
 
-
         // Genera un punto casuale all'interno della base
-        Vector3 targetLoc = Random.insideUnitCircle * closestBase.GetComponent<SphereCollider>().radius;
+        Vector2 point = Random.insideUnitCircle * 20f;
+        Vector3 targetLoc = new Vector3(point.x, 0f, point.y) + closestBase.transform.position;
         return targetLoc;
     }
 }
