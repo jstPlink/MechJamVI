@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1974418495751261953}
   m_Layer: 0
   m_Name: Sphere_Hit2
-  m_TagString: HitBox
+  m_TagString: PlayerHitbox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 5150682311279814316}
   m_Layer: 0
   m_Name: Sphere_Hit3
-  m_TagString: HitBox
+  m_TagString: PlayerHitbox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -163,6 +163,7 @@ GameObject:
   - component: {fileID: 4650734998387958559}
   - component: {fileID: 2476885190536362473}
   - component: {fileID: 8791274877796153203}
+  - component: {fileID: 7139730805484780333}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -229,6 +230,19 @@ MonoBehaviour:
   playerCameraContainer: {fileID: 0}
   isAttacking: 0
   rotationSpeed: 20
+--- !u!114 &7139730805484780333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7259482422449819446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93023f4d1297ea14ba5611534b0c4bfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
 --- !u!1 &7653435160328184128
 GameObject:
   m_ObjectHideFlags: 0
@@ -243,7 +257,7 @@ GameObject:
   - component: {fileID: 1093111198404708274}
   m_Layer: 0
   m_Name: Sphere_Hit
-  m_TagString: HitBox
+  m_TagString: PlayerHitbox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

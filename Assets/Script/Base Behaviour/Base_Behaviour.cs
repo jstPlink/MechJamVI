@@ -43,11 +43,11 @@ public class Base_Behaviour : MonoBehaviour
     };
     [Header(" ## DEBUG ##")]
     [Header(" -- Status --")]
-    [SerializeField] private Status _status;
+    [SerializeField] public Status _status;
     [SerializeField] private Status _owner;
     [SerializeField] private bool _isThereEnemy;
     [SerializeField] private byte enemyCounter = 0;
-    [SerializeField] private bool _isTherePlayer;
+    [SerializeField] public bool _isTherePlayer;
     [SerializeField] private bool canModifyTime;
     [SerializeField] private float _timeXLight;
 

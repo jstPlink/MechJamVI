@@ -7,7 +7,7 @@ public class Minion : Enemy
 {
     GameObject player;
     Spawner mySpawner;
-    Vector2 intervalRange = new Vector2(2f, 7f);
+    public Vector2 intervalRange = new Vector2(2f, 7f);
     NavMeshAgent agent;
     Animator animator;
 
@@ -22,22 +22,36 @@ public class Minion : Enemy
 
 
 
+    private void Update()
+    {
+        if (agent.velocity.sqrMagnitude <= 2f)
+        {
+            if (Vector3.Distance(transform.position, GameManager.player.transform.position) <= 15f) {
+                animator.SetBool("canAttack", true);
+            }
+            else {
+                animator.SetBool("canAttack", false);
+            }
+        }
+    }
+
+
     IEnumerator TickLoop()
     {
-        // Attesa con tempo casuale tra min e max
-        float waitTime = Random.Range(intervalRange.x, intervalRange.y);
-        yield return new WaitForSeconds(waitTime);
-
-        // LOGICA IA MINION
-        if (health > 0 && agent.isOnNavMesh && gameObject != null)
+        while (health > 0)
         {
-            agent.SetDestination(GameManager.GetClosestBase(gameObject.transform));
-            animator.SetFloat("speed", agent.velocity.magnitude);
-        }
-        else yield return null;
+            if (agent.velocity.sqrMagnitude <= 2f) {
+                yield return null;
+            }
 
-        // Il ciclo continua automaticamente con un nuovo timer
-        StartCoroutine(TickLoop());
+            Vector3 newDestination = GameManager.GetClosestBase(gameObject.transform);
+            agent.SetDestination(newDestination);
+            animator.SetFloat("speed", agent.velocity.magnitude);
+
+            yield return new WaitForSeconds(Random.Range(intervalRange.x, intervalRange.y));
+        }
+
+        yield break;
     }
 
 
@@ -53,6 +67,7 @@ public class Minion : Enemy
     {
         base.OnDeath();
 
+        StopAllCoroutines();
         agent.Stop();
         animator.SetBool("dead", true);
     }
