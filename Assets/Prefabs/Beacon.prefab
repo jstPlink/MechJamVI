@@ -955,6 +955,14 @@ PrefabInstance:
       propertyPath: minion
       value: 
       objectReference: {fileID: 7259482422449819446, guid: a4a5a89ba1b716b4fa3a79474e9a5292, type: 3}
+    - target: {fileID: 8479315578571054986, guid: 6ec80a22933125e498c9b448ab0cee7c, type: 3}
+      propertyPath: spawnTimeRange.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8479315578571054986, guid: 6ec80a22933125e498c9b448ab0cee7c, type: 3}
+      propertyPath: spawnTimeRange.y
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 8908157286677860687, guid: 6ec80a22933125e498c9b448ab0cee7c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 15
@@ -1021,6 +1029,14 @@ PrefabInstance:
       propertyPath: minion
       value: 
       objectReference: {fileID: 7259482422449819446, guid: a4a5a89ba1b716b4fa3a79474e9a5292, type: 3}
+    - target: {fileID: 8479315578571054986, guid: 6ec80a22933125e498c9b448ab0cee7c, type: 3}
+      propertyPath: spawnTimeRange.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8479315578571054986, guid: 6ec80a22933125e498c9b448ab0cee7c, type: 3}
+      propertyPath: spawnTimeRange.y
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 8908157286677860687, guid: 6ec80a22933125e498c9b448ab0cee7c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.49
@@ -1161,6 +1177,14 @@ PrefabInstance:
       propertyPath: minion
       value: 
       objectReference: {fileID: 7259482422449819446, guid: a4a5a89ba1b716b4fa3a79474e9a5292, type: 3}
+    - target: {fileID: 8479315578571054986, guid: 6ec80a22933125e498c9b448ab0cee7c, type: 3}
+      propertyPath: spawnTimeRange.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8479315578571054986, guid: 6ec80a22933125e498c9b448ab0cee7c, type: 3}
+      propertyPath: spawnTimeRange.y
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 8908157286677860687, guid: 6ec80a22933125e498c9b448ab0cee7c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.0300007
@@ -1227,6 +1251,14 @@ PrefabInstance:
       propertyPath: minion
       value: 
       objectReference: {fileID: 7259482422449819446, guid: a4a5a89ba1b716b4fa3a79474e9a5292, type: 3}
+    - target: {fileID: 8479315578571054986, guid: 6ec80a22933125e498c9b448ab0cee7c, type: 3}
+      propertyPath: spawnTimeRange.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8479315578571054986, guid: 6ec80a22933125e498c9b448ab0cee7c, type: 3}
+      propertyPath: spawnTimeRange.y
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 8908157286677860687, guid: 6ec80a22933125e498c9b448ab0cee7c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -12.48

@@ -8,7 +8,7 @@ public class HitBox : MonoBehaviour
     private void OnTriggerEnter(Collider other) {
 
         if (other.tag == "Enemy") {
-            other.GetComponent<Health>().ApplyDamage(damage);
+            other.GetComponent<Enemy>().ApplyDamage(damage);
         }
     }
 }
