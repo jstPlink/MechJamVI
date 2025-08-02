@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
     [Header(" -- Pointer --")]
     [Tooltip("Attach here every base of the game")]
     [SerializeField] private static Base_Behaviour[] bases;
+    [Tooltip("Attach here player transform")]
+    [SerializeField] private static Transform player;
     [Tooltip("Match the number of the map with the pin")]
     [SerializeField] private MeshRenderer[] basesMapPin;
     [SerializeField] private Material enemyMaterial;
@@ -28,6 +30,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         bases = FindObjectsByType<Base_Behaviour>(FindObjectsSortMode.None);
+        player = GameObject.Find("Player").transform;
 
         // Lock and hide cursor
         Cursor.lockState = CursorLockMode.Locked;
@@ -77,6 +80,10 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(tickTimer);
     }
 
+    public static Vector3 GetPlayerPostion()
+    {
+        return player.position;
+    }
 
     public static Vector3 GetClosestBase(Transform enemyPosition)
     {
