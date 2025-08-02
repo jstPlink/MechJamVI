@@ -1,0 +1,165 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Mask_Arms
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: R_Scorpion
+    m_Weight: 0
+  - m_Path: R_Scorpion/Bone
+    m_Weight: 0
+  - m_Path: R_Scorpion/Bone/body
+    m_Weight: 1
+  - m_Path: R_Scorpion/Bone/body/arm1.L
+    m_Weight: 1
+  - m_Path: R_Scorpion/Bone/body/arm1.L/arm2.L
+    m_Weight: 1
+  - m_Path: R_Scorpion/Bone/body/arm1.L/arm2.L/arm3.L
+    m_Weight: 1
+  - m_Path: R_Scorpion/Bone/body/arm1.L/arm2.L/arm3.L/arm4.L
+    m_Weight: 1
+  - m_Path: R_Scorpion/Bone/body/arm1.L/arm2.L/arm3.L/arm4.L/arm5.L
+    m_Weight: 1
+  - m_Path: R_Scorpion/Bone/body/arm1.L/arm2.L/arm3.L/arm4.L/arm5.L/hand.L
+    m_Weight: 1
+  - m_Path: R_Scorpion/Bone/body/arm1.R
+    m_Weight: 1
+  - m_Path: R_Scorpion/Bone/body/arm1.R/arm2.R
+    m_Weight: 1
+  - m_Path: R_Scorpion/Bone/body/arm1.R/arm2.R/arm3.R
+    m_Weight: 1
+  - m_Path: R_Scorpion/Bone/body/arm1.R/arm2.R/arm3.R/arm4.R
+    m_Weight: 1
+  - m_Path: R_Scorpion/Bone/body/arm1.R/arm2.R/arm3.R/arm4.R/arm5.R
+    m_Weight: 1
+  - m_Path: R_Scorpion/Bone/body/arm1.R/arm2.R/arm3.R/arm4.R/arm5.R/hand.R
+    m_Weight: 1
+  - m_Path: R_Scorpion/Bone/body/leg1.1.L
+    m_Weight: 0
+  - m_Path: R_Scorpion/Bone/body/leg1.1.L/leg1.2.L
+    m_Weight: 0
+  - m_Path: R_Scorpion/Bone/body/leg1.1.L/leg1.2.L/leg1.3.L
+    m_Weight: 0
+  - m_Path: R_Scorpion/Bone/body/leg1.1.R
+    m_Weight: 0
+  - m_Path: R_Scorpion/Bone/body/leg1.1.R/leg1.2.R
+    m_Weight: 0
+  - m_Path: R_Scorpion/Bone/body/leg1.1.R/leg1.2.R/leg1.3.R
+    m_Weight: 0
+  - m_Path: R_Scorpion/Bone/body/leg2.1.L
+    m_Weight: 0
+  - m_Path: R_Scorpion/Bone/body/leg2.1.L/leg2.2.L
+    m_Weight: 0
+  - m_Path: R_Scorpion/Bone/body/leg2.1.L/leg2.2.L/leg2.3.L
+    m_Weight: 0
+  - m_Path: R_Scorpion/Bone/body/leg2.1.R
+    m_Weight: 0
+  - m_Path: R_Scorpion/Bone/body/leg2.1.R/leg2.2.R
+    m_Weight: 0
+  - m_Path: R_Scorpion/Bone/body/leg2.1.R/leg2.2.R/leg2.3.R
+    m_Weight: 0
+  - m_Path: R_Scorpion/Bone/body/leg3.1.L
+    m_Weight: 0
+  - m_Path: R_Scorpion/Bone/body/leg3.1.L/leg3.2.L
+    m_Weight: 0
+  - m_Path: R_Scorpion/Bone/body/leg3.1.L/leg3.2.L/Bone.016.L
+    m_Weight: 0
+  - m_Path: R_Scorpion/Bone/body/leg3.1.L/leg3.2.L/leg3.3.L
+    m_Weight: 0
+  - m_Path: R_Scorpion/Bone/body/leg3.1.R
+    m_Weight: 0
+  - m_Path: R_Scorpion/Bone/body/leg3.1.R/leg3.2.R
+    m_Weight: 0
+  - m_Path: R_Scorpion/Bone/body/leg3.1.R/leg3.2.R/Bone.016.R
+    m_Weight: 0
+  - m_Path: R_Scorpion/Bone/body/leg3.1.R/leg3.2.R/leg3.3.R
+    m_Weight: 0
+  - m_Path: R_Scorpion/Bone/body/piston.L
+    m_Weight: 0
+  - m_Path: R_Scorpion/Bone/body/piston.R
+    m_Weight: 0
+  - m_Path: R_Scorpion/Bone/body/tail0
+    m_Weight: 0
+  - m_Path: R_Scorpion/Bone/body/tail0/tail1
+    m_Weight: 0
+  - m_Path: R_Scorpion/Bone/body/tail0/tail1/tail2
+    m_Weight: 0
+  - m_Path: R_Scorpion/Bone/body/tail0/tail1/tail2/tail3
+    m_Weight: 0
+  - m_Path: R_Scorpion/Bone/body/tail0/tail1/tail2/tail3/tail4
+    m_Weight: 0
+  - m_Path: R_Scorpion/Bone/body/tail0/tail1/tail2/tail3/tail4/tail5
+    m_Weight: 0
+  - m_Path: R_Scorpion/Bone/body/tail0/tail1/tail2/tail3/tail4/tail5/tail6
+    m_Weight: 0
+  - m_Path: R_Scorpion/Bone/body/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail6.001
+    m_Weight: 0
+  - m_Path: R_Scorpion/Bone/body/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail6.001/tail7
+    m_Weight: 0
+  - m_Path: R_Scorpion/Bone/body/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail6.001/tail7/tail8
+    m_Weight: 0
+  - m_Path: R_Scorpion/Bone/body/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail6.001/tail7/tail8/tail9
+    m_Weight: 0
+  - m_Path: R_Scorpion/Bone/body/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail6.001/tail7/tail8/tail9/tail10
+    m_Weight: 0
+  - m_Path: R_Scorpion/Bone/body/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail6.001/tail7/tail8/tail9/tail10/tail11
+    m_Weight: 0
+  - m_Path: R_Scorpion/Bone/body/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail6.001/tail7/tail8/tail9/tail10/tail11/tail12
+    m_Weight: 0
+  - m_Path: R_Scorpion/Bone/body/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail6.001/tail7/tail8/tail9/tail10/tail11/tail12/tail13
+    m_Weight: 0
+  - m_Path: R_Scorpion/Bone/body/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail6.001/tail7/tail8/tail9/tail10/tail11/tail12/tail13/tail14
+    m_Weight: 0
+  - m_Path: R_Scorpion/Bone/body/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail6.001/tail7/tail8/tail9/tail10/tail11/tail12/tail13/tail14/tail15
+    m_Weight: 0
+  - m_Path: R_Scorpion/Bone/body/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail6.001/tail7/tail8/tail9/tail10/tail11/tail12/tail13/tail14/tail15/tail16
+    m_Weight: 0
+  - m_Path: R_Scorpion/Bone/body/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail6.001/tail7/tail8/tail9/tail10/tail11/tail12/tail13/tail14/tail15/tail16/tail17
+    m_Weight: 0
+  - m_Path: R_Scorpion/Bone/body/tail0/tail1/tail2/tail3/tail4/tail5/tail6/tail6.001/tail7/tail8/tail9/tail10/tail11/tail12/tail13/tail14/tail15/tail16/tail17/tail.tip
+    m_Weight: 0
+  - m_Path: R_Scorpion/hand.IK.L
+    m_Weight: 0
+  - m_Path: R_Scorpion/hand.IK.pole.L
+    m_Weight: 0
+  - m_Path: R_Scorpion/hand.IK.pole.R
+    m_Weight: 0
+  - m_Path: R_Scorpion/hand.IK.R
+    m_Weight: 0
+  - m_Path: R_Scorpion/leg1.IK.L
+    m_Weight: 0
+  - m_Path: R_Scorpion/leg1.IK.pole.L
+    m_Weight: 0
+  - m_Path: R_Scorpion/leg1.IK.pole.R
+    m_Weight: 0
+  - m_Path: R_Scorpion/leg1.IK.R
+    m_Weight: 0
+  - m_Path: R_Scorpion/leg2.IK.L
+    m_Weight: 0
+  - m_Path: R_Scorpion/leg2.IK.pole.L
+    m_Weight: 0
+  - m_Path: R_Scorpion/leg2.IK.pole.R
+    m_Weight: 0
+  - m_Path: R_Scorpion/leg2.IK.R
+    m_Weight: 0
+  - m_Path: R_Scorpion/leg3.IK.L
+    m_Weight: 0
+  - m_Path: R_Scorpion/leg3.IK.R
+    m_Weight: 0
+  - m_Path: R_Scorpion/leg3.IKpole..L
+    m_Weight: 0
+  - m_Path: R_Scorpion/leg3.IKpole..R
+    m_Weight: 0
+  - m_Path: R_Scorpion/tail.IK
+    m_Weight: 0
+  - m_Path: R_Scorpion/tail.IK.pole
+    m_Weight: 0
+  - m_Path: SM_Scorpion
+    m_Weight: 0

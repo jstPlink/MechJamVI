@@ -8643,11 +8643,20 @@ AnimationClip:
         weightedMode: 0
         inWeight: 0
         outWeight: 0
+      - serializedVersion: 3
+        time: 1.2083334
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: R_Scorpion/Bone/body/arm1.L/arm2.L/arm3.L/arm4.L/arm5.L/hand.L/Sphere_Hit
+    path: R_Scorpion/Bone/body/arm1.L/arm2.L/arm3.L/arm4.L/arm5.L/hand.L/Sphere_Hit2
     classID: 1
     script: {fileID: 0}
     flags: 0
@@ -9083,7 +9092,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 104070259
+      path: 3554651511
       attribute: 2086281974
       script: {fileID: 0}
       typeID: 1
@@ -44568,11 +44577,20 @@ AnimationClip:
         weightedMode: 0
         inWeight: 0
         outWeight: 0
+      - serializedVersion: 3
+        time: 1.2083334
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: R_Scorpion/Bone/body/arm1.L/arm2.L/arm3.L/arm4.L/arm5.L/hand.L/Sphere_Hit
+    path: R_Scorpion/Bone/body/arm1.L/arm2.L/arm3.L/arm4.L/arm5.L/hand.L/Sphere_Hit2
     classID: 1
     script: {fileID: 0}
     flags: 0

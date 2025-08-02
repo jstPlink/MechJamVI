@@ -52,7 +52,7 @@ public class GameManager : MonoBehaviour
     private IEnumerator addResource()
     {
         ResourceQty += totalResourceXTick;
-        _resourceText.text = "Resource: " + ResourceQty;
+        // _resourceText.text = "Resource: " + ResourceQty;
         yield return new WaitForSeconds(tickTimer);
         canAdd = true;
     }

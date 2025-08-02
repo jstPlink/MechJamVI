@@ -8,7 +8,7 @@ public class Spawner : MonoBehaviour
     [HideInInspector] public Minion myMinion;
 
     [Header("Tempi di spawn")]
-    Vector2 spawnTimeRange = new Vector2(10f, 20f);
+    public Vector2 spawnTimeRange = new Vector2(10f, 20f);
     public float spawnInterval = 3f;
 
     private Coroutine spawnCoroutine;
