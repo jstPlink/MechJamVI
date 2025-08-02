@@ -75,7 +75,14 @@ namespace AK
 
     namespace BUSSES
     {
+        static const AkUniqueID AMBIENT = 77978275U;
+        static const AkUniqueID ENEMIES = 2242381963U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
+        static const AkUniqueID MUSIC = 3991942870U;
+        static const AkUniqueID NON_WORLD = 3869140995U;
+        static const AkUniqueID OBJECTS = 1695690031U;
+        static const AkUniqueID PLAYER = 1069431850U;
+        static const AkUniqueID UI = 1551306167U;
         static const AkUniqueID WORLD = 2609808943U;
     } // namespace BUSSES
 

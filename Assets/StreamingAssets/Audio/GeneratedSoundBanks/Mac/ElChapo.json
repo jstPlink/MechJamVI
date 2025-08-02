@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{AEED4C7A-EFF1-4B94-88D1-41A771CFEFCF}",
     "Language": "SFX",
-    "Hash": "{574C9B15-5E84-B5BA-6B37-5482B8D2699F}",
+    "Hash": "{D8D9C85B-A9AB-0AF5-1154-815412F5A860}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\ElChapo",
     "ShortName": "ElChapo",
     "Path": "ElChapo.bnk",
@@ -21,7 +21,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "813080__audiopapkin__sound-design-elements-robot-mechanism-021.wav",
-      "CachePath": "16/{166E6F9D-BCD4-EEF7-4708-F2C97D8E592F}.wem"
+      "CachePath": "3E/{3E04991B-86F2-2868-5986-FFB4A9CAA4EC}.wem"
      },
      {
       "Id": "9290680",
@@ -29,7 +29,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "813077__audiopapkin__sound-design-elements-robot-mechanism-018.wav",
-      "CachePath": "F9/{F9F40761-EC9F-475B-8DF3-02133FC26A58}.wem"
+      "CachePath": "29/{291D8117-2DB5-A69A-5E1A-C42963642462}.wem"
      },
      {
       "Id": "64498864",
@@ -37,7 +37,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Compact Alarm Beep Loop.wav",
-      "CachePath": "22/{2253B691-4113-2126-56A7-C2160372F07E}.wem"
+      "CachePath": "54/{54F44EC7-D1C1-F281-8E57-D5E20DFA3180}.wem"
      },
      {
       "Id": "78534883",
@@ -61,7 +61,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "FUI Holo Mechanism Activate.wav",
-      "CachePath": "6A/{6A9F2D68-A58D-CD90-80DD-FF5438933113}.wem"
+      "CachePath": "21/{21802983-B869-1FFC-861F-D6385A233073}.wem"
      },
      {
       "Id": "159409977",
@@ -69,7 +69,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "FUI Button Toggle Mechanical.wav",
-      "CachePath": "D5/{D57365CE-5BAA-C69D-857D-86EC28A6BEBB}.wem"
+      "CachePath": "72/{72E26C78-6FB4-D052-E58C-8E5689BA8C62}.wem"
      },
      {
       "Id": "164404195",
@@ -77,7 +77,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Holographic Pad Motion-1.wav",
-      "CachePath": "6E/{6E0621EC-DB2A-0F4C-FE84-59C8702C4BEA}.wem"
+      "CachePath": "8D/{8D4D7072-8119-5130-2050-EF6E6EE0594F}.wem"
      },
      {
       "Id": "226300041",
@@ -85,7 +85,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Old Hologram Activation Rumble.wav",
-      "CachePath": "69/{69E6201A-F91F-E009-758E-EB4D69F36C6D}.wem"
+      "CachePath": "B4/{B4783A23-0FF8-5271-8FF2-3FAE3E957726}.wem"
      },
      {
       "Id": "323913972",
@@ -93,7 +93,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "813079__audiopapkin__sound-design-elements-robot-mechanism-020.wav",
-      "CachePath": "51/{512AE394-FDBE-F437-B79E-2FB4A48A4921}.wem"
+      "CachePath": "FE/{FE63AD7A-2B92-FF96-C1E4-40735D3A6BB5}.wem"
      },
      {
       "Id": "370360480",
@@ -101,7 +101,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Disk Noise Loop-1.wav",
-      "CachePath": "FE/{FEE97511-0E5E-80A3-0965-F327E7EB7361}.wem"
+      "CachePath": "1F/{1F6A87F5-4BF6-AA01-500D-76949B36A2AB}.wem"
      },
      {
       "Id": "401044624",
@@ -109,7 +109,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "813073__audiopapkin__sound-design-elements-robot-mechanism-014.wav",
-      "CachePath": "D6/{D6840284-A240-054A-062E-AAA261FC9A8B}.wem"
+      "CachePath": "59/{5942AA97-3CFD-1356-C8BA-53ABF25EAAA8}.wem"
      },
      {
       "Id": "412699923",
@@ -117,7 +117,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "813078__audiopapkin__sound-design-elements-robot-mechanism-019.wav",
-      "CachePath": "15/{15B35373-D58F-F5BB-B5A4-A13BD2319254}.wem"
+      "CachePath": "0A/{0AB3D34E-7A24-6776-B6E8-A395CB8A7CC7}.wem"
      },
      {
       "Id": "485250142",
@@ -125,7 +125,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Alarm Beep Lofi Loop.wav",
-      "CachePath": "7C/{7C56A5AC-5E38-207E-FC5D-570FF5B2EF79}.wem"
+      "CachePath": "A1/{A1D6462E-94D3-671B-04BF-34EE7F9A9AB0}.wem"
      },
      {
       "Id": "490129382",
@@ -133,7 +133,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "AMBWar_Battlefield Explosions Distant Loop_SFRMS_SCIWPNS.wav",
-      "CachePath": "12/{12C8B139-F246-8483-9E90-75AF8EF62A4A}.wem"
+      "CachePath": "F6/{F6AFE8D1-E1F0-6E43-AEDD-A9BC1B07CB9F}.wem"
      },
      {
       "Id": "499224237",
@@ -141,7 +141,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Holographic Screen Appear.wav",
-      "CachePath": "96/{96720428-48CD-72D7-F84B-9E71A96DC9E8}.wem"
+      "CachePath": "61/{61ACD105-8D17-9684-5E44-C2D929537E2D}.wem"
      },
      {
       "Id": "650576443",
@@ -149,7 +149,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "FUI Holo Mechanism Activate-1.wav",
-      "CachePath": "1B/{1B0698DE-352C-3B42-1FF8-69B119B9D2F6}.wem"
+      "CachePath": "7A/{7A120C93-6F1F-D38B-5AC2-E4B0856DF40E}.wem"
      },
      {
       "Id": "809030593",
@@ -157,7 +157,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Alarm Coarse Loop.wav",
-      "CachePath": "0E/{0EB88BB1-0A74-3FB0-7099-832ADEE4AC16}.wem"
+      "CachePath": "52/{5271BE38-C994-DFF5-1293-87D925E8BEDD}.wem"
      },
      {
       "Id": "848998426",
@@ -165,7 +165,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Data Jumble Loop.wav",
-      "CachePath": "1C/{1CE11662-C546-D849-1CAA-C844966079EF}.wem"
+      "CachePath": "7B/{7BFA8B64-52A6-5D0F-C540-9EAAB36EB95F}.wem"
      },
      {
       "Id": "871062797",
@@ -173,7 +173,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "EXPLDsgn_Explosion Impact_02_SFRMS_SCIWPNS.wav",
-      "CachePath": "81/{81D88421-FE27-97CF-DBF9-F32FED9CB792}.wem"
+      "CachePath": "38/{38D61A69-036C-9198-5638-285D128AE43C}.wem"
      },
      {
       "Id": "947932380",
@@ -189,7 +189,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "AMBPubl_Area Graveyard-Loop 01_AKB00M_Ambience Fantasy.wav",
-      "CachePath": "9E/{9EBEF2D6-ACFF-3B76-553E-142D4F360DB3}.wem"
+      "CachePath": "E4/{E4FC000B-FB08-4C57-8CD1-7ACE6353F055}.wem"
      },
      {
       "Id": "1010170936",
@@ -197,7 +197,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Particle Scanner Loop.wav",
-      "CachePath": "FB/{FBF07BD3-FAFC-081D-BF80-D5CDC6433E19}.wem"
+      "CachePath": "B5/{B5C81069-9EA4-A7FE-0529-1F23E38B6FC0}.wem"
      }
     ],
     "Events": [
@@ -484,6 +484,6 @@
     ]
    }
   ],
-  "FileHash": "{67D11B93-CF3C-8F6F-6D32-9C1F0775DE32}"
+  "FileHash": "{12E19402-2931-AA36-CF81-14E42183C804}"
  }
 }
