@@ -7,7 +7,7 @@ public class Minion : Enemy
 {
     GameObject player;
     Spawner mySpawner;
-    Vector2 intervalRange = new Vector2(2f, 7f);
+    public Vector2 intervalRange = new Vector2(2f, 7f);
     NavMeshAgent agent;
     Animator animator;
 
@@ -21,10 +21,29 @@ public class Minion : Enemy
     }
 
 
+
+    private void Update()
+    {
+        if (agent.velocity.sqrMagnitude <= 2f)
+        {
+            if (Vector3.Distance(transform.position, GameManager.player.transform.position) <= 15f) {
+                animator.SetBool("canAttack", true);
+            }
+            else {
+                animator.SetBool("canAttack", false);
+            }
+        }
+    }
+
+
     IEnumerator TickLoop()
     {
         while (health > 0)
         {
+            if (agent.velocity.sqrMagnitude <= 2f) {
+                yield return null;
+            }
+
             Vector3 newDestination = GameManager.GetClosestBase(gameObject.transform);
             agent.SetDestination(newDestination);
             animator.SetFloat("speed", agent.velocity.magnitude);

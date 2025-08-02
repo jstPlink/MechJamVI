@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private bool canAdd = true;
     [SerializeField] public bool somethingChanged = true;
 
-    static GameObject player;
+    public static GameObject player;
 
 
     private void Start()
@@ -32,8 +32,6 @@ public class GameManager : MonoBehaviour
         bases = FindObjectsByType<Base_Behaviour>(FindObjectsSortMode.None);
 
         player = FindFirstObjectByType<SimpleMovement>().gameObject;
-
-        print(player);
 
         // Lock and hide cursor
         Cursor.lockState = CursorLockMode.Locked;

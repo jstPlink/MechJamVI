@@ -12657,7 +12657,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 732, y: 415}
+  m_AnchoredPosition: {x: -715, y: 415}
   m_SizeDelta: {x: 372.9587, y: 144.1096}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1422444526
@@ -12680,7 +12680,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: M TO SWAP MAPS
+  m_text: PLAYER HEALTH
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -13643,6 +13643,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7139730805484780333, guid: 5e1bff75215b1974c9f72de1982e9e0e, type: 3}
+      propertyPath: textHealth
+      value: 
+      objectReference: {fileID: 1422444526}
     - target: {fileID: 7259482422449819446, guid: 5e1bff75215b1974c9f72de1982e9e0e, type: 3}
       propertyPath: m_Name
       value: Player
@@ -19113,9 +19117,9 @@ SceneRoots:
   - {fileID: 1822111256}
   - {fileID: 71396215}
   - {fileID: 518738557}
+  - {fileID: 87017853}
   - {fileID: 1512523646}
   - {fileID: 781473064}
-  - {fileID: 87017853}
   - {fileID: 1199666575}
   - {fileID: 1361495604}
   - {fileID: 497347472}
