@@ -56,7 +56,7 @@ public class GameManager : MonoBehaviour
     private IEnumerator addResource()
     {
         ResourceQty += totalResourceXTick;
-        _resourceText.text = "Resource: " + ResourceQty;
+        if (_resourceText != null) _resourceText.text = "Resource: " + ResourceQty;
         yield return new WaitForSeconds(tickTimer);
         canAdd = true;
     }
@@ -93,6 +93,8 @@ public class GameManager : MonoBehaviour
             // Verifica che sia contestata o di un alleato
             if (tmpBase._status == Base_Behaviour.Status.Contested || tmpBase._status == Base_Behaviour.Status.Ally)
             {
+                if (tmpBase._isTherePlayer) return player.transform.position;
+
                 float distance = Vector3.Distance(enemyPosition.position, tmpBase.transform.position);
                 if (distance < thresholdDistance)
                 {

@@ -10,13 +10,10 @@ public class Minion : Enemy
     NavMeshAgent agent;
     Animator animator;
 
-    NavMeshPath navMeshPath;
-
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponentInChildren<Animator>();
-        navMeshPath = new NavMeshPath();
         StartCoroutine(TickLoop());
     }
 
@@ -36,27 +33,16 @@ public class Minion : Enemy
     }
 
 
-
-    Vector3 newDest = Vector3.zero;
-
     IEnumerator TickLoop()
     {
         while (health > 0)
         {
-            if (agent.velocity.sqrMagnitude <= 2f) {
-                yield return null;
+            Vector3 posTarget = GameManager.GetClosestBase(gameObject.transform);
+
+            if (Vector3.Distance(transform.position, posTarget) < 200f) {
+                agent.SetDestination(posTarget);
             }
-
-
-            newDest = Vector3.zero;
-            newDest = GameManager.GetClosestBase(gameObject.transform);
-
-            if (Vector3.Distance(transform.position, newDest) < 200f)
-            {
-                agent.SetDestination(newDest);
-            }
-            else
-            {
+            else {
                 agent.Stop();
             }
 
