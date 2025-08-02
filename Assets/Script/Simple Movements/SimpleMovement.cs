@@ -18,6 +18,8 @@ public class SimpleMovement : MonoBehaviour
     private Vector3 moveAxis;
     Animator animator;
 
+    public bool isAttacking = false;
+
     public float rotationSpeed;
 
     private void OnEnable()
@@ -69,7 +71,7 @@ public class SimpleMovement : MonoBehaviour
     }
     private void Update()
     {
-        HandleMovement();
+        if (!isAttacking) HandleMovement();
 
     }
 }

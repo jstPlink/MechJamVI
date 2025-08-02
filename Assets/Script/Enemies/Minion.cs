@@ -29,13 +29,10 @@ public class Minion : Enemy
         yield return new WaitForSeconds(waitTime);
 
         // LOGICA IA MINION
-        if (health > 0)
+        if (health > 0 && agent.isOnNavMesh && gameObject != null)
         {
-            if (agent.isOnNavMesh)
-            {
-                agent.SetDestination(GameManager.GetClosestBase(gameObject.transform));
-                animator.SetFloat("speed", agent.velocity.magnitude);
-            }
+            agent.SetDestination(GameManager.GetClosestBase(gameObject.transform));
+            animator.SetFloat("speed", agent.velocity.magnitude);
         }
         else yield return null;
 
@@ -48,6 +45,7 @@ public class Minion : Enemy
     {
         base.ApplyDamage(damageAmount);
 
+        agent.Stop();
         if (health > 0) animator.SetInteger("hitState", 1);
     }
 

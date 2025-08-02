@@ -13,7 +13,7 @@ public class ComboSystem : MonoBehaviour
     public bool canAttack = true;
     public int comboStep = 0;
 
-
+    public SimpleMovement movement;
 
 
     private void Start() {
@@ -25,6 +25,8 @@ public class ComboSystem : MonoBehaviour
     void Update() {
         if (canAttack) {
             if (attackAction.ReadValue<float>() > 0) {
+
+                movement.isAttacking = true;
                 canAttack = false;
                 IncremenetCombo();
             }
@@ -41,12 +43,15 @@ public class ComboSystem : MonoBehaviour
     // Viene chiamato dal codice per aumentare la combo e passare ad un nuovo stato
     public void IncremenetCombo() {
         comboStep++;
+        animator.SetLayerWeight(2, 1);
         animator.SetInteger("comboStep", comboStep);
     }
 
     public void ResetCombo() {
         comboStep = 0;
         canAttack = true;
+        movement.isAttacking = false;
+        animator.SetLayerWeight(2, 0);
         animator.SetInteger("comboStep", comboStep);
     }
 }

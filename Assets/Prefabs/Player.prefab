@@ -94,7 +94,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8101410129577072335
 Transform:
   m_ObjectHideFlags: 0
@@ -227,6 +227,7 @@ MonoBehaviour:
   gravity: -9.81
   movementSpeed: 15
   playerCameraContainer: {fileID: 0}
+  isAttacking: 0
   rotationSpeed: 20
 --- !u!1 &7653435160328184128
 GameObject:
@@ -1311,6 +1312,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canAttack: 1
   comboStep: 0
+  movement: {fileID: 8791274877796153203}
 --- !u!4 &5192598518421138999 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4a0cf7f81a9b89c4189c7e079b1c9556, type: 3}
