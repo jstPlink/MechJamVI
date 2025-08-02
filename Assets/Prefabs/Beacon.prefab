@@ -733,10 +733,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyMaterial: {fileID: 2100000, guid: d7aa183419117f346a27c809590557d7, type: 2}
   allyMaterial: {fileID: 2100000, guid: c869952065cb3db468194cc749dfbd3b, type: 2}
-  timeForCapture: 20
-  timeLeftForCapture: 20
-  timeToSubtractEnemyXTick: 4
-  timeToSubtractPlayerXTick: 4
+  timeForCapture: 50
+  timeLeftForCapture: 50
+  timeToSubtractEnemyXTick: 0.2
+  timeToSubtractPlayerXTick: 5
   Lights:
   - {fileID: 7996248014311429054}
   - {fileID: 6156903722867255967}
@@ -745,7 +745,7 @@ MonoBehaviour:
   - {fileID: 1056070545280636967}
   resourceGenAmmount: 150
   canGenerateResource: 0
-  haveProject: 1
+  haveProject: 0
   dropPrefab: {fileID: 1102664358604211652, guid: f4dd470fd501c1f4d9a908dd9367f440, type: 3}
   spawnPointProject: {fileID: 5416995690253852452}
   pulseForce: 5
@@ -1031,11 +1031,11 @@ PrefabInstance:
       objectReference: {fileID: 7259482422449819446, guid: a4a5a89ba1b716b4fa3a79474e9a5292, type: 3}
     - target: {fileID: 8479315578571054986, guid: 6ec80a22933125e498c9b448ab0cee7c, type: 3}
       propertyPath: spawnTimeRange.x
-      value: 5
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8479315578571054986, guid: 6ec80a22933125e498c9b448ab0cee7c, type: 3}
       propertyPath: spawnTimeRange.y
-      value: 15
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 8908157286677860687, guid: 6ec80a22933125e498c9b448ab0cee7c, type: 3}
       propertyPath: m_LocalPosition.x

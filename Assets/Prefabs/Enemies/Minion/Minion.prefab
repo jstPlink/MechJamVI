@@ -882,6 +882,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 7752910021063827952}
   enemy: {fileID: 8241396972743653112}
+  _enemy1: {fileID: 8241396972743653112}
 --- !u!4 &8677560307326222567 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5378550205852353530, guid: 762d1974108b3b9438c6e5a8d0d36051, type: 3}
