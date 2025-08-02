@@ -303,8 +303,48 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy/Default Work Unit
     guid: 64fe4fde7f893d4381e284a69f3aad98
     GuidInternal: 
-    m_lastTime: -8584476108833132355
+    m_lastTime: -8584474648557605901
     List:
+    - name: Ambient
+      guid: 1bdf67499992164e99b3fb97ba6fc553
+      id: 77978275
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 64fe4fde7f893d4381e284a69f3aad98
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: World
+        ObjectType: 2
+        guid: e95d7b13e5304e40943579506d15852d
+      - ElementName: Ambient
+        ObjectType: 2
+        guid: 1bdf67499992164e99b3fb97ba6fc553
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/World/Ambient
+    - name: Enemies
+      guid: e7cc920e46d5de45b4cf59fac4c1ac44
+      id: 2242381963
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 64fe4fde7f893d4381e284a69f3aad98
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: World
+        ObjectType: 2
+        guid: e95d7b13e5304e40943579506d15852d
+      - ElementName: Enemies
+        ObjectType: 2
+        guid: e7cc920e46d5de45b4cf59fac4c1ac44
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/World/Enemies
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3803692087
@@ -319,6 +359,103 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus
+    - name: Music
+      guid: 63362cb904d78640a54431b6cd6d77f3
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 64fe4fde7f893d4381e284a69f3aad98
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Non_World
+        ObjectType: 2
+        guid: ac1627630e9af8408e4bc10bd2f00ac6
+      - ElementName: Music
+        ObjectType: 2
+        guid: 63362cb904d78640a54431b6cd6d77f3
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/Non_World/Music
+    - name: Non_World
+      guid: ac1627630e9af8408e4bc10bd2f00ac6
+      id: 3869140995
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 64fe4fde7f893d4381e284a69f3aad98
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Non_World
+        ObjectType: 2
+        guid: ac1627630e9af8408e4bc10bd2f00ac6
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/Non_World
+    - name: Objects
+      guid: 855c15995772af47b264ddbe230d11df
+      id: 1695690031
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 64fe4fde7f893d4381e284a69f3aad98
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: World
+        ObjectType: 2
+        guid: e95d7b13e5304e40943579506d15852d
+      - ElementName: Objects
+        ObjectType: 2
+        guid: 855c15995772af47b264ddbe230d11df
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/World/Objects
+    - name: Player
+      guid: 32c0acd14373754091f79c1925733023
+      id: 1069431850
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 64fe4fde7f893d4381e284a69f3aad98
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: World
+        ObjectType: 2
+        guid: e95d7b13e5304e40943579506d15852d
+      - ElementName: Player
+        ObjectType: 2
+        guid: 32c0acd14373754091f79c1925733023
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/World/Player
+    - name: UI
+      guid: 16669c5425ef6344a39548e566b18282
+      id: 1551306167
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 64fe4fde7f893d4381e284a69f3aad98
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Non_World
+        ObjectType: 2
+        guid: ac1627630e9af8408e4bc10bd2f00ac6
+      - ElementName: UI
+        ObjectType: 2
+        guid: 16669c5425ef6344a39548e566b18282
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/Non_World/UI
     - name: World
       guid: e95d7b13e5304e40943579506d15852d
       id: 2609808943
@@ -395,7 +532,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 6fd2a3c715508f418783ac77feed77fb
       Path: Events/Ambient/Generic/Ambient_EnergyField
-      maxAttenuation: 50
+      maxAttenuation: 80
       maxDuration: 0
       minDuration: 0
     - name: Ambient_MainScenario
@@ -549,8 +686,8 @@ MonoBehaviour:
         guid: 0e8d11023ff7f343a7ad16c0bc8cf535
       Path: Events/Player/PlayerStatus/Player_Movement
       maxAttenuation: 0
-      maxDuration: 0.5853532
-      minDuration: 0.5379941
+      maxDuration: 0.65682405
+      minDuration: 0.604161
     - name: PlayerStatus
       guid: a3c12e51ea5bc94098aa460645320723
       id: 3800848640
@@ -579,7 +716,7 @@ MonoBehaviour:
     ParentPath: Events/UI
     guid: a09ca73b79cf8542b72e8f261f961920
     GuidInternal: 
-    m_lastTime: -8584476200835207880
+    m_lastTime: -8584474709138157092
     List:
     - name: Generic
       guid: 777d86e6d90f1a4a80e2b7bdfa536fd6
@@ -1089,7 +1226,7 @@ MonoBehaviour:
     m_lastTime: -8584481567148078519
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000070000000a0000001000000011000000
+  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000b0000000c00000010000000110000001300000014000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

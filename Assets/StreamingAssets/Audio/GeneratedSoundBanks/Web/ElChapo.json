@@ -10,19 +10,11 @@
     "Type": "User",
     "GUID": "{AEED4C7A-EFF1-4B94-88D1-41A771CFEFCF}",
     "Language": "SFX",
-    "Hash": "{D8D9C85B-A9AB-0AF5-1154-815412F5A860}",
+    "Hash": "{F080E1FD-E3BC-CE23-F033-51FD75196245}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\ElChapo",
     "ShortName": "ElChapo",
     "Path": "ElChapo.bnk",
     "Media": [
-     {
-      "Id": "402570",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "813080__audiopapkin__sound-design-elements-robot-mechanism-021.wav",
-      "CachePath": "3E/{3E04991B-86F2-2868-5986-FFB4A9CAA4EC}.wem"
-     },
      {
       "Id": "9290680",
       "Language": "SFX",
@@ -88,14 +80,6 @@
       "CachePath": "B4/{B4783A23-0FF8-5271-8FF2-3FAE3E957726}.wem"
      },
      {
-      "Id": "323913972",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "813079__audiopapkin__sound-design-elements-robot-mechanism-020.wav",
-      "CachePath": "FE/{FE63AD7A-2B92-FF96-C1E4-40735D3A6BB5}.wem"
-     },
-     {
       "Id": "370360480",
       "Language": "SFX",
       "Streaming": "false",
@@ -104,20 +88,20 @@
       "CachePath": "1F/{1F6A87F5-4BF6-AA01-500D-76949B36A2AB}.wem"
      },
      {
-      "Id": "401044624",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "813073__audiopapkin__sound-design-elements-robot-mechanism-014.wav",
-      "CachePath": "59/{5942AA97-3CFD-1356-C8BA-53ABF25EAAA8}.wem"
-     },
-     {
       "Id": "412699923",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "813078__audiopapkin__sound-design-elements-robot-mechanism-019.wav",
       "CachePath": "0A/{0AB3D34E-7A24-6776-B6E8-A395CB8A7CC7}.wem"
+     },
+     {
+      "Id": "439739419",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PRJINS - 00_Scenario_Step_Placeholder2.wav",
+      "CachePath": "4D/{4DAFA163-3A7A-8C80-FF36-0E75D5631661}.wem"
      },
      {
       "Id": "485250142",
@@ -176,14 +160,6 @@
       "CachePath": "38/{38D61A69-036C-9198-5638-285D128AE43C}.wem"
      },
      {
-      "Id": "947932380",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "PRJINS - 00_Scenario_Step_Placeholder.wav",
-      "CachePath": "06/{06A67D25-CA4A-0F5A-8FF7-3A9621C65D8A}.wem"
-     },
-     {
       "Id": "966446192",
       "Language": "SFX",
       "Streaming": "false",
@@ -206,7 +182,7 @@
       "Name": "Ambient_EnergyField",
       "ObjectPath": "\\Events\\Ambient\\Generic\\Ambient_EnergyField",
       "GUID": "{C7A3D26F-5015-418F-8783-AC77FEED77FB}",
-      "MaxAttenuation": "50",
+      "MaxAttenuation": "80",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -237,7 +213,7 @@
       "DurationType": "Infinite",
       "MediaRefs": [
        {
-        "Id": "947932380"
+        "Id": "439739419"
        }
       ]
      },
@@ -285,20 +261,11 @@
       "ObjectPath": "\\Events\\Player\\PlayerStatus\\Player_Movement",
       "GUID": "{02118D0E-F73F-43F3-A7AD-16C0BC8CF535}",
       "DurationType": "OneShot",
-      "DurationMin": "0.5379941",
-      "DurationMax": "0.5853532",
+      "DurationMin": "0.604161",
+      "DurationMax": "0.65682405",
       "MediaRefs": [
        {
-        "Id": "402570"
-       },
-       {
         "Id": "9290680"
-       },
-       {
-        "Id": "323913972"
-       },
-       {
-        "Id": "401044624"
        },
        {
         "Id": "412699923"
@@ -484,6 +451,6 @@
     ]
    }
   ],
-  "FileHash": "{AE949FA3-25B8-9EFB-FC1B-ED2FC5116CB9}"
+  "FileHash": "{7E3D13D2-DB8B-D916-2ACB-170D1AC50604}"
  }
 }
