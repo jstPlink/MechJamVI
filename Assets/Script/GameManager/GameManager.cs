@@ -34,8 +34,8 @@ public class GameManager : MonoBehaviour
         player = FindFirstObjectByType<SimpleMovement>().gameObject;
 
         // Lock and hide cursor
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Confined;
+        // Cursor.visible = true;
     }
 
 
@@ -56,7 +56,7 @@ public class GameManager : MonoBehaviour
     private IEnumerator addResource()
     {
         ResourceQty += totalResourceXTick;
-        _resourceText.text = "Resource: " + ResourceQty;
+        if (_resourceText != null) _resourceText.SetText(ResourceQty.ToString());
         yield return new WaitForSeconds(tickTimer);
         canAdd = true;
     }
@@ -105,9 +105,9 @@ public class GameManager : MonoBehaviour
         }
         if (closestBase == null) return player.transform.position;
 
-
         // Genera un punto casuale all'interno della base
-        Vector3 targetLoc = Random.insideUnitCircle * closestBase.GetComponent<SphereCollider>().radius;
+        Vector2 point = Random.insideUnitCircle * 20f;
+        Vector3 targetLoc = new Vector3(point.x, 0f, point.y) + closestBase.transform.position;
         return targetLoc;
     }
 }

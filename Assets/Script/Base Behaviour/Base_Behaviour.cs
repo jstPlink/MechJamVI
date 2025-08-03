@@ -193,7 +193,7 @@ public class Base_Behaviour : MonoBehaviour
                     }
                     else
                     {
-                        StartCoroutine(AddTime(timeToSuttractPlayerWithEnemy));
+                        StartCoroutine(AddTime(timeToSubtractEnemyXTick));
                     }
                 }
                 Lights[lightNumber].material = allyMaterial;
@@ -213,9 +213,10 @@ public class Base_Behaviour : MonoBehaviour
     {
         yield return new WaitForSeconds(_gm.tickTimer);
         timeLeftForCapture += timeToAdd;
-        if (timeLeftForCapture > timeForCapture)
+        if (timeLeftForCapture >= timeForCapture)
         {
             timeLeftForCapture = timeForCapture;
+            _status = _owner;
         }
         canModifyTime = true;
     }

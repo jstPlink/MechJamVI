@@ -33,8 +33,6 @@ public class look : MonoBehaviour
     {
         float containerLookAxis = _lookAction.ReadValue<Vector2>().x;
         float cameraLookAxis = _lookAction.ReadValue<Vector2>().y;
-        containerLookAxis = Mathf.Clamp(containerLookAxis, -1f, 1f);
-        cameraLookAxis = Mathf.Clamp(cameraLookAxis, -1f, 1f);
 
         float yAngle = containerLookAxis * horizontalRotationSpeed * Time.deltaTime;
         float xAngle = cameraLookAxis * verticalRotationSpeed * Time.deltaTime;

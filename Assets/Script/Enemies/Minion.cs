@@ -5,7 +5,6 @@ using System.Collections.Generic;
 
 public class Minion : Enemy
 {
-    GameObject player;
     Spawner mySpawner;
     public Vector2 intervalRange = new Vector2(2f, 7f);
     NavMeshAgent agent;
@@ -14,8 +13,6 @@ public class Minion : Enemy
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        player = GameObject.FindWithTag("Player");
-        agent.SetDestination(player.transform.position);
         animator = GetComponentInChildren<Animator>();
         StartCoroutine(TickLoop());
     }
@@ -40,12 +37,15 @@ public class Minion : Enemy
     {
         while (health > 0)
         {
-            if (agent.velocity.sqrMagnitude <= 2f) {
-                yield return null;
+            Vector3 posTarget = GameManager.GetClosestBase(gameObject.transform);
+
+            if (Vector3.Distance(transform.position, posTarget) < 200f) {
+                agent.SetDestination(posTarget);
+            }
+            else {
+                agent.Stop();
             }
 
-            Vector3 newDestination = GameManager.GetClosestBase(gameObject.transform);
-            agent.SetDestination(newDestination);
             animator.SetFloat("speed", agent.velocity.magnitude);
 
             yield return new WaitForSeconds(Random.Range(intervalRange.x, intervalRange.y));
