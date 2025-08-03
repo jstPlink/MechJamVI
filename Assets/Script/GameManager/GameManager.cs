@@ -56,7 +56,7 @@ public class GameManager : MonoBehaviour
     private IEnumerator addResource()
     {
         ResourceQty += totalResourceXTick;
-        if (_resourceText != null) _resourceText.text = "Resource: " + ResourceQty;
+        if (_resourceText != null) _resourceText.SetText(ResourceQty.ToString());
         yield return new WaitForSeconds(tickTimer);
         canAdd = true;
     }
