@@ -7,26 +7,39 @@ public class FrogBoss : Enemy
     public float chaseDistance;
     public float attackLDistance;
     public float fillOffset;
+    public float energyFill;
+    public float fillSpeed;
+    public float fillPerAttack;
+    public float projectileSpeed;
     [Tooltip("X = minimum time for next attack; Y = MAXIMUM time for next attack")]
     public Vector2 waitTime;
     private Animator _anim;
     [SerializeField] private  Renderer rend;
-    [SerializeField] private  float originalFill;
+    [SerializeField] private  float prevFill;
     [SerializeField] private  bool canAttack = true;
+    [SerializeField] private Transform firePoint;
+    private Transform player;
+    public GameObject projectile;
     [Tooltip("Ref. to liquid material positon")]
     public byte index;
+
+    //Need for Shader Animation
+    private Vector2 fillLimit = new Vector2(0.82f, 3.4f);
 
     private void Awake()
     {
         //rend = GetComponent<Renderer>();
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         _anim = GetComponentInChildren <Animator>();
-        originalFill = rend.materials[index].GetFloat("_Fill");
+        prevFill = rend.materials[index].GetFloat("_Fill");
+        firePoint = GameObject.Find("Projectile_Spawn").GetComponent<Transform>();
     }
 
     private void Update()
     {
         //rend.material.SetFloat("_Fill", originalFill + fillOffset);
-        rend.materials[index].SetFloat("_Fill", originalFill + fillOffset);
+        prevFill = Mathf.Lerp(prevFill, energyFill, fillSpeed);
+        rend.materials[index].SetFloat("_Fill", prevFill + fillOffset);
         distance = Vector3.Distance(GameManager.GetPlayerPostion(),transform.position); //Distanza tra player e boss
        
 
@@ -45,7 +58,14 @@ public class FrogBoss : Enemy
 
         if (distance <= attackLDistance && canAttack)
         {
-            randomPickAttacks();
+            if (energyFill < fillLimit.y)
+            {
+                randomPickAttacks(2); //Se l'energia non è sufficente uso solo due attacchi
+            }
+            else
+            {
+                randomPickAttacks(3);// Se ho abbastanza energia posso usare anche la cannonata
+            }
         }
     }
 
@@ -64,20 +84,23 @@ public class FrogBoss : Enemy
         }
     }
 
-    private void randomPickAttacks()
+    private void randomPickAttacks(int random)
     {
         canAttack = false;
-        int rnd = Random.Range(0, 2);
+        int rnd = Random.Range(0, random);
         switch (rnd)
         {
             case 0:
                  _anim.SetTrigger("Attack_L1");
+                energyFill += fillPerAttack;
                 break;
             case 1:
                 _anim.SetTrigger("Attack_L2");
+                energyFill += fillPerAttack;
                 break;
             case 2:
                 _anim.SetTrigger("Attack_H");
+                energyFill = fillLimit.x;
                 break;
         }
     }
@@ -93,5 +116,10 @@ public class FrogBoss : Enemy
         canAttack = true;
     }
 
-
+    public void heavyAttack()
+    {
+        firePoint.LookAt(player);
+        Rigidbody rb = Instantiate(projectile, firePoint.position, firePoint.rotation).GetComponent<Rigidbody>();
+        rb.AddForce(rb.transform.forward * projectileSpeed);
+    }
 }
