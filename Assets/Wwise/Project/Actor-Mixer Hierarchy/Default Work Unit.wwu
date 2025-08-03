@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{1355577E-AE4B-414F-BC05-0F4EA7E8ED25}" SchemaVersion="123">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{1355577E-AE4B-414F-BC05-0F4EA7E8ED25}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="Non_World" ID="{4261A44C-0A5E-4B03-8F5B-A40E6E68EC87}" ShortID="192166624">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="UI_General" ID="{C90BF1B7-302B-427A-BD89-987738D3AAD5}" WorkUnitID="{02C56FBA-37F0-481A-9AF2-FCA6DF6512EE}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Non_World" ID="{632716AC-9A0E-40F8-8E4B-C10BD2F00AC6}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<WorkUnit Name="UI" ID="{6726047F-A115-4747-A3EB-754F447B6465}" PersistMode="Reference"/>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="World" ID="{779260EB-BD18-49E9-A611-DAB12F1E3DD7}" ShortID="787257233">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{06BF233A-7D66-4665-8F64-7F7534A521B0}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Ambient_General" ID="{276C5193-EF73-4974-AC89-7F295176C65B}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="World" ID="{137B5DE9-30E5-404E-9435-79506D15852D}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<WorkUnit Name="Ambient" ID="{261ADBD3-7157-48AA-9ECF-E34886FC1D96}" PersistMode="Reference"/>
+						<WorkUnit Name="Enemies" ID="{0E6C67BA-9B5A-425C-9DF3-93F64D2FACE8}" PersistMode="Reference"/>
+						<WorkUnit Name="Player" ID="{3D244E8C-9103-4ED4-B110-56E962BB6EF5}" PersistMode="Reference"/>
+						<WorkUnit Name="Objects" ID="{46FBC24E-5CE0-42CD-B466-3CDF6B644DAF}" PersistMode="Reference"/>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Effects">
+							<Reference>
+								<Local>
+									<EffectSlot Name="" ID="{95FE28CD-3C25-4C0E-9ACF-6D043D9D00ED}" ShortID="928831694">
+										<PropertyList>
+											<Property Name="Render" Type="bool" Value="True"/>
+										</PropertyList>
+									</EffectSlot>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</ActorMixer>
+				<Folder Name="trash" ID="{E9CB710E-1C32-4EF6-A574-1768190CC432}" ShortID="70868268">
+					<PropertyList>
+						<Property Name="Inclusion" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ChildrenList>
+						<Sound Name="813056__audiopapkin__big-robot-footstep" ID="{EF8A864B-5413-4A51-B395-37014F302E41}" ShortID="961908830">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>1000</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="World" ID="{137B5DE9-30E5-404E-9435-79506D15852D}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="813056__audiopapkin__big-robot-footstep" ID="{CC9F16E1-8674-41C3-8784-4C0B499E9DE3}">
+									<Language>SFX</Language>
+									<AudioFile>813056__audiopapkin__big-robot-footstep.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="115458566"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="813056__audiopapkin__big-robot-footstep" ID="{CC9F16E1-8674-41C3-8784-4C0B499E9DE3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="813054__audiopapkin__big-robot-footstep-003" ID="{51604345-86B2-4BEE-A665-AC0E7CAE2508}" ShortID="833744254">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>1000</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="World" ID="{137B5DE9-30E5-404E-9435-79506D15852D}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="813054__audiopapkin__big-robot-footstep-003" ID="{450DD448-CF33-49B4-83E3-934EE24E2ED4}">
+									<Language>SFX</Language>
+									<AudioFile>813054__audiopapkin__big-robot-footstep-003.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="474731916"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="813054__audiopapkin__big-robot-footstep-003" ID="{450DD448-CF33-49B4-83E3-934EE24E2ED4}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="813053__audiopapkin__big-robot-footstep-002" ID="{DABEB617-8DE4-4115-9821-7B974F954122}" ShortID="384548798">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>1000</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="World" ID="{137B5DE9-30E5-404E-9435-79506D15852D}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="813053__audiopapkin__big-robot-footstep-002" ID="{6F62BA32-9CD6-40E6-999A-B7596BCDA482}">
+									<Language>SFX</Language>
+									<AudioFile>813053__audiopapkin__big-robot-footstep-002.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="422761376"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="813053__audiopapkin__big-robot-footstep-002" ID="{6F62BA32-9CD6-40E6-999A-B7596BCDA482}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="813055__audiopapkin__big-robot-footstep-004" ID="{C5BF35E8-AA40-4AAB-A6DF-0259A741EE3A}" ShortID="783545548">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>1000</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="World" ID="{137B5DE9-30E5-404E-9435-79506D15852D}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="813055__audiopapkin__big-robot-footstep-004" ID="{D8BAE295-F3BD-4710-9936-E912A0C63F17}">
+									<Language>SFX</Language>
+									<AudioFile>813055__audiopapkin__big-robot-footstep-004.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="44179478"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="813055__audiopapkin__big-robot-footstep-004" ID="{D8BAE295-F3BD-4710-9936-E912A0C63F17}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="417148__superphat__slowfiringheavyweapon" ID="{0B21B326-13DF-4BD8-BFD6-5513C8A28193}" ShortID="378377029">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="World" ID="{137B5DE9-30E5-404E-9435-79506D15852D}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="417148__superphat__slowfiringheavyweapon" ID="{872A836B-92ED-41C6-9B4E-3322CA71CD4C}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.496613081891671"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.640160793354898"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>417148__superphat__slowfiringheavyweapon.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="670543675"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="417148__superphat__slowfiringheavyweapon" ID="{872A836B-92ED-41C6-9B4E-3322CA71CD4C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="815039__audiopapkin__big-robot-footstep-005" ID="{EA5BE2F0-B547-4DB9-8843-5C12EB9A8FCB}" ShortID="110278401">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>1000</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="World" ID="{137B5DE9-30E5-404E-9435-79506D15852D}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="815039__audiopapkin__big-robot-footstep-005" ID="{EBCF18F2-21E9-4543-B905-837992282B92}">
+									<Language>SFX</Language>
+									<AudioFile>815039__audiopapkin__big-robot-footstep-005.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="355588376"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="815039__audiopapkin__big-robot-footstep-005" ID="{EBCF18F2-21E9-4543-B905-837992282B92}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
