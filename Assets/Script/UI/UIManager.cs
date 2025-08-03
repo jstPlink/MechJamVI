@@ -8,8 +8,7 @@ public class UIManager : MonoBehaviour
     public GameObject settingsPanel;
 
     // Test map
-    public GameObject map1;
-    public GameObject map2;
+
 
     //private  controls;
     private InputAction _changemap;
@@ -22,17 +21,7 @@ public class UIManager : MonoBehaviour
     }
     private void Update()
     {
-        /*
 
-        if (Input.GetKeyDown(KeyCode.M))
-        {
-            if (map1 && map2)
-            {
-                map1.SetActive(!map1.active);
-                map2.SetActive(!map2.active);
-            }
-        }
-        */
     }
 
     

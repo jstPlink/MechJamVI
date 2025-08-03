@@ -34,8 +34,8 @@ public class GameManager : MonoBehaviour
         player = FindFirstObjectByType<SimpleMovement>().gameObject;
 
         // Lock and hide cursor
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Confined;
+        // Cursor.visible = true;
     }
 
 
