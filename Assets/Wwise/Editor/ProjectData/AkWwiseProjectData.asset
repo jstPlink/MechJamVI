@@ -37,7 +37,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics/Factory Acoustic Textures
     guid: 6b663d46a83ca54f8b4a5fef12b883f6
     GuidInternal: 
-    m_lastTime: -8584481569224775808
+    m_lastTime: -8584472988222327314
     List:
     - name: Acoustic_Banner
       guid: f2532d2fccda8e408b8898b1b52a26d6
@@ -646,8 +646,48 @@ MonoBehaviour:
     ParentPath: Events/Player
     guid: 648b2e27f41c674fbcc4efd93a3d7e05
     GuidInternal: 
-    m_lastTime: -8584476139400702691
+    m_lastTime: -8584472848737255658
     List:
+    - name: Player_Attack_Light1
+      guid: d932040c7cd93e4f820361e357b965b4
+      id: 2793622033
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: 648b2e27f41c674fbcc4efd93a3d7e05
+      - ElementName: PlayerStatus
+        ObjectType: 4
+        guid: a3c12e51ea5bc94098aa460645320723
+      - ElementName: Player_Attack_Light1
+        ObjectType: 3
+        guid: d932040c7cd93e4f820361e357b965b4
+      Path: Events/Player/PlayerStatus/Player_Attack_Light1
+      maxAttenuation: 0
+      maxDuration: 0.9934744
+      minDuration: 0.93771505
+    - name: Player_Attack_Light2
+      guid: 196d2c7982b75a45b28dd254b0797756
+      id: 2793622034
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: 648b2e27f41c674fbcc4efd93a3d7e05
+      - ElementName: PlayerStatus
+        ObjectType: 4
+        guid: a3c12e51ea5bc94098aa460645320723
+      - ElementName: Player_Attack_Light2
+        ObjectType: 3
+        guid: 196d2c7982b75a45b28dd254b0797756
+      Path: Events/Player/PlayerStatus/Player_Attack_Light2
+      maxAttenuation: 0
+      maxDuration: 0.9934744
+      minDuration: 0.93771505
     - name: Player_CautionAlarm
       guid: 55c6d03ba4ddc5468db985c10c3af250
       id: 4240862283

@@ -27,6 +27,28 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Player_Attack_Light1" ID="{0C0432D9-D97C-4F3E-8203-61E357B965B4}">
+							<ChildrenList>
+								<Action Name="" ID="{46D6131A-BF04-40EE-A844-6F1D0295CD66}" ShortID="247999571">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Player_LightAttack_1" ID="{1D0A8B5E-10E4-44B2-89D2-DA9095132B91}" WorkUnitID="{3D244E8C-9103-4ED4-B110-56E962BB6EF5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Player_Attack_Light2" ID="{792C6D19-B782-455A-B28D-D254B0797756}">
+							<ChildrenList>
+								<Action Name="" ID="{A92308F9-0124-4B8A-839A-7377E517047C}" ShortID="343203074">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Player_LightAttack_2" ID="{D317160B-8C09-4FE8-B3EF-0294A73B2689}" WorkUnitID="{3D244E8C-9103-4ED4-B110-56E962BB6EF5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{AEED4C7A-EFF1-4B94-88D1-41A771CFEFCF}",
     "Language": "SFX",
-    "Hash": "{6FA0DC1B-EE91-71A5-32F1-31DB5A13758C}",
+    "Hash": "{BFD97618-1900-EAE3-1631-86846500C1CB}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\ElChapo",
     "ShortName": "ElChapo",
     "Path": "ElChapo.bnk",
@@ -46,6 +46,14 @@
       "Location": "Memory",
       "ShortName": "FUI Button Beep Stereo-1.wav",
       "CachePath": "31/{31F1C8C1-2037-56C5-B4BC-66792DFF4750}.wem"
+     },
+     {
+      "Id": "149230998",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_Throw_Shield_03.wav",
+      "CachePath": "BF/{BF74805F-1160-B082-3F72-C8DAF226902C}.wem"
      },
      {
       "Id": "153090760",
@@ -96,6 +104,14 @@
       "CachePath": "1F/{1F6A87F5-4BF6-AA01-500D-76949B36A2AB}.wem"
      },
      {
+      "Id": "401044624",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "813073__audiopapkin__sound-design-elements-robot-mechanism-014.wav",
+      "CachePath": "50/{501A8633-F38D-A7B2-6F4A-9B849D4DE3C5}.wem"
+     },
+     {
       "Id": "412699923",
       "Language": "SFX",
       "Streaming": "false",
@@ -128,12 +144,44 @@
       "CachePath": "61/{61ACD105-8D17-9684-5E44-C2D929537E2D}.wem"
      },
      {
+      "Id": "644301096",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_Throw_03.wav",
+      "CachePath": "B8/{B8BBD9B1-0938-1B8C-3B6A-5E30FA969FA1}.wem"
+     },
+     {
+      "Id": "649203044",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_Throw_Shield_02.wav",
+      "CachePath": "87/{875359B9-7149-B9E5-575B-1982511701C1}.wem"
+     },
+     {
       "Id": "650576443",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "FUI Holo Mechanism Activate-1.wav",
       "CachePath": "7A/{7A120C93-6F1F-D38B-5AC2-E4B0856DF40E}.wem"
+     },
+     {
+      "Id": "707869156",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Sword Attack 1.wav",
+      "CachePath": "67/{67D863D0-E685-5FFD-5E3D-2F1F66171E3B}.wem"
+     },
+     {
+      "Id": "723694733",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_Throw_02.wav",
+      "CachePath": "F3/{F30919DB-A2E6-41C4-B560-AF4B8BE2EFA4}.wem"
      },
      {
       "Id": "809030593",
@@ -168,12 +216,36 @@
       "CachePath": "E4/{E4FC000B-FB08-4C57-8CD1-7ACE6353F055}.wem"
      },
      {
+      "Id": "966474169",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Sword Attack 2.wav",
+      "CachePath": "CF/{CF8CA273-FEDC-6E06-8A10-457D5BE32BBB}.wem"
+     },
+     {
+      "Id": "988191268",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_Throw_01.wav",
+      "CachePath": "29/{290BE915-0B4B-922C-5682-4647D6526037}.wem"
+     },
+     {
       "Id": "1010170936",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Particle Scanner Loop.wav",
       "CachePath": "B5/{B5C81069-9EA4-A7FE-0529-1F23E38B6FC0}.wem"
+     },
+     {
+      "Id": "1049724239",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_Throw_Shield_01.wav",
+      "CachePath": "5A/{5A14B424-9658-534E-1DAB-7E25EE7A4492}.wem"
      }
     ],
     "Events": [
@@ -214,6 +286,82 @@
       "MediaRefs": [
        {
         "Id": "196575134"
+       }
+      ]
+     },
+     {
+      "Id": "2793622033",
+      "Name": "Player_Attack_Light1",
+      "ObjectPath": "\\Events\\Player\\PlayerStatus\\Player_Attack_Light1",
+      "GUID": "{0C0432D9-D97C-4F3E-8203-61E357B965B4}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.93771505",
+      "DurationMax": "0.9934744",
+      "MediaRefs": [
+       {
+        "Id": "149230998"
+       },
+       {
+        "Id": "401044624"
+       },
+       {
+        "Id": "644301096"
+       },
+       {
+        "Id": "649203044"
+       },
+       {
+        "Id": "707869156"
+       },
+       {
+        "Id": "723694733"
+       },
+       {
+        "Id": "966474169"
+       },
+       {
+        "Id": "988191268"
+       },
+       {
+        "Id": "1049724239"
+       }
+      ]
+     },
+     {
+      "Id": "2793622034",
+      "Name": "Player_Attack_Light2",
+      "ObjectPath": "\\Events\\Player\\PlayerStatus\\Player_Attack_Light2",
+      "GUID": "{792C6D19-B782-455A-B28D-D254B0797756}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.93771505",
+      "DurationMax": "0.9934744",
+      "MediaRefs": [
+       {
+        "Id": "149230998"
+       },
+       {
+        "Id": "401044624"
+       },
+       {
+        "Id": "644301096"
+       },
+       {
+        "Id": "649203044"
+       },
+       {
+        "Id": "707869156"
+       },
+       {
+        "Id": "723694733"
+       },
+       {
+        "Id": "966474169"
+       },
+       {
+        "Id": "988191268"
+       },
+       {
+        "Id": "1049724239"
        }
       ]
      },
@@ -451,6 +599,6 @@
     ]
    }
   ],
-  "FileHash": "{6244409C-3701-8A2C-E598-E41A49CD49FC}"
+  "FileHash": "{F14FA90D-7E68-95A1-61C7-3AB258859E69}"
  }
 }
