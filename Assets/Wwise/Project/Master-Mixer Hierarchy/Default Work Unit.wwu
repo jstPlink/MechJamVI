@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}" SchemaVersion="123">
+	<Busses>
+		<WorkUnit Name="Default Work Unit" ID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}" PersistMode="Standalone">
+			<ChildrenList>
+				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<ReferenceList>
+						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+							<ObjectRef Name="System" ID="{1FABF7CB-6BCB-4241-B982-21999973A7B8}" WorkUnitID="{B272867E-5CA6-429B-B88E-5239EE469735}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="World" ID="{137B5DE9-30E5-404E-9435-79506D15852D}">
+							<ChildrenList>
+								<Bus Name="Player" ID="{D1ACC032-7343-4075-91F7-9C1925733023}"/>
+								<Bus Name="Ambient" ID="{4967DF1B-9299-4E16-99B3-FB97BA6FC553}"/>
+								<Bus Name="Enemies" ID="{0E92CCE7-D546-45DE-B4CF-59FAC4C1AC44}"/>
+								<Bus Name="Objects" ID="{99155C85-7257-47AF-B264-DDBE230D11DF}"/>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{BAE12458-FBAC-4DCA-ACCB-1173B51814EA}" ShortID="803527224">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Lowpass"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="MenuAttenuation" ID="{5EE17611-8EF7-48A6-B658-2E1A4710C18F}" WorkUnitID="{2776FCC4-2BF5-4920-A960-29689E030F7E}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{78F75869-45C5-4925-8FE8-037F46CF171C}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>Log2</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>48</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{1B70DC51-A13A-4D01-9F4A-290ECB2AACEE}" ShortID="705754265">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="MenuAttenuation" ID="{5EE17611-8EF7-48A6-B658-2E1A4710C18F}" WorkUnitID="{2776FCC4-2BF5-4920-A960-29689E030F7E}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{F25E6BA0-0A0E-40F1-8A61-7E51D1DA7416}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>-6</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</Bus>
+						<Bus Name="Non_World" ID="{632716AC-9A0E-40F8-8E4B-C10BD2F00AC6}">
+							<ChildrenList>
+								<Bus Name="Music" ID="{B92C3663-D704-4086-A544-31B6CD6D77F3}">
+									<PropertyList>
+										<Property Name="BusVolume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+								</Bus>
+								<Bus Name="UI" ID="{549C6616-EF25-4463-A395-48E566B18282}"/>
+							</ChildrenList>
+						</Bus>
+					</ChildrenList>
+				</Bus>
+			</ChildrenList>
+		</WorkUnit>
+	</Busses>
+</WwiseDocument>

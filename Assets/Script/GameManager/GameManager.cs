@@ -18,13 +18,26 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Material contestedMaterial;
     [Tooltip("UI for Resource Reference")]
     [SerializeField] private TextMeshProUGUI _resourceText;
+    public TextMeshProUGUI textResourcesUI;
+
+    [Header(" -- POWERUPS --")]
+    public float powerupCostIncrement = 1.5f;
+    [SerializeField] public Vars.Powerup attackPowerup;
+    [SerializeField] public Vars.Powerup healthPowerup;
+    [SerializeField] public Vars.Powerup speedPowerup;
+
+
     [Header(" ## DEBUG ##")]
     public float totalResourceXTick;
-    [SerializeField] private float ResourceQty;
+    [SerializeField] public float ResourceQty;
     [SerializeField] private bool canAdd = true;
     [SerializeField] public bool somethingChanged = true;
 
-    public static GameObject player;
+    public GameObject player;
+    public static GameObject playerStatic;
+
+
+
 
 
     private void Start()
@@ -32,6 +45,7 @@ public class GameManager : MonoBehaviour
         bases = FindObjectsByType<Base_Behaviour>(FindObjectsSortMode.None);
 
         player = FindFirstObjectByType<SimpleMovement>().gameObject;
+        playerStatic = player;
 
         // Lock and hide cursor
         Cursor.lockState = CursorLockMode.Confined;
@@ -53,10 +67,30 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    
+
+    public bool CheckResourcesAvailability(int resourcesRequest)
+    {
+        if (resourcesRequest <= ResourceQty)
+        {
+            ResourceQty -= resourcesRequest;
+            return true;
+        }
+        else
+        {
+            print("NO RESOURCES");
+        }
+        return false;
+    }
+
     private IEnumerator addResource()
     {
         ResourceQty += totalResourceXTick;
-        if (_resourceText != null) _resourceText.SetText(ResourceQty.ToString());
+        if (_resourceText != null)
+        {
+            _resourceText.SetText(ResourceQty.ToString());
+            textResourcesUI.SetText(ResourceQty.ToString());
+        }
         yield return new WaitForSeconds(tickTimer);
         canAdd = true;
     }
@@ -93,7 +127,8 @@ public class GameManager : MonoBehaviour
             // Verifica che sia contestata o di un alleato
             if (tmpBase._status == Base_Behaviour.Status.Contested || tmpBase._status == Base_Behaviour.Status.Ally)
             {
-                if (tmpBase._isTherePlayer) return player.transform.position;
+                // SE C'è IL PLAYER IN ZONA VALLO A PICCHIARE
+                if (tmpBase._isTherePlayer) return playerStatic.transform.position;
 
                 float distance = Vector3.Distance(enemyPosition.position, tmpBase.transform.position);
                 if (distance < thresholdDistance)
@@ -103,7 +138,7 @@ public class GameManager : MonoBehaviour
                 }
             }
         }
-        if (closestBase == null) return player.transform.position;
+        if (closestBase == null) return playerStatic.transform.position;
 
         // Genera un punto casuale all'interno della base
         Vector2 point = Random.insideUnitCircle * 20f;

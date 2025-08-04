@@ -12,7 +12,7 @@
   <ShowSpatialAudioWarningMsg>true</ShowSpatialAudioWarningMsg>
   <WwiseInstallationPathMac>/Applications/Audiokinetic/Wwise2024.1.6.8842/Wwise.app</WwiseInstallationPathMac>
   <WwiseInstallationPathWindows>C:\Audiokinetic\Wwise2024.1.6.8842</WwiseInstallationPathWindows>
-  <WwiseProjectPath>../../../WwiseProjects/projectinsectaudiowwise/projectinsectaudiowwise.wproj</WwiseProjectPath>
+  <WwiseProjectPath>WWise/Project/projectinsectaudiowwise.wproj</WwiseProjectPath>
   <UseWaapi>true</UseWaapi>
   <WaapiPort>8080</WaapiPort>
   <WaapiIP>127.0.0.1</WaapiIP>

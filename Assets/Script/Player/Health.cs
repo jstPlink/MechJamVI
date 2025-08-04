@@ -11,6 +11,8 @@ public class Health : MonoBehaviour
     float maxShield;
     public Slider barHealth;
     public Slider barShield;
+    public TextMeshProUGUI textHealth;
+    public TextMeshProUGUI textShield;
 
     public GameObject shieldMesh;
 
@@ -33,6 +35,21 @@ public class Health : MonoBehaviour
             shieldMesh.SetActive(true);
         }
         else shieldMesh.SetActive(false);
+    }
+
+
+    public void BoostHealth(float multiplier)
+    {
+        maxHealth = maxHealth * multiplier;
+        health = maxHealth;
+        UpdateUI();
+    }
+
+    public void RestoreHealth(bool restoreHealth, int amount)
+    {
+        if (restoreHealth) Mathf.Clamp(health += amount, 0, maxHealth);
+        else Mathf.Clamp(shield += amount, 0, maxShield);
+        UpdateUI();
     }
 
     public void ApplyDamage(float damageAmount)
@@ -62,9 +79,12 @@ public class Health : MonoBehaviour
         }
     }
 
+    
     void UpdateUI()
     {
         barHealth.SetValueWithoutNotify(health / maxHealth);
         barShield.SetValueWithoutNotify(shield / maxShield);
+        textHealth.SetText(Mathf.RoundToInt(health).ToString());
+        textShield.SetText(Mathf.RoundToInt(shield).ToString());
     }
 }
