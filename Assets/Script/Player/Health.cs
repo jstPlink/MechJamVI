@@ -6,13 +6,14 @@ using TMPro;
 public class Health : MonoBehaviour
 {
     public float health = 100f;
-    float maxHealth;
+    [HideInInspector] public float maxHealth;
     public float shield = 100f;
-    float maxShield;
+    [HideInInspector] public float maxShield;
     public Slider barHealth;
     public Slider barShield;
     public TextMeshProUGUI textHealth;
     public TextMeshProUGUI textShield;
+    GameManager gm;
 
     public GameObject shieldMesh;
 
@@ -24,6 +25,7 @@ public class Health : MonoBehaviour
         maxHealth = health;
         maxShield = shield;
         shieldAction = InputSystem.actions.FindAction("Shield");
+        gm = FindObjectOfType<GameManager>();
 
         UpdateUI();
     }
@@ -45,10 +47,17 @@ public class Health : MonoBehaviour
         UpdateUI();
     }
 
-    public void RestoreHealth(bool restoreHealth, int amount)
+    public void RestoreHealth(bool restoreHealth)
     {
-        if (restoreHealth) Mathf.Clamp(health += amount, 0, maxHealth);
-        else Mathf.Clamp(shield += amount, 0, maxShield);
+        // ripristina vita
+        if (restoreHealth) {
+            if (!gm.RestoreHealth(health / maxHealth)) return;
+            else health = maxHealth;
+        }
+        // ripristina scudo
+        else if (!gm.RestoreHealth(-1)) return;
+        else shield = maxShield;
+
         UpdateUI();
     }
 
