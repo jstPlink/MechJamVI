@@ -117,6 +117,10 @@
 							<Position X="2" Y="2"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Music_MainScenario" ID="{7BE7A7C2-5EB8-43C1-962D-13A2206A67CC}" WorkUnitID="{E3E91FDB-7795-4C87-ACF9-C1D503741540}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="UI_Button_StartGame" ID="{47D1696A-42DD-4F2F-A16C-7710C2B2670D}" WorkUnitID="{3BA79CA0-CF79-4285-B72E-8F261F961920}"/>
 							<Position X="3" Y="1"/>
 						</Module>

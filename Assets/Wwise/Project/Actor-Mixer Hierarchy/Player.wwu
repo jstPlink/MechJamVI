@@ -481,42 +481,6 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="813073__audiopapkin__sound-design-elements-robot-mechanism-014" ID="{FCF941E8-9224-473A-96E8-E2C0D464A88B}" ShortID="82327127">
-													<PropertyList>
-														<Property Name="Inclusion" Type="bool">
-															<ValueList>
-																<Value>False</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="813073__audiopapkin__sound-design-elements-robot-mechanism-014" ID="{C70106A3-5C4D-4EA1-94FD-12AAB4837AB5}">
-															<PropertyList>
-																<Property Name="FadeInDuration" Type="Real64" Value="0.0217850298625074"/>
-																<Property Name="FadeOutDuration" Type="Real64" Value="0.298135207543612"/>
-																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																<Property Name="TrimBegin" Type="Real64" Value="0.3013392452469"/>
-																<Property Name="TrimEnd" Type="Real64" Value="1.30056883060033"/>
-															</PropertyList>
-															<Language>SFX</Language>
-															<AudioFile>813073__audiopapkin__sound-design-elements-robot-mechanism-014.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="401044624"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="813073__audiopapkin__sound-design-elements-robot-mechanism-014" ID="{C70106A3-5C4D-4EA1-94FD-12AAB4837AB5}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
 												<Sound Name="813077__audiopapkin__sound-design-elements-robot-mechanism-018" ID="{C8E5C115-6117-466B-90DB-0349516C0AFD}" ShortID="701022090">
 													<ReferenceList>
 														<Reference Name="Conversion">
@@ -573,77 +537,6 @@
 													</ChildrenList>
 													<ActiveSourceList>
 														<ActiveSource Name="813078__audiopapkin__sound-design-elements-robot-mechanism-019" ID="{D61281DC-05CC-43AD-B3C6-A9A99736D979}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="813079__audiopapkin__sound-design-elements-robot-mechanism-020" ID="{7D0CD003-BE39-4734-8D02-E8C6E5DF7E66}" ShortID="1023859834">
-													<PropertyList>
-														<Property Name="Inclusion" Type="bool">
-															<ValueList>
-																<Value>False</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="813079__audiopapkin__sound-design-elements-robot-mechanism-020" ID="{5ED4827D-745B-4BDD-86B0-DF141388B803}">
-															<PropertyList>
-																<Property Name="FadeInDuration" Type="Real64" Value="0.0109699997854945"/>
-																<Property Name="FadeOutDuration" Type="Real64" Value="0.298383994165451"/>
-																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																<Property Name="TrimBegin" Type="Real64" Value="0.102386664664615"/>
-																<Property Name="TrimEnd" Type="Real64" Value="1.10053686981891"/>
-															</PropertyList>
-															<Language>SFX</Language>
-															<AudioFile>813079__audiopapkin__sound-design-elements-robot-mechanism-020.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="323913972"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="813079__audiopapkin__sound-design-elements-robot-mechanism-020" ID="{5ED4827D-745B-4BDD-86B0-DF141388B803}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="813080__audiopapkin__sound-design-elements-robot-mechanism-021" ID="{294174D1-B1A2-4D82-8BD0-E5335036FC49}" ShortID="579411067">
-													<PropertyList>
-														<Property Name="Inclusion" Type="bool">
-															<ValueList>
-																<Value>False</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="813080__audiopapkin__sound-design-elements-robot-mechanism-021" ID="{ED66A930-4761-44D1-9855-828C862F4C67}">
-															<PropertyList>
-																<Property Name="FadeOutDuration" Type="Real64" Value="0.299493715721758"/>
-																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																<Property Name="TrimBegin" Type="Real64" Value="0.301539591656815"/>
-																<Property Name="TrimEnd" Type="Real64" Value="1.30319001530743"/>
-															</PropertyList>
-															<Language>SFX</Language>
-															<AudioFile>813080__audiopapkin__sound-design-elements-robot-mechanism-021.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="402570"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="813080__audiopapkin__sound-design-elements-robot-mechanism-021" ID="{ED66A930-4761-44D1-9855-828C862F4C67}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
@@ -895,6 +788,106 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="New Random Container" ID="{DB113507-14FF-44A0-8586-92AA0653DD40}" ShortID="890154150">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="813073__audiopapkin__sound-design-elements-robot-mechanism-014" ID="{FCF941E8-9224-473A-96E8-E2C0D464A88B}" ShortID="82327127">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Player_General" ID="{8DEAAAA0-293A-43F0-A693-A2BFE6F56F6D}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Player" ID="{D1ACC032-7343-4075-91F7-9C1925733023}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="813073__audiopapkin__sound-design-elements-robot-mechanism-014" ID="{C70106A3-5C4D-4EA1-94FD-12AAB4837AB5}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0217850298625074"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.298135207543612"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.3013392452469"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.30056883060033"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>813073__audiopapkin__sound-design-elements-robot-mechanism-014.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="401044624"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="813073__audiopapkin__sound-design-elements-robot-mechanism-014" ID="{C70106A3-5C4D-4EA1-94FD-12AAB4837AB5}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="813079__audiopapkin__sound-design-elements-robot-mechanism-020" ID="{7D0CD003-BE39-4734-8D02-E8C6E5DF7E66}" ShortID="1023859834">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Player_General" ID="{8DEAAAA0-293A-43F0-A693-A2BFE6F56F6D}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Player" ID="{D1ACC032-7343-4075-91F7-9C1925733023}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="813079__audiopapkin__sound-design-elements-robot-mechanism-020" ID="{5ED4827D-745B-4BDD-86B0-DF141388B803}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0109699997854945"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.298383994165451"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.102386664664615"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.10053686981891"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>813079__audiopapkin__sound-design-elements-robot-mechanism-020.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="323913972"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="813079__audiopapkin__sound-design-elements-robot-mechanism-020" ID="{5ED4827D-745B-4BDD-86B0-DF141388B803}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="813080__audiopapkin__sound-design-elements-robot-mechanism-021" ID="{294174D1-B1A2-4D82-8BD0-E5335036FC49}" ShortID="579411067">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Player_General" ID="{8DEAAAA0-293A-43F0-A693-A2BFE6F56F6D}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Player" ID="{D1ACC032-7343-4075-91F7-9C1925733023}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="813080__audiopapkin__sound-design-elements-robot-mechanism-021" ID="{ED66A930-4761-44D1-9855-828C862F4C67}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.299493715721758"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.301539591656815"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.30319001530743"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>813080__audiopapkin__sound-design-elements-robot-mechanism-021.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="402570"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="813080__audiopapkin__sound-design-elements-robot-mechanism-021" ID="{ED66A930-4761-44D1-9855-828C862F4C67}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
 								</BlendContainer>
 								<BlendContainer Name="Player_LightAttack_2" ID="{D317160B-8C09-4FE8-B3EF-0294A73B2689}" ShortID="288736466">
 									<ReferenceList>

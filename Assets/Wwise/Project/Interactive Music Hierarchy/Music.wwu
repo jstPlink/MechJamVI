@@ -61,7 +61,7 @@
 					<ChildrenList>
 						<MusicSegment Name="Scenario" ID="{A6FB0EA5-B976-467B-BDCC-51963962B2C5}" ShortID="216691093">
 							<PropertyList>
-								<Property Name="EndPosition" Type="Real64" Value="431052.654605263"/>
+								<Property Name="EndPosition" Type="Real64" Value="432631.625"/>
 								<Property Name="Tempo" Type="Real64" Value="76"/>
 								<Property Name="Volume" Type="Real64">
 									<ModifierList>
@@ -80,7 +80,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<MusicTrack Name="PRJINS - 00_Scenario_Step_Placeholder3" ID="{7A5BC62D-3E1C-4898-9330-101BD7DFC1E8}" ShortID="1038829243">
+								<MusicTrack Name="VENGEANCEPROTOCOL - 00_Scenario_MatrixPREMIX" ID="{7A5BC62D-3E1C-4898-9330-101BD7DFC1E8}" ShortID="1038829243">
 									<ReferenceList>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
@@ -97,11 +97,11 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="PRJINS - 00_Scenario_Step_Placeholder3" ID="{E10542CE-0C0A-4A5B-9F77-5227035EDFB5}">
+										<AudioFileSource Name="VENGEANCEPROTOCOL - 00_Scenario_MatrixPREMIX" ID="{F4949293-482D-4B09-B9E1-B4CAA67C7E03}">
 											<Language>SFX</Language>
-											<AudioFile>PRJINS - 00_Scenario_Step_Placeholder3.wav</AudioFile>
+											<AudioFile>VENGEANCEPROTOCOL - 00_Scenario_MatrixPREMIX.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="950006522"/>
+												<MediaID ID="196575134"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
@@ -114,13 +114,13 @@
 															<ObjectList Name="Clips">
 																<Reference>
 																	<Local>
-																		<MusicClip Name="PRJINS - 00_Scenario_Step_Placeholder3" ID="{42807473-F7F1-4B21-8AAC-9D83B98547CB}">
+																		<MusicClip Name="VENGEANCEPROTOCOL - 00_Scenario_MatrixPREMIX" ID="{E1940BCC-ED7D-4247-8C50-EE0384CF9802}">
 																			<PropertyList>
 																				<Property Name="EndTrimOffset" Type="Real64" Value="216315.8125"/>
 																				<Property Name="FadeInMode" Type="int16" Value="0"/>
-																				<Property Name="FadeOutDuration" Type="Real64" Value="2507.66895315156"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1025.86457174388"/>
 																			</PropertyList>
-																			<AudioSourceRef Name="PRJINS - 00_Scenario_Step_Placeholder3" ID="{E10542CE-0C0A-4A5B-9F77-5227035EDFB5}"/>
+																			<AudioSourceRef Name="VENGEANCEPROTOCOL - 00_Scenario_MatrixPREMIX" ID="{F4949293-482D-4B09-B9E1-B4CAA67C7E03}"/>
 																		</MusicClip>
 																	</Local>
 																</Reference>
@@ -137,11 +137,7 @@
 								<ObjectList Name="Cues">
 									<Reference>
 										<Local>
-											<MusicCue Name="Entry Cue" ID="{B281C49C-9C42-4F57-B404-8CFD63AB81AA}">
-												<PropertyList>
-													<Property Name="TimeMs" Type="Real64" Value="50526.3157894737"/>
-												</PropertyList>
-											</MusicCue>
+											<MusicCue Name="Entry Cue" ID="{B281C49C-9C42-4F57-B404-8CFD63AB81AA}"/>
 										</Local>
 									</Reference>
 									<Reference>
