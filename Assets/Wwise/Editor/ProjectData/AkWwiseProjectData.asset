@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy/Default Work Unit
     guid: 64fe4fde7f893d4381e284a69f3aad98
     GuidInternal: 
-    m_lastTime: -8584473628306608339
+    m_lastTime: -8584472704945667275
     List:
     - name: Ambient
       guid: 1bdf67499992164e99b3fb97ba6fc553
@@ -485,7 +485,7 @@ MonoBehaviour:
     ParentPath: SoundBanks/Default Work Unit
     guid: 258ec914a376454287ffb3421b8706bc
     GuidInternal: 
-    m_lastTime: -8584476101507828568
+    m_lastTime: -8584472724341086489
     List:
     - name: ElChapo
       guid: 7a4cedaef1ef944b88d141a771cfefcf
@@ -583,8 +583,58 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 69fe29f5f6c58b4fbb65fd940784a2f5
     GuidInternal: 
-    m_lastTime: -8584481567147911509
+    m_lastTime: -8584472769290407572
     List: []
+  - PhysicalPath: Events/Enemies.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Enemies
+      ObjectType: 12
+      guid: 65b1bc0102603447858c985142756ae5
+    ParentPath: Events/Enemies
+    guid: 65b1bc0102603447858c985142756ae5
+    GuidInternal: 
+    m_lastTime: -8584472720815770978
+    List:
+    - name: Enemies_FrogMinionOnHit
+      guid: 834b6b3cc5c0534cb195b1b594d0376f
+      id: 596226124
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Enemies
+        ObjectType: 12
+        guid: 65b1bc0102603447858c985142756ae5
+      - ElementName: Generic
+        ObjectType: 4
+        guid: ab47b60a70b012418f1b146d0cfe63cb
+      - ElementName: Enemies_FrogMinionOnHit
+        ObjectType: 3
+        guid: 834b6b3cc5c0534cb195b1b594d0376f
+      Path: Events/Enemies/Generic/Enemies_FrogMinionOnHit
+      maxAttenuation: 80
+      maxDuration: 0.37465596
+      minDuration: 0.16848072
+    - name: Generic
+      guid: ab47b60a70b012418f1b146d0cfe63cb
+      id: 4294388576
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Enemies
+        ObjectType: 12
+        guid: 65b1bc0102603447858c985142756ae5
+      - ElementName: Generic
+        ObjectType: 4
+        guid: ab47b60a70b012418f1b146d0cfe63cb
+      Path: Events/Enemies/Generic
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events/Music.wwu
     PathAndIcons:
     - ElementName: Events
@@ -646,7 +696,7 @@ MonoBehaviour:
     ParentPath: Events/Player
     guid: 648b2e27f41c674fbcc4efd93a3d7e05
     GuidInternal: 
-    m_lastTime: -8584472848737255658
+    m_lastTime: -8584472704945604844
     List:
     - name: Player_Attack_Light1
       guid: d932040c7cd93e4f820361e357b965b4
@@ -666,8 +716,8 @@ MonoBehaviour:
         guid: d932040c7cd93e4f820361e357b965b4
       Path: Events/Player/PlayerStatus/Player_Attack_Light1
       maxAttenuation: 0
-      maxDuration: 0.9934744
-      minDuration: 0.93771505
+      maxDuration: 1.4545319
+      minDuration: 1.371412
     - name: Player_Attack_Light2
       guid: 196d2c7982b75a45b28dd254b0797756
       id: 2793622034
@@ -686,8 +736,8 @@ MonoBehaviour:
         guid: 196d2c7982b75a45b28dd254b0797756
       Path: Events/Player/PlayerStatus/Player_Attack_Light2
       maxAttenuation: 0
-      maxDuration: 0.9934744
-      minDuration: 0.93771505
+      maxDuration: 1.1892071
+      minDuration: 1.1892071
     - name: Player_CautionAlarm
       guid: 55c6d03ba4ddc5468db985c10c3af250
       id: 4240862283
@@ -726,8 +776,8 @@ MonoBehaviour:
         guid: 0e8d11023ff7f343a7ad16c0bc8cf535
       Path: Events/Player/PlayerStatus/Player_Movement
       maxAttenuation: 0
-      maxDuration: 0.65682405
-      minDuration: 0.604161
+      maxDuration: 0.52612376
+      minDuration: 0.4175847
     - name: PlayerStatus
       guid: a3c12e51ea5bc94098aa460645320723
       id: 3800848640
@@ -907,8 +957,8 @@ MonoBehaviour:
         guid: 6966d10963422948aa9e0de4fdea9625
       Path: Events/UI/Maintenance/UI_Maintenance_Close
       maxAttenuation: 0
-      maxDuration: 1.5453968
-      minDuration: 1.5453968
+      maxDuration: 0.46931973
+      minDuration: 0.46931973
     - name: UI_Maintenance_Open
       guid: 2a7cb09054748b4885080d7580f278ab
       id: 701705398
@@ -1085,7 +1135,7 @@ MonoBehaviour:
     ParentPath: Switches/Default Work Unit
     guid: a135530b885dfc41bccc51f66abd3c5e
     GuidInternal: 
-    m_lastTime: -8584476134203259935
+    m_lastTime: -8584472769290380892
     List:
     - name: PlayerHealthSwitch
       guid: c84d57ed95a9e548aa3240359b3f9ad8
@@ -1184,6 +1234,22 @@ MonoBehaviour:
         - ElementName: Dirt
           ObjectType: 10
           guid: f6b0c5a63a80d84293261f84fff4751c
+      - name: Enemy_FrogMinion
+        guid: c488dfb1e6552d4e9c683a08ffa7cb6e
+        id: 370158778
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: a135530b885dfc41bccc51f66abd3c5e
+        - ElementName: SurfaceType
+          ObjectType: 11
+          guid: 3bc5347f9076a84aaf756b1ef685301a
+        - ElementName: Enemy_FrogMinion
+          ObjectType: 10
+          guid: c488dfb1e6552d4e9c683a08ffa7cb6e
       - name: Foliage
         guid: 8a3c5406b218d14398206bb87e1ac2ed
         id: 1162469934
@@ -1266,7 +1332,7 @@ MonoBehaviour:
     m_lastTime: -8584481567148078519
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000a0000000b0000000c0000000d0000001000000011000000130000001400000015000000
+  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000a0000000b0000000c0000000d00000010000000110000001300000014000000150000003700000038000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

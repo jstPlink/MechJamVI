@@ -307,14 +307,14 @@ or modified for a commercial purpose nor for public demonstration.</Comment>
 								</TransmissionHPFUsage>
 							</CurveUsageInfoList>
 						</Attenuation>
-						<Attenuation Name="nulla5" ID="{08035439-B761-4E7F-B163-6CADF6727F87}" ShortID="182748855">
+						<Attenuation Name="Frog_Minion" ID="{08035439-B761-4E7F-B163-6CADF6727F87}" ShortID="182748855">
 							<PropertyList>
 								<Property Name="ConeAttenuation" Type="Real64">
 									<ValueList>
 										<Value>0</Value>
 									</ValueList>
 								</Property>
-								<Property Name="RadiusMax" Type="Real64" Value="30"/>
+								<Property Name="RadiusMax" Type="Real64" Value="80"/>
 							</PropertyList>
 							<CurveUsageInfoList>
 								<VolumeDryUsage>
@@ -330,17 +330,17 @@ or modified for a commercial purpose nor for public demonstration.</Comment>
 													<Flags>5</Flags>
 												</Point>
 												<Point>
-													<XPos>4.72131</XPos>
+													<XPos>12.59016</XPos>
 													<YPos>0</YPos>
 													<Flags>0</Flags>
 												</Point>
 												<Point>
-													<XPos>6.45902</XPos>
+													<XPos>17.2240533333333</XPos>
 													<YPos>-4.30167</YPos>
 													<Flags>0</Flags>
 												</Point>
 												<Point>
-													<XPos>30</XPos>
+													<XPos>80</XPos>
 													<YPos>-200</YPos>
 													<Flags>37</Flags>
 												</Point>
@@ -364,12 +364,12 @@ or modified for a commercial purpose nor for public demonstration.</Comment>
 													<Flags>5</Flags>
 												</Point>
 												<Point>
-													<XPos>0.9</XPos>
+													<XPos>2.4</XPos>
 													<YPos>0</YPos>
 													<Flags>0</Flags>
 												</Point>
 												<Point>
-													<XPos>30</XPos>
+													<XPos>80</XPos>
 													<YPos>-96.3</YPos>
 													<Flags>37</Flags>
 												</Point>
@@ -396,12 +396,12 @@ or modified for a commercial purpose nor for public demonstration.</Comment>
 													<Flags>5</Flags>
 												</Point>
 												<Point>
-													<XPos>1.19048</XPos>
+													<XPos>3.17461333333333</XPos>
 													<YPos>0</YPos>
 													<Flags>0</Flags>
 												</Point>
 												<Point>
-													<XPos>30</XPos>
+													<XPos>80</XPos>
 													<YPos>0</YPos>
 													<Flags>37</Flags>
 												</Point>

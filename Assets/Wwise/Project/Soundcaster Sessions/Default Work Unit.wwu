@@ -128,6 +128,18 @@
 							<ObjectRef Name="UI_Maintenance_Repair" ID="{9F24FB75-8B03-4009-AE60-C03E863CCDF5}" WorkUnitID="{3BA79CA0-CF79-4285-B72E-8F261F961920}"/>
 							<Position X="3" Y="2"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="Enemies_FrogMinionOnHit" ID="{3C6B4B83-C0C5-4C53-B195-B1B594D0376F}" WorkUnitID="{01BCB165-6002-4734-858C-985142756AE5}"/>
+							<Position X="4" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Player_Attack_Light1" ID="{0C0432D9-D97C-4F3E-8203-61E357B965B4}" WorkUnitID="{272E8B64-1CF4-4F67-BCC4-EFD93A3D7E05}"/>
+							<Position X="4" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Player_Attack_Light2" ID="{792C6D19-B782-455A-B28D-D254B0797756}" WorkUnitID="{272E8B64-1CF4-4F67-BCC4-EFD93A3D7E05}"/>
+							<Position X="4" Y="2"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
@@ -141,7 +153,8 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="PlayerHealth100" ID="{0DE56D8A-2075-46D7-8469-12F39C913C63}"/>
+						<CurrentSwitchRef Name="PlayerHealth20" ID="{2E637713-D4A1-485C-9F58-8678848C1C0B}"/>
+						<CurrentSwitchRef Name="Enemy_FrogMinion" ID="{B1DF88C4-55E6-4E2D-9C68-3A08FFA7CB6E}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

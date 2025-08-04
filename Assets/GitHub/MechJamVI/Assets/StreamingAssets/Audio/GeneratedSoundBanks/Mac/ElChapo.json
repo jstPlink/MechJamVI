@@ -10,19 +10,11 @@
     "Type": "User",
     "GUID": "{AEED4C7A-EFF1-4B94-88D1-41A771CFEFCF}",
     "Language": "SFX",
-    "Hash": "{BFD97618-1900-EAE3-1631-86846500C1CB}",
+    "Hash": "{D5BB15A8-1B24-8781-71FB-90D7B864A0BD}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\ElChapo",
     "ShortName": "ElChapo",
     "Path": "ElChapo.bnk",
     "Media": [
-     {
-      "Id": "9290680",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "813077__audiopapkin__sound-design-elements-robot-mechanism-018.wav",
-      "CachePath": "29/{291D8117-2DB5-A69A-5E1A-C42963642462}.wem"
-     },
      {
       "Id": "64498864",
       "Language": "SFX",
@@ -48,14 +40,6 @@
       "CachePath": "31/{31F1C8C1-2037-56C5-B4BC-66792DFF4750}.wem"
      },
      {
-      "Id": "149230998",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "SFX_Throw_Shield_03.wav",
-      "CachePath": "BF/{BF74805F-1160-B082-3F72-C8DAF226902C}.wem"
-     },
-     {
       "Id": "153090760",
       "Language": "SFX",
       "Streaming": "false",
@@ -72,12 +56,12 @@
       "CachePath": "72/{72E26C78-6FB4-D052-E58C-8E5689BA8C62}.wem"
      },
      {
-      "Id": "164404195",
+      "Id": "162447182",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "Holographic Pad Motion-1.wav",
-      "CachePath": "8D/{8D4D7072-8119-5130-2050-EF6E6EE0594F}.wem"
+      "ShortName": "Error AI Voice.wav",
+      "CachePath": "BB/{BB376865-9B80-5FD8-A963-8137F02A8522}.wem"
      },
      {
       "Id": "196575134",
@@ -96,6 +80,22 @@
       "CachePath": "B4/{B4783A23-0FF8-5271-8FF2-3FAE3E957726}.wem"
      },
      {
+      "Id": "231570252",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Error Metallic Thud.wav",
+      "CachePath": "CB/{CBF0CEE0-6C5F-B7F5-C827-AE334A38813B}.wem"
+     },
+     {
+      "Id": "323913972",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "813079__audiopapkin__sound-design-elements-robot-mechanism-020.wav",
+      "CachePath": "B2/{B2413265-EE97-0538-2A5B-9C8D2CFD7F1F}.wem"
+     },
+     {
       "Id": "370360480",
       "Language": "SFX",
       "Streaming": "false",
@@ -109,15 +109,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "813073__audiopapkin__sound-design-elements-robot-mechanism-014.wav",
-      "CachePath": "50/{501A8633-F38D-A7B2-6F4A-9B849D4DE3C5}.wem"
-     },
-     {
-      "Id": "412699923",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "813078__audiopapkin__sound-design-elements-robot-mechanism-019.wav",
-      "CachePath": "0A/{0AB3D34E-7A24-6776-B6E8-A395CB8A7CC7}.wem"
+      "CachePath": "87/{87788FD1-6071-1024-828A-A862F1A2F1BC}.wem"
      },
      {
       "Id": "485250142",
@@ -125,7 +117,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Alarm Beep Lofi Loop.wav",
-      "CachePath": "A1/{A1D6462E-94D3-671B-04BF-34EE7F9A9AB0}.wem"
+      "CachePath": "00/{00BFE514-C790-8682-66F3-62816B2B66C9}.wem"
      },
      {
       "Id": "490129382",
@@ -136,12 +128,12 @@
       "CachePath": "F6/{F6AFE8D1-E1F0-6E43-AEDD-A9BC1B07CB9F}.wem"
      },
      {
-      "Id": "499224237",
+      "Id": "541667914",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "Holographic Screen Appear.wav",
-      "CachePath": "61/{61ACD105-8D17-9684-5E44-C2D929537E2D}.wem"
+      "ShortName": "MOV2.wav",
+      "CachePath": "55/{55049E07-8904-04BD-1942-AB73D2B0484E}.wem"
      },
      {
       "Id": "644301096",
@@ -149,15 +141,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "SFX_Throw_03.wav",
-      "CachePath": "B8/{B8BBD9B1-0938-1B8C-3B6A-5E30FA969FA1}.wem"
-     },
-     {
-      "Id": "649203044",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "SFX_Throw_Shield_02.wav",
-      "CachePath": "87/{875359B9-7149-B9E5-575B-1982511701C1}.wem"
+      "CachePath": "6E/{6E2E0258-BAA1-29F3-5E50-1C72F387CC93}.wem"
      },
      {
       "Id": "650576443",
@@ -168,12 +152,44 @@
       "CachePath": "7A/{7A120C93-6F1F-D38B-5AC2-E4B0856DF40E}.wem"
      },
      {
+      "Id": "655008111",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Hologram Menu Open-1.wav",
+      "CachePath": "DC/{DC773FDE-1079-FCEB-2186-A77823FDCA52}.wem"
+     },
+     {
+      "Id": "660477324",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Hologram Menu Close-1.wav",
+      "CachePath": "BA/{BABB6C18-AB5D-BF7C-D951-C2E79F4469C4}.wem"
+     },
+     {
       "Id": "707869156",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Sword Attack 1.wav",
-      "CachePath": "67/{67D863D0-E685-5FFD-5E3D-2F1F66171E3B}.wem"
+      "CachePath": "8E/{8E4D335E-AA09-7183-BF70-F6399DC2CD7D}.wem"
+     },
+     {
+      "Id": "709150420",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Error Metallic.wav",
+      "CachePath": "C7/{C783BB46-CA49-2173-CC2A-411C6660B4A0}.wem"
+     },
+     {
+      "Id": "720227983",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "axe_boss.wav",
+      "CachePath": "CA/{CABEAE81-8903-3A9D-410C-DF1C26798FA8}.wem"
      },
      {
       "Id": "723694733",
@@ -181,7 +197,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "SFX_Throw_02.wav",
-      "CachePath": "F3/{F30919DB-A2E6-41C4-B560-AF4B8BE2EFA4}.wem"
+      "CachePath": "E6/{E6E09DA6-7B0E-5E6F-3A71-92869A459D4C}.wem"
      },
      {
       "Id": "809030593",
@@ -189,7 +205,15 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Alarm Coarse Loop.wav",
-      "CachePath": "52/{5271BE38-C994-DFF5-1293-87D925E8BEDD}.wem"
+      "CachePath": "7A/{7A71F9FF-2CD7-1746-8B7D-1E855B1D8482}.wem"
+     },
+     {
+      "Id": "830216992",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MOV1.wav",
+      "CachePath": "77/{77DB0D0D-C597-4A54-7FE1-9735B3854F0A}.wem"
      },
      {
       "Id": "848998426",
@@ -205,7 +229,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "EXPLDsgn_Explosion Impact_02_SFRMS_SCIWPNS.wav",
-      "CachePath": "38/{38D61A69-036C-9198-5638-285D128AE43C}.wem"
+      "CachePath": "20/{209792C0-B883-EAF1-B0C5-5681C658C6A7}.wem"
      },
      {
       "Id": "966446192",
@@ -221,7 +245,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Sword Attack 2.wav",
-      "CachePath": "CF/{CF8CA273-FEDC-6E06-8A10-457D5BE32BBB}.wem"
+      "CachePath": "92/{922A7893-8BF5-2C3F-337D-09387466CEBA}.wem"
      },
      {
       "Id": "988191268",
@@ -229,7 +253,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "SFX_Throw_01.wav",
-      "CachePath": "29/{290BE915-0B4B-922C-5682-4647D6526037}.wem"
+      "CachePath": "02/{02FA03CD-92C6-9784-C588-CBD0123F6B3B}.wem"
      },
      {
       "Id": "1010170936",
@@ -238,14 +262,6 @@
       "Location": "Memory",
       "ShortName": "Particle Scanner Loop.wav",
       "CachePath": "B5/{B5C81069-9EA4-A7FE-0529-1F23E38B6FC0}.wem"
-     },
-     {
-      "Id": "1049724239",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "SFX_Throw_Shield_01.wav",
-      "CachePath": "5A/{5A14B424-9658-534E-1DAB-7E25EE7A4492}.wem"
      }
     ],
     "Events": [
@@ -278,6 +294,27 @@
       ]
      },
      {
+      "Id": "596226124",
+      "Name": "Enemies_FrogMinionOnHit",
+      "ObjectPath": "\\Events\\Enemies\\Generic\\Enemies_FrogMinionOnHit",
+      "GUID": "{3C6B4B83-C0C5-4C53-B195-B1B594D0376F}",
+      "MaxAttenuation": "80",
+      "DurationType": "OneShot",
+      "DurationMin": "0.16848072",
+      "DurationMax": "0.37465596",
+      "MediaRefs": [
+       {
+        "Id": "162447182"
+       },
+       {
+        "Id": "231570252"
+       },
+       {
+        "Id": "709150420"
+       }
+      ]
+     },
+     {
       "Id": "1419702340",
       "Name": "Music_MainScenario",
       "ObjectPath": "\\Events\\Music\\BGMLV1\\Music_MainScenario",
@@ -295,11 +332,11 @@
       "ObjectPath": "\\Events\\Player\\PlayerStatus\\Player_Attack_Light1",
       "GUID": "{0C0432D9-D97C-4F3E-8203-61E357B965B4}",
       "DurationType": "OneShot",
-      "DurationMin": "0.93771505",
-      "DurationMax": "0.9934744",
+      "DurationMin": "1.371412",
+      "DurationMax": "1.4545319",
       "MediaRefs": [
        {
-        "Id": "149230998"
+        "Id": "323913972"
        },
        {
         "Id": "401044624"
@@ -308,22 +345,13 @@
         "Id": "644301096"
        },
        {
-        "Id": "649203044"
-       },
-       {
-        "Id": "707869156"
+        "Id": "720227983"
        },
        {
         "Id": "723694733"
        },
        {
-        "Id": "966474169"
-       },
-       {
         "Id": "988191268"
-       },
-       {
-        "Id": "1049724239"
        }
       ]
      },
@@ -333,20 +361,11 @@
       "ObjectPath": "\\Events\\Player\\PlayerStatus\\Player_Attack_Light2",
       "GUID": "{792C6D19-B782-455A-B28D-D254B0797756}",
       "DurationType": "OneShot",
-      "DurationMin": "0.93771505",
-      "DurationMax": "0.9934744",
+      "DurationMin": "1.1892071",
+      "DurationMax": "1.1892071",
       "MediaRefs": [
        {
-        "Id": "149230998"
-       },
-       {
-        "Id": "401044624"
-       },
-       {
         "Id": "644301096"
-       },
-       {
-        "Id": "649203044"
        },
        {
         "Id": "707869156"
@@ -359,9 +378,6 @@
        },
        {
         "Id": "988191268"
-       },
-       {
-        "Id": "1049724239"
        }
       ]
      },
@@ -409,14 +425,14 @@
       "ObjectPath": "\\Events\\Player\\PlayerStatus\\Player_Movement",
       "GUID": "{02118D0E-F73F-43F3-A7AD-16C0BC8CF535}",
       "DurationType": "OneShot",
-      "DurationMin": "0.604161",
-      "DurationMax": "0.65682405",
+      "DurationMin": "0.4175847",
+      "DurationMax": "0.52612376",
       "MediaRefs": [
        {
-        "Id": "9290680"
+        "Id": "541667914"
        },
        {
-        "Id": "412699923"
+        "Id": "830216992"
        },
        {
         "Id": "871062797"
@@ -485,11 +501,11 @@
       "ObjectPath": "\\Events\\UI\\Maintenance\\UI_Maintenance_Close",
       "GUID": "{09D16669-4263-4829-AA9E-0DE4FDEA9625}",
       "DurationType": "OneShot",
-      "DurationMin": "1.5453968",
-      "DurationMax": "1.5453968",
+      "DurationMin": "0.46931973",
+      "DurationMax": "0.46931973",
       "MediaRefs": [
        {
-        "Id": "164404195"
+        "Id": "660477324"
        }
       ]
      },
@@ -504,7 +520,7 @@
         "Id": "370360480"
        },
        {
-        "Id": "499224237"
+        "Id": "655008111"
        }
       ]
      },
@@ -599,6 +615,6 @@
     ]
    }
   ],
-  "FileHash": "{086A4228-2E58-5DE6-5EE4-202EA38F1A0D}"
+  "FileHash": "{E54EF5A0-832E-8D42-6DBC-A0504D151E3B}"
  }
 }

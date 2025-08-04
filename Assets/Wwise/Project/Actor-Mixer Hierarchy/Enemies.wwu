@@ -18,6 +18,7 @@
 					</ReferenceList>
 					<ChildrenList>
 						<WorkUnit Name="Enemies_FrogBoss" ID="{6ADD558A-37EC-44CA-BF2C-CF9A155B8FE8}" PersistMode="Reference"/>
+						<WorkUnit Name="Enemies_FrogMinion" ID="{5B6BC789-1D01-478C-AF18-E0DC160C20B5}" PersistMode="Reference"/>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>

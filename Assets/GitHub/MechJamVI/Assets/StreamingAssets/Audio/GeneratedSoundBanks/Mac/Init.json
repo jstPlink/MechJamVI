@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{F96BFCA9-1F43-7C9E-C025-DDB6C6E42075}",
+    "Hash": "{7CA537A2-A877-2684-D4BB-18146E45C455}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -123,6 +123,12 @@
       "ObjectPath": "\\Switches\\Default Work Unit\\SurfaceType",
       "GUID": "{7F34C53B-7690-4AA8-AF75-6B1EF685301A}",
       "Switches": [
+       {
+        "Id": "370158778",
+        "Name": "Enemy_FrogMinion",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SurfaceType\\Enemy_FrogMinion",
+        "GUID": "{B1DF88C4-55E6-4E2D-9C68-3A08FFA7CB6E}"
+       },
        {
         "Id": "803837735",
         "Name": "Sand",
@@ -664,6 +670,6 @@
     ]
    }
   ],
-  "FileHash": "{F237B810-79F3-DB13-4500-09CB8936926D}"
+  "FileHash": "{CB6B0807-EB0E-92B6-9129-A824D459B72F}"
  }
 }

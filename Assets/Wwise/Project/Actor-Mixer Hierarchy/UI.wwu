@@ -244,9 +244,16 @@
 												<MediaID ID="164404195"/>
 											</MediaIDList>
 										</AudioFileSource>
+										<AudioFileSource Name="Hologram Menu Close-1" ID="{91305C3F-E0DC-4D0E-BABC-C34325890674}">
+											<Language>SFX</Language>
+											<AudioFile>Hologram Menu Close-1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="660477324"/>
+											</MediaIDList>
+										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="Holographic Pad Motion-1" ID="{2A2BC91D-7332-4277-AC16-497E947AEBC5}" Platform="Linked"/>
+										<ActiveSource Name="Hologram Menu Close-1" ID="{91305C3F-E0DC-4D0E-BABC-C34325890674}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 								<RandomSequenceContainer Name="Powerup_BP" ID="{DF95B82E-6442-42D1-BAFF-B9815AC352B3}" ShortID="616039032">
@@ -338,8 +345,7 @@
 								<RandomSequenceContainer Name="Screen_Explore" ID="{D75B4ACE-470C-496C-8E0C-959955F7E7EE}" ShortID="579848680">
 									<PropertyList>
 										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
-										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
 										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 									</PropertyList>
@@ -416,9 +422,19 @@
 														<MediaID ID="499224237"/>
 													</MediaIDList>
 												</AudioFileSource>
+												<AudioFileSource Name="Hologram Menu Open-1" ID="{07C14874-D313-42A6-B899-097D2EFCB0A4}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Hologram Menu Open-1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="655008111"/>
+													</MediaIDList>
+												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="Holographic Screen Appear" ID="{A349931D-D35C-4AD5-AECE-363B425FA02E}" Platform="Linked"/>
+												<ActiveSource Name="Hologram Menu Open-1" ID="{07C14874-D313-42A6-B899-097D2EFCB0A4}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>

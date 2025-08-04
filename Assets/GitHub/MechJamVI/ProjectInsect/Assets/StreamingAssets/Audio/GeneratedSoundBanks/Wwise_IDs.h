@@ -15,6 +15,7 @@ namespace AK
     {
         static const AkUniqueID AMBIENT_ENERGYFIELD = 3983137402U;
         static const AkUniqueID AMBIENT_MAINSCENARIO = 263695675U;
+        static const AkUniqueID ENEMIES_FROGMINIONONHIT = 596226124U;
         static const AkUniqueID MUSIC_MAINSCENARIO = 1419702340U;
         static const AkUniqueID PLAYER_ATTACK_LIGHT1 = 2793622033U;
         static const AkUniqueID PLAYER_ATTACK_LIGHT2 = 2793622034U;
@@ -52,6 +53,7 @@ namespace AK
             namespace SWITCH
             {
                 static const AkUniqueID DIRT = 2195636714U;
+                static const AkUniqueID ENEMY_FROGMINION = 370158778U;
                 static const AkUniqueID FOLIAGE = 1162469934U;
                 static const AkUniqueID METAL = 2473969246U;
                 static const AkUniqueID SAND = 803837735U;
