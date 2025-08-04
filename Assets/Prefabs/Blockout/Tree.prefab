@@ -154,6 +154,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
       objectReference: {fileID: 2100000, guid: ad229a08f9952984e83272a38d3881fe, type: 2}
+    - target: {fileID: -2582627594736249370, guid: b2ce645f944cc0449a5e3b4dbac3d4ae, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.37
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b2ce645f944cc0449a5e3b4dbac3d4ae, type: 3}
       propertyPath: m_Name
       value: funghi mecha jam
@@ -166,6 +170,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
       objectReference: {fileID: 2100000, guid: ad229a08f9952984e83272a38d3881fe, type: 2}
+    - target: {fileID: 2558026089252078509, guid: b2ce645f944cc0449a5e3b4dbac3d4ae, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.37
+      objectReference: {fileID: 0}
     - target: {fileID: 5465253217434886690, guid: b2ce645f944cc0449a5e3b4dbac3d4ae, type: 3}
       propertyPath: m_LocalPosition.y
       value: -1.37
