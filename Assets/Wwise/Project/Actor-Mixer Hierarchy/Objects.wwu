@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{46FBC24E-5CE0-42CD-B466-3CDF6B644DAF}" SchemaVersion="123" RootDocumentID="{1355577E-AE4B-414F-BC05-0F4EA7E8ED25}" ParentDocumentID="{1355577E-AE4B-414F-BC05-0F4EA7E8ED25}">
+	<AudioObjects>
+		<WorkUnit Name="Objects" ID="{46FBC24E-5CE0-42CD-B466-3CDF6B644DAF}" OwnerID="{779260EB-BD18-49E9-A611-DAB12F1E3DD7}" PersistMode="Nested">
+			<ChildrenList>
+				<ActorMixer Name="Objects" ID="{939644D2-7DFB-47C6-A874-7702183CD2E6}" ShortID="1032888819">
+					<PropertyList>
+						<Property Name="OverrideConversion" Type="bool" Value="True"/>
+						<Property Name="OverrideOutput" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Objects_General" ID="{22CD1637-2C1D-482A-9724-E95106AFC605}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Objects" ID="{99155C85-7257-47AF-B264-DDBE230D11DF}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+						</Reference>
+					</ReferenceList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{0E6C67BA-9B5A-425C-9DF3-93F64D2FACE8}" SchemaVersion="123" RootDocumentID="{1355577E-AE4B-414F-BC05-0F4EA7E8ED25}" ParentDocumentID="{1355577E-AE4B-414F-BC05-0F4EA7E8ED25}">
+	<AudioObjects>
+		<WorkUnit Name="Enemies" ID="{0E6C67BA-9B5A-425C-9DF3-93F64D2FACE8}" OwnerID="{779260EB-BD18-49E9-A611-DAB12F1E3DD7}" PersistMode="Nested">
+			<ChildrenList>
+				<ActorMixer Name="Enemies" ID="{869267B7-20A1-4BF2-9636-5E3A1F8816FE}" ShortID="74932611">
+					<PropertyList>
+						<Property Name="OverrideConversion" Type="bool" Value="True"/>
+						<Property Name="OverrideOutput" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Enemies_General" ID="{A5216F2D-613D-40CF-A20E-5FA0F6DD5103}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Enemies" ID="{0E92CCE7-D546-45DE-B4CF-59FAC4C1AC44}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<WorkUnit Name="Enemies_FrogBoss" ID="{6ADD558A-37EC-44CA-BF2C-CF9A155B8FE8}" PersistMode="Reference"/>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

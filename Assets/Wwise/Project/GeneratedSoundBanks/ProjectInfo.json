@@ -1,0 +1,43 @@
+{
+ "ProjectInfo": {
+  "Project": {
+   "Name": "projectinsectaudiowwise",
+   "GUID": "{4CE651C8-C7A5-418F-AE14-DA2E7BA1487D}",
+   "Generator": "2024.1.6.8842"
+  },
+  "CacheRoot": "../.cache",
+  "Platforms": [
+   {
+    "Name": "Mac",
+    "GUID": "{6412F2F4-32A3-45E1-8DD1-79CF03D18EBE}",
+    "BasePlatform": "Mac",
+    "BasePlatformGUID": "{9C6217D5-DD11-4795-87C1-6CE02853C540}",
+    "Path": "Mac"
+   },
+   {
+    "Name": "Web",
+    "GUID": "{077A488C-3A28-4EDF-BE20-11D0B6345546}",
+    "BasePlatform": "Web",
+    "BasePlatformGUID": "{639AD233-23F2-4C0F-9127-79F44C15E1DA}",
+    "Path": "Web"
+   },
+   {
+    "Name": "Windows",
+    "GUID": "{9E0EE42F-E43E-4D98-A166-1D6105EEB2B9}",
+    "BasePlatform": "Windows",
+    "BasePlatformGUID": "{6E0CB257-C6C8-4C5C-8366-2740DFC441EB}",
+    "Path": "Windows"
+   }
+  ],
+  "Languages": [
+   {
+    "Name": "English(US)",
+    "Id": "684519430",
+    "GUID": "{E6355993-3EBE-42D7-9F22-955A4DC24ACD}",
+    "Default": "true",
+    "UseAsStandIn": "true"
+   }
+  ],
+  "FileHash": "{19C3EFEC-9078-ED27-AC16-68A3B29233EA}"
+ }
+}
