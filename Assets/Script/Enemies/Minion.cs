@@ -6,7 +6,7 @@ using System.Collections.Generic;
 public class Minion : Enemy
 {
     Spawner mySpawner;
-    public Vector2 intervalRange = new Vector2(2f, 7f);
+    public Vector2 updateIntervalRange = new Vector2(2f, 7f);
     NavMeshAgent agent;
     Animator animator;
 
@@ -48,7 +48,7 @@ public class Minion : Enemy
 
             animator.SetFloat("speed", agent.velocity.magnitude);
 
-            yield return new WaitForSeconds(Random.Range(intervalRange.x, intervalRange.y));
+            yield return new WaitForSeconds(Random.Range(updateIntervalRange.x, updateIntervalRange.y));
         }
 
         yield break;
