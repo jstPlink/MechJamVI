@@ -43,7 +43,7 @@ public class Minion : Enemy
                 agent.SetDestination(posTarget);
             }
             else {
-                agent.Stop();
+                agent.ResetPath();
             }
 
             animator.SetFloat("speed", agent.velocity.magnitude);

@@ -127,6 +127,7 @@ public class GameManager : MonoBehaviour
             // Verifica che sia contestata o di un alleato
             if (tmpBase._status == Base_Behaviour.Status.Contested || tmpBase._status == Base_Behaviour.Status.Ally)
             {
+                // SE C'è IL PLAYER IN ZONA VALLO A PICCHIARE
                 if (tmpBase._isTherePlayer) return playerStatic.transform.position;
 
                 float distance = Vector3.Distance(enemyPosition.position, tmpBase.transform.position);
