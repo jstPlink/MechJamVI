@@ -167,7 +167,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3473170991347254799
 Transform:
   m_ObjectHideFlags: 0
@@ -306,6 +306,8 @@ GameObject:
   - component: {fileID: 2476885190536362473}
   - component: {fileID: 8791274877796153203}
   - component: {fileID: 7139730805484780333}
+  - component: {fileID: 7128369277019818552}
+  - component: {fileID: 9113236182160014837}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -389,7 +391,35 @@ MonoBehaviour:
   shield: 100
   barHealth: {fileID: 0}
   barShield: {fileID: 0}
-  shieldMesh: {fileID: 0}
+  shieldMesh: {fileID: 6298278880964255475}
+--- !u!114 &7128369277019818552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7259482422449819446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8026e663a824d364badacf111b2cd65a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unlockedProjects: 000000
+--- !u!114 &9113236182160014837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7259482422449819446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7166dde9ee0d9a4e818a9e3c214342b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curAttackMultiplier: 0
+  curSpeedMultiplier: 0
+  curHealthMultiplier: 0
 --- !u!1 &7653435160328184128
 GameObject:
   m_ObjectHideFlags: 0

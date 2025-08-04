@@ -23,7 +23,7 @@ public class Minion : Enemy
     {
         if (agent.velocity.sqrMagnitude <= 2f)
         {
-            if (Vector3.Distance(transform.position, GameManager.player.transform.position) <= 15f) {
+            if (Vector3.Distance(transform.position, GameManager.playerStatic.transform.position) <= 15f) {
                 animator.SetBool("canAttack", true);
             }
             else {

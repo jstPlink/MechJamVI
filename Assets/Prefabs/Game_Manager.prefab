@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3497551818307589866}
   - component: {fileID: 9181407521145735555}
-  - component: {fileID: 4429405384241843950}
   m_Layer: 0
   m_Name: Game_Manager
   m_TagString: Untagged
@@ -46,10 +45,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tickTimer: 1
-  bases:
+  basesMapPin:
   - {fileID: 0}
   - {fileID: 0}
-  basesMapPin: []
   enemyMaterial: {fileID: 2100000, guid: d7aa183419117f346a27c809590557d7, type: 2}
   allyMaterial: {fileID: 2100000, guid: c869952065cb3db468194cc749dfbd3b, type: 2}
   contestedMaterial: {fileID: 2100000, guid: 0433c41849a0c2c45a3c08ade5fb8d68, type: 2}
@@ -57,16 +55,4 @@ MonoBehaviour:
   totalResourceXTick: 0
   ResourceQty: 0
   canAdd: 1
---- !u!114 &4429405384241843950
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3064084619903729773}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8026e663a824d364badacf111b2cd65a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  unlockedProjects: 000000
+  somethingChanged: 1

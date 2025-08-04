@@ -1,0 +1,21 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "3768109323",
+    "Type": "User",
+    "GUID": "{AEED4C7A-EFF1-4B94-88D1-41A771CFEFCF}",
+    "Language": "SFX",
+    "Hash": "{CA031E71-1D8A-3706-28C8-BF0D64447490}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\ElChapo",
+    "ShortName": "ElChapo",
+    "Path": "ElChapo.bnk"
+   }
+  ],
+  "FileHash": "{B139A9C8-A329-1E11-D7EE-996B1BE00754}"
+ }
+}
