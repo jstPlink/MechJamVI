@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{AEED4C7A-EFF1-4B94-88D1-41A771CFEFCF}",
     "Language": "SFX",
-    "Hash": "{F080E1FD-E3BC-CE23-F033-51FD75196245}",
+    "Hash": "{9273E4D7-5981-DAC9-4567-44FA7D569192}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\ElChapo",
     "ShortName": "ElChapo",
     "Path": "ElChapo.bnk",
@@ -96,14 +96,6 @@
       "CachePath": "0A/{0AB3D34E-7A24-6776-B6E8-A395CB8A7CC7}.wem"
      },
      {
-      "Id": "439739419",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "PRJINS - 00_Scenario_Step_Placeholder2.wav",
-      "CachePath": "4D/{4DAFA163-3A7A-8C80-FF36-0E75D5631661}.wem"
-     },
-     {
       "Id": "485250142",
       "Language": "SFX",
       "Streaming": "false",
@@ -160,6 +152,14 @@
       "CachePath": "38/{38D61A69-036C-9198-5638-285D128AE43C}.wem"
      },
      {
+      "Id": "950006522",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PRJINS - 00_Scenario_Step_Placeholder3.wav",
+      "CachePath": "3A/{3ACB597E-F965-5413-F234-7358BE3949C3}.wem"
+     },
+     {
       "Id": "966446192",
       "Language": "SFX",
       "Streaming": "false",
@@ -213,7 +213,7 @@
       "DurationType": "Infinite",
       "MediaRefs": [
        {
-        "Id": "439739419"
+        "Id": "950006522"
        }
       ]
      },
@@ -451,6 +451,6 @@
     ]
    }
   ],
-  "FileHash": "{8B40B2C7-9E20-A923-1094-D7FDEB67C6FF}"
+  "FileHash": "{A9634EFC-C2B7-ED6A-CB35-903D3D1A9843}"
  }
 }
