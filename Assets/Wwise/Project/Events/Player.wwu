@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{272E8B64-1CF4-4F67-BCC4-EFD93A3D7E05}" SchemaVersion="123">
+	<Events>
+		<WorkUnit Name="Player" ID="{272E8B64-1CF4-4F67-BCC4-EFD93A3D7E05}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="PlayerStatus" ID="{512EC1A3-5BEA-40C9-98AA-460645320723}" ShortID="214715602">
+					<ChildrenList>
+						<Event Name="Player_CautionAlarm" ID="{3BD0C655-DDA4-46C5-8DB9-85C10C3AF250}">
+							<ChildrenList>
+								<Action Name="" ID="{1765BAF6-F1AC-48D8-926F-56E63C47E686}" ShortID="1040203812">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="CautionAlarm" ID="{7DACEEEB-BE3D-4EDF-BF21-C08B2BD52706}" WorkUnitID="{3D244E8C-9103-4ED4-B110-56E962BB6EF5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Player_Movement" ID="{02118D0E-F73F-43F3-A7AD-16C0BC8CF535}">
+							<ChildrenList>
+								<Action Name="" ID="{D6397031-08AB-4431-BDAA-E3D16B105A90}" ShortID="279832605">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Player_Movement" ID="{1A7F4E19-CFA2-4916-823E-58A34AC472D4}" WorkUnitID="{3D244E8C-9103-4ED4-B110-56E962BB6EF5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

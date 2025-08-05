@@ -7,6 +7,8 @@ public class Inventory : MonoBehaviour
     [Tooltip("Regulate value to match the right number of project in game")]
     [SerializeField] public bool[] unlockedProjects; //Follow numeration of Projects Enum
 
+
+
     public void UnlockProject(byte index)
     {
         unlockedProjects[index] = true;

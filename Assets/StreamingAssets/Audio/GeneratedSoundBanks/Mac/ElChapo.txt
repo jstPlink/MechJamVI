@@ -1,0 +1,50 @@
+Event	ID	Name			Wwise Object Path	Notes
+	26115229	UI_Maintenance_Repair			\UI\Maintenance\UI_Maintenance_Repair	
+	120049226	UI_Maintenance_PowerUp			\UI\Maintenance\UI_Maintenance_PowerUp	
+	263695675	Ambient_MainScenario			\Ambient\Generic\Ambient_MainScenario	
+	541470702	Player_Movement			\Player\PlayerStatus\Player_Movement	
+	701705398	UI_Maintenance_Open			\UI\Maintenance\UI_Maintenance_Open	
+	916601097	UI_Button_StartGame			\UI\Generic\UI_Button_StartGame	
+	1098067136	UI_Button_Denied			\UI\Generic\UI_Button_Denied	
+	1419702340	Music_MainScenario			\Music\BGMLV1\Music_MainScenario	
+	1598004116	UI_Button_Back			\UI\Generic\UI_Button_Back	
+	1664509575	UI_Button_Click			\UI\Generic\UI_Button_Click	
+	1676561250	UI_Maintenance_Close			\UI\Maintenance\UI_Maintenance_Close	
+	2991794566	UI_Mission_TargetPopUp			\UI\Mission\UI_Mission_TargetPopUp	
+	3983137402	Ambient_EnergyField			\Ambient\Generic\Ambient_EnergyField	
+	4240862283	Player_CautionAlarm			\Player\PlayerStatus\Player_CautionAlarm	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	206614296	PlayerHealthSwitch			\Default Work Unit\PlayerHealthSwitch	
+
+Switch	ID	Name	Switch Group			Notes
+	1619908955	PlayerHealth50	PlayerHealthSwitch			
+	1703797114	PlayerHealth20	PlayerHealthSwitch			
+	3528909237	PlayerHealth100	PlayerHealthSwitch			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	2557281390	PlayerMovementSpeed			\Default Work Unit\PlayerMovementSpeed	
+	2774557527	PlayerHealthValue			\Default Work Unit\PlayerHealthValue	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	9290680	813077__audiopapkin__sound-design-elements-robot-mechanism-018	Y:\Documents\WwiseProjects\projectinsectaudiowwise\.cache\29\{291D8117-2DB5-A69A-5E1A-C42963642462}.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\Player_Movement\MechaServo\813077__audiopapkin__sound-design-elements-robot-mechanism-018		42372
+	64498864	TargetPopUp	Y:\Documents\WwiseProjects\projectinsectaudiowwise\.cache\54\{54F44EC7-D1C1-F281-8E57-D5E20DFA3180}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non_World\UI\UI\TargetPopUp\TargetPopUp		9378
+	78534883	Button_Denied	Y:\Documents\WwiseProjects\projectinsectaudiowwise\.cache\34\{3463B9E3-48B9-CDF0-5663-2E5B3CF53387}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non_World\UI\UI\Button\Button_Denied		42432
+	121838931	Button_Click	Y:\Documents\WwiseProjects\projectinsectaudiowwise\.cache\31\{31F1C8C1-2037-56C5-B4BC-66792DFF4750}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non_World\UI\UI\Button\Button_Click		30200
+	153090760	FUI Holo Mechanism Activate	Y:\Documents\WwiseProjects\projectinsectaudiowwise\.cache\21\{21802983-B869-1FFC-861F-D6385A233073}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non_World\UI\UI\Maintenance_Screen\Powerup_BP\FUI Holo Mechanism Activate		17208
+	159409977	Button_Back	Y:\Documents\WwiseProjects\projectinsectaudiowwise\.cache\72\{72E26C78-6FB4-D052-E58C-8E5689BA8C62}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non_World\UI\UI\Button\Button_Back		3361
+	164404195	Screen_Close	Y:\Documents\WwiseProjects\projectinsectaudiowwise\.cache\8D\{8D4D7072-8119-5130-2050-EF6E6EE0594F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non_World\UI\UI\Maintenance_Screen\Screen_Close		21910
+	226300041	StartGame	Y:\Documents\WwiseProjects\projectinsectaudiowwise\.cache\B4\{B4783A23-0FF8-5271-8FF2-3FAE3E957726}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non_World\UI\UI\StartGame\StartGame		35529
+	370360480	Screen_Noise	Y:\Documents\WwiseProjects\projectinsectaudiowwise\.cache\1F\{1F6A87F5-4BF6-AA01-500D-76949B36A2AB}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non_World\UI\UI\Maintenance_Screen\Screen_Explore\Screen_Noise		24797
+	412699923	813078__audiopapkin__sound-design-elements-robot-mechanism-019	Y:\Documents\WwiseProjects\projectinsectaudiowwise\.cache\0A\{0AB3D34E-7A24-6776-B6E8-A395CB8A7CC7}.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\Player_Movement\MechaServo\813078__audiopapkin__sound-design-elements-robot-mechanism-019		42273
+	439739419	PRJINS - 00_Scenario_Step_Placeholder2	Y:\Documents\WwiseProjects\projectinsectaudiowwise\.cache\4D\{4DAFA163-3A7A-8C80-FF36-0E75D5631661}.wem		\Interactive Music Hierarchy\Music\Music_MainScenario\Scenario\PRJINS - 00_Scenario_Step_Placeholder2		3525034
+	485250142	Alarm Beep Lofi Loop	Y:\Documents\WwiseProjects\projectinsectaudiowwise\.cache\A1\{A1D6462E-94D3-671B-04BF-34EE7F9A9AB0}.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Health\CautionAlarm\Alarm Beep Lofi Loop		105793
+	490129382	Ambient_Battlefield	Y:\Documents\WwiseProjects\projectinsectaudiowwise\.cache\F6\{F6AFE8D1-E1F0-6E43-AEDD-A9BC1B07CB9F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Ambient\Ambiences\Ambiences_Background\Ambient_MainScenario\Ambient_Battlefield		435247
+	499224237	Screen_Open	Y:\Documents\WwiseProjects\projectinsectaudiowwise\.cache\61\{61ACD105-8D17-9684-5E44-C2D929537E2D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non_World\UI\UI\Maintenance_Screen\Screen_Explore\Screen_Open		11766
+	650576443	FUI Holo Mechanism Activate-1	Y:\Documents\WwiseProjects\projectinsectaudiowwise\.cache\7A\{7A120C93-6F1F-D38B-5AC2-E4B0856DF40E}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non_World\UI\UI\Maintenance_Screen\Powerup_BP\FUI Holo Mechanism Activate-1		47362
+	809030593	Alarm Coarse Loop	Y:\Documents\WwiseProjects\projectinsectaudiowwise\.cache\52\{5271BE38-C994-DFF5-1293-87D925E8BEDD}.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Health\CautionAlarm\Alarm Coarse Loop		137108
+	848998426	Repair	Y:\Documents\WwiseProjects\projectinsectaudiowwise\.cache\7B\{7BFA8B64-52A6-5D0F-C540-9EAAB36EB95F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non_World\UI\UI\Maintenance_Screen\Repair		109450
+	871062797	EXPLDsgn_Explosion Impact_02_SFRMS_SCIWPNS	Y:\Documents\WwiseProjects\projectinsectaudiowwise\.cache\38\{38D61A69-036C-9198-5638-285D128AE43C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\Player_Movement\EXPLDsgn_Explosion Impact_02_SFRMS_SCIWPNS		7774
+	966446192	Ambient_Nature	Y:\Documents\WwiseProjects\projectinsectaudiowwise\.cache\E4\{E4FC000B-FB08-4C57-8CD1-7ACE6353F055}.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Ambient\Ambiences\Ambiences_Background\Ambient_MainScenario\Ambient_Nature		3209653
+	1010170936	Ambient_EnergyField	Y:\Documents\WwiseProjects\projectinsectaudiowwise\.cache\B5\{B5C81069-9EA4-A7FE-0529-1F23E38B6FC0}.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Ambient\Ambiences\Ambiences_Emitters\Emitters\Ambient_EnergyField		13434
+

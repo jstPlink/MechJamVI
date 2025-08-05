@@ -35,6 +35,17 @@ public class ComboSystem : MonoBehaviour
 
 
 
+    public void OnHit()
+    {
+        animator.SetTrigger("hit");
+    }
+
+    public void OnDeath()
+    {
+        animator.SetTrigger("isDead");
+    }
+
+
     // Viene chiamato dall'animazione per avvisare che puo attaccare di nuovo
     public void ResetAttackState() {   
         canAttack = true;

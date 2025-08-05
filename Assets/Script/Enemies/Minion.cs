@@ -6,7 +6,7 @@ using System.Collections.Generic;
 public class Minion : Enemy
 {
     Spawner mySpawner;
-    public Vector2 intervalRange = new Vector2(2f, 7f);
+    public Vector2 updateIntervalRange = new Vector2(2f, 7f);
     NavMeshAgent agent;
     Animator animator;
 
@@ -23,7 +23,7 @@ public class Minion : Enemy
     {
         if (agent.velocity.sqrMagnitude <= 2f)
         {
-            if (Vector3.Distance(transform.position, GameManager.player.transform.position) <= 15f) {
+            if (Vector3.Distance(transform.position, GameManager.playerStatic.transform.position) <= 15f) {
                 animator.SetBool("canAttack", true);
             }
             else {
@@ -43,12 +43,12 @@ public class Minion : Enemy
                 agent.SetDestination(posTarget);
             }
             else {
-                agent.Stop();
+                agent.ResetPath();
             }
 
             animator.SetFloat("speed", agent.velocity.magnitude);
 
-            yield return new WaitForSeconds(Random.Range(intervalRange.x, intervalRange.y));
+            yield return new WaitForSeconds(Random.Range(updateIntervalRange.x, updateIntervalRange.y));
         }
 
         yield break;

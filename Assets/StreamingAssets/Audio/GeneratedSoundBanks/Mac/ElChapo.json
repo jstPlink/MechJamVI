@@ -1,0 +1,456 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "3768109323",
+    "Type": "User",
+    "GUID": "{AEED4C7A-EFF1-4B94-88D1-41A771CFEFCF}",
+    "Language": "SFX",
+    "Hash": "{F080E1FD-E3BC-CE23-F033-51FD75196245}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\ElChapo",
+    "ShortName": "ElChapo",
+    "Path": "ElChapo.bnk",
+    "Media": [
+     {
+      "Id": "9290680",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "813077__audiopapkin__sound-design-elements-robot-mechanism-018.wav",
+      "CachePath": "29/{291D8117-2DB5-A69A-5E1A-C42963642462}.wem"
+     },
+     {
+      "Id": "64498864",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Compact Alarm Beep Loop.wav",
+      "CachePath": "54/{54F44EC7-D1C1-F281-8E57-D5E20DFA3180}.wem"
+     },
+     {
+      "Id": "78534883",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Error Triplet-1.wav",
+      "CachePath": "34/{3463B9E3-48B9-CDF0-5663-2E5B3CF53387}.wem"
+     },
+     {
+      "Id": "121838931",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FUI Button Beep Stereo-1.wav",
+      "CachePath": "31/{31F1C8C1-2037-56C5-B4BC-66792DFF4750}.wem"
+     },
+     {
+      "Id": "153090760",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FUI Holo Mechanism Activate.wav",
+      "CachePath": "21/{21802983-B869-1FFC-861F-D6385A233073}.wem"
+     },
+     {
+      "Id": "159409977",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FUI Button Toggle Mechanical.wav",
+      "CachePath": "72/{72E26C78-6FB4-D052-E58C-8E5689BA8C62}.wem"
+     },
+     {
+      "Id": "164404195",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Holographic Pad Motion-1.wav",
+      "CachePath": "8D/{8D4D7072-8119-5130-2050-EF6E6EE0594F}.wem"
+     },
+     {
+      "Id": "226300041",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Old Hologram Activation Rumble.wav",
+      "CachePath": "B4/{B4783A23-0FF8-5271-8FF2-3FAE3E957726}.wem"
+     },
+     {
+      "Id": "370360480",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Disk Noise Loop-1.wav",
+      "CachePath": "1F/{1F6A87F5-4BF6-AA01-500D-76949B36A2AB}.wem"
+     },
+     {
+      "Id": "412699923",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "813078__audiopapkin__sound-design-elements-robot-mechanism-019.wav",
+      "CachePath": "0A/{0AB3D34E-7A24-6776-B6E8-A395CB8A7CC7}.wem"
+     },
+     {
+      "Id": "439739419",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PRJINS - 00_Scenario_Step_Placeholder2.wav",
+      "CachePath": "4D/{4DAFA163-3A7A-8C80-FF36-0E75D5631661}.wem"
+     },
+     {
+      "Id": "485250142",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Alarm Beep Lofi Loop.wav",
+      "CachePath": "A1/{A1D6462E-94D3-671B-04BF-34EE7F9A9AB0}.wem"
+     },
+     {
+      "Id": "490129382",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "AMBWar_Battlefield Explosions Distant Loop_SFRMS_SCIWPNS.wav",
+      "CachePath": "F6/{F6AFE8D1-E1F0-6E43-AEDD-A9BC1B07CB9F}.wem"
+     },
+     {
+      "Id": "499224237",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Holographic Screen Appear.wav",
+      "CachePath": "61/{61ACD105-8D17-9684-5E44-C2D929537E2D}.wem"
+     },
+     {
+      "Id": "650576443",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FUI Holo Mechanism Activate-1.wav",
+      "CachePath": "7A/{7A120C93-6F1F-D38B-5AC2-E4B0856DF40E}.wem"
+     },
+     {
+      "Id": "809030593",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Alarm Coarse Loop.wav",
+      "CachePath": "52/{5271BE38-C994-DFF5-1293-87D925E8BEDD}.wem"
+     },
+     {
+      "Id": "848998426",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Data Jumble Loop.wav",
+      "CachePath": "7B/{7BFA8B64-52A6-5D0F-C540-9EAAB36EB95F}.wem"
+     },
+     {
+      "Id": "871062797",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EXPLDsgn_Explosion Impact_02_SFRMS_SCIWPNS.wav",
+      "CachePath": "38/{38D61A69-036C-9198-5638-285D128AE43C}.wem"
+     },
+     {
+      "Id": "966446192",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "AMBPubl_Area Graveyard-Loop 01_AKB00M_Ambience Fantasy.wav",
+      "CachePath": "E4/{E4FC000B-FB08-4C57-8CD1-7ACE6353F055}.wem"
+     },
+     {
+      "Id": "1010170936",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Particle Scanner Loop.wav",
+      "CachePath": "B5/{B5C81069-9EA4-A7FE-0529-1F23E38B6FC0}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3983137402",
+      "Name": "Ambient_EnergyField",
+      "ObjectPath": "\\Events\\Ambient\\Generic\\Ambient_EnergyField",
+      "GUID": "{C7A3D26F-5015-418F-8783-AC77FEED77FB}",
+      "MaxAttenuation": "80",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "1010170936"
+       }
+      ]
+     },
+     {
+      "Id": "263695675",
+      "Name": "Ambient_MainScenario",
+      "ObjectPath": "\\Events\\Ambient\\Generic\\Ambient_MainScenario",
+      "GUID": "{0632D8D0-0560-48BB-A7D1-09D8F4F6D66F}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "490129382"
+       },
+       {
+        "Id": "966446192"
+       }
+      ]
+     },
+     {
+      "Id": "1419702340",
+      "Name": "Music_MainScenario",
+      "ObjectPath": "\\Events\\Music\\BGMLV1\\Music_MainScenario",
+      "GUID": "{7BE7A7C2-5EB8-43C1-962D-13A2206A67CC}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "439739419"
+       }
+      ]
+     },
+     {
+      "Id": "4240862283",
+      "Name": "Player_CautionAlarm",
+      "ObjectPath": "\\Events\\Player\\PlayerStatus\\Player_CautionAlarm",
+      "GUID": "{3BD0C655-DDA4-46C5-8DB9-85C10C3AF250}",
+      "DurationType": "Infinite",
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "206614296",
+         "Id": "1703797114",
+         "GUID": "{2E637713-D4A1-485C-9F58-8678848C1C0B}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "485250142"
+         },
+         {
+          "Id": "809030593"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "206614296",
+         "Id": "1619908955",
+         "GUID": "{DA792220-5F93-499A-9691-15F6717119EC}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "809030593"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "Id": "541470702",
+      "Name": "Player_Movement",
+      "ObjectPath": "\\Events\\Player\\PlayerStatus\\Player_Movement",
+      "GUID": "{02118D0E-F73F-43F3-A7AD-16C0BC8CF535}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.604161",
+      "DurationMax": "0.65682405",
+      "MediaRefs": [
+       {
+        "Id": "9290680"
+       },
+       {
+        "Id": "412699923"
+       },
+       {
+        "Id": "871062797"
+       }
+      ]
+     },
+     {
+      "Id": "1598004116",
+      "Name": "UI_Button_Back",
+      "ObjectPath": "\\Events\\UI\\Generic\\UI_Button_Back",
+      "GUID": "{60F219A9-3D5A-4E1C-8AC8-10B7DEE7301E}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.13866213",
+      "DurationMax": "0.13866213",
+      "MediaRefs": [
+       {
+        "Id": "159409977"
+       }
+      ]
+     },
+     {
+      "Id": "1664509575",
+      "Name": "UI_Button_Click",
+      "ObjectPath": "\\Events\\UI\\Generic\\UI_Button_Click",
+      "GUID": "{C47D20E6-AB7A-4EA5-AD0C-60F0359FE3A3}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.17065759",
+      "DurationMax": "0.17065759",
+      "MediaRefs": [
+       {
+        "Id": "121838931"
+       }
+      ]
+     },
+     {
+      "Id": "1098067136",
+      "Name": "UI_Button_Denied",
+      "ObjectPath": "\\Events\\UI\\Generic\\UI_Button_Denied",
+      "GUID": "{5015B647-36F4-4B70-9BB7-D6AE3B173F02}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.24",
+      "DurationMax": "0.24",
+      "MediaRefs": [
+       {
+        "Id": "78534883"
+       }
+      ]
+     },
+     {
+      "Id": "916601097",
+      "Name": "UI_Button_StartGame",
+      "ObjectPath": "\\Events\\UI\\Generic\\UI_Button_StartGame",
+      "GUID": "{47D1696A-42DD-4F2F-A16C-7710C2B2670D}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.5119956",
+      "DurationMax": "2.5119956",
+      "MediaRefs": [
+       {
+        "Id": "226300041"
+       }
+      ]
+     },
+     {
+      "Id": "1676561250",
+      "Name": "UI_Maintenance_Close",
+      "ObjectPath": "\\Events\\UI\\Maintenance\\UI_Maintenance_Close",
+      "GUID": "{09D16669-4263-4829-AA9E-0DE4FDEA9625}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.5453968",
+      "DurationMax": "1.5453968",
+      "MediaRefs": [
+       {
+        "Id": "164404195"
+       }
+      ]
+     },
+     {
+      "Id": "701705398",
+      "Name": "UI_Maintenance_Open",
+      "ObjectPath": "\\Events\\UI\\Maintenance\\UI_Maintenance_Open",
+      "GUID": "{90B07C2A-7454-488B-8508-0D7580F278AB}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "370360480"
+       },
+       {
+        "Id": "499224237"
+       }
+      ]
+     },
+     {
+      "Id": "120049226",
+      "Name": "UI_Maintenance_PowerUp",
+      "ObjectPath": "\\Events\\UI\\Maintenance\\UI_Maintenance_PowerUp",
+      "GUID": "{660FC6E9-2ADA-4BF8-AF8F-0793B77E2A1F}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.002653",
+      "DurationMax": "2",
+      "MediaRefs": [
+       {
+        "Id": "153090760"
+       },
+       {
+        "Id": "650576443"
+       }
+      ]
+     },
+     {
+      "Id": "26115229",
+      "Name": "UI_Maintenance_Repair",
+      "ObjectPath": "\\Events\\UI\\Maintenance\\UI_Maintenance_Repair",
+      "GUID": "{9F24FB75-8B03-4009-AE60-C03E863CCDF5}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "848998426"
+       }
+      ]
+     },
+     {
+      "Id": "2991794566",
+      "Name": "UI_Mission_TargetPopUp",
+      "ObjectPath": "\\Events\\UI\\Mission\\UI_Mission_TargetPopUp",
+      "GUID": "{F33D96A2-8A80-4AB5-9374-D9B34C8BC43D}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.2712148",
+      "DurationMax": "1.3084643",
+      "MediaRefs": [
+       {
+        "Id": "64498864"
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "2557281390",
+      "Name": "PlayerMovementSpeed",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\PlayerMovementSpeed",
+      "GUID": "{1D3865F4-750F-42D5-BD11-FE5DD0470BAF}"
+     },
+     {
+      "Id": "2774557527",
+      "Name": "PlayerHealthValue",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\PlayerHealthValue",
+      "GUID": "{D76F94C3-67C5-43FF-981A-FF488ECD82E9}"
+     }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "206614296",
+      "Name": "PlayerHealthSwitch",
+      "ObjectPath": "\\Switches\\Default Work Unit\\PlayerHealthSwitch",
+      "GUID": "{ED574DC8-A995-48E5-AA32-40359B3F9AD8}",
+      "GameParameterRef": {
+       "Id": "2774557527"
+      },
+      "Switches": [
+       {
+        "Id": "1619908955",
+        "Name": "PlayerHealth50",
+        "ObjectPath": "\\Switches\\Default Work Unit\\PlayerHealthSwitch\\PlayerHealth50",
+        "GUID": "{DA792220-5F93-499A-9691-15F6717119EC}"
+       },
+       {
+        "Id": "1703797114",
+        "Name": "PlayerHealth20",
+        "ObjectPath": "\\Switches\\Default Work Unit\\PlayerHealthSwitch\\PlayerHealth20",
+        "GUID": "{2E637713-D4A1-485C-9F58-8678848C1C0B}"
+       },
+       {
+        "Id": "3528909237",
+        "Name": "PlayerHealth100",
+        "ObjectPath": "\\Switches\\Default Work Unit\\PlayerHealthSwitch\\PlayerHealth100",
+        "GUID": "{0DE56D8A-2075-46D7-8469-12F39C913C63}"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{9B24AFE5-660F-9A1A-471C-5024F19A1C60}"
+ }
+}

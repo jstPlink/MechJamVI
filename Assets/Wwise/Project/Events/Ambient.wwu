@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{ED1F6747-AA19-44F8-80EA-FF742D677ECB}" SchemaVersion="123">
+	<Events>
+		<WorkUnit Name="Ambient" ID="{ED1F6747-AA19-44F8-80EA-FF742D677ECB}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Generic" ID="{A1C89894-6146-41DD-82DF-1D7675172567}" ShortID="834502657">
+					<ChildrenList>
+						<Event Name="Ambient_MainScenario" ID="{0632D8D0-0560-48BB-A7D1-09D8F4F6D66F}">
+							<ChildrenList>
+								<Action Name="" ID="{38E8E612-B2AD-4F0F-82C9-A48ED70BF11F}" ShortID="1049796181">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ambient_MainScenario" ID="{3BEB802C-40A8-4853-8010-02B31961D66B}" WorkUnitID="{7614687E-3D82-4EB2-B47D-1E571500C7E2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{69B1B5E1-F169-4B30-8782-BC2B6167691B}" ShortID="867437756">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ambient_MainScenario" ID="{3BEB802C-40A8-4853-8010-02B31961D66B}" WorkUnitID="{7614687E-3D82-4EB2-B47D-1E571500C7E2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Ambient_EnergyField" ID="{C7A3D26F-5015-418F-8783-AC77FEED77FB}">
+							<ChildrenList>
+								<Action Name="" ID="{7F6605BD-9BD6-46C5-98E9-DE967B12D259}" ShortID="28540011">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ambient_EnergyField" ID="{880B061B-A840-430A-8538-C5E5BAA65041}" WorkUnitID="{D77BABA5-C254-4C0B-A8ED-AC37C4EC68F7}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{EA6E5B24-9C0D-4251-A044-0271D3A52072}" ShortID="675552688">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ambient_EnergyField" ID="{880B061B-A840-430A-8538-C5E5BAA65041}" WorkUnitID="{D77BABA5-C254-4C0B-A8ED-AC37C4EC68F7}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

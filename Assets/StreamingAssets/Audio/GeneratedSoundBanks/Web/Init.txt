@@ -1,4 +1,13 @@
+Switch Group	ID	Name			Wwise Object Path	Notes
+	206614296	PlayerHealthSwitch			\Default Work Unit\PlayerHealthSwitch	
+
+Switch	ID	Name	Switch Group			Notes
+	1619908955	PlayerHealth50	PlayerHealthSwitch			
+	1703797114	PlayerHealth20	PlayerHealthSwitch			
+	3528909237	PlayerHealth100	PlayerHealthSwitch			
+
 Game Parameter	ID	Name			Wwise Object Path	Notes
+	466717960	MenuAttenuation			\Default Work Unit\MenuAttenuation	
 	504532776	Brick			\Factory Acoustic Textures\Textures\Brick	
 	513139656	Mountain			\Factory Acoustic Textures\Textures\Mountain	
 	841620460	Concrete			\Factory Acoustic Textures\Textures\Concrete	
@@ -15,7 +24,15 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	4262522749	Wood_Bright			\Factory Acoustic Textures\Textures\Wood_Bright	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	77978275	Ambient			\Default Work Unit\Master Audio Bus\World\Ambient	
+	1069431850	Player			\Default Work Unit\Master Audio Bus\World\Player	
+	1551306167	UI			\Default Work Unit\Master Audio Bus\Non_World\UI	
+	1695690031	Objects			\Default Work Unit\Master Audio Bus\World\Objects	
+	2242381963	Enemies			\Default Work Unit\Master Audio Bus\World\Enemies	
+	2609808943	World			\Default Work Unit\Master Audio Bus\World	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3869140995	Non_World			\Default Work Unit\Master Audio Bus\Non_World	
+	3991942870	Music			\Default Work Unit\Master Audio Bus\Non_World\Music	
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

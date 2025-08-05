@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{0B5335A1-5D88-41FC-BCCC-51F66ABD3C5E}" SchemaVersion="123">
+	<Switches>
+		<WorkUnit Name="Default Work Unit" ID="{0B5335A1-5D88-41FC-BCCC-51F66ABD3C5E}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="PlayerHealthSwitch" ID="{ED574DC8-A995-48E5-AA32-40359B3F9AD8}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="PlayerHealth100" ID="{0DE56D8A-2075-46D7-8469-12F39C913C63}"/>
+						<Switch Name="PlayerHealth50" ID="{DA792220-5F93-499A-9691-15F6717119EC}"/>
+						<Switch Name="PlayerHealth20" ID="{2E637713-D4A1-485C-9F58-8678848C1C0B}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="PlayerHealthValue" ID="{D76F94C3-67C5-43FF-981A-FF488ECD82E9}"/>
+						<Curve Name="" ID="{155B3198-CE7F-4B10-BAC2-4F68A459AFA3}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>3</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>20.001</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>50.001</XPos>
+									<YPos>1</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>99.999</XPos>
+									<YPos>0</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>100</XPos>
+									<YPos>0</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+				<SwitchGroup Name="SurfaceType" ID="{7F34C53B-7690-4AA8-AF75-6B1EF685301A}">
+					<ChildrenList>
+						<Switch Name="Dirt" ID="{A6C5B0F6-803A-42D8-9326-1F84FFF4751C}"/>
+						<Switch Name="Water" ID="{AFBAB8AB-A4BE-4E97-9694-7D416E92BEA7}"/>
+						<Switch Name="Metal" ID="{7C69D30C-B2FE-4C30-9B52-CAE5BCB17FCE}"/>
+						<Switch Name="Sand" ID="{0F9E3219-F486-411F-9BD5-F306B189D7AE}"/>
+						<Switch Name="Foliage" ID="{06543C8A-18B2-43D1-9820-6BB87E1AC2ED}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>
