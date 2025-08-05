@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy/Default Work Unit
     guid: 64fe4fde7f893d4381e284a69f3aad98
     GuidInternal: 
-    m_lastTime: -8584472704945667275
+    m_lastTime: -8584472000793201665
     List:
     - name: Ambient
       guid: 1bdf67499992164e99b3fb97ba6fc553
@@ -379,6 +379,26 @@ MonoBehaviour:
         ObjectType: 2
         guid: 63362cb904d78640a54431b6cd6d77f3
       Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/Non_World/Music
+    - name: Music_Stinger
+      guid: f7b8514989335e49a5ee000020cfb435
+      id: 721991581
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 64fe4fde7f893d4381e284a69f3aad98
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Non_World
+        ObjectType: 2
+        guid: ac1627630e9af8408e4bc10bd2f00ac6
+      - ElementName: Music_Stinger
+        ObjectType: 2
+        guid: f7b8514989335e49a5ee000020cfb435
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/Non_World/Music_Stinger
     - name: Non_World
       guid: ac1627630e9af8408e4bc10bd2f00ac6
       id: 3869140995
@@ -596,8 +616,28 @@ MonoBehaviour:
     ParentPath: Events/Enemies
     guid: 65b1bc0102603447858c985142756ae5
     GuidInternal: 
-    m_lastTime: -8584472171728210686
+    m_lastTime: -8584471951983581552
     List:
+    - name: Enemies_FrogMinionDeath
+      guid: 35bdd9304cd38a42a2bbb5abe1ee6506
+      id: 2517757688
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Enemies
+        ObjectType: 12
+        guid: 65b1bc0102603447858c985142756ae5
+      - ElementName: Generic
+        ObjectType: 4
+        guid: ab47b60a70b012418f1b146d0cfe63cb
+      - ElementName: Enemies_FrogMinionDeath
+        ObjectType: 3
+        guid: 35bdd9304cd38a42a2bbb5abe1ee6506
+      Path: Events/Enemies/Generic/Enemies_FrogMinionDeath
+      maxAttenuation: 80
+      maxDuration: 7.8605685
+      minDuration: 1.7205455
     - name: Enemies_FrogMinionOnHit
       guid: 834b6b3cc5c0534cb195b1b594d0376f
       id: 596226124
@@ -646,7 +686,7 @@ MonoBehaviour:
     ParentPath: Events/Music
     guid: db1fe9e39577874cacf9c1d503741540
     GuidInternal: 
-    m_lastTime: -8584476101507805681
+    m_lastTime: -8584472000793180653
     List:
     - name: BGMLV1
       guid: ce1943480ddcbc4c862f62789592fa0c
@@ -872,7 +912,7 @@ MonoBehaviour:
     ParentPath: Events/UI
     guid: a09ca73b79cf8542b72e8f261f961920
     GuidInternal: 
-    m_lastTime: -8584474709138157092
+    m_lastTime: -8584471964966582497
     List:
     - name: Generic
       guid: 777d86e6d90f1a4a80e2b7bdfa536fd6
@@ -1085,6 +1125,46 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: UI_Mission_BaseLost
+      guid: 0978a0497cef694d888199fc36cdcfd6
+      id: 620449730
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: UI
+        ObjectType: 12
+        guid: a09ca73b79cf8542b72e8f261f961920
+      - ElementName: Mission
+        ObjectType: 4
+        guid: 117440f62576ec49b413ff585ee0a4e5
+      - ElementName: UI_Mission_BaseLost
+        ObjectType: 3
+        guid: 0978a0497cef694d888199fc36cdcfd6
+      Path: Events/UI/Mission/UI_Mission_BaseLost
+      maxAttenuation: 0
+      maxDuration: 1.282585
+      minDuration: 1.282585
+    - name: UI_Mission_BaseWon
+      guid: cee5883f3a430a4fbf80932fb81f4d51
+      id: 1175031056
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: UI
+        ObjectType: 12
+        guid: a09ca73b79cf8542b72e8f261f961920
+      - ElementName: Mission
+        ObjectType: 4
+        guid: 117440f62576ec49b413ff585ee0a4e5
+      - ElementName: UI_Mission_BaseWon
+        ObjectType: 3
+        guid: cee5883f3a430a4fbf80932fb81f4d51
+      Path: Events/UI/Mission/UI_Mission_BaseWon
+      maxAttenuation: 0
+      maxDuration: 1.7891327
+      minDuration: 1.3050572
     - name: UI_Mission_TargetPopUp
       guid: a2963df3808ab54a9374d9b34c8bc43d
       id: 2991794566
@@ -1117,7 +1197,7 @@ MonoBehaviour:
     ParentPath: Game Parameters/Default Work Unit
     guid: c4fc7627f52b2049a96029689e030f7e
     GuidInternal: 
-    m_lastTime: -8584476200835161041
+    m_lastTime: -8584472000793139527
     List:
     - name: CameraDistance
       guid: 634514c8f2dbbb42b8c09006aadf189c
@@ -1147,6 +1227,20 @@ MonoBehaviour:
         ObjectType: 13
         guid: 1176e15ef78ea648b6582e1a4710c18f
       Path: Game Parameters/Default Work Unit/MenuAttenuation
+    - name: MusicStinger
+      guid: b4d3b91f6eea39408d238f4d81199bc1
+      id: 1636576504
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c4fc7627f52b2049a96029689e030f7e
+      - ElementName: MusicStinger
+        ObjectType: 13
+        guid: b4d3b91f6eea39408d238f4d81199bc1
+      Path: Game Parameters/Default Work Unit/MusicStinger
     - name: PlayerHealthValue
       guid: c3946fd7c567ff43981aff488ecd82e9
       id: 2774557527
@@ -1187,8 +1281,42 @@ MonoBehaviour:
     ParentPath: States/Default Work Unit
     guid: c22443ecf148814ca9bb9727de7877a0
     GuidInternal: 
-    m_lastTime: -8584476200835173698
-    List: []
+    m_lastTime: -8584472000793155074
+    List:
+    - name: None
+      guid: 660dc3130fd48e47b29599f708e1a878
+      id: 748895195
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c22443ecf148814ca9bb9727de7877a0
+      - ElementName: None
+        ObjectType: 9
+        guid: 660dc3130fd48e47b29599f708e1a878
+      Path: States/Default Work Unit/None
+      values:
+      - name: None
+        guid: cdbe71799bc75b4589988a2fd1d41210
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: c22443ecf148814ca9bb9727de7877a0
+        - ElementName: None
+          ObjectType: 9
+          guid: 660dc3130fd48e47b29599f708e1a878
+        - ElementName: None
+          ObjectType: 8
+          guid: cdbe71799bc75b4589988a2fd1d41210
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches/Default Work Unit.wwu
     PathAndIcons:
@@ -1395,10 +1523,38 @@ MonoBehaviour:
     ParentPath: Triggers/Default Work Unit
     guid: aa5cc4cdc3782a43b9a61d01156bde33
     GuidInternal: 
-    m_lastTime: -8584481567148078519
-    List: []
+    m_lastTime: -8584471964966518442
+    List:
+    - name: Music_StingerDefeat
+      guid: f4bb3a4b50703f4392ab36e58b6a3afc
+      id: 1723656556
+      PathAndIcons:
+      - ElementName: Triggers
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: aa5cc4cdc3782a43b9a61d01156bde33
+      - ElementName: Music_StingerDefeat
+        ObjectType: 14
+        guid: f4bb3a4b50703f4392ab36e58b6a3afc
+      Path: Triggers/Default Work Unit/Music_StingerDefeat
+    - name: Music_StingerVictory
+      guid: 2a67469a220fb44b99df0d6c74bbeda5
+      id: 1385723609
+      PathAndIcons:
+      - ElementName: Triggers
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: aa5cc4cdc3782a43b9a61d01156bde33
+      - ElementName: Music_StingerVictory
+        ObjectType: 14
+        guid: 2a67469a220fb44b99df0d6c74bbeda5
+      Path: Triggers/Default Work Unit/Music_StingerVictory
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000b0000000c0000000d0000000e00000010000000110000001300000014000000150000002d0000003700000038000000
+  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e00000010000000110000001300000014000000150000002d0000003700000038000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

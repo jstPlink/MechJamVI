@@ -15,6 +15,7 @@ namespace AK
     {
         static const AkUniqueID AMBIENT_ENERGYFIELD = 3983137402U;
         static const AkUniqueID AMBIENT_MAINSCENARIO = 263695675U;
+        static const AkUniqueID ENEMIES_FROGMINIONDEATH = 2517757688U;
         static const AkUniqueID ENEMIES_FROGMINIONONHIT = 596226124U;
         static const AkUniqueID MUSIC_MAINSCENARIO = 1419702340U;
         static const AkUniqueID PLAYER_ATTACK_HEAVY_IMPACT = 2923944706U;

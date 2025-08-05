@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{AEED4C7A-EFF1-4B94-88D1-41A771CFEFCF}",
     "Language": "SFX",
-    "Hash": "{D5D1E1E6-BC5D-49A0-7DD8-DBD2B7F9BD84}",
+    "Hash": "{BDCFB0D0-8A19-17FF-1251-F34EE7A4927D}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\ElChapo",
     "ShortName": "ElChapo",
     "Path": "ElChapo.bnk",
@@ -22,6 +22,14 @@
       "Location": "Memory",
       "ShortName": "813080__audiopapkin__sound-design-elements-robot-mechanism-021.wav",
       "CachePath": "A5/{A5A884E2-174C-9AE1-79AE-B567F7D4F12E}.wem"
+     },
+     {
+      "Id": "14319534",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Old Terminal Computing-2.wav",
+      "CachePath": "0A/{0AAB8F8C-B8C2-BF84-D849-ECE8F73AA35F}.wem"
      },
      {
       "Id": "64498864",
@@ -46,6 +54,14 @@
       "Location": "Memory",
       "ShortName": "VENGEANCEPROTOCOL - 01_Stinger_Victory_APREMIX.wav",
       "CachePath": "A0/{A039D22D-E8F9-2731-B528-98BD3C217986}.wem"
+     },
+     {
+      "Id": "99905388",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Old Terminal Computing-3.wav",
+      "CachePath": "3D/{3DBC4A72-6994-7875-B1D8-CA646C11C0D0}.wem"
      },
      {
       "Id": "104298631",
@@ -144,6 +160,14 @@
       "CachePath": "B2/{B2413265-EE97-0538-2A5B-9C8D2CFD7F1F}.wem"
      },
      {
+      "Id": "345392918",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Old Terminal Computing-1.wav",
+      "CachePath": "CE/{CEC4007E-1F54-46B7-6FDC-BDAF3AA7DBD2}.wem"
+     },
+     {
       "Id": "370360480",
       "Language": "SFX",
       "Streaming": "false",
@@ -208,6 +232,22 @@
       "CachePath": "F6/{F6AFE8D1-E1F0-6E43-AEDD-A9BC1B07CB9F}.wem"
      },
      {
+      "Id": "519076991",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ROBTVox_Robot Vocalisation_01_SFRMS_SCIWPNS.wav",
+      "CachePath": "9E/{9EDCF468-101D-9146-CCA4-71061021FAFD}.wem"
+     },
+     {
+      "Id": "529049141",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EXPLDsgn_Implode_14_SFRMS_SCIWPNS.wav",
+      "CachePath": "EA/{EAEAD503-BC70-F279-1715-E8785AD315C5}.wem"
+     },
+     {
       "Id": "541667914",
       "Language": "SFX",
       "Streaming": "false",
@@ -222,6 +262,14 @@
       "Location": "Memory",
       "ShortName": "EXPLDsgn_Explosion Impact_05_SFRMS_SCIWPNS.wav",
       "CachePath": "4E/{4E1DA346-771E-E932-B56D-3746253221DD}.wem"
+     },
+     {
+      "Id": "587117239",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EXPLDsgn_Explosion Rumble Distorted_04_SFRMS_SCIWPNS.wav",
+      "CachePath": "56/{56C20FC8-A0BB-5900-88DF-ED9563E7BD01}.wem"
      },
      {
       "Id": "644301096",
@@ -280,6 +328,14 @@
       "CachePath": "38/{38D61A69-036C-9198-5638-285D128AE43C}.wem"
      },
      {
+      "Id": "698822350",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ROBTVox_Robot Vocalisation_03_SFRMS_SCIWPNS.wav",
+      "CachePath": "21/{21C9A06A-5750-645B-0F05-EB908EBFE886}.wem"
+     },
+     {
       "Id": "707869156",
       "Language": "SFX",
       "Streaming": "false",
@@ -310,6 +366,22 @@
       "Location": "Memory",
       "ShortName": "SFX_Throw_02.wav",
       "CachePath": "E6/{E6E09DA6-7B0E-5E6F-3A71-92869A459D4C}.wem"
+     },
+     {
+      "Id": "751601628",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EXPLDsgn_Implode_16_SFRMS_SCIWPNS.wav",
+      "CachePath": "D2/{D29C2D94-9257-100C-7AB9-57E280CD797A}.wem"
+     },
+     {
+      "Id": "780477426",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EXPLDsgn_Explosion Impact_18_SFRMS_SCIWPNS.wav",
+      "CachePath": "FE/{FE818AFC-71E6-160F-4789-1A27AAAB5C7E}.wem"
      },
      {
       "Id": "809030593",
@@ -352,12 +424,36 @@
       "CachePath": "20/{209792C0-B883-EAF1-B0C5-5681C658C6A7}.wem"
      },
      {
+      "Id": "896497004",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Old Terminal Computing-4.wav",
+      "CachePath": "9D/{9DCF8580-C0E6-A11D-DD37-546FD3BC6308}.wem"
+     },
+     {
+      "Id": "931901667",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EXPLDsgn_Implode_04_SFRMS_SCIWPNS.wav",
+      "CachePath": "0A/{0AC8CF0C-3E55-EC4D-5E20-7A9EB51E7828}.wem"
+     },
+     {
       "Id": "957594136",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "VENGEANCEPROTOCOL - 02_Stinger_Defeat_BPREMIX.wav",
       "CachePath": "B8/{B8D08DE5-2AE2-5CC9-231E-94F0961C7318}.wem"
+     },
+     {
+      "Id": "960516792",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ROBTVox_Robot Vocalisation_02_SFRMS_SCIWPNS.wav",
+      "CachePath": "99/{99190EF4-BBAF-C900-E7CA-3A2782FBB17A}.wem"
      },
      {
       "Id": "966446192",
@@ -384,6 +480,14 @@
       "CachePath": "33/{33E61F87-FBD7-424A-242F-603939D81C95}.wem"
      },
      {
+      "Id": "979158487",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EXPLDsgn_Explosion Impact_23_SFRMS_SCIWPNS.wav",
+      "CachePath": "9F/{9FDED2EF-5D00-EAB2-C03D-75825F2A4F99}.wem"
+     },
+     {
       "Id": "988191268",
       "Language": "SFX",
       "Streaming": "false",
@@ -392,12 +496,28 @@
       "CachePath": "02/{02FA03CD-92C6-9784-C588-CBD0123F6B3B}.wem"
      },
      {
+      "Id": "1006780533",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EXPLDsgn_Implode_17_SFRMS_SCIWPNS.wav",
+      "CachePath": "1D/{1DE272E1-BC1F-818F-5EF5-4B172364768D}.wem"
+     },
+     {
       "Id": "1010170936",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Particle Scanner Loop.wav",
       "CachePath": "B5/{B5C81069-9EA4-A7FE-0529-1F23E38B6FC0}.wem"
+     },
+     {
+      "Id": "1037773656",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EXPLDsgn_Explosion Rumble Distorted_09_SFRMS_SCIWPNS.wav",
+      "CachePath": "5D/{5DB695D9-BB40-37B8-9CB5-BF734D936B06}.wem"
      }
     ],
     "Events": [
@@ -426,6 +546,72 @@
        },
        {
         "Id": "966446192"
+       }
+      ]
+     },
+     {
+      "Id": "2517757688",
+      "Name": "Enemies_FrogMinionDeath",
+      "ObjectPath": "\\Events\\Enemies\\Generic\\Enemies_FrogMinionDeath",
+      "GUID": "{30D9BD35-D34C-428A-A2BB-B5ABE1EE6506}",
+      "MaxAttenuation": "80",
+      "DurationType": "OneShot",
+      "DurationMin": "1.7205455",
+      "DurationMax": "7.8605685",
+      "MediaRefs": [
+       {
+        "Id": "14319534"
+       },
+       {
+        "Id": "99905388"
+       },
+       {
+        "Id": "162447182"
+       },
+       {
+        "Id": "231570252"
+       },
+       {
+        "Id": "345392918"
+       },
+       {
+        "Id": "519076991"
+       },
+       {
+        "Id": "529049141"
+       },
+       {
+        "Id": "587117239"
+       },
+       {
+        "Id": "698822350"
+       },
+       {
+        "Id": "709150420"
+       },
+       {
+        "Id": "751601628"
+       },
+       {
+        "Id": "780477426"
+       },
+       {
+        "Id": "896497004"
+       },
+       {
+        "Id": "931901667"
+       },
+       {
+        "Id": "960516792"
+       },
+       {
+        "Id": "979158487"
+       },
+       {
+        "Id": "1006780533"
+       },
+       {
+        "Id": "1037773656"
        }
       ]
      },
@@ -910,6 +1096,6 @@
     ]
    }
   ],
-  "FileHash": "{C4977372-776D-C298-66CE-74677EE678B9}"
+  "FileHash": "{2C11738A-8D37-FD13-9C9E-E1FF158CA8FF}"
  }
 }
