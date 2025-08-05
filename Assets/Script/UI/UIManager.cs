@@ -4,27 +4,70 @@ using UnityEngine.InputSystem;
 
 public class UIManager : MonoBehaviour
 {
+    GameObject player;
+
     // Main menu
     public GameObject settingsPanel;
 
-    // Test map
+    // Game
+    public GameObject repairPanel;
+    public GameObject powerupPanel;
+    public GameObject blueprintPanel;
 
 
-    //private  controls;
-    private InputAction _changemap;
 
     private void Start()
     {
         ShowSettings(false);
 
-        _changemap = InputSystem.actions.FindAction("SwitchMap");
+        player = GameManager.playerStatic;
     }
-    private void Update()
+
+
+
+    // GAME - PANELS
+    public void OpenRepair()
+    {
+        repairPanel.SetActive(true);
+        powerupPanel.SetActive(false);
+        blueprintPanel.SetActive(false);
+        // refresh repair
+        repairPanel.GetComponent<PanelRepair>().RefreshPanel();
+    }
+    public void OpenPowerUps()
+    {
+        repairPanel.SetActive(false);
+        powerupPanel.SetActive(true);
+        blueprintPanel.SetActive(false);
+        // refresh powerup
+        powerupPanel.GetComponent<PanelPowerup>().RefreshPanels();
+    }
+    public void OpenBlueprints()
+    {
+        repairPanel.SetActive(false);
+        powerupPanel.SetActive(false);
+        blueprintPanel.SetActive(true);
+        // refresh BP
+    }
+
+
+    
+
+    
+
+    // BLUEPRINTS
+    public void AddBP1()
+    {
+
+    }
+    public void AddBP2()
     {
 
     }
 
-    
+
+
+
 
 
     #region MainMenu

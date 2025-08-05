@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{2776FCC4-2BF5-4920-A960-29689E030F7E}" SchemaVersion="123">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{2776FCC4-2BF5-4920-A960-29689E030F7E}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="CameraDistance" ID="{C8144563-DBF2-42BB-B8C0-9006AADF189C}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="PlayerHealthValue" ID="{D76F94C3-67C5-43FF-981A-FF488ECD82E9}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="MenuAttenuation" ID="{5EE17611-8EF7-48A6-B658-2E1A4710C18F}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+						<Property Name="SlewRateDown" Type="Real64" Value="100"/>
+						<Property Name="SlewRateUp" Type="Real64" Value="100"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="PlayerMovementSpeed" ID="{1D3865F4-750F-42D5-BD11-FE5DD0470BAF}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

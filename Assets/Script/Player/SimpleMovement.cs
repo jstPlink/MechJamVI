@@ -66,12 +66,13 @@ public class SimpleMovement : MonoBehaviour
             animator.SetLayerWeight(animator.GetLayerIndex("WalkLayer"), 0f);
         }
 
-        Vector3 velocity = inputDir * movementSpeed + Vector3.up * gravity;
+        float speedPowerupMultiplier = GameManager.playerStatic.GetComponent<PlayerState>().curSpeedMultiplier;
+
+        Vector3 velocity = inputDir * movementSpeed * speedPowerupMultiplier + Vector3.up * gravity;
         _CC.Move(velocity * Time.deltaTime);
     }
     private void Update()
     {
         if (!isAttacking) HandleMovement();
-
     }
 }

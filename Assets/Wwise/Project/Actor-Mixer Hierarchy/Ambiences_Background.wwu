@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{7614687E-3D82-4EB2-B47D-1E571500C7E2}" SchemaVersion="123" RootDocumentID="{1355577E-AE4B-414F-BC05-0F4EA7E8ED25}" ParentDocumentID="{261ADBD3-7157-48AA-9ECF-E34886FC1D96}">
+	<AudioObjects>
+		<WorkUnit Name="Ambiences_Background" ID="{7614687E-3D82-4EB2-B47D-1E571500C7E2}" OwnerID="{D32563BE-2CD0-493A-A7DE-C9E7A93A8699}" PersistMode="Nested">
+			<ChildrenList>
+				<BlendContainer Name="Ambient_MainScenario" ID="{3BEB802C-40A8-4853-8010-02B31961D66B}" ShortID="395577470">
+					<PropertyList>
+						<Property Name="BlendBehavior" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Ambient_Battlefield" ID="{D5437843-E7F5-4760-86B6-CC6B5AC62A2A}" ShortID="1032946525">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-9</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="AMBWar_Battlefield Explosions Distant Loop_SFRMS_SCIWPNS" ID="{AADE7850-9CA0-44D3-A84B-171E82BF1F5E}">
+									<Language>SFX</Language>
+									<AudioFile>AMBWar_Battlefield Explosions Distant Loop_SFRMS_SCIWPNS.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="490129382"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="AMBWar_Battlefield Explosions Distant Loop_SFRMS_SCIWPNS" ID="{AADE7850-9CA0-44D3-A84B-171E82BF1F5E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Ambient_Nature" ID="{003FA1A6-4F0E-4E6D-9BE7-663AFD28EA98}" ShortID="761634869">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="AMBPubl_Area Graveyard-Loop 01_AKB00M_Ambience Fantasy" ID="{FC8B0363-67DC-4FED-B59D-C07DBA31898A}">
+									<Language>SFX</Language>
+									<AudioFile>AMBPubl_Area Graveyard-Loop 01_AKB00M_Ambience Fantasy.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="966446192"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="AMBPubl_Area Graveyard-Loop 01_AKB00M_Ambience Fantasy" ID="{FC8B0363-67DC-4FED-B59D-C07DBA31898A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</BlendContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
