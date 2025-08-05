@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 33a17e047c5d6e43aaecb799cadd4a81
     GuidInternal: 
-    m_lastTime: -8584477258650294091
+    m_lastTime: -8584471871933051656
     List: []
   - PhysicalPath: Virtual Acoustics\Factory Acoustic Textures.wwu
     PathAndIcons:
@@ -37,7 +37,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Factory Acoustic Textures
     guid: 6b663d46a83ca54f8b4a5fef12b883f6
     GuidInternal: 
-    m_lastTime: -8584477258650284096
+    m_lastTime: -8584471871933046386
     List:
     - name: Acoustic_Banner
       guid: f2532d2fccda8e408b8898b1b52a26d6
@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 64fe4fde7f893d4381e284a69f3aad98
     GuidInternal: 
-    m_lastTime: -8584477258652874599
+    m_lastTime: -8584471871933157698
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -331,7 +331,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 258ec914a376454287ffb3421b8706bc
     GuidInternal: 
-    m_lastTime: -8584477258650324102
+    m_lastTime: -8584471871933072532
     List:
     - name: ElChapo
       guid: 7a4cedaef1ef944b88d141a771cfefcf
@@ -359,7 +359,7 @@ MonoBehaviour:
     ParentPath: Events\Ambient
     guid: 47671fed19aaf84480eaff742d677ecb
     GuidInternal: 
-    m_lastTime: -8584477258652974639
+    m_lastTime: -8584471871933243390
     List:
     - name: Ambient_Background
       guid: d0d832066005bb48a7d109d8f4f6d66f
@@ -426,7 +426,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 69fe29f5f6c58b4fbb65fd940784a2f5
     GuidInternal: 
-    m_lastTime: -8584477258652974639
+    m_lastTime: -8584471871933243390
     List: []
   - PhysicalPath: Events\UI.wwu
     PathAndIcons:
@@ -439,7 +439,7 @@ MonoBehaviour:
     ParentPath: Events\UI
     guid: a09ca73b79cf8542b72e8f261f961920
     GuidInternal: 
-    m_lastTime: -8584477258652964581
+    m_lastTime: -8584471871933233392
     List:
     - name: Generic
       guid: 777d86e6d90f1a4a80e2b7bdfa536fd6
@@ -704,7 +704,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: c4fc7627f52b2049a96029689e030f7e
     GuidInternal: 
-    m_lastTime: -8584477258652964581
+    m_lastTime: -8584471871933233392
     List:
     - name: CameraDistance
       guid: 634514c8f2dbbb42b8c09006aadf189c
@@ -732,7 +732,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: c22443ecf148814ca9bb9727de7877a0
     GuidInternal: 
-    m_lastTime: -8584477258650304079
+    m_lastTime: -8584471871933062201
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -746,7 +746,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: a135530b885dfc41bccc51f66abd3c5e
     GuidInternal: 
-    m_lastTime: -8584477258650304079
+    m_lastTime: -8584471871933056997
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -760,7 +760,7 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: aa5cc4cdc3782a43b9a61d01156bde33
     GuidInternal: 
-    m_lastTime: -8584477258650294091
+    m_lastTime: -8584471871933051656
     List: []
   ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 0500000006000000070000000a0000001000000011000000
