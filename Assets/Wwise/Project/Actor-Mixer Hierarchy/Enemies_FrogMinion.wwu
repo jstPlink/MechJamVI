@@ -1,0 +1,1197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{5B6BC789-1D01-478C-AF18-E0DC160C20B5}" SchemaVersion="123" RootDocumentID="{1355577E-AE4B-414F-BC05-0F4EA7E8ED25}" ParentDocumentID="{0E6C67BA-9B5A-425C-9DF3-93F64D2FACE8}">
+	<AudioObjects>
+		<WorkUnit Name="Enemies_FrogMinion" ID="{5B6BC789-1D01-478C-AF18-E0DC160C20B5}" OwnerID="{869267B7-20A1-4BF2-9636-5E3A1F8816FE}" PersistMode="Nested">
+			<ChildrenList>
+				<ActorMixer Name="FrogMinion" ID="{286FD7C9-A204-44CC-B194-66195F290A6B}" ShortID="919569135">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="OverridePositioning" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Frog_Minion" ID="{08035439-B761-4E7F-B163-6CADF6727F87}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<BlendContainer Name="FrogMinion_OnHit" ID="{90A54544-E0D2-4D3B-962E-91930B33C5BD}" ShortID="270788082">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{8B54A755-1073-47B6-8513-F2F76A542B15}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Frog_Minion" ID="{08035439-B761-4E7F-B163-6CADF6727F87}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Player_General" ID="{8DEAAAA0-293A-43F0-A693-A2BFE6F56F6D}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Player" ID="{D1ACC032-7343-4075-91F7-9C1925733023}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="FrogMinion_OnHit_Hit" ID="{19A383B8-E049-42A4-A939-77B4CDB83745}" ShortID="216200377">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>10</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-600</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{890506AB-922B-4C24-8C55-35FD7036DF7E}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Player_General" ID="{8DEAAAA0-293A-43F0-A693-A2BFE6F56F6D}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Player" ID="{D1ACC032-7343-4075-91F7-9C1925733023}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="EXPLDsgn_Explosion Impact_02_SFRMS_SCIWPNS" ID="{A37ECE6B-DC71-4876-8208-588B6B5DD765}" ShortID="527925365">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>368</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{E9EA89DC-A97B-40EB-A58F-F575991ED599}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="200"/>
+																	<Property Name="Min" Type="Real64" Value="-200"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{C70ED531-DE77-40CD-BC8B-BC79B3E0CC38}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="3"/>
+																	<Property Name="Min" Type="Real64" Value="-1"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Player_General" ID="{8DEAAAA0-293A-43F0-A693-A2BFE6F56F6D}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Player" ID="{D1ACC032-7343-4075-91F7-9C1925733023}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="EXPLDsgn_Explosion Impact_02_SFRMS_SCIWPNS" ID="{47E7FA2F-19DB-4B13-A0FC-4AA97F0A3D59}">
+													<Language>SFX</Language>
+													<AudioFile>EXPLDsgn_Explosion Impact_02_SFRMS_SCIWPNS.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="698340496"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="EXPLDsgn_Explosion Impact_02_SFRMS_SCIWPNS" ID="{47E7FA2F-19DB-4B13-A0FC-4AA97F0A3D59}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="EXPLDsgn_Explosion Impact_04_SFRMS_SCIWPNS" ID="{3541CAB8-E546-4A21-B19B-B7D8780310B2}" ShortID="554570844">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="EXPLDsgn_Explosion Impact_04_SFRMS_SCIWPNS" ID="{B23674FB-D65D-4022-9E8C-4526739D20C0}">
+													<Language>SFX</Language>
+													<AudioFile>EXPLDsgn_Explosion Impact_04_SFRMS_SCIWPNS.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="658069730"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="EXPLDsgn_Explosion Impact_04_SFRMS_SCIWPNS" ID="{B23674FB-D65D-4022-9E8C-4526739D20C0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="EXPLDsgn_Explosion Impact_05_SFRMS_SCIWPNS" ID="{C1BF47A4-5B54-4302-8449-3D05516C580E}" ShortID="719639976">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="EXPLDsgn_Explosion Impact_05_SFRMS_SCIWPNS" ID="{B0B5F7B3-5581-488F-B6BB-46622DAED231}">
+													<Language>SFX</Language>
+													<AudioFile>EXPLDsgn_Explosion Impact_05_SFRMS_SCIWPNS.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="571316792"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="EXPLDsgn_Explosion Impact_05_SFRMS_SCIWPNS" ID="{B0B5F7B3-5581-488F-B6BB-46622DAED231}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="FrogMinion_OnHit_Speak" ID="{DDCEED9C-7548-41BF-8B04-154C8D17B1FF}" ShortID="838712258">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-400</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{262F37C0-08BF-46A9-9917-D2220A0F4CA2}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Error Metallic Thud" ID="{54222437-2757-4D55-816A-AB917366769B}" ShortID="961894330">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{EBDD3774-F01A-49D4-8BF9-50493D32474D}">
+																<PropertyList>
+																	<Property Name="Max" Type="Real64" Value="100"/>
+																	<Property Name="Min" Type="Real64" Value="-100"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Player_General" ID="{8DEAAAA0-293A-43F0-A693-A2BFE6F56F6D}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Player" ID="{D1ACC032-7343-4075-91F7-9C1925733023}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Error Metallic Thud" ID="{37A03886-9EE0-4CCA-B5BE-A01E3E1DFBC8}">
+													<Language>SFX</Language>
+													<AudioFile>Error Metallic Thud.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="231570252"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Error Metallic Thud" ID="{37A03886-9EE0-4CCA-B5BE-A01E3E1DFBC8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Error AI Voice" ID="{8FDDE4B3-BD8C-4F2E-9212-317F3B0D3D85}" ShortID="508030734">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Error AI Voice" ID="{D0977226-F752-4A56-90A1-1347CBD5E136}">
+													<Language>SFX</Language>
+													<AudioFile>Error AI Voice.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="162447182"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Error AI Voice" ID="{D0977226-F752-4A56-90A1-1347CBD5E136}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Error Metallic" ID="{50FDA65B-7650-448D-8510-322D4A93A049}" ShortID="612760218">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Error Metallic" ID="{8D99E8F4-6B0E-4804-BE79-B8B1599FEEEB}">
+													<Language>SFX</Language>
+													<AudioFile>Error Metallic.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="709150420"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Error Metallic" ID="{8D99E8F4-6B0E-4804-BE79-B8B1599FEEEB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<Sound Name="DSGNMisc_Kill Confirm Metallic_02_SFRMS_SCIWPNS" ID="{758E80E3-E34C-4358-9E53-4EEBB76CD8CF}" ShortID="399849376">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>20</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-200</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{50545629-6D4F-4556-BD1B-8D85D25C1856}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="150"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Priority" Type="int16">
+											<ValueList>
+												<Value>60</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Frog_Minion" ID="{08035439-B761-4E7F-B163-6CADF6727F87}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Enemies_General" ID="{A5216F2D-613D-40CF-A20E-5FA0F6DD5103}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Enemies" ID="{0E92CCE7-D546-45DE-B4CF-59FAC4C1AC44}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="DSGNMisc_Kill Confirm Metallic_02_SFRMS_SCIWPNS" ID="{C56ADAB2-BD7B-4918-AF3C-311CEB2CA97B}">
+											<Language>SFX</Language>
+											<AudioFile>DSGNMisc_Kill Confirm Metallic_02_SFRMS_SCIWPNS.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="481396576"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="DSGNMisc_Kill Confirm Metallic_02_SFRMS_SCIWPNS" ID="{C56ADAB2-BD7B-4918-AF3C-311CEB2CA97B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<RandomSequenceContainer Name="FrogMinion_OnHit_Glitch" ID="{0120D0A7-EE30-4300-97D4-72AC64E6DF71}" ShortID="430009757">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{FFEDC467-09A5-4533-A81D-E88B11EE923E}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="400"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="SCIMisc_Reload Alien Tech_01_SFRMS_SCIWPNS" ID="{2246DB75-30B7-4F90-9418-CD5BE757CA4E}" ShortID="567094312">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{C7C0FD01-CD80-4EE0-AF1A-D999181B3F29}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Priority" Type="int16">
+													<ValueList>
+														<Value>60</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Frog_Minion" ID="{08035439-B761-4E7F-B163-6CADF6727F87}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Enemies_General" ID="{A5216F2D-613D-40CF-A20E-5FA0F6DD5103}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Enemies" ID="{0E92CCE7-D546-45DE-B4CF-59FAC4C1AC44}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SCIMisc_Reload Alien Tech_01_SFRMS_SCIWPNS" ID="{D4CC75D0-0309-4055-83E2-8077A437466C}">
+													<Language>SFX</Language>
+													<AudioFile>SCIMisc_Reload Alien Tech_01_SFRMS_SCIWPNS.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="535694026"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SCIMisc_Reload Alien Tech_01_SFRMS_SCIWPNS" ID="{D4CC75D0-0309-4055-83E2-8077A437466C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SCIMisc_Reload Alien Tech_04_SFRMS_SCIWPNS" ID="{A6ABA566-67D4-4AAE-A3B0-0D0250F1BB32}" ShortID="314981242">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{4A885F8A-1C32-4BA9-A55B-988ECA450043}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Priority" Type="int16">
+													<ValueList>
+														<Value>60</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Frog_Minion" ID="{08035439-B761-4E7F-B163-6CADF6727F87}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Enemies_General" ID="{A5216F2D-613D-40CF-A20E-5FA0F6DD5103}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Enemies" ID="{0E92CCE7-D546-45DE-B4CF-59FAC4C1AC44}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SCIMisc_Reload Alien Tech_04_SFRMS_SCIWPNS" ID="{2D35C0ED-A7E5-4FAC-A0E2-679527269334}">
+													<Language>SFX</Language>
+													<AudioFile>SCIMisc_Reload Alien Tech_04_SFRMS_SCIWPNS.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="496989514"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SCIMisc_Reload Alien Tech_04_SFRMS_SCIWPNS" ID="{2D35C0ED-A7E5-4FAC-A0E2-679527269334}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SCIMisc_Reload Alien Tech_03_SFRMS_SCIWPNS" ID="{6793F820-D121-4059-8893-BBFB3E1D1E48}" ShortID="670337870">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{FB3ABFBC-6D4C-4A00-BB04-85DCEA5FBD2C}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Priority" Type="int16">
+													<ValueList>
+														<Value>60</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Frog_Minion" ID="{08035439-B761-4E7F-B163-6CADF6727F87}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Enemies_General" ID="{A5216F2D-613D-40CF-A20E-5FA0F6DD5103}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Enemies" ID="{0E92CCE7-D546-45DE-B4CF-59FAC4C1AC44}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SCIMisc_Reload Alien Tech_03_SFRMS_SCIWPNS" ID="{020E1A31-102C-4F02-A539-A4D3C185BB9E}">
+													<Language>SFX</Language>
+													<AudioFile>SCIMisc_Reload Alien Tech_03_SFRMS_SCIWPNS.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="124786220"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SCIMisc_Reload Alien Tech_03_SFRMS_SCIWPNS" ID="{020E1A31-102C-4F02-A539-A4D3C185BB9E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SCIMisc_Reload Alien Tech_02_SFRMS_SCIWPNS" ID="{59EE4424-11B9-4913-B2CD-8EC3AD2E4DD9}" ShortID="456141944">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{D7EA2EC4-1C56-41D2-BA8F-E1EC42A08DED}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Priority" Type="int16">
+													<ValueList>
+														<Value>60</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Frog_Minion" ID="{08035439-B761-4E7F-B163-6CADF6727F87}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Enemies_General" ID="{A5216F2D-613D-40CF-A20E-5FA0F6DD5103}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Enemies" ID="{0E92CCE7-D546-45DE-B4CF-59FAC4C1AC44}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SCIMisc_Reload Alien Tech_02_SFRMS_SCIWPNS" ID="{7B4E3332-A6CE-4873-893A-CB45272AFE0B}">
+													<Language>SFX</Language>
+													<AudioFile>SCIMisc_Reload Alien Tech_02_SFRMS_SCIWPNS.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="500236997"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SCIMisc_Reload Alien Tech_02_SFRMS_SCIWPNS" ID="{7B4E3332-A6CE-4873-893A-CB45272AFE0B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</BlendContainer>
+						<BlendContainer Name="FrogMinion_Death" ID="{5BD90EA4-D67F-4BB5-973C-3868E442609B}" ShortID="341676504">
+							<PropertyList>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{BC121D4C-BD4B-4594-A0E8-3CFF159F3EA4}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="FrogMinion_Death_Explosion" ID="{118C8B18-EE99-4BC9-9E48-AB5A9A202376}" ShortID="741016583">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{2A89D28F-B4F0-48DF-972C-0B00E6CB74B1}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="EXPLDsgn_Explosion Rumble Distorted_04_SFRMS_SCIWPNS" ID="{76B57577-6A11-4349-BC60-232EC1C0AF7B}" ShortID="347281125">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="Priority" Type="int16">
+													<ValueList>
+														<Value>60</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Frog_Minion" ID="{08035439-B761-4E7F-B163-6CADF6727F87}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Enemies_General" ID="{A5216F2D-613D-40CF-A20E-5FA0F6DD5103}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Enemies" ID="{0E92CCE7-D546-45DE-B4CF-59FAC4C1AC44}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="EXPLDsgn_Explosion Rumble Distorted_04_SFRMS_SCIWPNS" ID="{E5792507-7843-400B-A9E4-4F66AC389010}">
+													<Language>SFX</Language>
+													<AudioFile>EXPLDsgn_Explosion Rumble Distorted_04_SFRMS_SCIWPNS.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="587117239"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="EXPLDsgn_Explosion Rumble Distorted_04_SFRMS_SCIWPNS" ID="{E5792507-7843-400B-A9E4-4F66AC389010}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="EXPLDsgn_Explosion Impact_23_SFRMS_SCIWPNS" ID="{BBB2B1C6-C67C-461A-9EEE-37C5F09EB969}" ShortID="756855236">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="EXPLDsgn_Explosion Impact_23_SFRMS_SCIWPNS" ID="{080D1F0B-5104-4B3C-B40E-C78C7514A31B}">
+													<Language>SFX</Language>
+													<AudioFile>EXPLDsgn_Explosion Impact_23_SFRMS_SCIWPNS.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="979158487"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="EXPLDsgn_Explosion Impact_23_SFRMS_SCIWPNS" ID="{080D1F0B-5104-4B3C-B40E-C78C7514A31B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="EXPLDsgn_Explosion Impact_18_SFRMS_SCIWPNS" ID="{A6B22B7B-46D3-48BC-B539-923455F3FFBD}" ShortID="510142231">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="EXPLDsgn_Explosion Impact_18_SFRMS_SCIWPNS" ID="{E8F7903F-291C-4F88-907B-F2119758B712}">
+													<Language>SFX</Language>
+													<AudioFile>EXPLDsgn_Explosion Impact_18_SFRMS_SCIWPNS.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="780477426"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="EXPLDsgn_Explosion Impact_18_SFRMS_SCIWPNS" ID="{E8F7903F-291C-4F88-907B-F2119758B712}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="EXPLDsgn_Implode_17_SFRMS_SCIWPNS" ID="{DEF3ED9D-EB62-4DD7-B062-A9AC7848082E}" ShortID="802921399">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="EXPLDsgn_Implode_17_SFRMS_SCIWPNS" ID="{DF130D8E-6040-492C-8062-2D22D272668C}">
+													<Language>SFX</Language>
+													<AudioFile>EXPLDsgn_Implode_17_SFRMS_SCIWPNS.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1006780533"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="EXPLDsgn_Implode_17_SFRMS_SCIWPNS" ID="{DF130D8E-6040-492C-8062-2D22D272668C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="EXPLDsgn_Implode_14_SFRMS_SCIWPNS" ID="{B920C4E8-B294-49C6-8D93-5CBFC771DB73}" ShortID="601793193">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="EXPLDsgn_Implode_14_SFRMS_SCIWPNS" ID="{C1428C26-5427-4E09-B658-4DEC6617199D}">
+													<Language>SFX</Language>
+													<AudioFile>EXPLDsgn_Implode_14_SFRMS_SCIWPNS.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="529049141"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="EXPLDsgn_Implode_14_SFRMS_SCIWPNS" ID="{C1428C26-5427-4E09-B658-4DEC6617199D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="EXPLDsgn_Implode_04_SFRMS_SCIWPNS" ID="{0920C8AF-32F7-40FD-9C0F-E0B4699E2948}" ShortID="973769915">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="EXPLDsgn_Implode_04_SFRMS_SCIWPNS" ID="{FC6F9846-C4DB-4197-AB24-C7F05D2E1D41}">
+													<Language>SFX</Language>
+													<AudioFile>EXPLDsgn_Implode_04_SFRMS_SCIWPNS.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="931901667"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="EXPLDsgn_Implode_04_SFRMS_SCIWPNS" ID="{FC6F9846-C4DB-4197-AB24-C7F05D2E1D41}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="EXPLDsgn_Implode_16_SFRMS_SCIWPNS" ID="{B000FCED-6B1C-41F7-B870-A50221053CE8}" ShortID="219759472">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="EXPLDsgn_Implode_16_SFRMS_SCIWPNS" ID="{F671ADCF-F45C-4F3A-B70C-BA3ABC07FE78}">
+													<Language>SFX</Language>
+													<AudioFile>EXPLDsgn_Implode_16_SFRMS_SCIWPNS.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="751601628"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="EXPLDsgn_Implode_16_SFRMS_SCIWPNS" ID="{F671ADCF-F45C-4F3A-B70C-BA3ABC07FE78}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="EXPLDsgn_Explosion Rumble Distorted_09_SFRMS_SCIWPNS" ID="{ED4F2FCA-D02A-4C5A-9DA8-1F74549BC735}" ShortID="1058688195">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="EXPLDsgn_Explosion Rumble Distorted_09_SFRMS_SCIWPNS" ID="{B94AB718-F874-4CF6-8B53-22D41D901508}">
+													<Language>SFX</Language>
+													<AudioFile>EXPLDsgn_Explosion Rumble Distorted_09_SFRMS_SCIWPNS.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1037773656"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="EXPLDsgn_Explosion Rumble Distorted_09_SFRMS_SCIWPNS" ID="{B94AB718-F874-4CF6-8B53-22D41D901508}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="FrogMinion_Death_Speak" ID="{3722A546-6CEE-45AA-B860-E880A54A0D97}" ShortID="1006418243">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-400</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{883B04C3-2E31-4186-B3A0-D97B722262F3}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Error Metallic Thud" ID="{C19D8A34-F6CA-47A0-A14B-E62AC71FA4FD}" ShortID="663149813">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{D8F14BCD-58B6-457E-A7C1-4A5C55C1C45E}">
+																<PropertyList>
+																	<Property Name="Max" Type="Real64" Value="100"/>
+																	<Property Name="Min" Type="Real64" Value="-100"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Player_General" ID="{8DEAAAA0-293A-43F0-A693-A2BFE6F56F6D}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Player" ID="{D1ACC032-7343-4075-91F7-9C1925733023}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Error Metallic Thud" ID="{C9F32424-48FA-4D52-85A4-EC493BE0834A}">
+													<Language>SFX</Language>
+													<AudioFile>Error Metallic Thud.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="231570252"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Error Metallic Thud" ID="{C9F32424-48FA-4D52-85A4-EC493BE0834A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Error AI Voice" ID="{6DE865CB-3DB7-4A49-AF87-823CCB481C1B}" ShortID="748271870">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{C4254E66-7154-4DA3-B428-CF66AEA23AEC}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Error AI Voice" ID="{BB3BFF9E-046E-4BB4-8F21-72C9222FCC6B}">
+													<Language>SFX</Language>
+													<AudioFile>Error AI Voice.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="162447182"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Error AI Voice" ID="{BB3BFF9E-046E-4BB4-8F21-72C9222FCC6B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Error Metallic" ID="{20CD92FD-DABD-42C6-A4C2-AFE493A1C2F2}" ShortID="69890626">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Error Metallic" ID="{0D4670A8-EFB5-4FDD-A4F2-1A0EFCD1F4C8}">
+													<Language>SFX</Language>
+													<AudioFile>Error Metallic.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="709150420"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Error Metallic" ID="{0D4670A8-EFB5-4FDD-A4F2-1A0EFCD1F4C8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<RandomSequenceContainer Name="Death_Speak_Layer1" ID="{0D6339CE-8003-4BEF-B8D9-A76E9B1E56F4}" ShortID="466836378">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Old Terminal Computing-1" ID="{1E3F6D00-C79B-4743-83A5-3076B21DB155}" ShortID="991484524">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="Priority" Type="int16">
+															<ValueList>
+																<Value>60</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Frog_Minion" ID="{08035439-B761-4E7F-B163-6CADF6727F87}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Enemies_General" ID="{A5216F2D-613D-40CF-A20E-5FA0F6DD5103}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Enemies" ID="{0E92CCE7-D546-45DE-B4CF-59FAC4C1AC44}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Old Terminal Computing-1" ID="{FC8FEE30-6771-43D4-864F-3096AA23E312}">
+															<Language>SFX</Language>
+															<AudioFile>Old Terminal Computing-1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="345392918"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Old Terminal Computing-1" ID="{FC8FEE30-6771-43D4-864F-3096AA23E312}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Old Terminal Computing-4" ID="{94CCC5A7-48AC-4588-8099-EB9E614F65FD}" ShortID="660657060">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="Priority" Type="int16">
+															<ValueList>
+																<Value>60</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Frog_Minion" ID="{08035439-B761-4E7F-B163-6CADF6727F87}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Enemies_General" ID="{A5216F2D-613D-40CF-A20E-5FA0F6DD5103}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Enemies" ID="{0E92CCE7-D546-45DE-B4CF-59FAC4C1AC44}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Old Terminal Computing-4" ID="{6ACCF856-8F80-4A0B-AEAE-5B1D11173600}">
+															<Language>SFX</Language>
+															<AudioFile>Old Terminal Computing-4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="896497004"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Old Terminal Computing-4" ID="{6ACCF856-8F80-4A0B-AEAE-5B1D11173600}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Old Terminal Computing-2" ID="{038C3A02-B0E1-4258-9EC4-C0E2E11D35D8}" ShortID="556853408">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="Priority" Type="int16">
+															<ValueList>
+																<Value>60</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Frog_Minion" ID="{08035439-B761-4E7F-B163-6CADF6727F87}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Enemies_General" ID="{A5216F2D-613D-40CF-A20E-5FA0F6DD5103}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Enemies" ID="{0E92CCE7-D546-45DE-B4CF-59FAC4C1AC44}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Old Terminal Computing-2" ID="{49D641AD-1922-449A-A5E7-3BCE88BC8008}">
+															<Language>SFX</Language>
+															<AudioFile>Old Terminal Computing-2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="14319534"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Old Terminal Computing-2" ID="{49D641AD-1922-449A-A5E7-3BCE88BC8008}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Old Terminal Computing-3" ID="{FD5A7E5C-7BB7-4B94-8398-F38389CEB25B}" ShortID="332782058">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="Priority" Type="int16">
+															<ValueList>
+																<Value>60</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Frog_Minion" ID="{08035439-B761-4E7F-B163-6CADF6727F87}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Enemies_General" ID="{A5216F2D-613D-40CF-A20E-5FA0F6DD5103}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Enemies" ID="{0E92CCE7-D546-45DE-B4CF-59FAC4C1AC44}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Old Terminal Computing-3" ID="{DA3D7FAB-D432-4259-84E3-D8A8FC6D378C}">
+															<Language>SFX</Language>
+															<AudioFile>Old Terminal Computing-3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="99905388"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Old Terminal Computing-3" ID="{DA3D7FAB-D432-4259-84E3-D8A8FC6D378C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Death_Speak_Layer2" ID="{076B2C8D-5A59-4596-B5DF-AAF661182CFF}" ShortID="989361737">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{CB929CC9-11B5-4ECF-A78D-31A6B6251D0F}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="500"/>
+																	<Property Name="Min" Type="Real64" Value="-500"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="ROBTVox_Robot Vocalisation_03_SFRMS_SCIWPNS" ID="{7E6FBB82-7E98-4EA0-BF1E-1EEB1024353B}" ShortID="777167262">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="Priority" Type="int16">
+															<ValueList>
+																<Value>60</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Frog_Minion" ID="{08035439-B761-4E7F-B163-6CADF6727F87}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Enemies_General" ID="{A5216F2D-613D-40CF-A20E-5FA0F6DD5103}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Enemies" ID="{0E92CCE7-D546-45DE-B4CF-59FAC4C1AC44}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ROBTVox_Robot Vocalisation_03_SFRMS_SCIWPNS" ID="{32342918-24B5-4274-A8BD-B7C684D45B1E}">
+															<Language>SFX</Language>
+															<AudioFile>ROBTVox_Robot Vocalisation_03_SFRMS_SCIWPNS.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="698822350"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ROBTVox_Robot Vocalisation_03_SFRMS_SCIWPNS" ID="{32342918-24B5-4274-A8BD-B7C684D45B1E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="ROBTVox_Robot Vocalisation_02_SFRMS_SCIWPNS" ID="{075DCE1F-EA47-4353-81E7-ABEB360832CA}" ShortID="1009900126">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="Priority" Type="int16">
+															<ValueList>
+																<Value>60</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Frog_Minion" ID="{08035439-B761-4E7F-B163-6CADF6727F87}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Enemies_General" ID="{A5216F2D-613D-40CF-A20E-5FA0F6DD5103}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Enemies" ID="{0E92CCE7-D546-45DE-B4CF-59FAC4C1AC44}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ROBTVox_Robot Vocalisation_02_SFRMS_SCIWPNS" ID="{63064BBE-E2AE-4C7B-89E1-40823D8BCBA6}">
+															<Language>SFX</Language>
+															<AudioFile>ROBTVox_Robot Vocalisation_02_SFRMS_SCIWPNS.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="960516792"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ROBTVox_Robot Vocalisation_02_SFRMS_SCIWPNS" ID="{63064BBE-E2AE-4C7B-89E1-40823D8BCBA6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="ROBTVox_Robot Vocalisation_01_SFRMS_SCIWPNS" ID="{D3D02555-4024-447D-B881-C003190ED724}" ShortID="839047111">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="Priority" Type="int16">
+															<ValueList>
+																<Value>60</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Frog_Minion" ID="{08035439-B761-4E7F-B163-6CADF6727F87}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Enemies_General" ID="{A5216F2D-613D-40CF-A20E-5FA0F6DD5103}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Enemies" ID="{0E92CCE7-D546-45DE-B4CF-59FAC4C1AC44}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ROBTVox_Robot Vocalisation_01_SFRMS_SCIWPNS" ID="{92C17243-E9E2-4116-9B1D-D90D5B4A27E2}">
+															<Language>SFX</Language>
+															<AudioFile>ROBTVox_Robot Vocalisation_01_SFRMS_SCIWPNS.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="519076991"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ROBTVox_Robot Vocalisation_01_SFRMS_SCIWPNS" ID="{92C17243-E9E2-4116-9B1D-D90D5B4A27E2}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</BlendContainer>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

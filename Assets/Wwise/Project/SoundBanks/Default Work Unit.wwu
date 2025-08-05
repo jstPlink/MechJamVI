@@ -7,6 +7,7 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="UI" ID="{3BA79CA0-CF79-4285-B72E-8F261F961920}" WorkUnitID="{3BA79CA0-CF79-4285-B72E-8F261F961920}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Ambient" ID="{ED1F6747-AA19-44F8-80EA-FF742D677ECB}" WorkUnitID="{ED1F6747-AA19-44F8-80EA-FF742D677ECB}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Enemies" ID="{01BCB165-6002-4734-858C-985142756AE5}" WorkUnitID="{01BCB165-6002-4734-858C-985142756AE5}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Music" ID="{E3E91FDB-7795-4C87-ACF9-C1D503741540}" WorkUnitID="{E3E91FDB-7795-4C87-ACF9-C1D503741540}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Player" ID="{272E8B64-1CF4-4F67-BCC4-EFD93A3D7E05}" WorkUnitID="{272E8B64-1CF4-4F67-BCC4-EFD93A3D7E05}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>

@@ -55,6 +55,7 @@
 						<Switch Name="Metal" ID="{7C69D30C-B2FE-4C30-9B52-CAE5BCB17FCE}"/>
 						<Switch Name="Sand" ID="{0F9E3219-F486-411F-9BD5-F306B189D7AE}"/>
 						<Switch Name="Foliage" ID="{06543C8A-18B2-43D1-9820-6BB87E1AC2ED}"/>
+						<Switch Name="Enemy_FrogMinion" ID="{B1DF88C4-55E6-4E2D-9C68-3A08FFA7CB6E}"/>
 					</ChildrenList>
 				</SwitchGroup>
 			</ChildrenList>

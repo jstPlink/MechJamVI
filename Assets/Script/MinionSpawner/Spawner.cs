@@ -5,6 +5,7 @@ public class Spawner : MonoBehaviour
 {
     [Header("Prefab e punto di spawn")]
     public GameObject minion;
+    public Base_Behaviour _bh;
     [HideInInspector] public Minion myMinion;
 
     [Header("Tempi di spawn")]
@@ -15,21 +16,29 @@ public class Spawner : MonoBehaviour
 
     void Start()
     {
+        _bh = GetComponentInParent<Base_Behaviour>();
         spawnCoroutine = StartCoroutine(SpawnRoutine());
     }
 
     IEnumerator SpawnRoutine()
     {
         // Attende un tempo casuale iniziale
-        float initialDelay = Random.Range(spawnTimeRange.x, spawnTimeRange.y);
-        yield return new WaitForSeconds(initialDelay);
-
-        while (myMinion == null)
+        if (_bh._owner != Base_Behaviour.Status.Ally)
         {
-            Spawn();
+            float initialDelay = Random.Range(spawnTimeRange.x, spawnTimeRange.y);
+            yield return new WaitForSeconds(initialDelay);
 
-            yield return new WaitForSeconds(spawnInterval);
+            while (myMinion == null)
+            {
+                Spawn();
+
+                //yield return new WaitForSeconds(spawnInterval);
+            }
         }
+        // Se il minion è valido fai ripartire il check
+        // Se il minion non era valido lo ha spawnato e dopo aver aspettato un po aspetta di nuovo e riparte il check
+        yield return new WaitForSeconds(spawnInterval);
+        StartCoroutine(SpawnRoutine());
     }
 
     void Spawn()

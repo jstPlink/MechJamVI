@@ -52,6 +52,10 @@
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
+							<GameParameterRef Name="MusicStinger" ID="{1FB9D3B4-EA6E-4039-8D23-8F4D81199BC1}"/>
+							<Value>-48</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="PlayerMovementSpeed" ID="{1D3865F4-750F-42D5-BD11-FE5DD0470BAF}"/>
 							<Value>0</Value>
 						</RTPCValue>
@@ -117,6 +121,14 @@
 							<Position X="2" Y="2"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="UI_Mission_BaseLost" ID="{49A07809-EF7C-4D69-8881-99FC36CDCFD6}" WorkUnitID="{3BA79CA0-CF79-4285-B72E-8F261F961920}"/>
+							<Position X="2" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Music_MainScenario" ID="{7BE7A7C2-5EB8-43C1-962D-13A2206A67CC}" WorkUnitID="{E3E91FDB-7795-4C87-ACF9-C1D503741540}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="UI_Button_StartGame" ID="{47D1696A-42DD-4F2F-A16C-7710C2B2670D}" WorkUnitID="{3BA79CA0-CF79-4285-B72E-8F261F961920}"/>
 							<Position X="3" Y="1"/>
 						</Module>
@@ -124,8 +136,28 @@
 							<ObjectRef Name="UI_Maintenance_Repair" ID="{9F24FB75-8B03-4009-AE60-C03E863CCDF5}" WorkUnitID="{3BA79CA0-CF79-4285-B72E-8F261F961920}"/>
 							<Position X="3" Y="2"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="UI_Mission_BaseWon" ID="{3F88E5CE-433A-4F0A-BF80-932FB81F4D51}" WorkUnitID="{3BA79CA0-CF79-4285-B72E-8F261F961920}"/>
+							<Position X="3" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Enemies_FrogMinionOnHit" ID="{3C6B4B83-C0C5-4C53-B195-B1B594D0376F}" WorkUnitID="{01BCB165-6002-4734-858C-985142756AE5}"/>
+							<Position X="4" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Player_Attack_Light1" ID="{0C0432D9-D97C-4F3E-8203-61E357B965B4}" WorkUnitID="{272E8B64-1CF4-4F67-BCC4-EFD93A3D7E05}"/>
+							<Position X="4" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Player_Attack_Light2" ID="{792C6D19-B782-455A-B28D-D254B0797756}" WorkUnitID="{272E8B64-1CF4-4F67-BCC4-EFD93A3D7E05}"/>
+							<Position X="4" Y="2"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="MusicStinger" ID="{1FB9D3B4-EA6E-4039-8D23-8F4D81199BC1}"/>
+							<Value>-48</Value>
+						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="PlayerHealthValue" ID="{D76F94C3-67C5-43FF-981A-FF488ECD82E9}"/>
 							<Value>100</Value>
@@ -138,6 +170,7 @@
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="PlayerHealth100" ID="{0DE56D8A-2075-46D7-8469-12F39C913C63}"/>
+						<CurrentSwitchRef Name="Dirt" ID="{A6C5B0F6-803A-42D8-9326-1F84FFF4751C}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

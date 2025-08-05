@@ -142,6 +142,48 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="UI_Mission_BaseLost" ID="{49A07809-EF7C-4D69-8881-99FC36CDCFD6}">
+							<ChildrenList>
+								<Action Name="" ID="{5366E426-00EE-4321-9F68-6F681DFDA6C5}" ShortID="706194814">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BaseLost" ID="{294FA14E-DDDC-4481-940E-48DAD9D61487}" WorkUnitID="{6726047F-A115-4747-A3EB-754F447B6465}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{0FCEBDAD-24F8-407D-BA6C-DE3EB02EB870}" ShortID="1013461342">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="35"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music_StingerDefeat" ID="{4B3ABBF4-7050-433F-92AB-36E58B6A3AFC}" WorkUnitID="{CDC45CAA-78C3-432A-B9A6-1D01156BDE33}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="UI_Mission_BaseWon" ID="{3F88E5CE-433A-4F0A-BF80-932FB81F4D51}">
+							<ChildrenList>
+								<Action Name="" ID="{973FAC81-5E91-47B7-BAD5-E218A536897B}" ShortID="227845194">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BaseWon" ID="{E5959718-68EF-43CD-A88E-D65DA7B00D44}" WorkUnitID="{6726047F-A115-4747-A3EB-754F447B6465}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{2E92762F-5F57-4AAA-900A-1D3ED40ECA6D}" ShortID="308621853">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="35"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music_StingerVictory" ID="{9A46672A-0F22-4BB4-99DF-0D6C74BBEDA5}" WorkUnitID="{CDC45CAA-78C3-432A-B9A6-1D01156BDE33}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

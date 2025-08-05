@@ -13,14 +13,14 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Music_MainScenario" ID="{83096F49-CB7A-46F8-B17F-D619B92CCD30}" WorkUnitID="{98BF9162-79E8-4069-A9C7-B29074F5DA63}"/>
+											<ObjectRef Name="Music_Main" ID="{9E3AC428-7CE3-45EA-A7DE-CD2194A8F215}" WorkUnitID="{98BF9162-79E8-4069-A9C7-B29074F5DA63}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 								<Action Name="" ID="{687AE0A6-0193-4643-B9B8-8215613410DB}" ShortID="631543164">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Music_MainScenario" ID="{83096F49-CB7A-46F8-B17F-D619B92CCD30}" WorkUnitID="{98BF9162-79E8-4069-A9C7-B29074F5DA63}"/>
+											<ObjectRef Name="Music_Main" ID="{9E3AC428-7CE3-45EA-A7DE-CD2194A8F215}" WorkUnitID="{98BF9162-79E8-4069-A9C7-B29074F5DA63}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

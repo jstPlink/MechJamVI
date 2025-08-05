@@ -4,6 +4,13 @@
 		<WorkUnit Name="Default Work Unit" ID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}" PersistMode="Standalone">
 			<ChildrenList>
 				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-3</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
 							<ObjectRef Name="System" ID="{1FABF7CB-6BCB-4241-B982-21999973A7B8}" WorkUnitID="{B272867E-5CA6-429B-B88E-5239EE469735}"/>
@@ -18,6 +25,13 @@
 								<Bus Name="Objects" ID="{99155C85-7257-47AF-B264-DDBE230D11DF}"/>
 							</ChildrenList>
 							<ObjectLists>
+								<ObjectList Name="Effects">
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{2A532F3A-7E5F-49F0-B599-1CADC2338F07}" ShortID="726611543"/>
+										</Local>
+									</Reference>
+								</ObjectList>
 								<ObjectList Name="RTPC">
 									<Reference>
 										<Local>
@@ -103,8 +117,70 @@
 											</ValueList>
 										</Property>
 									</PropertyList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{8CE92EE8-3A66-484C-BABF-9EF4C5926566}" ShortID="303449706">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Volume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="MusicStinger" ID="{1FB9D3B4-EA6E-4039-8D23-8F4D81199BC1}" WorkUnitID="{2776FCC4-2BF5-4920-A960-29689E030F7E}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{5E3DEE0A-234C-49DE-BBDB-D42055AB2298}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>-48</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																				<SegmentShape>Log2</SegmentShape>
+																			</Point>
+																			<Point>
+																				<XPos>-41.999</XPos>
+																				<YPos>-24</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
 								</Bus>
 								<Bus Name="UI" ID="{549C6616-EF25-4463-A395-48E566B18282}"/>
+								<Bus Name="Music_Stinger" ID="{4951B8F7-3389-495E-A5EE-000020CFB435}">
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<Reference>
+												<Local>
+													<EffectSlot Name="" ID="{D75EA0BF-BD7E-4196-8D70-4881A52C732E}" ShortID="257627704">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+																<ObjectRef Name="Music_SideChain" ID="{1FA39EAF-47CA-4D6C-8040-FAE42D2FFBE3}" WorkUnitID="{184652B6-9723-4760-A254-B1D8D79DA367}"/>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</Bus>
 							</ChildrenList>
 						</Bus>
 					</ChildrenList>

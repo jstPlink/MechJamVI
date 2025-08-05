@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{01BCB165-6002-4734-858C-985142756AE5}" SchemaVersion="123">
+	<Events>
+		<WorkUnit Name="Enemies" ID="{01BCB165-6002-4734-858C-985142756AE5}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Generic" ID="{0AB647AB-B070-4112-8F1B-146D0CFE63CB}" ShortID="249113648">
+					<ChildrenList>
+						<Event Name="Enemies_FrogMinionOnHit" ID="{3C6B4B83-C0C5-4C53-B195-B1B594D0376F}">
+							<ChildrenList>
+								<Action Name="" ID="{F44E875F-F556-496C-A0D7-9385832414EE}" ShortID="1024951437">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FrogMinion_OnHit" ID="{90A54544-E0D2-4D3B-962E-91930B33C5BD}" WorkUnitID="{5B6BC789-1D01-478C-AF18-E0DC160C20B5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Enemies_FrogMinionDeath" ID="{30D9BD35-D34C-428A-A2BB-B5ABE1EE6506}">
+							<ChildrenList>
+								<Action Name="" ID="{CDDD06F1-C651-4FD4-8E89-95C4416FF533}" ShortID="961281855">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FrogMinion_Death" ID="{5BD90EA4-D67F-4BB5-973C-3868E442609B}" WorkUnitID="{5B6BC789-1D01-478C-AF18-E0DC160C20B5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

@@ -27,6 +27,54 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Player_Attack_Light1" ID="{0C0432D9-D97C-4F3E-8203-61E357B965B4}">
+							<ChildrenList>
+								<Action Name="" ID="{46D6131A-BF04-40EE-A844-6F1D0295CD66}" ShortID="247999571">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Player_LightAttack_1" ID="{1D0A8B5E-10E4-44B2-89D2-DA9095132B91}" WorkUnitID="{3D244E8C-9103-4ED4-B110-56E962BB6EF5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Player_Attack_Light2" ID="{792C6D19-B782-455A-B28D-D254B0797756}">
+							<ChildrenList>
+								<Action Name="" ID="{A92308F9-0124-4B8A-839A-7377E517047C}" ShortID="343203074">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Player_LightAttack_2" ID="{D317160B-8C09-4FE8-B3EF-0294A73B2689}" WorkUnitID="{3D244E8C-9103-4ED4-B110-56E962BB6EF5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Folder Name="Player_Attack_Heavy" ID="{D58A8AA2-9301-4414-A6F1-3AD8F121C53A}" ShortID="631456359">
+							<ChildrenList>
+								<Event Name="Player_Attack_Heavy_Impact" ID="{A371701F-AD0E-497B-B536-85DDB5E58BA6}">
+									<ChildrenList>
+										<Action Name="" ID="{D7D7BCDA-A57D-4024-8FC7-FAD68E057781}" ShortID="312927702">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Player_HeavyAttack_Impact" ID="{939D7583-C11C-4F23-AA05-95E480CACA67}" WorkUnitID="{3D244E8C-9103-4ED4-B110-56E962BB6EF5}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Player_Attack_Heavy_Jump" ID="{30B47C42-26EA-4D94-82B4-67F7DD394250}">
+									<ChildrenList>
+										<Action Name="" ID="{C9B16736-B273-486F-AF6A-70ABD7A18221}" ShortID="314650801">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Player_HeavyAttack_Jump" ID="{E26BF32D-5054-4A10-82D3-84A8F9D64342}" WorkUnitID="{3D244E8C-9103-4ED4-B110-56E962BB6EF5}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

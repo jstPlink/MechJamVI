@@ -1,0 +1,111 @@
+Event	ID	Name			Wwise Object Path	Notes
+	26115229	UI_Maintenance_Repair			\UI\Maintenance\UI_Maintenance_Repair	
+	120049226	UI_Maintenance_PowerUp			\UI\Maintenance\UI_Maintenance_PowerUp	
+	263695675	Ambient_MainScenario			\Ambient\Generic\Ambient_MainScenario	
+	541470702	Player_Movement			\Player\PlayerStatus\Player_Movement	
+	596226124	Enemies_FrogMinionOnHit			\Enemies\Generic\Enemies_FrogMinionOnHit	
+	620449730	UI_Mission_BaseLost			\UI\Mission\UI_Mission_BaseLost	
+	701705398	UI_Maintenance_Open			\UI\Maintenance\UI_Maintenance_Open	
+	916601097	UI_Button_StartGame			\UI\Generic\UI_Button_StartGame	
+	1098067136	UI_Button_Denied			\UI\Generic\UI_Button_Denied	
+	1175031056	UI_Mission_BaseWon			\UI\Mission\UI_Mission_BaseWon	
+	1419702340	Music_MainScenario			\Music\BGMLV1\Music_MainScenario	
+	1598004116	UI_Button_Back			\UI\Generic\UI_Button_Back	
+	1664509575	UI_Button_Click			\UI\Generic\UI_Button_Click	
+	1676561250	UI_Maintenance_Close			\UI\Maintenance\UI_Maintenance_Close	
+	2517757688	Enemies_FrogMinionDeath			\Enemies\Generic\Enemies_FrogMinionDeath	
+	2793622033	Player_Attack_Light1			\Player\PlayerStatus\Player_Attack_Light1	
+	2793622034	Player_Attack_Light2			\Player\PlayerStatus\Player_Attack_Light2	
+	2923944706	Player_Attack_Heavy_Impact			\Player\PlayerStatus\Player_Attack_Heavy\Player_Attack_Heavy_Impact	
+	2991794566	UI_Mission_TargetPopUp			\UI\Mission\UI_Mission_TargetPopUp	
+	3983137402	Ambient_EnergyField			\Ambient\Generic\Ambient_EnergyField	
+	4105981504	Player_Attack_Heavy_Jump			\Player\PlayerStatus\Player_Attack_Heavy\Player_Attack_Heavy_Jump	
+	4240862283	Player_CautionAlarm			\Player\PlayerStatus\Player_CautionAlarm	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	206614296	PlayerHealthSwitch			\Default Work Unit\PlayerHealthSwitch	
+
+Switch	ID	Name	Switch Group			Notes
+	1619908955	PlayerHealth50	PlayerHealthSwitch			
+	1703797114	PlayerHealth20	PlayerHealthSwitch			
+	3528909237	PlayerHealth100	PlayerHealthSwitch			
+
+State Group	ID	Name			Wwise Object Path	Notes
+	748895195	None			\Default Work Unit\None	
+
+State	ID	Name	State Group			Notes
+	748895195	None	None			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	2557281390	PlayerMovementSpeed			\Default Work Unit\PlayerMovementSpeed	
+	2774557527	PlayerHealthValue			\Default Work Unit\PlayerHealthValue	
+
+Trigger	ID	Name			Wwise Object Path	Notes
+	1385723609	Music_StingerVictory			\Default Work Unit\Music_StingerVictory	
+	1723656556	Music_StingerDefeat			\Default Work Unit\Music_StingerDefeat	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	402570	Player_HeavyAttack_Jump	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\A5\{A5A884E2-174C-9AE1-79AE-B567F7D4F12E}.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Melee\Player_HeavyAttack\Player_HeavyAttack_Jump		9593
+	14319534	Old Terminal Computing-2	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\0A\{0AAB8F8C-B8C2-BF84-D849-ECE8F73AA35F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Enemies\Enemies\Enemies_FrogMinion\FrogMinion\FrogMinion_Death\FrogMinion_Death_Speak\Death_Speak_Layer1\Old Terminal Computing-2		15643
+	64498864	TargetPopUp	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\54\{54F44EC7-D1C1-F281-8E57-D5E20DFA3180}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non_World\UI\UI\TargetPopUp\TargetPopUp		9378
+	78534883	Button_Denied	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\34\{3463B9E3-48B9-CDF0-5663-2E5B3CF53387}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non_World\UI\UI\Button\Button_Denied		42432
+	88260462	VENGEANCEPROTOCOL - 01_Stinger_Victory_APREMIX	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\A0\{A039D22D-E8F9-2731-B528-98BD3C217986}.wem		\Interactive Music Hierarchy\Music\Music_Stinger_Victory\VENGEANCEPROTOCOL - 01_Stinger_Victory_APREMIX		1364308
+	99905388	Old Terminal Computing-3	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\3D\{3DBC4A72-6994-7875-B1D8-CA646C11C0D0}.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Enemies\Enemies\Enemies_FrogMinion\FrogMinion\FrogMinion_Death\FrogMinion_Death_Speak\Death_Speak_Layer1\Old Terminal Computing-3		21265
+	104298631	Holographic Interaction-20	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\7E\{7EB24ED0-1471-56D0-A9C0-83BAFCCD59CF}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non_World\UI\UI\BaseStatus\BaseWon\Holographic Interaction-20		32577
+	121838931	Button_Click	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\31\{31F1C8C1-2037-56C5-B4BC-66792DFF4750}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non_World\UI\UI\Button\Button_Click		30200
+	153090760	FUI Holo Mechanism Activate	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\21\{21802983-B869-1FFC-861F-D6385A233073}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non_World\UI\UI\Maintenance_Screen\Powerup_BP\FUI Holo Mechanism Activate		17208
+	159409977	Button_Back	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\72\{72E26C78-6FB4-D052-E58C-8E5689BA8C62}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non_World\UI\UI\Button\Button_Back		3361
+	162447182	Error AI Voice	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\BB\{BB376865-9B80-5FD8-A963-8137F02A8522}.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Enemies\Enemies\Enemies_FrogMinion\FrogMinion\FrogMinion_OnHit\FrogMinion_OnHit_Speak\Error AI Voice		6301
+	177389884	Holographic Interaction-22	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\13\{131F91A8-37F9-99AD-A636-D593F83C555F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non_World\UI\UI\BaseStatus\BaseWon\Holographic Interaction-22		28705
+	196575134	VENGEANCEPROTOCOL - 00_Scenario_MatrixPREMIX	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\50\{500D011B-0888-8760-F19A-D6F5C1E32823}.wem		\Interactive Music Hierarchy\Music\Music_Main\Music_MainScenario\Scenario\VENGEANCEPROTOCOL - 00_Scenario_MatrixPREMIX		3515764
+	226300041	StartGame	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\B4\{B4783A23-0FF8-5271-8FF2-3FAE3E957726}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non_World\UI\UI\StartGame\StartGame		35529
+	231570252	Error Metallic Thud	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\CB\{CBF0CEE0-6C5F-B7F5-C827-AE334A38813B}.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Enemies\Enemies\Enemies_FrogMinion\FrogMinion\FrogMinion_OnHit\FrogMinion_OnHit_Speak\Error Metallic Thud		6265
+	279072042	EXPLDsgn_Explosion Impact_13_SFRMS_SCIWPNS	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\34\{3423B36E-A257-7ACB-E98F-A8E827A96FDE}.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Melee\Player_HeavyAttack\Player_HeavyAttack_Impact\EXPLDsgn_Explosion Impact_13_SFRMS_SCIWPNS		7479
+	306019051	Holographic Interaction-23	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\11\{11502654-C1E1-1C9C-6DCB-299DD8D1BF1D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non_World\UI\UI\BaseStatus\BaseWon\Holographic Interaction-23		26497
+	323913972	813079__audiopapkin__sound-design-elements-robot-mechanism-020	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\B2\{B2413265-EE97-0538-2A5B-9C8D2CFD7F1F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Melee\Player_LightAttack_1\Player_LightAttack_1_Servo\813079__audiopapkin__sound-design-elements-robot-mechanism-020		9866
+	345392918	Old Terminal Computing-1	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\CE\{CEC4007E-1F54-46B7-6FDC-BDAF3AA7DBD2}.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Enemies\Enemies\Enemies_FrogMinion\FrogMinion\FrogMinion_Death\FrogMinion_Death_Speak\Death_Speak_Layer1\Old Terminal Computing-1		16669
+	370360480	Screen_Noise	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\1F\{1F6A87F5-4BF6-AA01-500D-76949B36A2AB}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non_World\UI\UI\Maintenance_Screen\Screen_Explore\Screen_Noise		24797
+	401044624	813073__audiopapkin__sound-design-elements-robot-mechanism-014	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\87\{87788FD1-6071-1024-828A-A862F1A2F1BC}.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Melee\Player_LightAttack_1\Player_LightAttack_1_Servo\813073__audiopapkin__sound-design-elements-robot-mechanism-014		11526
+	471240038	Holographic Interaction-24	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\99\{992F8DCF-2FF6-6B00-338F-C497EE748196}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non_World\UI\UI\BaseStatus\BaseWon\Holographic Interaction-24		36575
+	471952270	EXPLDsgn_Explosion Impact_14_SFRMS_SCIWPNS	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\82\{82DD25CB-07B0-5EC0-82D3-262B1A86224D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Melee\Player_HeavyAttack\Player_HeavyAttack_Impact\EXPLDsgn_Explosion Impact_14_SFRMS_SCIWPNS		11026
+	472738727	VENGEANCEPROTOCOL - 01_Stinger_Victory_APREMIX	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\1E\{1E7AF815-C761-8791-16A7-E41ABAD20B13}.wem		\Interactive Music Hierarchy\Music\Music_Stinger_Defeat\VENGEANCEPROTOCOL - 01_Stinger_Victory_APREMIX		1152096
+	481396576	DSGNMisc_Kill Confirm Metallic_02_SFRMS_SCIWPNS	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\8B\{8BCB0418-C12E-6856-43E8-1D676E347993}.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Enemies\Enemies\Enemies_FrogMinion\FrogMinion\FrogMinion_OnHit\DSGNMisc_Kill Confirm Metallic_02_SFRMS_SCIWPNS		16080
+	485250142	Alarm Beep Lofi Loop	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\00\{00BFE514-C790-8682-66F3-62816B2B66C9}.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Health\CautionAlarm\Alarm Beep Lofi Loop		62015
+	490129382	Ambient_Battlefield	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\F6\{F6AFE8D1-E1F0-6E43-AEDD-A9BC1B07CB9F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Ambient\Ambiences\Ambiences_Background\Ambient_MainScenario\Ambient_Battlefield		435247
+	519076991	ROBTVox_Robot Vocalisation_01_SFRMS_SCIWPNS	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\9E\{9EDCF468-101D-9146-CCA4-71061021FAFD}.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Enemies\Enemies\Enemies_FrogMinion\FrogMinion\FrogMinion_Death\FrogMinion_Death_Speak\Death_Speak_Layer2\ROBTVox_Robot Vocalisation_01_SFRMS_SCIWPNS		10341
+	529049141	EXPLDsgn_Implode_14_SFRMS_SCIWPNS	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\EA\{EAEAD503-BC70-F279-1715-E8785AD315C5}.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Enemies\Enemies\Enemies_FrogMinion\FrogMinion\FrogMinion_Death\FrogMinion_Death_Explosion\EXPLDsgn_Implode_14_SFRMS_SCIWPNS		81793
+	541667914	MOV2	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\8E\{8E65963B-BB4D-88E6-C25B-44B629265892}.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\Player_Movement\Player_Movement_Walk\MOV2		13191
+	571316792	EXPLDsgn_Explosion Impact_05_SFRMS_SCIWPNS	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\4E\{4E1DA346-771E-E932-B56D-3746253221DD}.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Enemies\Enemies\Enemies_FrogMinion\FrogMinion\FrogMinion_OnHit\FrogMinion_OnHit_Hit\EXPLDsgn_Explosion Impact_05_SFRMS_SCIWPNS		9269
+	587117239	EXPLDsgn_Explosion Rumble Distorted_04_SFRMS_SCIWPNS	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\56\{56C20FC8-A0BB-5900-88DF-ED9563E7BD01}.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Enemies\Enemies\Enemies_FrogMinion\FrogMinion\FrogMinion_Death\FrogMinion_Death_Explosion\EXPLDsgn_Explosion Rumble Distorted_04_SFRMS_SCIWPNS		54266
+	644301096	SFX_Throw_03	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\6E\{6E2E0258-BAA1-29F3-5E50-1C72F387CC93}.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Melee\Player_LightAttack_1\Player_LightAttack_1_Swing\SFX_Throw_03		4839
+	650576443	FUI Holo Mechanism Activate-1	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\7A\{7A120C93-6F1F-D38B-5AC2-E4B0856DF40E}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non_World\UI\UI\Maintenance_Screen\Powerup_BP\FUI Holo Mechanism Activate-1		47362
+	655008111	Screen_Open	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\DC\{DC773FDE-1079-FCEB-2186-A77823FDCA52}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non_World\UI\UI\Maintenance_Screen\Screen_Explore\Screen_Open		8884
+	658069730	EXPLDsgn_Explosion Impact_04_SFRMS_SCIWPNS	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\EF\{EF4F1243-8619-7B52-217E-FE1FA1488482}.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Enemies\Enemies\Enemies_FrogMinion\FrogMinion\FrogMinion_OnHit\FrogMinion_OnHit_Hit\EXPLDsgn_Explosion Impact_04_SFRMS_SCIWPNS		9253
+	660477324	Screen_Close	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\BA\{BABB6C18-AB5D-BF7C-D951-C2E79F4469C4}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non_World\UI\UI\Maintenance_Screen\Screen_Close		8665
+	691099798	Holographic Interaction-21	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\46\{4623F2F9-C858-5AA9-3780-E57EBE4EC955}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non_World\UI\UI\BaseStatus\BaseWon\Holographic Interaction-21		44077
+	698340496	EXPLDsgn_Explosion Impact_02_SFRMS_SCIWPNS	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\38\{38D61A69-036C-9198-5638-285D128AE43C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Enemies\Enemies\Enemies_FrogMinion\FrogMinion\FrogMinion_OnHit\FrogMinion_OnHit_Hit\EXPLDsgn_Explosion Impact_02_SFRMS_SCIWPNS		7774
+	698822350	ROBTVox_Robot Vocalisation_03_SFRMS_SCIWPNS	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\21\{21C9A06A-5750-645B-0F05-EB908EBFE886}.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Enemies\Enemies\Enemies_FrogMinion\FrogMinion\FrogMinion_Death\FrogMinion_Death_Speak\Death_Speak_Layer2\ROBTVox_Robot Vocalisation_03_SFRMS_SCIWPNS		14699
+	707869156	Sword Attack 1	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\8E\{8E4D335E-AA09-7183-BF70-F6399DC2CD7D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Melee\Player_LightAttack_2\Player_LightAttack_2_Scything\Sword Attack 1		5061
+	709150420	Error Metallic	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\C7\{C783BB46-CA49-2173-CC2A-411C6660B4A0}.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Enemies\Enemies\Enemies_FrogMinion\FrogMinion\FrogMinion_OnHit\FrogMinion_OnHit_Speak\Error Metallic		4784
+	720227983	Player_LightAttack_1_ExtraLayer2	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\CA\{CABEAE81-8903-3A9D-410C-DF1C26798FA8}.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Melee\Player_LightAttack_1\Player_LightAttack_1_ExtraLayer2		8193
+	723694733	SFX_Throw_02	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\E6\{E6E09DA6-7B0E-5E6F-3A71-92869A459D4C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Melee\Player_LightAttack_2\Player_LightAttack_2_Swing\SFX_Throw_02		4902
+	751601628	EXPLDsgn_Implode_16_SFRMS_SCIWPNS	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\D2\{D29C2D94-9257-100C-7AB9-57E280CD797A}.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Enemies\Enemies\Enemies_FrogMinion\FrogMinion\FrogMinion_Death\FrogMinion_Death_Explosion\EXPLDsgn_Implode_16_SFRMS_SCIWPNS		96928
+	780477426	EXPLDsgn_Explosion Impact_18_SFRMS_SCIWPNS	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\FE\{FE818AFC-71E6-160F-4789-1A27AAAB5C7E}.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Enemies\Enemies\Enemies_FrogMinion\FrogMinion\FrogMinion_Death\FrogMinion_Death_Explosion\EXPLDsgn_Explosion Impact_18_SFRMS_SCIWPNS		39776
+	809030593	Alarm Coarse Loop	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\7A\{7A71F9FF-2CD7-1746-8B7D-1E855B1D8482}.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Health\CautionAlarm\Alarm Coarse Loop		67843
+	813303468	VENGEANCEPROTOCOL - 01_Stinger_Victory_APREMIX	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\01\{01DB12BB-82F8-B423-DD43-00074DDA42E2}.wem		\Interactive Music Hierarchy\Music\Music_Stinger_Victory\VENGEANCEPROTOCOL - 01_Stinger_Victory_APREMIX		1364312
+	830216992	MOV1	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\AD\{AD0B1D2D-A811-4B24-E111-114ABAF8CEA0}.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\Player_Movement\Player_Movement_Walk\MOV1		11971
+	848998426	Repair	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\7B\{7BFA8B64-52A6-5D0F-C540-9EAAB36EB95F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non_World\UI\UI\Maintenance_Screen\Repair		109450
+	871062797	EXPLDsgn_Explosion Impact_02_SFRMS_SCIWPNS	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\20\{209792C0-B883-EAF1-B0C5-5681C658C6A7}.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\Player_Movement\EXPLDsgn_Explosion Impact_02_SFRMS_SCIWPNS		10999
+	896497004	Old Terminal Computing-4	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\9D\{9DCF8580-C0E6-A11D-DD37-546FD3BC6308}.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Enemies\Enemies\Enemies_FrogMinion\FrogMinion\FrogMinion_Death\FrogMinion_Death_Speak\Death_Speak_Layer1\Old Terminal Computing-4		31422
+	931901667	EXPLDsgn_Implode_04_SFRMS_SCIWPNS	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\0A\{0AC8CF0C-3E55-EC4D-5E20-7A9EB51E7828}.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Enemies\Enemies\Enemies_FrogMinion\FrogMinion\FrogMinion_Death\FrogMinion_Death_Explosion\EXPLDsgn_Implode_04_SFRMS_SCIWPNS		29803
+	957594136	VENGEANCEPROTOCOL - 01_Stinger_Victory_APREMIX	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\B8\{B8D08DE5-2AE2-5CC9-231E-94F0961C7318}.wem		\Interactive Music Hierarchy\Music\Music_Stinger_Defeat\VENGEANCEPROTOCOL - 01_Stinger_Victory_APREMIX		1152096
+	960516792	ROBTVox_Robot Vocalisation_02_SFRMS_SCIWPNS	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\99\{99190EF4-BBAF-C900-E7CA-3A2782FBB17A}.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Enemies\Enemies\Enemies_FrogMinion\FrogMinion\FrogMinion_Death\FrogMinion_Death_Speak\Death_Speak_Layer2\ROBTVox_Robot Vocalisation_02_SFRMS_SCIWPNS		12943
+	966446192	Ambient_Nature	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\E4\{E4FC000B-FB08-4C57-8CD1-7ACE6353F055}.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Ambient\Ambiences\Ambiences_Background\Ambient_MainScenario\Ambient_Nature		3209653
+	966474169	Sword Attack 2	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\92\{922A7893-8BF5-2C3F-337D-09387466CEBA}.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Melee\Player_LightAttack_2\Player_LightAttack_2_Scything\Sword Attack 2		4861
+	972540742	BaseLost	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\33\{33E61F87-FBD7-424A-242F-603939D81C95}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non_World\UI\UI\BaseStatus\BaseLost		18721
+	979158487	EXPLDsgn_Explosion Impact_23_SFRMS_SCIWPNS	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\9F\{9FDED2EF-5D00-EAB2-C03D-75825F2A4F99}.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Enemies\Enemies\Enemies_FrogMinion\FrogMinion\FrogMinion_Death\FrogMinion_Death_Explosion\EXPLDsgn_Explosion Impact_23_SFRMS_SCIWPNS		64876
+	988191268	SFX_Throw_01	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\02\{02FA03CD-92C6-9784-C588-CBD0123F6B3B}.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Melee\Player_LightAttack_1\Player_LightAttack_1_Swing\SFX_Throw_01		4830
+	1006780533	EXPLDsgn_Implode_17_SFRMS_SCIWPNS	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\1D\{1DE272E1-BC1F-818F-5EF5-4B172364768D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Enemies\Enemies\Enemies_FrogMinion\FrogMinion\FrogMinion_Death\FrogMinion_Death_Explosion\EXPLDsgn_Implode_17_SFRMS_SCIWPNS		118212
+	1010170936	Ambient_EnergyField	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\B5\{B5C81069-9EA4-A7FE-0529-1F23E38B6FC0}.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Ambient\Ambiences\Ambiences_Emitters\Emitters\Ambient_EnergyField		13434
+	1037773656	EXPLDsgn_Explosion Rumble Distorted_09_SFRMS_SCIWPNS	Y:\Documents\GitHub\MechJamVI\Assets\Wwise\Project\.cache\5D\{5DB695D9-BB40-37B8-9CB5-BF734D936B06}.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Enemies\Enemies\Enemies_FrogMinion\FrogMinion\FrogMinion_Death\FrogMinion_Death_Explosion\EXPLDsgn_Explosion Rumble Distorted_09_SFRMS_SCIWPNS		114735
+

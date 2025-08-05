@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{AEED4C7A-EFF1-4B94-88D1-41A771CFEFCF}",
     "Language": "SFX",
-    "Hash": "{F080E1FD-E3BC-CE23-F033-51FD75196245}",
+    "Hash": "{EFF0D0A5-C514-EF49-BA09-D6433DBF2CD3}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\ElChapo",
     "ShortName": "ElChapo",
     "Path": "ElChapo.bnk",
@@ -72,6 +72,14 @@
       "CachePath": "8D/{8D4D7072-8119-5130-2050-EF6E6EE0594F}.wem"
      },
      {
+      "Id": "196575134",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "VENGEANCEPROTOCOL - 00_Scenario_MatrixPREMIX.wav",
+      "CachePath": "50/{500D011B-0888-8760-F19A-D6F5C1E32823}.wem"
+     },
+     {
       "Id": "226300041",
       "Language": "SFX",
       "Streaming": "false",
@@ -94,14 +102,6 @@
       "Location": "Memory",
       "ShortName": "813078__audiopapkin__sound-design-elements-robot-mechanism-019.wav",
       "CachePath": "0A/{0AB3D34E-7A24-6776-B6E8-A395CB8A7CC7}.wem"
-     },
-     {
-      "Id": "439739419",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "PRJINS - 00_Scenario_Step_Placeholder2.wav",
-      "CachePath": "4D/{4DAFA163-3A7A-8C80-FF36-0E75D5631661}.wem"
      },
      {
       "Id": "485250142",
@@ -213,7 +213,7 @@
       "DurationType": "Infinite",
       "MediaRefs": [
        {
-        "Id": "439739419"
+        "Id": "196575134"
        }
       ]
      },
@@ -451,6 +451,6 @@
     ]
    }
   ],
-  "FileHash": "{9B24AFE5-660F-9A1A-471C-5024F19A1C60}"
+  "FileHash": "{B4342F25-C8A4-2C33-0574-6CD1ECA6AB63}"
  }
 }

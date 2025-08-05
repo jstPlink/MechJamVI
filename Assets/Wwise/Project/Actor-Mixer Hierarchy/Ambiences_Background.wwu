@@ -5,9 +5,21 @@
 			<ChildrenList>
 				<BlendContainer Name="Ambient_MainScenario" ID="{3BEB802C-40A8-4853-8010-02B31961D66B}" ShortID="395577470">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="BlendBehavior" Type="int16" Value="1"/>
+						<Property Name="OverridePriority" Type="bool" Value="True"/>
+						<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+						<Property Name="Priority" Type="int16">
+							<ValueList>
+								<Value>70</Value>
+							</ValueList>
+						</Property>
+						<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Ambience_Emitters_Huge_5_80" ID="{21C9C3CB-17DA-4D39-AD87-46CEB24597F3}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
 						</Reference>
@@ -77,6 +89,9 @@
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
+					<PositioningInfo>
+						<Panner Name="" ID="{262704A2-C53A-43C6-ACE1-F1C87AD30DB9}"/>
+					</PositioningInfo>
 				</BlendContainer>
 			</ChildrenList>
 		</WorkUnit>

@@ -62,7 +62,7 @@ sysinfo.txt
 *.unitypackage.meta
 *.app
 
-Robe di mac
+Robe mac
 *.DS_Store
 
 # Crashlytics generated file
