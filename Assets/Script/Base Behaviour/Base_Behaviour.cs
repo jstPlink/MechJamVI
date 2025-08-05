@@ -44,7 +44,7 @@ public class Base_Behaviour : MonoBehaviour
     [Header(" ## DEBUG ##")]
     [Header(" -- Status --")]
     [SerializeField] public Status _status;
-    [SerializeField] private Status _owner;
+    [SerializeField] public Status _owner;
     [SerializeField] private bool _isThereEnemy;
     [SerializeField] private byte enemyCounter = 0;
     [SerializeField] public bool _isTherePlayer;
@@ -87,6 +87,7 @@ public class Base_Behaviour : MonoBehaviour
         }
         if (other.CompareTag("Enemy")) //Check se il nemico è nell`area della base
         {
+            other.GetComponent<Minion>().AssignBase(this.gameObject.GetComponent<Base_Behaviour>());
             _isThereEnemy = true;
             enemyCounter++; //Aumento contatore nemici in base
         }
@@ -113,13 +114,9 @@ public class Base_Behaviour : MonoBehaviour
         if (other.CompareTag("Enemy"))
         {
             enemyCounter--;
-            if (enemyCounter == 0)
-            {
-                _isThereEnemy = false;
-            }
-
         }
     }
+
 
     private void Update()
     {
@@ -199,6 +196,10 @@ public class Base_Behaviour : MonoBehaviour
                 Lights[lightNumber].material = allyMaterial;
             }
         }
+        if (enemyCounter == 0)
+        {
+            _isThereEnemy = false;
+        }
     }
 
 
@@ -219,5 +220,10 @@ public class Base_Behaviour : MonoBehaviour
             _status = _owner;
         }
         canModifyTime = true;
+    }
+
+    public void minionDeath()
+    {
+        enemyCounter--;
     }
 }
