@@ -52,7 +52,30 @@ MonoBehaviour:
   allyMaterial: {fileID: 2100000, guid: c869952065cb3db468194cc749dfbd3b, type: 2}
   contestedMaterial: {fileID: 2100000, guid: 0433c41849a0c2c45a3c08ade5fb8d68, type: 2}
   _resourceText: {fileID: 0}
+  textResourcesUI: {fileID: 0}
+  maxHealthCost: 2500
+  shieldRepairCost: 350
+  powerupCostIncrement: 1.5
+  attackPowerup:
+    name: SHARPEN PEDIPALPS
+    description: Makes attacks more effective
+    firstUpgradeMultiplier: 2.25
+    repeatedUpgradeMultiplier: 1.25
+    cost: 500
+  healthPowerup:
+    name: BOOST EXOSKELETON
+    description: Makes the mecha more durable
+    firstUpgradeMultiplier: 1.25
+    repeatedUpgradeMultiplier: 1.25
+    cost: 500
+  speedPowerup:
+    name: OIL THE JOINTS
+    description: Makes you move faster
+    firstUpgradeMultiplier: 2.1
+    repeatedUpgradeMultiplier: 1.1
+    cost: 500
   totalResourceXTick: 0
   ResourceQty: 0
   canAdd: 1
   somethingChanged: 1
+  player: {fileID: 0}
