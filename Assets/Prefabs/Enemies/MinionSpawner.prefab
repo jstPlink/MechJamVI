@@ -78,6 +78,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minion: {fileID: 0}
+  _bh: {fileID: 0}
   myMinion: {fileID: 0}
   spawnTimeRange: {x: 2, y: 2}
   spawnInterval: 3
@@ -98,7 +99,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3546666393515446145
 Transform:
   m_ObjectHideFlags: 0
