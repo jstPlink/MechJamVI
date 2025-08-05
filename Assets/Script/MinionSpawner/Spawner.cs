@@ -30,6 +30,10 @@ public class Spawner : MonoBehaviour
 
             yield return new WaitForSeconds(spawnInterval);
         }
+
+        // Se il minion è valido fai ripartire il check
+        // Se il minion non era valido lo ha spawnato e dopo aver aspettato un po aspetta di nuovo e riparte il check
+        StartCoroutine(SpawnRoutine());
     }
 
     void Spawn()
