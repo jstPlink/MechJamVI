@@ -75,7 +75,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1efa68c527b0b240adc406044d5c766, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 35
+  damage: 30
 --- !u!1 &4866907364101305055
 GameObject:
   m_ObjectHideFlags: 0
@@ -151,7 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1efa68c527b0b240adc406044d5c766, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 55
+  damage: 60
 --- !u!1 &6298278880964255475
 GameObject:
   m_ObjectHideFlags: 0
@@ -391,6 +391,8 @@ MonoBehaviour:
   shield: 100
   barHealth: {fileID: 0}
   barShield: {fileID: 0}
+  textHealth: {fileID: 0}
+  textShield: {fileID: 0}
   shieldMesh: {fileID: 6298278880964255475}
 --- !u!114 &7128369277019818552
 MonoBehaviour:
@@ -417,9 +419,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7166dde9ee0d9a4e818a9e3c214342b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  curAttackMultiplier: 0
-  curSpeedMultiplier: 0
-  curHealthMultiplier: 0
+  curAttackMultiplier: 1
+  curSpeedMultiplier: 1
+  curHealthMultiplier: 1
+  powerupCount: 000000000000000000000000
 --- !u!1 &7653435160328184128
 GameObject:
   m_ObjectHideFlags: 0
@@ -495,7 +498,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1efa68c527b0b240adc406044d5c766, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 25
+  damage: 30
 --- !u!1001 &5730102280721222108
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1451,6 +1454,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4a0cf7f81a9b89c4189c7e079b1c9556, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3355739560126620992}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4a0cf7f81a9b89c4189c7e079b1c9556, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1222853438727684026}
   m_SourcePrefab: {fileID: 100100000, guid: 4a0cf7f81a9b89c4189c7e079b1c9556, type: 3}
 --- !u!4 &4306341020586382889 stripped
 Transform:
@@ -1504,6 +1510,22 @@ MonoBehaviour:
   canAttack: 1
   comboStep: 0
   movement: {fileID: 8791274877796153203}
+--- !u!114 &1222853438727684026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4846999630946661517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d429bc17c23543d1a57a46116e77202, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AudioEventMov:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!4 &5192598518421138999 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4a0cf7f81a9b89c4189c7e079b1c9556, type: 3}

@@ -44,7 +44,7 @@ public class Base_Behaviour : MonoBehaviour
     [Header(" ## DEBUG ##")]
     [Header(" -- Status --")]
     [SerializeField] public Status _status;
-    [SerializeField] private Status _owner;
+    [SerializeField] public Status _owner;
     [SerializeField] private bool _isThereEnemy;
     [SerializeField] private byte enemyCounter = 0;
     [SerializeField] public bool _isTherePlayer;

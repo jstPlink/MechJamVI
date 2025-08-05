@@ -118,8 +118,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38f94702bcf078d47837324752219036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 80
-  intervalRange: {x: 1, y: 4}
+  health: 160
+  _currentBase: {fileID: 0}
+  updateIntervalRange: {x: 2, y: 7}
 --- !u!1 &8386880053891970194
 GameObject:
   m_ObjectHideFlags: 0
@@ -882,7 +883,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 7752910021063827952}
   enemy: {fileID: 8241396972743653112}
-  _enemy1: {fileID: 8241396972743653112}
 --- !u!4 &8677560307326222567 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5378550205852353530, guid: 762d1974108b3b9438c6e5a8d0d36051, type: 3}
