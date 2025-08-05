@@ -3,7 +3,7 @@
   "Project": {
    "Name": "projectinsectaudiowwise",
    "GUID": "{4CE651C8-C7A5-418F-AE14-DA2E7BA1487D}",
-   "Generator": "2024.1.6.8842"
+   "Generator": "2024.1.0.8669"
   },
   "CacheRoot": "../../../../../../../Wwise/Project/.cache",
   "Platforms": [
@@ -38,6 +38,6 @@
     "UseAsStandIn": "true"
    }
   ],
-  "FileHash": "{3F12A6BB-58A1-411E-8792-FEB5705D10E5}"
+  "FileHash": "{6BDF9A3D-F108-2BC1-6E5C-F4977A1E2563}"
  }
 }

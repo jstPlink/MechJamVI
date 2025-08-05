@@ -1618,6 +1618,117 @@
 								<ActiveSource Name="LASRGun_Electron Impeller Charged Fire_05_SFRMS_SCIWPNS" ID="{7B8F6C53-3E78-4677-87F6-58BAC38AA8FF}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="Error Metallic Thud" ID="{54222437-2757-4D55-816A-AB917366769B}" ShortID="961894330">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{EBDD3774-F01A-49D4-8BF9-50493D32474D}">
+												<PropertyList>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Frog_Minion" ID="{08035439-B761-4E7F-B163-6CADF6727F87}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Enemies_General" ID="{A5216F2D-613D-40CF-A20E-5FA0F6DD5103}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Enemies" ID="{0E92CCE7-D546-45DE-B4CF-59FAC4C1AC44}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Error Metallic Thud" ID="{37A03886-9EE0-4CCA-B5BE-A01E3E1DFBC8}">
+									<Language>SFX</Language>
+									<AudioFile>Error Metallic Thud.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="231570252"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Error Metallic Thud" ID="{37A03886-9EE0-4CCA-B5BE-A01E3E1DFBC8}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Error AI Voice" ID="{8FDDE4B3-BD8C-4F2E-9212-317F3B0D3D85}" ShortID="508030734">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Frog_Minion" ID="{08035439-B761-4E7F-B163-6CADF6727F87}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Enemies_General" ID="{A5216F2D-613D-40CF-A20E-5FA0F6DD5103}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Enemies" ID="{0E92CCE7-D546-45DE-B4CF-59FAC4C1AC44}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Error AI Voice" ID="{D0977226-F752-4A56-90A1-1347CBD5E136}">
+									<Language>SFX</Language>
+									<AudioFile>Error AI Voice.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="162447182"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Error AI Voice" ID="{D0977226-F752-4A56-90A1-1347CBD5E136}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Error Metallic" ID="{50FDA65B-7650-448D-8510-322D4A93A049}" ShortID="612760218">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Frog_Minion" ID="{08035439-B761-4E7F-B163-6CADF6727F87}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Enemies_General" ID="{A5216F2D-613D-40CF-A20E-5FA0F6DD5103}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Enemies" ID="{0E92CCE7-D546-45DE-B4CF-59FAC4C1AC44}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Error Metallic" ID="{8D99E8F4-6B0E-4804-BE79-B8B1599FEEEB}">
+									<Language>SFX</Language>
+									<AudioFile>Error Metallic.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="709150420"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Error Metallic" ID="{8D99E8F4-6B0E-4804-BE79-B8B1599FEEEB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

@@ -75,6 +75,54 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Event Name="Player_OnHit" ID="{813D1AC8-7D69-4EAD-A7D6-7CD1263D8512}">
+							<ChildrenList>
+								<Action Name="" ID="{15181C61-6AD4-4418-91BB-CBF45AA08326}" ShortID="662698605">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="OnHit" ID="{2F697849-E172-4B2F-A072-9A14F6EA7AB2}" WorkUnitID="{3D244E8C-9103-4ED4-B110-56E962BB6EF5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Folder Name="Player_Death" ID="{388574D5-E76D-4B3B-AC7A-80AF631E61DF}" ShortID="852269982">
+							<ChildrenList>
+								<Event Name="Player_Death" ID="{2EB88DF9-3F39-45A3-92E5-332902737032}">
+									<ChildrenList>
+										<Action Name="" ID="{8CB31838-0A4B-423B-8FA2-BE3B8D778622}" ShortID="943572163">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Death" ID="{E9D44A2A-3300-420D-8084-58EC7F6DB664}" WorkUnitID="{3D244E8C-9103-4ED4-B110-56E962BB6EF5}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Player_Death_Impact" ID="{71FE3E36-8BB9-45BB-9663-693C09DBDD43}">
+									<ChildrenList>
+										<Action Name="" ID="{A127CCA4-CF94-4973-9297-304FAAB86E8D}" ShortID="802618753">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Death_Impact" ID="{E3E2FE00-3DC5-4B04-9FA5-3D9C80373601}" WorkUnitID="{3D244E8C-9103-4ED4-B110-56E962BB6EF5}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Event Name="Player_Engine_Idle" ID="{5E82F5D8-7325-4D61-808B-F7355EA529E8}">
+							<ChildrenList>
+								<Action Name="" ID="{AC5C7D29-0786-42C4-8756-60EF24035819}" ShortID="1050717665">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Player_Idle" ID="{301632CC-A6DB-4F6C-AD86-53529AE2C563}" WorkUnitID="{3D244E8C-9103-4ED4-B110-56E962BB6EF5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

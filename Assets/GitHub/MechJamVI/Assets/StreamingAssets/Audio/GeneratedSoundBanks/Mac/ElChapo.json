@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{AEED4C7A-EFF1-4B94-88D1-41A771CFEFCF}",
     "Language": "SFX",
-    "Hash": "{AC4E814A-FA7E-DDC5-ECAC-4BAFA4261A03}",
+    "Hash": "{1E7EF60E-9205-B1C6-BAD6-4650DF025721}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\ElChapo",
     "ShortName": "ElChapo",
     "Path": "ElChapo.bnk",
@@ -32,12 +32,28 @@
       "CachePath": "0A/{0AAB8F8C-B8C2-BF84-D849-ECE8F73AA35F}.wem"
      },
      {
+      "Id": "30923449",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "813079__audiopapkin__sound-design-elements-robot-mechanism-020.wav",
+      "CachePath": "66/{6624A72E-E643-7279-1D09-773A66F32F87}.wem"
+     },
+     {
       "Id": "64498864",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Compact Alarm Beep Loop.wav",
       "CachePath": "54/{54F44EC7-D1C1-F281-8E57-D5E20DFA3180}.wem"
+     },
+     {
+      "Id": "66929765",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Micro Mechanism Release.wav",
+      "CachePath": "BD/{BD9ADCF5-F714-102D-E18E-4B95CE95CD43}.wem"
      },
      {
       "Id": "78534883",
@@ -56,20 +72,20 @@
       "CachePath": "A0/{A039D22D-E8F9-2731-B528-98BD3C217986}.wem"
      },
      {
-      "Id": "99905388",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "Old Terminal Computing-3.wav",
-      "CachePath": "3D/{3DBC4A72-6994-7875-B1D8-CA646C11C0D0}.wem"
-     },
-     {
       "Id": "104298631",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Holographic Interaction-20.wav",
       "CachePath": "7E/{7EB24ED0-1471-56D0-A9C0-83BAFCCD59CF}.wem"
+     },
+     {
+      "Id": "105605370",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EXPLDsgn_Implode_17_SFRMS_SCIWPNS.wav",
+      "CachePath": "EF/{EF3B1529-8E3E-850B-599D-3FD408C520D5}.wem"
      },
      {
       "Id": "121838931",
@@ -80,12 +96,28 @@
       "CachePath": "31/{31F1C8C1-2037-56C5-B4BC-66792DFF4750}.wem"
      },
      {
+      "Id": "148497074",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MOV2.wav",
+      "CachePath": "E5/{E5805109-51B1-C48B-9F6A-86440B6266A9}.wem"
+     },
+     {
       "Id": "153090760",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "FUI Holo Mechanism Activate.wav",
       "CachePath": "21/{21802983-B869-1FFC-861F-D6385A233073}.wem"
+     },
+     {
+      "Id": "153370742",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "DSGNStngr_Kill Confirm Metallic_01_SFRMS_SCIWPNS.wav",
+      "CachePath": "1E/{1E62735B-220E-2643-8D50-6F0FB3E4844F}.wem"
      },
      {
       "Id": "159409977",
@@ -112,12 +144,44 @@
       "CachePath": "13/{131F91A8-37F9-99AD-A636-D593F83C555F}.wem"
      },
      {
+      "Id": "187611991",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EXPLDsgn_Explosion Impact_13_SFRMS_SCIWPNS.wav",
+      "CachePath": "54/{54C5B2DD-B86B-900E-4A04-6DB5815BC785}.wem"
+     },
+     {
       "Id": "196575134",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "VENGEANCEPROTOCOL - 00_Scenario_MatrixPREMIX.wav",
       "CachePath": "50/{500D011B-0888-8760-F19A-D6F5C1E32823}.wem"
+     },
+     {
+      "Id": "196579915",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EXPLDsgn_Explosion Impact_04_SFRMS_SCIWPNS.wav",
+      "CachePath": "EE/{EE4FD31E-F468-D828-CC49-72A404D1D21F}.wem"
+     },
+     {
+      "Id": "214211937",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BLLTRico_Metallic_12_SFRMS_SCIWPNS.wav",
+      "CachePath": "C5/{C574EF9A-DA51-B0DD-AFCE-2363A397BA68}.wem"
+     },
+     {
+      "Id": "223108353",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EXPLDsgn_Explosion Impact_02_SFRMS_SCIWPNS.wav",
+      "CachePath": "2B/{2BADDF9E-FF8E-7526-5879-6C662F4486C3}.wem"
      },
      {
       "Id": "226300041",
@@ -160,12 +224,12 @@
       "CachePath": "B2/{B2413265-EE97-0538-2A5B-9C8D2CFD7F1F}.wem"
      },
      {
-      "Id": "345392918",
+      "Id": "333953003",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "Old Terminal Computing-1.wav",
-      "CachePath": "CE/{CEC4007E-1F54-46B7-6FDC-BDAF3AA7DBD2}.wem"
+      "ShortName": "EXPLDsgn_Explosion Impact_05_SFRMS_SCIWPNS.wav",
+      "CachePath": "41/{418D74FA-4019-DFEE-C627-5337D9CC7449}.wem"
      },
      {
       "Id": "370360480",
@@ -264,12 +328,12 @@
       "CachePath": "4E/{4E1DA346-771E-E932-B56D-3746253221DD}.wem"
      },
      {
-      "Id": "587117239",
+      "Id": "604315611",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "EXPLDsgn_Explosion Rumble Distorted_04_SFRMS_SCIWPNS.wav",
-      "CachePath": "56/{56C20FC8-A0BB-5900-88DF-ED9563E7BD01}.wem"
+      "ShortName": "DSGNStngr_Kill Confirm Metallic_02_SFRMS_SCIWPNS.wav",
+      "CachePath": "6E/{6E42ADFA-9B4B-0152-DADD-AA38255F9DE4}.wem"
      },
      {
       "Id": "644301096",
@@ -328,6 +392,14 @@
       "CachePath": "38/{38D61A69-036C-9198-5638-285D128AE43C}.wem"
      },
      {
+      "Id": "698551349",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BLLTRico_Metallic_03_SFRMS_SCIWPNS.wav",
+      "CachePath": "84/{8402E5FC-E1AB-FEFD-38F0-6B910CC88027}.wem"
+     },
+     {
       "Id": "698822350",
       "Language": "SFX",
       "Streaming": "false",
@@ -360,12 +432,36 @@
       "CachePath": "CA/{CABEAE81-8903-3A9D-410C-DF1C26798FA8}.wem"
      },
      {
+      "Id": "720738922",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EXPLDsgn_Explosion Impact_14_SFRMS_SCIWPNS.wav",
+      "CachePath": "82/{82DD25CB-07B0-5EC0-82D3-262B1A86224D}.wem"
+     },
+     {
+      "Id": "721787423",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "DSGNStngr_Kill Confirm Metallic_02_SFRMS_SCIWPNS.wav",
+      "CachePath": "FE/{FE71683D-5540-4512-4193-211554B29A3E}.wem"
+     },
+     {
       "Id": "723694733",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "SFX_Throw_02.wav",
       "CachePath": "E6/{E6E09DA6-7B0E-5E6F-3A71-92869A459D4C}.wem"
+     },
+     {
+      "Id": "749220280",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "LASRGun_Gauss Cannon Fire_06_SFRMS_SCIWPNS.wav",
+      "CachePath": "57/{57B5D66F-BFB8-70DC-591B-0E349F1C91FC}.wem"
      },
      {
       "Id": "751601628",
@@ -376,12 +472,20 @@
       "CachePath": "D2/{D29C2D94-9257-100C-7AB9-57E280CD797A}.wem"
      },
      {
-      "Id": "780477426",
+      "Id": "800918408",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "EXPLDsgn_Explosion Impact_18_SFRMS_SCIWPNS.wav",
-      "CachePath": "FE/{FE818AFC-71E6-160F-4789-1A27AAAB5C7E}.wem"
+      "ShortName": "DSGNMisc_Kill Confirm Metallic_04_SFRMS_SCIWPNS.wav",
+      "CachePath": "A6/{A68AB2BA-7A90-50FF-7D78-3F9D51418F31}.wem"
+     },
+     {
+      "Id": "801769119",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Vehicle_Truck_Idle_Exterior_Rear_Loop_Stereo_01.wav",
+      "CachePath": "9C/{9CE837D8-88FE-7F00-4A23-D0BC62E27910}.wem"
      },
      {
       "Id": "809030593",
@@ -398,6 +502,14 @@
       "Location": "Memory",
       "ShortName": "VENGEANCEPROTOCOL - 01_Stinger_Victory_BPREMIX.wav",
       "CachePath": "01/{01DB12BB-82F8-B423-DD43-00074DDA42E2}.wem"
+     },
+     {
+      "Id": "824443533",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BLLTRico_Metallic_09_SFRMS_SCIWPNS.wav",
+      "CachePath": "85/{854C42F8-0B3D-75FB-FFED-B6CD370F154F}.wem"
      },
      {
       "Id": "830216992",
@@ -480,14 +592,6 @@
       "CachePath": "33/{33E61F87-FBD7-424A-242F-603939D81C95}.wem"
      },
      {
-      "Id": "979158487",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "EXPLDsgn_Explosion Impact_23_SFRMS_SCIWPNS.wav",
-      "CachePath": "9F/{9FDED2EF-5D00-EAB2-C03D-75825F2A4F99}.wem"
-     },
-     {
       "Id": "988191268",
       "Language": "SFX",
       "Streaming": "false",
@@ -512,14 +616,34 @@
       "CachePath": "B5/{B5C81069-9EA4-A7FE-0529-1F23E38B6FC0}.wem"
      },
      {
-      "Id": "1037773656",
+      "Id": "1073724749",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "EXPLDsgn_Explosion Rumble Distorted_09_SFRMS_SCIWPNS.wav",
-      "CachePath": "5D/{5DB695D9-BB40-37B8-9CB5-BF734D936B06}.wem"
+      "ShortName": "MOV1.wav",
+      "CachePath": "EF/{EF72671F-DF40-CAB8-1EA6-2A9308BEBC40}.wem"
      }
     ],
+    "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "1588715066",
+       "Name": "Echoes_Linear",
+       "ObjectPath": "\\Effects\\Factory Effects\\Delay\\Echoes_Linear",
+       "GUID": "{D20F3717-EBA2-4E3A-84F8-C8BD431563FB}",
+       "LibName": "Wwise Delay",
+       "LibId": "6946819"
+      },
+      {
+       "Id": "3442768367",
+       "Name": "Hall_Large_Dark",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Halls\\Hall_Large_Dark",
+       "GUID": "{0F6A7D6D-131C-4650-9561-FC05F5C7A37B}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      }
+     ]
+    },
     "Events": [
      {
       "Id": "3983137402",
@@ -557,82 +681,22 @@
       "MaxAttenuation": "80",
       "DurationType": "OneShot",
       "DurationMin": "1.7205455",
-      "DurationMax": "7.8605685",
+      "DurationMax": "7.530982",
       "MediaRefs": [
        {
         "Id": "14319534"
        },
        {
-        "Id": "99905388"
-       },
-       {
         "Id": "162447182"
        },
        {
+        "Id": "187611991"
+       },
+       {
         "Id": "231570252"
-       },
-       {
-        "Id": "345392918"
-       },
-       {
-        "Id": "519076991"
        },
        {
         "Id": "529049141"
-       },
-       {
-        "Id": "587117239"
-       },
-       {
-        "Id": "698822350"
-       },
-       {
-        "Id": "709150420"
-       },
-       {
-        "Id": "751601628"
-       },
-       {
-        "Id": "780477426"
-       },
-       {
-        "Id": "896497004"
-       },
-       {
-        "Id": "931901667"
-       },
-       {
-        "Id": "960516792"
-       },
-       {
-        "Id": "979158487"
-       },
-       {
-        "Id": "1006780533"
-       },
-       {
-        "Id": "1037773656"
-       }
-      ]
-     },
-     {
-      "Id": "596226124",
-      "Name": "Enemies_FrogMinionOnHit",
-      "ObjectPath": "\\Events\\Enemies\\Generic\\Enemies_FrogMinionOnHit",
-      "GUID": "{3C6B4B83-C0C5-4C53-B195-B1B594D0376F}",
-      "MaxAttenuation": "80",
-      "DurationType": "OneShot",
-      "DurationMin": "0.8841263",
-      "DurationMax": "1.0214777",
-      "MediaRefs": [
-       {
-        "Id": "162447182"
-       },
-       {
-        "Id": "231570252"
-       },
-       {
-        "Id": "481396576"
        },
        {
         "Id": "571316792"
@@ -645,6 +709,93 @@
        },
        {
         "Id": "709150420"
+       },
+       {
+        "Id": "751601628"
+       },
+       {
+        "Id": "896497004"
+       },
+       {
+        "Id": "931901667"
+       },
+       {
+        "Id": "1006780533"
+       }
+      ]
+     },
+     {
+      "Id": "1372172665",
+      "Name": "Enemies_FrogMinionMovement",
+      "ObjectPath": "\\Events\\Enemies\\Generic\\Enemies_FrogMinionMovement",
+      "GUID": "{2CC417BE-C56C-4B49-9643-6734C720CD6A}",
+      "MaxAttenuation": "80",
+      "DurationType": "OneShot",
+      "DurationMin": "0.40569684",
+      "DurationMax": "0.511146",
+      "MediaRefs": [
+       {
+        "Id": "148497074"
+       },
+       {
+        "Id": "698340496"
+       },
+       {
+        "Id": "1073724749"
+       }
+      ]
+     },
+     {
+      "Id": "596226124",
+      "Name": "Enemies_FrogMinionOnHit",
+      "ObjectPath": "\\Events\\Enemies\\Generic\\Enemies_FrogMinionOnHit",
+      "GUID": "{3C6B4B83-C0C5-4C53-B195-B1B594D0376F}",
+      "MaxAttenuation": "80",
+      "DurationType": "OneShot",
+      "DurationMin": "1.0005066",
+      "DurationMax": "3.682739",
+      "MediaRefs": [
+       {
+        "Id": "153370742"
+       },
+       {
+        "Id": "162447182"
+       },
+       {
+        "Id": "187611991"
+       },
+       {
+        "Id": "231570252"
+       },
+       {
+        "Id": "481396576"
+       },
+       {
+        "Id": "519076991"
+       },
+       {
+        "Id": "571316792"
+       },
+       {
+        "Id": "604315611"
+       },
+       {
+        "Id": "658069730"
+       },
+       {
+        "Id": "698340496"
+       },
+       {
+        "Id": "698822350"
+       },
+       {
+        "Id": "709150420"
+       },
+       {
+        "Id": "800918408"
+       },
+       {
+        "Id": "960516792"
        }
       ]
      },
@@ -815,6 +966,74 @@
       ]
      },
      {
+      "Id": "3083087645",
+      "Name": "Player_Death",
+      "ObjectPath": "\\Events\\Player\\PlayerStatus\\Player_Death\\Player_Death",
+      "GUID": "{2EB88DF9-3F39-45A3-92E5-332902737032}",
+      "DurationType": "OneShot",
+      "DurationMin": "6.2655706",
+      "DurationMax": "7.0328655",
+      "MediaRefs": [
+       {
+        "Id": "30923449"
+       },
+       {
+        "Id": "66929765"
+       },
+       {
+        "Id": "105605370"
+       },
+       {
+        "Id": "333953003"
+       },
+       {
+        "Id": "721787423"
+       },
+       {
+        "Id": "749220280"
+       }
+      ]
+     },
+     {
+      "Id": "1610333822",
+      "Name": "Player_Death_Impact",
+      "ObjectPath": "\\Events\\Player\\PlayerStatus\\Player_Death\\Player_Death_Impact",
+      "GUID": "{71FE3E36-8BB9-45BB-9663-693C09DBDD43}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.2730099",
+      "DurationMax": "1.4289054",
+      "MediaRefs": [
+       {
+        "Id": "279072042"
+       },
+       {
+        "Id": "720738922"
+       }
+      ],
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "1588715066"
+        },
+        {
+         "Id": "3442768367"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "3147042112",
+      "Name": "Player_Engine_Idle",
+      "ObjectPath": "\\Events\\Player\\PlayerStatus\\Player_Engine_Idle",
+      "GUID": "{5E82F5D8-7325-4D61-808B-F7355EA529E8}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "801769119"
+       }
+      ]
+     },
+     {
       "Id": "541470702",
       "Name": "Player_Movement",
       "ObjectPath": "\\Events\\Player\\PlayerStatus\\Player_Movement",
@@ -831,6 +1050,38 @@
        },
        {
         "Id": "871062797"
+       }
+      ]
+     },
+     {
+      "Id": "1842275445",
+      "Name": "Player_OnHit",
+      "ObjectPath": "\\Events\\Player\\PlayerStatus\\Player_OnHit",
+      "GUID": "{813D1AC8-7D69-4EAD-A7D6-7CD1263D8512}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.0005066",
+      "DurationMax": "1.1230309",
+      "MediaRefs": [
+       {
+        "Id": "196579915"
+       },
+       {
+        "Id": "214211937"
+       },
+       {
+        "Id": "223108353"
+       },
+       {
+        "Id": "279072042"
+       },
+       {
+        "Id": "333953003"
+       },
+       {
+        "Id": "698551349"
+       },
+       {
+        "Id": "824443533"
        }
       ]
      },
@@ -1096,6 +1347,6 @@
     ]
    }
   ],
-  "FileHash": "{64ABA753-10F1-E8F4-7543-8E55EBC38672}"
+  "FileHash": "{5234919B-456B-91F6-7AEB-A34D151C35F3}"
  }
 }

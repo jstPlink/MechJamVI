@@ -616,7 +616,7 @@ MonoBehaviour:
     ParentPath: Events/Enemies
     guid: 65b1bc0102603447858c985142756ae5
     GuidInternal: 
-    m_lastTime: -8584471930606950475
+    m_lastTime: -8584471829138237475
     List:
     - name: Enemies_FrogMinionDeath
       guid: 35bdd9304cd38a42a2bbb5abe1ee6506
@@ -636,8 +636,28 @@ MonoBehaviour:
         guid: 35bdd9304cd38a42a2bbb5abe1ee6506
       Path: Events/Enemies/Generic/Enemies_FrogMinionDeath
       maxAttenuation: 80
-      maxDuration: 7.8605685
+      maxDuration: 7.530982
       minDuration: 1.7205455
+    - name: Enemies_FrogMinionMovement
+      guid: be17c42c6cc5494b96436734c720cd6a
+      id: 1372172665
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Enemies
+        ObjectType: 12
+        guid: 65b1bc0102603447858c985142756ae5
+      - ElementName: Generic
+        ObjectType: 4
+        guid: ab47b60a70b012418f1b146d0cfe63cb
+      - ElementName: Enemies_FrogMinionMovement
+        ObjectType: 3
+        guid: be17c42c6cc5494b96436734c720cd6a
+      Path: Events/Enemies/Generic/Enemies_FrogMinionMovement
+      maxAttenuation: 80
+      maxDuration: 0.511146
+      minDuration: 0.40569684
     - name: Enemies_FrogMinionOnHit
       guid: 834b6b3cc5c0534cb195b1b594d0376f
       id: 596226124
@@ -656,8 +676,8 @@ MonoBehaviour:
         guid: 834b6b3cc5c0534cb195b1b594d0376f
       Path: Events/Enemies/Generic/Enemies_FrogMinionOnHit
       maxAttenuation: 80
-      maxDuration: 1.0214777
-      minDuration: 0.8841263
+      maxDuration: 3.682739
+      minDuration: 1.0005066
     - name: Generic
       guid: ab47b60a70b012418f1b146d0cfe63cb
       id: 4294388576
@@ -736,7 +756,7 @@ MonoBehaviour:
     ParentPath: Events/Player
     guid: 648b2e27f41c674fbcc4efd93a3d7e05
     GuidInternal: 
-    m_lastTime: -8584472171728199049
+    m_lastTime: -8584471757484829919
     List:
     - name: Player_Attack_Heavy
       guid: a28a8ad501931444a6f13ad8f121c53a
@@ -864,6 +884,92 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Player_Death
+      guid: d57485386de73b4bac7a80af631e61df
+      id: 3083087645
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: 648b2e27f41c674fbcc4efd93a3d7e05
+      - ElementName: PlayerStatus
+        ObjectType: 4
+        guid: a3c12e51ea5bc94098aa460645320723
+      - ElementName: Player_Death
+        ObjectType: 4
+        guid: d57485386de73b4bac7a80af631e61df
+      Path: Events/Player/PlayerStatus/Player_Death
+      maxAttenuation: 0
+      maxDuration: 7.0328655
+      minDuration: 6.2655706
+    - name: Player_Death
+      guid: f98db82e393fa34592e5332902737032
+      id: 3083087645
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: 648b2e27f41c674fbcc4efd93a3d7e05
+      - ElementName: PlayerStatus
+        ObjectType: 4
+        guid: a3c12e51ea5bc94098aa460645320723
+      - ElementName: Player_Death
+        ObjectType: 4
+        guid: d57485386de73b4bac7a80af631e61df
+      - ElementName: Player_Death
+        ObjectType: 3
+        guid: f98db82e393fa34592e5332902737032
+      Path: Events/Player/PlayerStatus/Player_Death/Player_Death
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Player_Death_Impact
+      guid: 363efe71b98bbb459663693c09dbdd43
+      id: 1610333822
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: 648b2e27f41c674fbcc4efd93a3d7e05
+      - ElementName: PlayerStatus
+        ObjectType: 4
+        guid: a3c12e51ea5bc94098aa460645320723
+      - ElementName: Player_Death
+        ObjectType: 4
+        guid: d57485386de73b4bac7a80af631e61df
+      - ElementName: Player_Death_Impact
+        ObjectType: 3
+        guid: 363efe71b98bbb459663693c09dbdd43
+      Path: Events/Player/PlayerStatus/Player_Death/Player_Death_Impact
+      maxAttenuation: 0
+      maxDuration: 1.4289054
+      minDuration: 1.2730099
+    - name: Player_Engine_Idle
+      guid: d8f5825e2573614d808bf7355ea529e8
+      id: 3147042112
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: 648b2e27f41c674fbcc4efd93a3d7e05
+      - ElementName: PlayerStatus
+        ObjectType: 4
+        guid: a3c12e51ea5bc94098aa460645320723
+      - ElementName: Player_Engine_Idle
+        ObjectType: 3
+        guid: d8f5825e2573614d808bf7355ea529e8
+      Path: Events/Player/PlayerStatus/Player_Engine_Idle
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Player_Movement
       guid: 0e8d11023ff7f343a7ad16c0bc8cf535
       id: 541470702
@@ -884,6 +990,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.52612376
       minDuration: 0.4175847
+    - name: Player_OnHit
+      guid: c81a3d81697dad4ea7d67cd1263d8512
+      id: 1842275445
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: 648b2e27f41c674fbcc4efd93a3d7e05
+      - ElementName: PlayerStatus
+        ObjectType: 4
+        guid: a3c12e51ea5bc94098aa460645320723
+      - ElementName: Player_OnHit
+        ObjectType: 3
+        guid: c81a3d81697dad4ea7d67cd1263d8512
+      Path: Events/Player/PlayerStatus/Player_OnHit
+      maxAttenuation: 0
+      maxDuration: 1.1230309
+      minDuration: 1.0005066
     - name: PlayerStatus
       guid: a3c12e51ea5bc94098aa460645320723
       id: 3800848640
@@ -1553,8 +1679,8 @@ MonoBehaviour:
         ObjectType: 14
         guid: 2a67469a220fb44b99df0d6c74bbeda5
       Path: Triggers/Default Work Unit/Music_StingerVictory
-  ExpandedFileSystemItemIds: 020000000c0000000f00000010000000180000003800000039000000
-  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e00000010000000110000001300000014000000150000002d0000003700000038000000
+  ExpandedFileSystemItemIds: 02000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000013000000140000001500000018000000190000002d000000370000003800000039000000
+  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e00000010000000110000001300000014000000150000002d000000370000003800000039000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 1

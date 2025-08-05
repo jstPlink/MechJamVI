@@ -3,7 +3,7 @@
   "Platform": {
    "Name": "Web",
    "BasePlatform": "Web",
-   "Generator": "2024.1.6.8842"
+   "Generator": "2024.1.0.8669"
   },
   "RootPaths": {
    "ProjectRoot": "../../../../../../../Wwise/Project",
@@ -30,9 +30,8 @@
    "MaxAttenuationInfo": "true",
    "EstimatedDurationInfo": "true",
    "PrintObjectGuid": "true",
-   "PrintObjectPath": "true",
-   "PrintObjectColor": "true"
+   "PrintObjectPath": "true"
   },
-  "FileHash": "{A6EF8BA3-E879-58F9-9548-40FEC17DCFB1}"
+  "FileHash": "{EC08FA27-07FB-566A-F4A4-41C7CB1FB30E}"
  }
 }

@@ -16,6 +16,7 @@ namespace AK
         static const AkUniqueID AMBIENT_ENERGYFIELD = 3983137402U;
         static const AkUniqueID AMBIENT_MAINSCENARIO = 263695675U;
         static const AkUniqueID ENEMIES_FROGMINIONDEATH = 2517757688U;
+        static const AkUniqueID ENEMIES_FROGMINIONMOVEMENT = 1372172665U;
         static const AkUniqueID ENEMIES_FROGMINIONONHIT = 596226124U;
         static const AkUniqueID MUSIC_MAINSCENARIO = 1419702340U;
         static const AkUniqueID PLAYER_ATTACK_HEAVY_IMPACT = 2923944706U;
@@ -23,7 +24,11 @@ namespace AK
         static const AkUniqueID PLAYER_ATTACK_LIGHT1 = 2793622033U;
         static const AkUniqueID PLAYER_ATTACK_LIGHT2 = 2793622034U;
         static const AkUniqueID PLAYER_CAUTIONALARM = 4240862283U;
+        static const AkUniqueID PLAYER_DEATH = 3083087645U;
+        static const AkUniqueID PLAYER_DEATH_IMPACT = 1610333822U;
+        static const AkUniqueID PLAYER_ENGINE_IDLE = 3147042112U;
         static const AkUniqueID PLAYER_MOVEMENT = 541470702U;
+        static const AkUniqueID PLAYER_ONHIT = 1842275445U;
         static const AkUniqueID UI_BUTTON_BACK = 1598004116U;
         static const AkUniqueID UI_BUTTON_CLICK = 1664509575U;
         static const AkUniqueID UI_BUTTON_DENIED = 1098067136U;
