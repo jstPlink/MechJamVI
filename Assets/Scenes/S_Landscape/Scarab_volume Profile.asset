@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8384851375469227708
+--- !u!114 &-5873815474158143248
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -17,11 +17,11 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 1
   threshold:
-    m_OverrideState: 0
-    m_Value: 0.9
+    m_OverrideState: 1
+    m_Value: 1.1
   intensity:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 3.47
   scatter:
     m_OverrideState: 0
     m_Value: 0.7
@@ -29,8 +29,8 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 65472
   tint:
-    m_OverrideState: 0
-    m_Value: {r: 1, g: 1, b: 1, a: 1}
+    m_OverrideState: 1
+    m_Value: {r: 0.66352195, g: 1, b: 0.7010049, a: 1}
   highQualityFiltering:
     m_OverrideState: 0
     m_Value: 0
@@ -57,13 +57,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
-  m_Name: frog area box Profile
+  m_Name: Scarab_volume Profile
   m_EditorClassIdentifier: 
   components:
-  - {fileID: 3607113942968482736}
-  - {fileID: -8384851375469227708}
-  - {fileID: 5956973153055495804}
---- !u!114 &3607113942968482736
+  - {fileID: 5783269391913576548}
+  - {fileID: -5873815474158143248}
+--- !u!114 &5783269391913576548
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -77,33 +76,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 1
   postExposure:
-    m_OverrideState: 1
-    m_Value: 160.6
+    m_OverrideState: 0
+    m_Value: 0
   contrast:
     m_OverrideState: 0
-    m_Value: 9
+    m_Value: 0
   colorFilter:
-    m_OverrideState: 0
-    m_Value: {r: 0.91823894, g: 0.49407372, b: 0, a: 1}
+    m_OverrideState: 1
+    m_Value: {r: 1, g: 0.9415535, b: 0.827044, a: 1}
   hueShift:
     m_OverrideState: 0
     m_Value: 0
   saturation:
-    m_OverrideState: 0
-    m_Value: 0
---- !u!114 &5956973153055495804
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81180773991d8724ab7f2d216912b564, type: 3}
-  m_Name: ChromaticAberration
-  m_EditorClassIdentifier: 
-  active: 0
-  intensity:
     m_OverrideState: 0
     m_Value: 0
