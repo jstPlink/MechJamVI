@@ -21,10 +21,10 @@ public class UIManager : MonoBehaviour
         ShowSettings(false);
 
         player = GameManager.playerStatic;
-
     }
 
-    
+
+
     // GAME - PANELS
     public void OpenRepair()
     {
@@ -32,6 +32,7 @@ public class UIManager : MonoBehaviour
         powerupPanel.SetActive(false);
         blueprintPanel.SetActive(false);
         // refresh repair
+        repairPanel.GetComponent<PanelRepair>().RefreshPanel();
     }
     public void OpenPowerUps()
     {
@@ -47,17 +48,10 @@ public class UIManager : MonoBehaviour
         powerupPanel.SetActive(false);
         blueprintPanel.SetActive(true);
         // refresh BP
-
     }
 
 
-    // GAME - FUNCTIONS
-    public void RepairHull() {
-        player.GetComponent<Health>().RestoreHealth(true, 10);
-    }
-    public void RepairShield() {
-        player.GetComponent<Health>().RestoreHealth(false, 10);
-    }
+    
 
     
 

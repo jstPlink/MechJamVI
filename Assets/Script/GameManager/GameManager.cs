@@ -20,6 +20,11 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _resourceText;
     public TextMeshProUGUI textResourcesUI;
 
+
+    [Header(" -- REPAIRS --")]
+    public float maxHealthCost = 10f;
+    public float shieldRepairCost = 350f;
+
     [Header(" -- POWERUPS --")]
     public float powerupCostIncrement = 1.5f;
     [SerializeField] public Vars.Powerup attackPowerup;
@@ -144,5 +149,27 @@ public class GameManager : MonoBehaviour
         Vector2 point = Random.insideUnitCircle * 20f;
         Vector3 targetLoc = new Vector3(point.x, 0f, point.y) + closestBase.transform.position;
         return targetLoc;
+    }
+
+
+    public bool RestoreHealth(float percToRestore)
+    {
+        if (percToRestore == -1f)
+        { // shield
+            if (ResourceQty >= shieldRepairCost) {
+                ResourceQty -= shieldRepairCost;
+                return true;
+            }
+            else return false;
+        }
+        else
+        { // health
+            if (ResourceQty >= maxHealthCost * percToRestore)
+            {
+                ResourceQty -= maxHealthCost * percToRestore;
+                return true;
+            }
+            else return false;
+        }
     }
 }

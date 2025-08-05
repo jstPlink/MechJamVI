@@ -10,7 +10,7 @@ public class HitBox : MonoBehaviour
         // damage from player to enemy
         if (gameObject.tag == "PlayerHitbox" && other.tag == "Enemy") {
             float newDamage = damage * GameManager.playerStatic.GetComponent<PlayerState>().curAttackMultiplier;
-            other.GetComponent<Enemy>().ApplyDamage(damage);
+            other.GetComponent<Enemy>().ApplyDamage(newDamage);
         }
         // damage fro enemy to player
         else if (gameObject.tag == "EnemyHitbox" && other.tag == "Player")
