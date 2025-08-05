@@ -17,6 +17,9 @@ public class Health : MonoBehaviour
 
     public GameObject shieldMesh;
 
+    public ComboSystem comboSys;
+    
+
 
     InputAction shieldAction;
 
@@ -63,17 +66,31 @@ public class Health : MonoBehaviour
 
     public void ApplyDamage(float damageAmount)
     {
-        if (shieldAction.ReadValue<float>() > 0 && shield > 0) {
-            shield -= damageAmount;
-        } else health -= damageAmount;
+        if (health > 0)
+        {
+            if (shieldAction.ReadValue<float>() > 0 && shield > 0)
+            {
+                shield -= damageAmount;
+            }
+            else
+            {
+                health -= damageAmount;
+                comboSys.OnHit();
+            }
+        }
+        
+
         
         UpdateUI();
 
         if (health <= 0f)
         {
-            Time.timeScale = 0f;
-            Application.Quit();
+            comboSys.OnDeath();
+            Time.timeScale = 0.5f;
+            // Application.Quit();
         }
+
+
     }
     public void DamageShield(float damageAmount)
     {
