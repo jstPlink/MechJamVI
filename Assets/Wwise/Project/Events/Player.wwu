@@ -49,6 +49,32 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Folder Name="Player_Attack_Heavy" ID="{D58A8AA2-9301-4414-A6F1-3AD8F121C53A}" ShortID="631456359">
+							<ChildrenList>
+								<Event Name="Player_Attack_Heavy_Impact" ID="{A371701F-AD0E-497B-B536-85DDB5E58BA6}">
+									<ChildrenList>
+										<Action Name="" ID="{D7D7BCDA-A57D-4024-8FC7-FAD68E057781}" ShortID="312927702">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Player_HeavyAttack_Impact" ID="{939D7583-C11C-4F23-AA05-95E480CACA67}" WorkUnitID="{3D244E8C-9103-4ED4-B110-56E962BB6EF5}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Player_Attack_Heavy_Jump" ID="{30B47C42-26EA-4D94-82B4-67F7DD394250}">
+									<ChildrenList>
+										<Action Name="" ID="{C9B16736-B273-486F-AF6A-70ABD7A18221}" ShortID="314650801">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Player_HeavyAttack_Jump" ID="{E26BF32D-5054-4A10-82D3-84A8F9D64342}" WorkUnitID="{3D244E8C-9103-4ED4-B110-56E962BB6EF5}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

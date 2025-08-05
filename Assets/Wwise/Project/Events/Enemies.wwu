@@ -10,7 +10,7 @@
 								<Action Name="" ID="{F44E875F-F556-496C-A0D7-9385832414EE}" ShortID="1024951437">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Attack_ImpactFM" ID="{90A54544-E0D2-4D3B-962E-91930B33C5BD}" WorkUnitID="{5B6BC789-1D01-478C-AF18-E0DC160C20B5}"/>
+											<ObjectRef Name="FrogMinion_OnHit" ID="{90A54544-E0D2-4D3B-962E-91930B33C5BD}" WorkUnitID="{5B6BC789-1D01-478C-AF18-E0DC160C20B5}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

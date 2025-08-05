@@ -154,7 +154,7 @@
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="PlayerHealth20" ID="{2E637713-D4A1-485C-9F58-8678848C1C0B}"/>
-						<CurrentSwitchRef Name="Enemy_FrogMinion" ID="{B1DF88C4-55E6-4E2D-9C68-3A08FFA7CB6E}"/>
+						<CurrentSwitchRef Name="Dirt" ID="{A6C5B0F6-803A-42D8-9326-1F84FFF4751C}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

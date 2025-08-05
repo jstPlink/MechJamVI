@@ -6,6 +6,13 @@
 				<BlendContainer Name="Ambient_MainScenario" ID="{3BEB802C-40A8-4853-8010-02B31961D66B}" ShortID="395577470">
 					<PropertyList>
 						<Property Name="BlendBehavior" Type="int16" Value="1"/>
+						<Property Name="OverridePriority" Type="bool" Value="True"/>
+						<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+						<Property Name="Priority" Type="int16">
+							<ValueList>
+								<Value>70</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">

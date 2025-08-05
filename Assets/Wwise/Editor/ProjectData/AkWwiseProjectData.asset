@@ -596,7 +596,7 @@ MonoBehaviour:
     ParentPath: Events/Enemies
     guid: 65b1bc0102603447858c985142756ae5
     GuidInternal: 
-    m_lastTime: -8584472720815770978
+    m_lastTime: -8584472171728210686
     List:
     - name: Enemies_FrogMinionOnHit
       guid: 834b6b3cc5c0534cb195b1b594d0376f
@@ -616,8 +616,8 @@ MonoBehaviour:
         guid: 834b6b3cc5c0534cb195b1b594d0376f
       Path: Events/Enemies/Generic/Enemies_FrogMinionOnHit
       maxAttenuation: 80
-      maxDuration: 0.37465596
-      minDuration: 0.16848072
+      maxDuration: 1.0214777
+      minDuration: 0.8841263
     - name: Generic
       guid: ab47b60a70b012418f1b146d0cfe63cb
       id: 4294388576
@@ -696,8 +696,74 @@ MonoBehaviour:
     ParentPath: Events/Player
     guid: 648b2e27f41c674fbcc4efd93a3d7e05
     GuidInternal: 
-    m_lastTime: -8584472704945604844
+    m_lastTime: -8584472171728199049
     List:
+    - name: Player_Attack_Heavy
+      guid: a28a8ad501931444a6f13ad8f121c53a
+      id: 3038907409
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: 648b2e27f41c674fbcc4efd93a3d7e05
+      - ElementName: PlayerStatus
+        ObjectType: 4
+        guid: a3c12e51ea5bc94098aa460645320723
+      - ElementName: Player_Attack_Heavy
+        ObjectType: 4
+        guid: a28a8ad501931444a6f13ad8f121c53a
+      Path: Events/Player/PlayerStatus/Player_Attack_Heavy
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Player_Attack_Heavy_Impact
+      guid: 1f7071a30ead7b49b53685ddb5e58ba6
+      id: 2923944706
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: 648b2e27f41c674fbcc4efd93a3d7e05
+      - ElementName: PlayerStatus
+        ObjectType: 4
+        guid: a3c12e51ea5bc94098aa460645320723
+      - ElementName: Player_Attack_Heavy
+        ObjectType: 4
+        guid: a28a8ad501931444a6f13ad8f121c53a
+      - ElementName: Player_Attack_Heavy_Impact
+        ObjectType: 3
+        guid: 1f7071a30ead7b49b53685ddb5e58ba6
+      Path: Events/Player/PlayerStatus/Player_Attack_Heavy/Player_Attack_Heavy_Impact
+      maxAttenuation: 0
+      maxDuration: 1.4289054
+      minDuration: 1.2730099
+    - name: Player_Attack_Heavy_Jump
+      guid: 427cb430ea26944d82b467f7dd394250
+      id: 4105981504
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: 648b2e27f41c674fbcc4efd93a3d7e05
+      - ElementName: PlayerStatus
+        ObjectType: 4
+        guid: a3c12e51ea5bc94098aa460645320723
+      - ElementName: Player_Attack_Heavy
+        ObjectType: 4
+        guid: a28a8ad501931444a6f13ad8f121c53a
+      - ElementName: Player_Attack_Heavy_Jump
+        ObjectType: 3
+        guid: 427cb430ea26944d82b467f7dd394250
+      Path: Events/Player/PlayerStatus/Player_Attack_Heavy/Player_Attack_Heavy_Jump
+      maxAttenuation: 0
+      maxDuration: 1.0016505
+      minDuration: 1.0016505
     - name: Player_Attack_Light1
       guid: d932040c7cd93e4f820361e357b965b4
       id: 2793622033
@@ -736,8 +802,8 @@ MonoBehaviour:
         guid: 196d2c7982b75a45b28dd254b0797756
       Path: Events/Player/PlayerStatus/Player_Attack_Light2
       maxAttenuation: 0
-      maxDuration: 1.1892071
-      minDuration: 1.1892071
+      maxDuration: 1.4545319
+      minDuration: 1.371412
     - name: Player_CautionAlarm
       guid: 55c6d03ba4ddc5468db985c10c3af250
       id: 4240862283
@@ -1332,7 +1398,7 @@ MonoBehaviour:
     m_lastTime: -8584481567148078519
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000a0000000b0000000c0000000d00000010000000110000001300000014000000150000003700000038000000
+  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000b0000000c0000000d0000000e00000010000000110000001300000014000000150000002d0000003700000038000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

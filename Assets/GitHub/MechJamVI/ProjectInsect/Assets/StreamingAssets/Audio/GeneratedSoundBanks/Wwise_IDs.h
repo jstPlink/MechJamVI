@@ -17,6 +17,8 @@ namespace AK
         static const AkUniqueID AMBIENT_MAINSCENARIO = 263695675U;
         static const AkUniqueID ENEMIES_FROGMINIONONHIT = 596226124U;
         static const AkUniqueID MUSIC_MAINSCENARIO = 1419702340U;
+        static const AkUniqueID PLAYER_ATTACK_HEAVY_IMPACT = 2923944706U;
+        static const AkUniqueID PLAYER_ATTACK_HEAVY_JUMP = 4105981504U;
         static const AkUniqueID PLAYER_ATTACK_LIGHT1 = 2793622033U;
         static const AkUniqueID PLAYER_ATTACK_LIGHT2 = 2793622034U;
         static const AkUniqueID PLAYER_CAUTIONALARM = 4240862283U;

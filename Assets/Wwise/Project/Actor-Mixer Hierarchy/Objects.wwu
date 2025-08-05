@@ -2,9 +2,21 @@
 <WwiseDocument Type="WorkUnit" ID="{46FBC24E-5CE0-42CD-B466-3CDF6B644DAF}" SchemaVersion="123" RootDocumentID="{1355577E-AE4B-414F-BC05-0F4EA7E8ED25}" ParentDocumentID="{1355577E-AE4B-414F-BC05-0F4EA7E8ED25}">
 	<AudioObjects>
 		<WorkUnit Name="Objects" ID="{46FBC24E-5CE0-42CD-B466-3CDF6B644DAF}" OwnerID="{779260EB-BD18-49E9-A611-DAB12F1E3DD7}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Inclusion" Type="bool">
+					<ValueList>
+						<Value>False</Value>
+					</ValueList>
+				</Property>
+			</PropertyList>
 			<ChildrenList>
 				<ActorMixer Name="Objects" ID="{939644D2-7DFB-47C6-A874-7702183CD2E6}" ShortID="1032888819">
 					<PropertyList>
+						<Property Name="Inclusion" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
 						<Property Name="OverrideConversion" Type="bool" Value="True"/>
 						<Property Name="OverrideOutput" Type="bool" Value="True"/>
 					</PropertyList>

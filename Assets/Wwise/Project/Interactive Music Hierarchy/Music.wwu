@@ -137,7 +137,11 @@
 								<ObjectList Name="Cues">
 									<Reference>
 										<Local>
-											<MusicCue Name="Entry Cue" ID="{B281C49C-9C42-4F57-B404-8CFD63AB81AA}"/>
+											<MusicCue Name="Entry Cue" ID="{B281C49C-9C42-4F57-B404-8CFD63AB81AA}">
+												<PropertyList>
+													<Property Name="TimeMs" Type="Real64" Value="50526.3157894737"/>
+												</PropertyList>
+											</MusicCue>
 										</Local>
 									</Reference>
 									<Reference>
