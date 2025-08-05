@@ -52,6 +52,10 @@
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
+							<GameParameterRef Name="MusicStinger" ID="{1FB9D3B4-EA6E-4039-8D23-8F4D81199BC1}"/>
+							<Value>-48</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="PlayerMovementSpeed" ID="{1D3865F4-750F-42D5-BD11-FE5DD0470BAF}"/>
 							<Value>0</Value>
 						</RTPCValue>
@@ -117,6 +121,10 @@
 							<Position X="2" Y="2"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="UI_Mission_BaseLost" ID="{49A07809-EF7C-4D69-8881-99FC36CDCFD6}" WorkUnitID="{3BA79CA0-CF79-4285-B72E-8F261F961920}"/>
+							<Position X="2" Y="3"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Music_MainScenario" ID="{7BE7A7C2-5EB8-43C1-962D-13A2206A67CC}" WorkUnitID="{E3E91FDB-7795-4C87-ACF9-C1D503741540}"/>
 							<Position X="3" Y="0"/>
 						</Module>
@@ -127,6 +135,10 @@
 						<Module>
 							<ObjectRef Name="UI_Maintenance_Repair" ID="{9F24FB75-8B03-4009-AE60-C03E863CCDF5}" WorkUnitID="{3BA79CA0-CF79-4285-B72E-8F261F961920}"/>
 							<Position X="3" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="UI_Mission_BaseWon" ID="{3F88E5CE-433A-4F0A-BF80-932FB81F4D51}" WorkUnitID="{3BA79CA0-CF79-4285-B72E-8F261F961920}"/>
+							<Position X="3" Y="3"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Enemies_FrogMinionOnHit" ID="{3C6B4B83-C0C5-4C53-B195-B1B594D0376F}" WorkUnitID="{01BCB165-6002-4734-858C-985142756AE5}"/>
@@ -142,6 +154,10 @@
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="MusicStinger" ID="{1FB9D3B4-EA6E-4039-8D23-8F4D81199BC1}"/>
+							<Value>-48</Value>
+						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="PlayerHealthValue" ID="{D76F94C3-67C5-43FF-981A-FF488ECD82E9}"/>
 							<Value>100</Value>

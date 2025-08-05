@@ -10,11 +10,21 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{7CA537A2-A877-2684-D4BB-18146E45C455}",
+    "Hash": "{3482275D-FE34-1AE5-8FC7-E43CC2B968D0}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
     "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "266555239",
+       "Name": "Music_SideChain",
+       "ObjectPath": "\\Effects\\Default Work Unit\\Music_SideChain",
+       "GUID": "{1FA39EAF-47CA-4D6C-8040-FAE42D2FFBE3}",
+       "LibName": "Wwise Meter",
+       "LibId": "8454147"
+      }
+     ],
      "AudioDevices": [
       {
        "Id": "2317455096",
@@ -40,6 +50,19 @@
       "Name": "Ambient",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\World\\Ambient",
       "GUID": "{4967DF1B-9299-4E16-99B3-FB97BA6FC553}"
+     },
+     {
+      "Id": "721991581",
+      "Name": "Music_Stinger",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Non_World\\Music_Stinger",
+      "GUID": "{4951B8F7-3389-495E-A5EE-000020CFB435}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "266555239"
+        }
+       ]
+      }
      },
      {
       "Id": "1069431850",
@@ -98,6 +121,12 @@
       "GUID": "{5EE17611-8EF7-48A6-B658-2E1A4710C18F}"
      },
      {
+      "Id": "1636576504",
+      "Name": "MusicStinger",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\MusicStinger",
+      "GUID": "{1FB9D3B4-EA6E-4039-8D23-8F4D81199BC1}"
+     },
+     {
       "Id": "2557281390",
       "Name": "PlayerMovementSpeed",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\PlayerMovementSpeed",
@@ -114,6 +143,22 @@
       "Name": "CameraDistance",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\CameraDistance",
       "GUID": "{C8144563-DBF2-42BB-B8C0-9006AADF189C}"
+     }
+    ],
+    "StateGroups": [
+     {
+      "Id": "748895195",
+      "Name": "None",
+      "ObjectPath": "\\States\\Default Work Unit\\None",
+      "GUID": "{13C30D66-D40F-478E-B295-99F708E1A878}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\None\\None",
+        "GUID": "{7971BECD-C79B-455B-8998-8A2FD1D41210}"
+       }
+      ]
      }
     ],
     "SwitchGroups": [
@@ -670,6 +715,6 @@
     ]
    }
   ],
-  "FileHash": "{CB6B0807-EB0E-92B6-9129-A824D459B72F}"
+  "FileHash": "{9A988665-7054-85BB-C863-7D54ACE3A3B8}"
  }
 }

@@ -31,8 +31,24 @@ namespace AK
         static const AkUniqueID UI_MAINTENANCE_OPEN = 701705398U;
         static const AkUniqueID UI_MAINTENANCE_POWERUP = 120049226U;
         static const AkUniqueID UI_MAINTENANCE_REPAIR = 26115229U;
+        static const AkUniqueID UI_MISSION_BASELOST = 620449730U;
+        static const AkUniqueID UI_MISSION_BASEWON = 1175031056U;
         static const AkUniqueID UI_MISSION_TARGETPOPUP = 2991794566U;
     } // namespace EVENTS
+
+    namespace STATES
+    {
+        namespace NONE
+        {
+            static const AkUniqueID GROUP = 748895195U;
+
+            namespace STATE
+            {
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace NONE
+
+    } // namespace STATES
 
     namespace SWITCHES
     {
@@ -69,9 +85,16 @@ namespace AK
     {
         static const AkUniqueID CAMERADISTANCE = 2835450985U;
         static const AkUniqueID MENUATTENUATION = 466717960U;
+        static const AkUniqueID MUSICSTINGER = 1636576504U;
         static const AkUniqueID PLAYERHEALTHVALUE = 2774557527U;
         static const AkUniqueID PLAYERMOVEMENTSPEED = 2557281390U;
     } // namespace GAME_PARAMETERS
+
+    namespace TRIGGERS
+    {
+        static const AkUniqueID MUSIC_STINGERDEFEAT = 1723656556U;
+        static const AkUniqueID MUSIC_STINGERVICTORY = 1385723609U;
+    } // namespace TRIGGERS
 
     namespace BANKS
     {
@@ -85,6 +108,7 @@ namespace AK
         static const AkUniqueID ENEMIES = 2242381963U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
         static const AkUniqueID MUSIC = 3991942870U;
+        static const AkUniqueID MUSIC_STINGER = 721991581U;
         static const AkUniqueID NON_WORLD = 3869140995U;
         static const AkUniqueID OBJECTS = 1695690031U;
         static const AkUniqueID PLAYER = 1069431850U;

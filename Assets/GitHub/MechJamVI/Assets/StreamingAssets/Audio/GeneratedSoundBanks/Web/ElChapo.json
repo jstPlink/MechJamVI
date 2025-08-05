@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{AEED4C7A-EFF1-4B94-88D1-41A771CFEFCF}",
     "Language": "SFX",
-    "Hash": "{B319CF0E-331C-1324-7D02-0B73FF3B4CD6}",
+    "Hash": "{D5D1E1E6-BC5D-49A0-7DD8-DBD2B7F9BD84}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\ElChapo",
     "ShortName": "ElChapo",
     "Path": "ElChapo.bnk",
@@ -38,6 +38,22 @@
       "Location": "Memory",
       "ShortName": "Error Triplet-1.wav",
       "CachePath": "34/{3463B9E3-48B9-CDF0-5663-2E5B3CF53387}.wem"
+     },
+     {
+      "Id": "88260462",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "VENGEANCEPROTOCOL - 01_Stinger_Victory_APREMIX.wav",
+      "CachePath": "A0/{A039D22D-E8F9-2731-B528-98BD3C217986}.wem"
+     },
+     {
+      "Id": "104298631",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Holographic Interaction-20.wav",
+      "CachePath": "7E/{7EB24ED0-1471-56D0-A9C0-83BAFCCD59CF}.wem"
      },
      {
       "Id": "121838931",
@@ -72,6 +88,14 @@
       "CachePath": "BB/{BB376865-9B80-5FD8-A963-8137F02A8522}.wem"
      },
      {
+      "Id": "177389884",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Holographic Interaction-22.wav",
+      "CachePath": "13/{131F91A8-37F9-99AD-A636-D593F83C555F}.wem"
+     },
+     {
       "Id": "196575134",
       "Language": "SFX",
       "Streaming": "false",
@@ -104,6 +128,14 @@
       "CachePath": "34/{3423B36E-A257-7ACB-E98F-A8E827A96FDE}.wem"
      },
      {
+      "Id": "306019051",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Holographic Interaction-23.wav",
+      "CachePath": "11/{11502654-C1E1-1C9C-6DCB-299DD8D1BF1D}.wem"
+     },
+     {
       "Id": "323913972",
       "Language": "SFX",
       "Streaming": "false",
@@ -128,12 +160,28 @@
       "CachePath": "87/{87788FD1-6071-1024-828A-A862F1A2F1BC}.wem"
      },
      {
+      "Id": "471240038",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Holographic Interaction-24.wav",
+      "CachePath": "99/{992F8DCF-2FF6-6B00-338F-C497EE748196}.wem"
+     },
+     {
       "Id": "471952270",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "EXPLDsgn_Explosion Impact_14_SFRMS_SCIWPNS.wav",
       "CachePath": "82/{82DD25CB-07B0-5EC0-82D3-262B1A86224D}.wem"
+     },
+     {
+      "Id": "472738727",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "VENGEANCEPROTOCOL - 02_Stinger_Defeat_APREMIX.wav",
+      "CachePath": "1E/{1E7AF815-C761-8791-16A7-E41ABAD20B13}.wem"
      },
      {
       "Id": "481396576",
@@ -216,6 +264,14 @@
       "CachePath": "BA/{BABB6C18-AB5D-BF7C-D951-C2E79F4469C4}.wem"
      },
      {
+      "Id": "691099798",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Holographic Interaction-21.wav",
+      "CachePath": "46/{4623F2F9-C858-5AA9-3780-E57EBE4EC955}.wem"
+     },
+     {
       "Id": "698340496",
       "Language": "SFX",
       "Streaming": "false",
@@ -264,6 +320,14 @@
       "CachePath": "7A/{7A71F9FF-2CD7-1746-8B7D-1E855B1D8482}.wem"
      },
      {
+      "Id": "813303468",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "VENGEANCEPROTOCOL - 01_Stinger_Victory_BPREMIX.wav",
+      "CachePath": "01/{01DB12BB-82F8-B423-DD43-00074DDA42E2}.wem"
+     },
+     {
       "Id": "830216992",
       "Language": "SFX",
       "Streaming": "false",
@@ -288,6 +352,14 @@
       "CachePath": "20/{209792C0-B883-EAF1-B0C5-5681C658C6A7}.wem"
      },
      {
+      "Id": "957594136",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "VENGEANCEPROTOCOL - 02_Stinger_Defeat_BPREMIX.wav",
+      "CachePath": "B8/{B8D08DE5-2AE2-5CC9-231E-94F0961C7318}.wem"
+     },
+     {
       "Id": "966446192",
       "Language": "SFX",
       "Streaming": "false",
@@ -302,6 +374,14 @@
       "Location": "Memory",
       "ShortName": "Sword Attack 2.wav",
       "CachePath": "92/{922A7893-8BF5-2C3F-337D-09387466CEBA}.wem"
+     },
+     {
+      "Id": "972540742",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Alarm Beep Loop.wav",
+      "CachePath": "33/{33E61F87-FBD7-424A-242F-603939D81C95}.wem"
      },
      {
       "Id": "988191268",
@@ -390,7 +470,31 @@
       "DurationType": "Infinite",
       "MediaRefs": [
        {
-        "Id": "196575134"
+        "Id": "88260462"
+       },
+       {
+        "Id": "472738727"
+       },
+       {
+        "Id": "813303468"
+       },
+       {
+        "Id": "957594136"
+       }
+      ],
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "748895195",
+         "Id": "0",
+         "GUID": "{13C30D66-D40F-478E-B295-99F708E1A878}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "196575134"
+         }
+        ]
        }
       ]
      },
@@ -659,6 +763,62 @@
       ]
      },
      {
+      "Id": "620449730",
+      "Name": "UI_Mission_BaseLost",
+      "ObjectPath": "\\Events\\UI\\Mission\\UI_Mission_BaseLost",
+      "GUID": "{49A07809-EF7C-4D69-8881-99FC36CDCFD6}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.282585",
+      "DurationMax": "1.282585",
+      "MediaRefs": [
+       {
+        "Id": "972540742"
+       }
+      ],
+      "ActionTrigger": [
+       {
+        "Id": "1723656556",
+        "Name": "Music_StingerDefeat",
+        "ObjectPath": "\\Triggers\\Default Work Unit\\Music_StingerDefeat",
+        "GUID": "{4B3ABBF4-7050-433F-92AB-36E58B6A3AFC}"
+       }
+      ]
+     },
+     {
+      "Id": "1175031056",
+      "Name": "UI_Mission_BaseWon",
+      "ObjectPath": "\\Events\\UI\\Mission\\UI_Mission_BaseWon",
+      "GUID": "{3F88E5CE-433A-4F0A-BF80-932FB81F4D51}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.3050572",
+      "DurationMax": "1.7891327",
+      "MediaRefs": [
+       {
+        "Id": "104298631"
+       },
+       {
+        "Id": "177389884"
+       },
+       {
+        "Id": "306019051"
+       },
+       {
+        "Id": "471240038"
+       },
+       {
+        "Id": "691099798"
+       }
+      ],
+      "ActionTrigger": [
+       {
+        "Id": "1385723609",
+        "Name": "Music_StingerVictory",
+        "ObjectPath": "\\Triggers\\Default Work Unit\\Music_StingerVictory",
+        "GUID": "{9A46672A-0F22-4BB4-99DF-0D6C74BBEDA5}"
+       }
+      ]
+     },
+     {
       "Id": "2991794566",
       "Name": "UI_Mission_TargetPopUp",
       "ObjectPath": "\\Events\\UI\\Mission\\UI_Mission_TargetPopUp",
@@ -685,6 +845,22 @@
       "Name": "PlayerHealthValue",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\PlayerHealthValue",
       "GUID": "{D76F94C3-67C5-43FF-981A-FF488ECD82E9}"
+     }
+    ],
+    "StateGroups": [
+     {
+      "Id": "748895195",
+      "Name": "None",
+      "ObjectPath": "\\States\\Default Work Unit\\None",
+      "GUID": "{13C30D66-D40F-478E-B295-99F708E1A878}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\None\\None",
+        "GUID": "{7971BECD-C79B-455B-8998-8A2FD1D41210}"
+       }
+      ]
      }
     ],
     "SwitchGroups": [
@@ -717,9 +893,23 @@
        }
       ]
      }
+    ],
+    "Triggers": [
+     {
+      "Id": "1385723609",
+      "Name": "Music_StingerVictory",
+      "ObjectPath": "\\Triggers\\Default Work Unit\\Music_StingerVictory",
+      "GUID": "{9A46672A-0F22-4BB4-99DF-0D6C74BBEDA5}"
+     },
+     {
+      "Id": "1723656556",
+      "Name": "Music_StingerDefeat",
+      "ObjectPath": "\\Triggers\\Default Work Unit\\Music_StingerDefeat",
+      "GUID": "{4B3ABBF4-7050-433F-92AB-36E58B6A3AFC}"
+     }
     ]
    }
   ],
-  "FileHash": "{B4931D79-9204-AC27-5A61-C9E924C235C7}"
+  "FileHash": "{C4977372-776D-C298-66CE-74677EE678B9}"
  }
 }

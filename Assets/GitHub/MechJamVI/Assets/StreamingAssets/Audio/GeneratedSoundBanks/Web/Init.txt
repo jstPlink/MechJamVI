@@ -6,11 +6,18 @@ Switch	ID	Name	Switch Group			Notes
 	1703797114	PlayerHealth20	PlayerHealthSwitch			
 	3528909237	PlayerHealth100	PlayerHealthSwitch			
 
+State Group	ID	Name			Wwise Object Path	Notes
+	748895195	None			\Default Work Unit\None	
+
+State	ID	Name	State Group			Notes
+	748895195	None	None			
+
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	466717960	MenuAttenuation			\Default Work Unit\MenuAttenuation	
 	504532776	Brick			\Factory Acoustic Textures\Textures\Brick	
 	513139656	Mountain			\Factory Acoustic Textures\Textures\Mountain	
 	841620460	Concrete			\Factory Acoustic Textures\Textures\Concrete	
+	1636576504	MusicStinger			\Default Work Unit\MusicStinger	
 	1755085759	Wood_Deep			\Factory Acoustic Textures\Textures\Wood_Deep	
 	1873957695	Anechoic			\Factory Acoustic Textures\Textures\Anechoic	
 	1970351858	Fabric			\Factory Acoustic Textures\Textures\Fabric	
@@ -25,6 +32,7 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	77978275	Ambient			\Default Work Unit\Master Audio Bus\World\Ambient	
+	721991581	Music_Stinger			\Default Work Unit\Master Audio Bus\Non_World\Music_Stinger	
 	1069431850	Player			\Default Work Unit\Master Audio Bus\World\Player	
 	1551306167	UI			\Default Work Unit\Master Audio Bus\Non_World\UI	
 	1695690031	Objects			\Default Work Unit\Master Audio Bus\World\Objects	
@@ -33,6 +41,9 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 	3869140995	Non_World			\Default Work Unit\Master Audio Bus\Non_World	
 	3991942870	Music			\Default Work Unit\Master Audio Bus\Non_World\Music	
+
+Effect plug-ins	ID	Name	Type				Notes
+	266555239	Music_SideChain	Wwise Meter			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

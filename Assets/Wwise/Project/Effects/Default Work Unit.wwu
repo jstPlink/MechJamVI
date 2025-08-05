@@ -4,6 +4,15 @@
 		<WorkUnit Name="Default Work Unit" ID="{184652B6-9723-4760-A254-B1D8D79DA367}" PersistMode="Standalone">
 			<ChildrenList>
 				<Effect Name="Pitch_Shifter_Edo" ID="{C9128665-EC16-4DC4-BE3E-E22850AE3B80}" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3"/>
+				<Effect Name="Music_SideChain" ID="{1FA39EAF-47CA-4D6C-8040-FAE42D2FFBE3}" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+					<PropertyList>
+						<Property Name="MeterMode" Type="int32" Value="1"/>
+						<Property Name="ReleaseTime" Type="Real32" Value="1.5"/>
+					</PropertyList>
+					<PluginData>
+	<GameParameter Name="MusicStinger" ID="{1FB9D3B4-EA6E-4039-8D23-8F4D81199BC1}"/>
+</PluginData>
+				</Effect>
 			</ChildrenList>
 		</WorkUnit>
 	</Effects>
