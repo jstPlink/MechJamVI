@@ -834,6 +834,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _stopDistance: 9
+  liquidMat: {fileID: 2100000, guid: 066c6ee571c2c1542a27d299f7e3b146, type: 2}
+  _liquidSpeed: 0.3
   _attackDistance: 9
   _minAttackCooldown: 0.3
   _maxAttackCooldown: 0.4
