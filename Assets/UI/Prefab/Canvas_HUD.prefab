@@ -2450,7 +2450,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dafc79ebc513d24486ba9775a72b230, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textCost: {fileID: 4693898903957959347}
+  textCost: {fileID: 0}
   isHealth: 1
   gm: {fileID: 0}
   panelHealth: {fileID: 8411051686609611314}
