@@ -59,20 +59,20 @@ MonoBehaviour:
   attackPowerup:
     name: SHARPEN PEDIPALPS
     description: Makes attacks more effective
-    firstUpgradeMultiplier: 2.25
-    repeatedUpgradeMultiplier: 1.25
+    firstUpgradeMultiplier: 1.3
+    repeatedUpgradeMultiplier: 1.05
     cost: 500
   healthPowerup:
     name: BOOST EXOSKELETON
     description: Makes the mecha more durable
-    firstUpgradeMultiplier: 1.25
-    repeatedUpgradeMultiplier: 1.25
+    firstUpgradeMultiplier: 1.2
+    repeatedUpgradeMultiplier: 1.05
     cost: 500
   speedPowerup:
     name: OIL THE JOINTS
     description: Makes you move faster
-    firstUpgradeMultiplier: 2.1
-    repeatedUpgradeMultiplier: 1.1
+    firstUpgradeMultiplier: 1.2
+    repeatedUpgradeMultiplier: 1.05
     cost: 500
   totalResourceXTick: 0
   ResourceQty: 0

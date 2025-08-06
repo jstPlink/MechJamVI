@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 33a17e047c5d6e43aaecb799cadd4a81
     GuidInternal: 
-    m_lastTime: -8584472124958394691
+    m_lastTime: -8584471763171714409
     List: []
   - PhysicalPath: Virtual Acoustics\Factory Acoustic Textures.wwu
     PathAndIcons:
@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 64fe4fde7f893d4381e284a69f3aad98
     GuidInternal: 
-    m_lastTime: -8584470917673765537
+    m_lastTime: -8584470916651192187
     List:
     - name: Ambient
       guid: 1bdf67499992164e99b3fb97ba6fc553
@@ -553,7 +553,7 @@ MonoBehaviour:
     ParentPath: Events\Ambient
     guid: 47671fed19aaf84480eaff742d677ecb
     GuidInternal: 
-    m_lastTime: -8584470917673805744
+    m_lastTime: -8584470916651637650
     List:
     - name: Ambient_EnergyField
       guid: 6fd2a3c715508f418783ac77feed77fb
@@ -623,7 +623,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 69fe29f5f6c58b4fbb65fd940784a2f5
     GuidInternal: 
-    m_lastTime: -8584472124992902256
+    m_lastTime: -8584471763190797758
     List: []
   - PhysicalPath: Events\Enemies.wwu
     PathAndIcons:
@@ -726,7 +726,7 @@ MonoBehaviour:
     ParentPath: Events\Music
     guid: db1fe9e39577874cacf9c1d503741540
     GuidInternal: 
-    m_lastTime: -8584470917673800725
+    m_lastTime: -8584470916651562371
     List:
     - name: BGMLV1
       guid: ce1943480ddcbc4c862f62789592fa0c
@@ -796,7 +796,7 @@ MonoBehaviour:
     ParentPath: Events\Player
     guid: 648b2e27f41c674fbcc4efd93a3d7e05
     GuidInternal: 
-    m_lastTime: -8584470917673795721
+    m_lastTime: -8584470916651463384
     List:
     - name: Player_Attack_Heavy
       guid: a28a8ad501931444a6f13ad8f121c53a
@@ -1098,7 +1098,7 @@ MonoBehaviour:
     ParentPath: Events\UI
     guid: a09ca73b79cf8542b72e8f261f961920
     GuidInternal: 
-    m_lastTime: -8584470917673785582
+    m_lastTime: -8584470916651372775
     List:
     - name: ARMAGEDDON
       guid: d30038c7261e0542801b65f55c8a6b15
@@ -1460,7 +1460,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: c4fc7627f52b2049a96029689e030f7e
     GuidInternal: 
-    m_lastTime: -8584470917673780578
+    m_lastTime: -8584470916651286772
     List:
     - name: CameraDistance
       guid: 634514c8f2dbbb42b8c09006aadf189c
@@ -1586,7 +1586,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: c22443ecf148814ca9bb9727de7877a0
     GuidInternal: 
-    m_lastTime: -8584470917670418667
+    m_lastTime: -8584470916647503787
     List:
     - name: GameState
       guid: 8cbda6d670d40743b30109c23881f48a
@@ -1860,7 +1860,7 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: aa5cc4cdc3782a43b9a61d01156bde33
     GuidInternal: 
-    m_lastTime: -8584470917670413662
+    m_lastTime: -8584470916647503787
     List:
     - name: Music_StingerDefeat
       guid: f4bb3a4b50703f4392ab36e58b6a3afc

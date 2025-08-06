@@ -121,7 +121,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1efa68c527b0b240adc406044d5c766, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 45
+  damage: 50
+  hitEffect: []
 --- !u!1 &2844283488684433417
 GameObject:
   m_ObjectHideFlags: 0
@@ -243,7 +244,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1efa68c527b0b240adc406044d5c766, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 25
+  damage: 30
+  hitEffect: []
 --- !u!1 &6298278880964255475
 GameObject:
   m_ObjectHideFlags: 0
@@ -753,6 +755,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 65
+  hitEffect: []
 --- !u!1001 &2018486642708880173
 PrefabInstance:
   m_ObjectHideFlags: 0
