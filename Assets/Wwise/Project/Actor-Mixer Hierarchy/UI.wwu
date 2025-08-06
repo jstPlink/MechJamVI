@@ -6,6 +6,18 @@
 				<ActorMixer Name="UI" ID="{77883567-8BAD-4707-8E93-AA2C91DC7721}" ShortID="214203648">
 					<PropertyList>
 						<Property Name="OverrideOutput" Type="bool" Value="True"/>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{3EDA13D9-8ABD-47BC-ADE9-12AC25E2A3F4}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>3</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -17,6 +29,13 @@
 					</ReferenceList>
 					<ChildrenList>
 						<ActorMixer Name="Button" ID="{6B379C9A-76C8-4015-8D5F-0A4975E2FE72}" ShortID="846882736">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="UI_General" ID="{C90BF1B7-302B-427A-BD89-987738D3AAD5}" WorkUnitID="{02C56FBA-37F0-481A-9AF2-FCA6DF6512EE}"/>
@@ -26,83 +45,14 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="Button_Click" ID="{FAED9D3C-0A6B-4891-A277-95156572EC2B}" ShortID="638394244">
-									<PropertyList>
-										<Property Name="OverrideConversion" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<Custom>
-												<Conversion Name="Conversion Settings (Custom)" ID="{8E7A4717-395E-484C-9522-F55EDF390BCD}">
-													<PropertyList>
-														<Property Name="Channels" Type="int32">
-															<ValueList>
-																<Value Platform="Mac">4</Value>
-																<Value Platform="Windows">4</Value>
-																<Value Platform="Web">4</Value>
-															</ValueList>
-														</Property>
-														<Property Name="LRMix" Type="Real64">
-															<ValueList>
-																<Value Platform="Mac">0</Value>
-																<Value Platform="Windows">0</Value>
-																<Value Platform="Web">0</Value>
-															</ValueList>
-														</Property>
-														<Property Name="MaxSampleRate" Type="int32">
-															<ValueList>
-																<Value Platform="Mac">48000</Value>
-																<Value Platform="Windows">48000</Value>
-																<Value Platform="Web">48000</Value>
-															</ValueList>
-														</Property>
-														<Property Name="MinSampleRate" Type="int32">
-															<ValueList>
-																<Value Platform="Mac">0</Value>
-																<Value Platform="Windows">0</Value>
-																<Value Platform="Web">0</Value>
-															</ValueList>
-														</Property>
-														<Property Name="SampleRate" Type="int32">
-															<ValueList>
-																<Value Platform="Mac">0</Value>
-																<Value Platform="Windows">0</Value>
-																<Value Platform="Web">0</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
-													<ConversionPluginInfoList>
-														<ConversionPluginInfo Platform="Mac">
-															<ConversionPlugin Name="" ID="{10370A92-8417-4A85-BDB4-C691B571925D}" PluginName="PCM" CompanyID="0" PluginID="1"/>
-														</ConversionPluginInfo>
-														<ConversionPluginInfo Platform="Windows">
-															<ConversionPlugin Name="" ID="{0CFAD940-C38C-492A-8EE1-281C7A3B9A03}" PluginName="PCM" CompanyID="0" PluginID="1"/>
-														</ConversionPluginInfo>
-														<ConversionPluginInfo Platform="Web">
-															<ConversionPlugin Name="" ID="{6529866F-3842-4EB2-8347-8E4DA6A46500}" PluginName="PCM" CompanyID="0" PluginID="1"/>
-														</ConversionPluginInfo>
-													</ConversionPluginInfoList>
-												</Conversion>
-											</Custom>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="FUI Button Beep Stereo-1" ID="{726B19DB-0E55-4781-87A9-05EB5E3AB4C3}">
-											<Language>SFX</Language>
-											<AudioFile>FUI Button Beep Stereo-1.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="121838931"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="FUI Button Beep Stereo-1" ID="{726B19DB-0E55-4781-87A9-05EB5E3AB4C3}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
 								<Sound Name="Button_Back" ID="{D2A1E961-115A-4492-93B2-C5A25B974726}" ShortID="351258419">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
@@ -134,10 +84,31 @@
 											</ValueList>
 										</Property>
 										<Property Name="OverrideConversion" Type="bool" Value="True"/>
-										<Property Name="UseMaxSoundPerInstance" Type="bool">
-											<ValueList>
-												<Value>True</Value>
-											</ValueList>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{89EE1153-FC36-48C7-B005-C52A0B938919}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="10"/>
+															<Property Name="Min" Type="Real64" Value="-10"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{788CF96D-0B04-4C5F-A9BB-1E7D325C0A95}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="1"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
@@ -200,23 +171,692 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Error Triplet-1" ID="{B64FEB1B-D56D-4FE7-936F-BDA005912830}">
+										<AudioFileSource Name="FUI Erase Character" ID="{E2421F89-168F-4ADA-9990-F0ED662BB21C}">
 											<Language>SFX</Language>
-											<AudioFile>Error Triplet-1.wav</AudioFile>
+											<AudioFile>FUI Erase Character.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="78534883"/>
+												<MediaID ID="284939750"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<Reference>
+												<Local>
+													<EffectSlot Name="" ID="{D6FC5B8D-5DF0-404E-97CE-24A2B784AFF6}" ShortID="685878884">
+														<PropertyList>
+															<Property Name="Render" Type="bool" Value="True"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+																<ObjectRef Name="Small_Wooden_Room1" ID="{F7CBE859-36A8-4174-B553-AE32A7FE95FA}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
 									<ActiveSourceList>
-										<ActiveSource Name="Error Triplet-1" ID="{B64FEB1B-D56D-4FE7-936F-BDA005912830}" Platform="Linked"/>
+										<ActiveSource Name="FUI Erase Character" ID="{E2421F89-168F-4ADA-9990-F0ED662BB21C}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<RandomSequenceContainer Name="Button_Click" ID="{7061B65B-BDC2-4427-8384-F7C26DC5C60A}" ShortID="257219485">
+									<PropertyList>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{2C3C9EF5-535E-4007-A8F1-E012EDA8A225}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="10"/>
+															<Property Name="Min" Type="Real64" Value="-10"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{1A69ACB3-A47C-4D56-9F55-6F7CCAD86FBE}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-1"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Button_Click_1" ID="{FAED9D3C-0A6B-4891-A277-95156572EC2B}" ShortID="638394244">
+											<PropertyList>
+												<Property Name="OverrideConversion" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<Custom>
+														<Conversion Name="Conversion Settings (Custom)" ID="{8E7A4717-395E-484C-9522-F55EDF390BCD}">
+															<PropertyList>
+																<Property Name="Channels" Type="int32">
+																	<ValueList>
+																		<Value Platform="Mac">4</Value>
+																		<Value Platform="Windows">4</Value>
+																		<Value Platform="Web">4</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="LRMix" Type="Real64">
+																	<ValueList>
+																		<Value Platform="Mac">0</Value>
+																		<Value Platform="Windows">0</Value>
+																		<Value Platform="Web">0</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="MaxSampleRate" Type="int32">
+																	<ValueList>
+																		<Value Platform="Mac">48000</Value>
+																		<Value Platform="Windows">48000</Value>
+																		<Value Platform="Web">48000</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="MinSampleRate" Type="int32">
+																	<ValueList>
+																		<Value Platform="Mac">0</Value>
+																		<Value Platform="Windows">0</Value>
+																		<Value Platform="Web">0</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="SampleRate" Type="int32">
+																	<ValueList>
+																		<Value Platform="Mac">0</Value>
+																		<Value Platform="Windows">0</Value>
+																		<Value Platform="Web">0</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ConversionPluginInfoList>
+																<ConversionPluginInfo Platform="Mac">
+																	<ConversionPlugin Name="" ID="{10370A92-8417-4A85-BDB4-C691B571925D}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+																</ConversionPluginInfo>
+																<ConversionPluginInfo Platform="Windows">
+																	<ConversionPlugin Name="" ID="{0CFAD940-C38C-492A-8EE1-281C7A3B9A03}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+																</ConversionPluginInfo>
+																<ConversionPluginInfo Platform="Web">
+																	<ConversionPlugin Name="" ID="{6529866F-3842-4EB2-8347-8E4DA6A46500}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+																</ConversionPluginInfo>
+															</ConversionPluginInfoList>
+														</Conversion>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="UI" ID="{549C6616-EF25-4463-A395-48E566B18282}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FUI Navigation Synthetic-1" ID="{4456E278-98EB-47D9-A708-CA57FB6911AD}">
+													<Language>SFX</Language>
+													<AudioFile>FUI Navigation Synthetic-1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="524636756"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FUI Navigation Synthetic-1" ID="{4456E278-98EB-47D9-A708-CA57FB6911AD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Button_Click_2" ID="{730E7168-B2A6-412F-BD72-7E0C02836C6E}" ShortID="460149949">
+											<PropertyList>
+												<Property Name="OverrideConversion" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<Custom>
+														<Conversion Name="Conversion Settings (Custom)" ID="{16B8A242-772B-4B26-8631-782004619E63}">
+															<PropertyList>
+																<Property Name="Channels" Type="int32">
+																	<ValueList>
+																		<Value Platform="Mac">4</Value>
+																		<Value Platform="Windows">4</Value>
+																		<Value Platform="Web">4</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="LRMix" Type="Real64">
+																	<ValueList>
+																		<Value Platform="Mac">0</Value>
+																		<Value Platform="Windows">0</Value>
+																		<Value Platform="Web">0</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="MaxSampleRate" Type="int32">
+																	<ValueList>
+																		<Value Platform="Mac">48000</Value>
+																		<Value Platform="Windows">48000</Value>
+																		<Value Platform="Web">48000</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="MinSampleRate" Type="int32">
+																	<ValueList>
+																		<Value Platform="Mac">0</Value>
+																		<Value Platform="Windows">0</Value>
+																		<Value Platform="Web">0</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="SampleRate" Type="int32">
+																	<ValueList>
+																		<Value Platform="Mac">0</Value>
+																		<Value Platform="Windows">0</Value>
+																		<Value Platform="Web">0</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ConversionPluginInfoList>
+																<ConversionPluginInfo Platform="Mac">
+																	<ConversionPlugin Name="" ID="{5CF3AE50-E50A-473B-AC8E-441E72D4DBE9}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+																</ConversionPluginInfo>
+																<ConversionPluginInfo Platform="Windows">
+																	<ConversionPlugin Name="" ID="{4CB5DAC6-2A8D-4B28-832E-A856D5550511}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+																</ConversionPluginInfo>
+																<ConversionPluginInfo Platform="Web">
+																	<ConversionPlugin Name="" ID="{5B1D54F5-E474-4A8C-BACB-7010EE93FCD3}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+																</ConversionPluginInfo>
+															</ConversionPluginInfoList>
+														</Conversion>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="UI" ID="{549C6616-EF25-4463-A395-48E566B18282}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FUI Navigation Synthetic" ID="{FA00989C-6B7E-498D-9C9C-FD86E2DF44A3}">
+													<Language>SFX</Language>
+													<AudioFile>FUI Navigation Synthetic.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="810397308"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FUI Navigation Synthetic" ID="{FA00989C-6B7E-498D-9C9C-FD86E2DF44A3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Button_Click_3" ID="{CAA35628-E577-4EA0-8C9E-0955565612D4}" ShortID="815481938">
+											<PropertyList>
+												<Property Name="OverrideConversion" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<Custom>
+														<Conversion Name="Conversion Settings (Custom)" ID="{ECCC694B-2D54-40C6-A438-5C019175F20E}">
+															<PropertyList>
+																<Property Name="Channels" Type="int32">
+																	<ValueList>
+																		<Value Platform="Mac">4</Value>
+																		<Value Platform="Windows">4</Value>
+																		<Value Platform="Web">4</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="LRMix" Type="Real64">
+																	<ValueList>
+																		<Value Platform="Mac">0</Value>
+																		<Value Platform="Windows">0</Value>
+																		<Value Platform="Web">0</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="MaxSampleRate" Type="int32">
+																	<ValueList>
+																		<Value Platform="Mac">48000</Value>
+																		<Value Platform="Windows">48000</Value>
+																		<Value Platform="Web">48000</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="MinSampleRate" Type="int32">
+																	<ValueList>
+																		<Value Platform="Mac">0</Value>
+																		<Value Platform="Windows">0</Value>
+																		<Value Platform="Web">0</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="SampleRate" Type="int32">
+																	<ValueList>
+																		<Value Platform="Mac">0</Value>
+																		<Value Platform="Windows">0</Value>
+																		<Value Platform="Web">0</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ConversionPluginInfoList>
+																<ConversionPluginInfo Platform="Mac">
+																	<ConversionPlugin Name="" ID="{77050854-25C4-4DC8-BE34-5DAF51D1A279}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+																</ConversionPluginInfo>
+																<ConversionPluginInfo Platform="Windows">
+																	<ConversionPlugin Name="" ID="{50414E67-46D6-44F2-A4B3-AFF4F6A93A74}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+																</ConversionPluginInfo>
+																<ConversionPluginInfo Platform="Web">
+																	<ConversionPlugin Name="" ID="{E8E68C06-6B17-40F1-84E3-972D1E698B43}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+																</ConversionPluginInfo>
+															</ConversionPluginInfoList>
+														</Conversion>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="UI" ID="{549C6616-EF25-4463-A395-48E566B18282}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FUI Navigation Tone Stereo Flutter" ID="{093BE0CC-0543-4840-B344-014A45AD5116}">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="UI_General" ID="{C90BF1B7-302B-427A-BD89-987738D3AAD5}" WorkUnitID="{02C56FBA-37F0-481A-9AF2-FCA6DF6512EE}"/>
+														</Reference>
+													</ReferenceList>
+													<Language>SFX</Language>
+													<AudioFile>FUI Navigation Tone Stereo Flutter.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="902838034"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FUI Navigation Tone Stereo Flutter" ID="{093BE0CC-0543-4840-B344-014A45AD5116}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<Reference>
+												<Local>
+													<EffectSlot Name="" ID="{A6BF0E39-1B43-4398-9B06-D6CB3589CF0F}" ShortID="326151597">
+														<PropertyList>
+															<Property Name="Render" Type="bool" Value="True"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+																<ObjectRef Name="Small_Wooden_Room1" ID="{F7CBE859-36A8-4174-B553-AE32A7FE95FA}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</RandomSequenceContainer>
+								<Sound Name="Button_StartGame" ID="{85491A86-31B1-4309-8ECB-54E95A5BA3B8}" ShortID="548308406">
+									<PropertyList>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-2400</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="UI_General" ID="{C90BF1B7-302B-427A-BD89-987738D3AAD5}" WorkUnitID="{02C56FBA-37F0-481A-9AF2-FCA6DF6512EE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="UI" ID="{549C6616-EF25-4463-A395-48E566B18282}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Old Hologram Activation Rumble" ID="{D8A61524-C4CB-4048-8D3C-2A4ED48EB646}">
+											<Language>SFX</Language>
+											<AudioFile>Old Hologram Activation Rumble.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="226300041"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="FUI Metallic Click Reverberant" ID="{720EEBA3-0796-45C3-B5BF-72F03ABC7842}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.82499924227651"/>
+												<Property Name="FadeOutShape" Type="int16" Value="6"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.00958809672221"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>FUI Metallic Click Reverberant.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="641805281"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<Reference>
+												<Local>
+													<EffectSlot Name="" ID="{5006BB38-40AD-44B5-86E0-FD2C06CE84CA}" ShortID="58037923">
+														<PropertyList>
+															<Property Name="Render" Type="bool" Value="True"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+																<ObjectRef Name="Small_Wooden_Room1" ID="{F7CBE859-36A8-4174-B553-AE32A7FE95FA}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+									<ActiveSourceList>
+										<ActiveSource Name="FUI Metallic Click Reverberant" ID="{720EEBA3-0796-45C3-B5BF-72F03ABC7842}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<RandomSequenceContainer Name="Button_StartGame_Click" ID="{872F9E18-A70E-4685-B7ED-B323E4F4860A}" ShortID="629975427">
+									<PropertyList>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-1200</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{A0BADEF7-CCBD-4F69-A30F-D1A99F021E9B}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="10"/>
+															<Property Name="Min" Type="Real64" Value="-10"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Button_Click_1" ID="{F55C2E4C-10B2-4F57-8449-4B0BDFC172B1}" ShortID="170610207">
+											<PropertyList>
+												<Property Name="OverrideConversion" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<Custom>
+														<Conversion Name="Conversion Settings (Custom)" ID="{39F3A40A-4D9F-4687-82E1-8684F408D5B7}">
+															<PropertyList>
+																<Property Name="Channels" Type="int32">
+																	<ValueList>
+																		<Value Platform="Mac">4</Value>
+																		<Value Platform="Windows">4</Value>
+																		<Value Platform="Web">4</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="LRMix" Type="Real64">
+																	<ValueList>
+																		<Value Platform="Mac">0</Value>
+																		<Value Platform="Windows">0</Value>
+																		<Value Platform="Web">0</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="MaxSampleRate" Type="int32">
+																	<ValueList>
+																		<Value Platform="Mac">48000</Value>
+																		<Value Platform="Windows">48000</Value>
+																		<Value Platform="Web">48000</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="MinSampleRate" Type="int32">
+																	<ValueList>
+																		<Value Platform="Mac">0</Value>
+																		<Value Platform="Windows">0</Value>
+																		<Value Platform="Web">0</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="SampleRate" Type="int32">
+																	<ValueList>
+																		<Value Platform="Mac">0</Value>
+																		<Value Platform="Windows">0</Value>
+																		<Value Platform="Web">0</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ConversionPluginInfoList>
+																<ConversionPluginInfo Platform="Mac">
+																	<ConversionPlugin Name="" ID="{66E24D95-24DA-44C4-8B64-A79789BFCBEF}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+																</ConversionPluginInfo>
+																<ConversionPluginInfo Platform="Windows">
+																	<ConversionPlugin Name="" ID="{96D5DD3E-4B1C-4719-B00F-40EF586D1F0B}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+																</ConversionPluginInfo>
+																<ConversionPluginInfo Platform="Web">
+																	<ConversionPlugin Name="" ID="{F31B97B3-D15C-4B0C-8CE4-018AF421C3E8}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+																</ConversionPluginInfo>
+															</ConversionPluginInfoList>
+														</Conversion>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="UI" ID="{549C6616-EF25-4463-A395-48E566B18282}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FUI Navigation Synthetic-1" ID="{29A12332-AE17-4342-8716-8CEA8CFE9C80}">
+													<Language>SFX</Language>
+													<AudioFile>FUI Navigation Synthetic-1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="524636756"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FUI Navigation Synthetic-1" ID="{29A12332-AE17-4342-8716-8CEA8CFE9C80}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Button_Click_2" ID="{DE98B91D-795E-4BD7-B2B9-06595B11FBBA}" ShortID="158015908">
+											<PropertyList>
+												<Property Name="OverrideConversion" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<Custom>
+														<Conversion Name="Conversion Settings (Custom)" ID="{7BD1202C-D07D-4AA9-A780-33B0D733E49E}">
+															<PropertyList>
+																<Property Name="Channels" Type="int32">
+																	<ValueList>
+																		<Value Platform="Mac">4</Value>
+																		<Value Platform="Windows">4</Value>
+																		<Value Platform="Web">4</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="LRMix" Type="Real64">
+																	<ValueList>
+																		<Value Platform="Mac">0</Value>
+																		<Value Platform="Windows">0</Value>
+																		<Value Platform="Web">0</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="MaxSampleRate" Type="int32">
+																	<ValueList>
+																		<Value Platform="Mac">48000</Value>
+																		<Value Platform="Windows">48000</Value>
+																		<Value Platform="Web">48000</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="MinSampleRate" Type="int32">
+																	<ValueList>
+																		<Value Platform="Mac">0</Value>
+																		<Value Platform="Windows">0</Value>
+																		<Value Platform="Web">0</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="SampleRate" Type="int32">
+																	<ValueList>
+																		<Value Platform="Mac">0</Value>
+																		<Value Platform="Windows">0</Value>
+																		<Value Platform="Web">0</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ConversionPluginInfoList>
+																<ConversionPluginInfo Platform="Mac">
+																	<ConversionPlugin Name="" ID="{DC4C11D6-59C8-4622-816A-2577C5B07709}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+																</ConversionPluginInfo>
+																<ConversionPluginInfo Platform="Windows">
+																	<ConversionPlugin Name="" ID="{ADC6E57C-D3F9-42EF-A89C-639F13255215}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+																</ConversionPluginInfo>
+																<ConversionPluginInfo Platform="Web">
+																	<ConversionPlugin Name="" ID="{07616EC1-A747-4DAA-AF84-71FA83704399}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+																</ConversionPluginInfo>
+															</ConversionPluginInfoList>
+														</Conversion>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="UI" ID="{549C6616-EF25-4463-A395-48E566B18282}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FUI Navigation Synthetic" ID="{F66A50EE-C647-4307-A143-F28DCBE3B74C}">
+													<Language>SFX</Language>
+													<AudioFile>FUI Navigation Synthetic.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="810397308"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FUI Navigation Synthetic" ID="{F66A50EE-C647-4307-A143-F28DCBE3B74C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Button_Click_3" ID="{5C18944B-EEC6-409E-9DF7-F2A9FAFE5D15}" ShortID="539096235">
+											<PropertyList>
+												<Property Name="OverrideConversion" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<Custom>
+														<Conversion Name="Conversion Settings (Custom)" ID="{11B3FAF2-BCFB-425F-A05F-AF7AAF997ED5}">
+															<PropertyList>
+																<Property Name="Channels" Type="int32">
+																	<ValueList>
+																		<Value Platform="Mac">4</Value>
+																		<Value Platform="Windows">4</Value>
+																		<Value Platform="Web">4</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="LRMix" Type="Real64">
+																	<ValueList>
+																		<Value Platform="Mac">0</Value>
+																		<Value Platform="Windows">0</Value>
+																		<Value Platform="Web">0</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="MaxSampleRate" Type="int32">
+																	<ValueList>
+																		<Value Platform="Mac">48000</Value>
+																		<Value Platform="Windows">48000</Value>
+																		<Value Platform="Web">48000</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="MinSampleRate" Type="int32">
+																	<ValueList>
+																		<Value Platform="Mac">0</Value>
+																		<Value Platform="Windows">0</Value>
+																		<Value Platform="Web">0</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="SampleRate" Type="int32">
+																	<ValueList>
+																		<Value Platform="Mac">0</Value>
+																		<Value Platform="Windows">0</Value>
+																		<Value Platform="Web">0</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ConversionPluginInfoList>
+																<ConversionPluginInfo Platform="Mac">
+																	<ConversionPlugin Name="" ID="{8B288D43-C889-42BF-9869-81DB5BF4DDCF}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+																</ConversionPluginInfo>
+																<ConversionPluginInfo Platform="Windows">
+																	<ConversionPlugin Name="" ID="{1F0B73E4-84FE-4F11-8528-8DDD2CBBE1A9}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+																</ConversionPluginInfo>
+																<ConversionPluginInfo Platform="Web">
+																	<ConversionPlugin Name="" ID="{4D363A28-67D5-4681-8989-EDFE8AD557BE}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+																</ConversionPluginInfo>
+															</ConversionPluginInfoList>
+														</Conversion>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="UI" ID="{549C6616-EF25-4463-A395-48E566B18282}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FUI Navigation Tone Stereo Flutter" ID="{56DAB703-C9FF-4A46-8996-453832C051B2}">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="UI_General" ID="{C90BF1B7-302B-427A-BD89-987738D3AAD5}" WorkUnitID="{02C56FBA-37F0-481A-9AF2-FCA6DF6512EE}"/>
+														</Reference>
+													</ReferenceList>
+													<Language>SFX</Language>
+													<AudioFile>FUI Navigation Tone Stereo Flutter.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="902838034"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FUI Navigation Tone Stereo Flutter" ID="{56DAB703-C9FF-4A46-8996-453832C051B2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<Reference>
+												<Local>
+													<EffectSlot Name="" ID="{985F0AA5-11CC-450D-A226-F6765C8D038E}" ShortID="585844113">
+														<PropertyList>
+															<Property Name="Render" Type="bool" Value="True"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+																<ObjectRef Name="Small_Wooden_Room1" ID="{F7CBE859-36A8-4174-B553-AE32A7FE95FA}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</RandomSequenceContainer>
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="Maintenance_Screen" ID="{66516E04-C035-4065-899E-4318D21DA376}" ShortID="479337139">
 							<PropertyList>
 								<Property Name="OverrideConversion" Type="bool" Value="True"/>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{0BF0B9F7-587A-4A62-BDE2-3AE81F653382}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -257,6 +897,20 @@
 									</ActiveSourceList>
 								</Sound>
 								<RandomSequenceContainer Name="Powerup_BP" ID="{DF95B82E-6442-42D1-BAFF-B9815AC352B3}" ShortID="616039032">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{C39BA0A1-2098-4EA9-91C0-71783B704096}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
@@ -312,36 +966,6 @@
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
-								<Sound Name="Repair" ID="{CB4BFC61-340A-4AA0-B589-5C37E66F43BA}" ShortID="1019402670">
-									<PropertyList>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-6</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Data Jumble Loop" ID="{BCA906A2-6350-42FC-8021-D7CC2BB1E4B9}">
-											<Language>SFX</Language>
-											<AudioFile>Data Jumble Loop.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="848998426"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Data Jumble Loop" ID="{BCA906A2-6350-42FC-8021-D7CC2BB1E4B9}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
 								<RandomSequenceContainer Name="Screen_Explore" ID="{D75B4ACE-470C-496C-8E0C-959955F7E7EE}" ShortID="579848680">
 									<PropertyList>
 										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
@@ -449,22 +1073,21 @@
 										</ObjectList>
 									</ObjectLists>
 								</RandomSequenceContainer>
-							</ChildrenList>
-						</ActorMixer>
-						<ActorMixer Name="StartGame" ID="{A039EDC3-0E39-461F-A47F-202316DF3E03}" ShortID="543485299">
-							<PropertyList>
-								<Property Name="OverrideConversion" Type="bool" Value="True"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="UI_General" ID="{C90BF1B7-302B-427A-BD89-987738D3AAD5}" WorkUnitID="{02C56FBA-37F0-481A-9AF2-FCA6DF6512EE}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="StartGame" ID="{85491A86-31B1-4309-8ECB-54E95A5BA3B8}" ShortID="548308406">
+								<Sound Name="Maintenance_Back" ID="{6D165FAD-5E51-4C32-8725-F17220753987}" ShortID="35776493">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{A5C94612-9C34-4561-BD75-3304F05999EE}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
@@ -474,23 +1097,523 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Old Hologram Activation Rumble" ID="{D8A61524-C4CB-4048-8D3C-2A4ED48EB646}">
+										<AudioFileSource Name="FUI Button Toggle Mechanical" ID="{DE11C43E-1484-4869-8CE3-0486A7EA5A9A}">
 											<Language>SFX</Language>
-											<AudioFile>Old Hologram Activation Rumble.wav</AudioFile>
+											<AudioFile>FUI Button Toggle Mechanical.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="226300041"/>
+												<MediaID ID="206771943"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="Old Hologram Activation Rumble" ID="{D8A61524-C4CB-4048-8D3C-2A4ED48EB646}" Platform="Linked"/>
+										<ActiveSource Name="FUI Button Toggle Mechanical" ID="{DE11C43E-1484-4869-8CE3-0486A7EA5A9A}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<Sound Name="Maintenance_Click" ID="{71209E50-0BE7-45BD-AEBA-9E73D0BA85D4}" ShortID="696241021">
+									<PropertyList>
+										<Property Name="OverrideConversion" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{25915FFF-41B7-44BE-92BD-0F5D737C899A}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{5D1AC879-2B23-408A-8A9A-BBFD61177701}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-2"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<Custom>
+												<Conversion Name="Conversion Settings (Custom)" ID="{47A5010D-3B52-4DBC-A583-84CED75EFB60}">
+													<PropertyList>
+														<Property Name="Channels" Type="int32">
+															<ValueList>
+																<Value Platform="Mac">4</Value>
+																<Value Platform="Windows">4</Value>
+																<Value Platform="Web">4</Value>
+															</ValueList>
+														</Property>
+														<Property Name="LRMix" Type="Real64">
+															<ValueList>
+																<Value Platform="Mac">0</Value>
+																<Value Platform="Windows">0</Value>
+																<Value Platform="Web">0</Value>
+															</ValueList>
+														</Property>
+														<Property Name="MaxSampleRate" Type="int32">
+															<ValueList>
+																<Value Platform="Mac">48000</Value>
+																<Value Platform="Windows">48000</Value>
+																<Value Platform="Web">48000</Value>
+															</ValueList>
+														</Property>
+														<Property Name="MinSampleRate" Type="int32">
+															<ValueList>
+																<Value Platform="Mac">0</Value>
+																<Value Platform="Windows">0</Value>
+																<Value Platform="Web">0</Value>
+															</ValueList>
+														</Property>
+														<Property Name="SampleRate" Type="int32">
+															<ValueList>
+																<Value Platform="Mac">0</Value>
+																<Value Platform="Windows">0</Value>
+																<Value Platform="Web">0</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ConversionPluginInfoList>
+														<ConversionPluginInfo Platform="Mac">
+															<ConversionPlugin Name="" ID="{EF449666-1FA5-44E9-BD89-FB2F08C38E26}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+														</ConversionPluginInfo>
+														<ConversionPluginInfo Platform="Windows">
+															<ConversionPlugin Name="" ID="{C6FF1A20-AC32-4AE3-AD2F-6251B63014E2}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+														</ConversionPluginInfo>
+														<ConversionPluginInfo Platform="Web">
+															<ConversionPlugin Name="" ID="{99B08EA1-A134-493F-BF8E-FCB7D5F7DCAC}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+														</ConversionPluginInfo>
+													</ConversionPluginInfoList>
+												</Conversion>
+											</Custom>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FUI Button Beep Stereo-1" ID="{892A62CB-2CE6-4EC9-8CB0-DC1CD40055D5}">
+											<Language>SFX</Language>
+											<AudioFile>FUI Button Beep Stereo-1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="121838931"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FUI Button Beep Stereo-1" ID="{892A62CB-2CE6-4EC9-8CB0-DC1CD40055D5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Maintenance_Denied" ID="{3B333E6C-1857-4516-AD43-4050C98DCF5C}" ShortID="739708418">
+									<PropertyList>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideConversion" Type="bool" Value="True"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{0E88794A-9888-4833-AB9D-2EC7AD0BDF36}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="2"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<Custom>
+												<Conversion Name="Conversion Settings (Custom)" ID="{9E5A94FF-2A3E-4D39-A306-7277D686D4B0}">
+													<PropertyList>
+														<Property Name="Channels" Type="int32">
+															<ValueList>
+																<Value Platform="Mac">4</Value>
+																<Value Platform="Windows">4</Value>
+																<Value Platform="Web">4</Value>
+															</ValueList>
+														</Property>
+														<Property Name="LRMix" Type="Real64">
+															<ValueList>
+																<Value Platform="Mac">0</Value>
+																<Value Platform="Windows">0</Value>
+																<Value Platform="Web">0</Value>
+															</ValueList>
+														</Property>
+														<Property Name="MaxSampleRate" Type="int32">
+															<ValueList>
+																<Value Platform="Mac">48000</Value>
+																<Value Platform="Windows">48000</Value>
+																<Value Platform="Web">48000</Value>
+															</ValueList>
+														</Property>
+														<Property Name="MinSampleRate" Type="int32">
+															<ValueList>
+																<Value Platform="Mac">0</Value>
+																<Value Platform="Windows">0</Value>
+																<Value Platform="Web">0</Value>
+															</ValueList>
+														</Property>
+														<Property Name="SampleRate" Type="int32">
+															<ValueList>
+																<Value Platform="Mac">0</Value>
+																<Value Platform="Windows">0</Value>
+																<Value Platform="Web">0</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ConversionPluginInfoList>
+														<ConversionPluginInfo Platform="Mac">
+															<ConversionPlugin Name="" ID="{2B435248-4657-49CE-8F86-843318111004}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+														</ConversionPluginInfo>
+														<ConversionPluginInfo Platform="Windows">
+															<ConversionPlugin Name="" ID="{CBC7046C-3645-4B31-A896-BA3689A31700}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+														</ConversionPluginInfo>
+														<ConversionPluginInfo Platform="Web">
+															<ConversionPlugin Name="" ID="{45C0C9A6-2511-4804-B1B4-EC13D1C69151}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+														</ConversionPluginInfo>
+													</ConversionPluginInfoList>
+												</Conversion>
+											</Custom>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Error Triplet-1" ID="{C4F96896-D916-441C-9C85-8736B60117D1}">
+											<Language>SFX</Language>
+											<AudioFile>Error Triplet-1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="78534883"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Error Triplet-1" ID="{C4F96896-D916-441C-9C85-8736B60117D1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<RandomSequenceContainer Name="Repair" ID="{8CFCF5D0-C1F5-4639-8596-63FC31639F4C}" ShortID="1038015480">
+									<PropertyList>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Repair_Loop" ID="{CB4BFC61-340A-4AA0-B589-5C37E66F43BA}" ShortID="1019402670">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{F84823CF-0BF2-4DDB-8633-F3F720BE5C11}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-14</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="UI_General" ID="{C90BF1B7-302B-427A-BD89-987738D3AAD5}" WorkUnitID="{02C56FBA-37F0-481A-9AF2-FCA6DF6512EE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="UI" ID="{549C6616-EF25-4463-A395-48E566B18282}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Data Jumble Loop" ID="{BCA906A2-6350-42FC-8021-D7CC2BB1E4B9}">
+													<Language>SFX</Language>
+													<AudioFile>Data Jumble Loop.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="848998426"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="RTPC">
+													<Reference>
+														<Local>
+															<RTPC Name="" ID="{62C621D3-F78B-4662-A9FC-2B58EA2858AB}" ShortID="975757517">
+																<PropertyList>
+																	<Property Name="PropertyName" Type="string" Value="Volume"/>
+																</PropertyList>
+																<ReferenceList>
+																	<Reference Name="ControlInput">
+																		<ObjectRef Name="MaintenanceScreenStatus" ID="{7ED8B54E-AEF4-418A-935A-46A87A91ECD3}" WorkUnitID="{2776FCC4-2BF5-4920-A960-29689E030F7E}"/>
+																	</Reference>
+																	<Reference Name="Curve">
+																		<Custom>
+																			<Curve Name="" ID="{EAFDCDF0-C9FB-41E3-80AB-971DC545DF98}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-200</YPos>
+																						<Flags>5</Flags>
+																						<SegmentShape>Exp3</SegmentShape>
+																					</Point>
+																					<Point>
+																						<XPos>60.7565</XPos>
+																						<YPos>-200</YPos>
+																						<Flags>0</Flags>
+																						<SegmentShape>Exp3</SegmentShape>
+																					</Point>
+																					<Point>
+																						<XPos>100</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</Custom>
+																	</Reference>
+																</ReferenceList>
+															</RTPC>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+											<ActiveSourceList>
+												<ActiveSource Name="Data Jumble Loop" ID="{BCA906A2-6350-42FC-8021-D7CC2BB1E4B9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<RandomSequenceContainer Name="Repair_Click" ID="{896EC474-DA29-4DB7-9EFD-3EEF9BFCA830}" ShortID="478279185">
+											<PropertyList>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{58B8274F-E8A2-4854-8EC8-9A7D9895BD81}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="10"/>
+																	<Property Name="Min" Type="Real64" Value="-40"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="UI_General" ID="{C90BF1B7-302B-427A-BD89-987738D3AAD5}" WorkUnitID="{02C56FBA-37F0-481A-9AF2-FCA6DF6512EE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="UI" ID="{549C6616-EF25-4463-A395-48E566B18282}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="FUI Holographic Button Press" ID="{D7F67A00-45C6-41CD-89C7-DC8CD13CA135}" ShortID="437558654">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FUI Holographic Button Press" ID="{822593AE-A938-4051-A3BA-C5AFE38540A3}">
+															<Language>SFX</Language>
+															<AudioFile>FUI Holographic Button Press.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="151138613"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="FUI Holographic Button Press" ID="{822593AE-A938-4051-A3BA-C5AFE38540A3}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="FUI Bright Button Press" ID="{4B1852C3-06ED-4C07-BCD2-7E8E8E8C7210}" ShortID="544688934">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FUI Bright Button Press" ID="{303276B2-4710-47F3-9165-E01CFBCDBFAF}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.142027105671657"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>FUI Bright Button Press.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="37502802"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="FUI Bright Button Press" ID="{303276B2-4710-47F3-9165-E01CFBCDBFAF}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="FUI Holographic Button Light Echoed" ID="{990D2494-2702-4080-8741-B36FE53FAF2D}" ShortID="43763595">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{130436BC-DC01-4830-B1D6-EE54855EEC2C}"/>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FUI Holographic Button Light Echoed" ID="{FB7C0B11-53DA-40F2-818B-3972B9FF2500}">
+															<Language>SFX</Language>
+															<AudioFile>FUI Holographic Button Light Echoed.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="975327785"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="FUI Holographic Button Light Echoed" ID="{FB7C0B11-53DA-40F2-818B-3972B9FF2500}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Playlist">
+											<Reference>
+												<ObjectRef Name="Repair_Click" ID="{896EC474-DA29-4DB7-9EFD-3EEF9BFCA830}" WorkUnitID="{6726047F-A115-4747-A3EB-754F447B6465}"/>
+											</Reference>
+											<Reference>
+												<ObjectRef Name="Repair_Loop" ID="{CB4BFC61-340A-4AA0-B589-5C37E66F43BA}" WorkUnitID="{6726047F-A115-4747-A3EB-754F447B6465}"/>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</RandomSequenceContainer>
 							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{5819661C-9999-450A-B2EB-938AAE974B48}" ShortID="306513202">
+												<PropertyList>
+													<Property Name="Render" Type="bool" Value="True"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="Effect">
+														<Custom CreatedFrom="{0C0A3A92-A571-4FDB-AB40-ACFED04E0217}">
+															<Effect Name="Room_Medium_Tiled (Custom)" ID="{4E419185-2D34-4A95-B71E-3479205D5DFD}" ShortID="807475036" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+																<PropertyList>
+																	<Property Name="DecayTime" Type="Real32" Value="1.1"/>
+																	<Property Name="Density" Type="Real32" Value="72"/>
+																	<Property Name="Diffusion" Type="Real32" Value="72"/>
+																	<Property Name="DryLevel" Type="Real32" Value="-0.3"/>
+																	<Property Name="ERLevel" Type="Real32" Value="-23"/>
+																	<Property Name="Filter1Freq" Type="Real32" Value="590"/>
+																	<Property Name="Filter2Freq" Type="Real32" Value="6000"/>
+																	<Property Name="Filter3Freq" Type="Real32" Value="8440"/>
+																	<Property Name="Filter3Gain" Type="Real32" Value="-2"/>
+																	<Property Name="HFDamping" Type="Real32" Value="1.05"/>
+																	<Property Name="PreDelay" Type="Real32" Value="26"/>
+																	<Property Name="Quality" Type="int32" Value="10"/>
+																	<Property Name="ReverbLevel" Type="Real32" Value="-49"/>
+																	<Property Name="RoomShape" Type="Real32" Value="55"/>
+																	<Property Name="RoomSize" Type="Real32" Value="44"/>
+																	<Property Name="StereoWidth" Type="Real32" Value="135"/>
+																</PropertyList>
+															</Effect>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</ActorMixer>
+						<ActorMixer Name="StartGame" ID="{A039EDC3-0E39-461F-A47F-202316DF3E03}" ShortID="543485299">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverrideConversion" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="UI_General" ID="{C90BF1B7-302B-427A-BD89-987738D3AAD5}" WorkUnitID="{02C56FBA-37F0-481A-9AF2-FCA6DF6512EE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+								</Reference>
+							</ReferenceList>
 						</ActorMixer>
 						<ActorMixer Name="TargetPopUp" ID="{BC26CF35-9FDF-47CB-94FB-0D48024FD3FC}" ShortID="1042129558">
 							<PropertyList>
 								<Property Name="OverrideConversion" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -530,7 +1653,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>9</Value>
+												<Value>12</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -606,6 +1729,11 @@
 										<Property Name="Pitch" Type="int32">
 											<ValueList>
 												<Value>9</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>

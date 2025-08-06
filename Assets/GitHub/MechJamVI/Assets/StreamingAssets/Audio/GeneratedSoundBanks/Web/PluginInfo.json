@@ -25,6 +25,13 @@
     "StaticLib": "AkMeterFX"
    },
    {
+    "LibName": "Wwise Pitch Shifter",
+    "LibId": "8912899",
+    "Type": "Effect",
+    "DLL": "AkPitchShifter",
+    "StaticLib": "AkPitchShifterFX"
+   },
+   {
     "LibName": "System",
     "LibId": "11403271",
     "Type": "AudioDevice"
@@ -35,6 +42,6 @@
     "Type": "AudioDevice"
    }
   ],
-  "FileHash": "{E35CA0AB-1DDE-0EAD-663C-E3450E0602DA}"
+  "FileHash": "{A07532F2-8394-5A45-5DE8-C0EBBEFB9F11}"
  }
 }

@@ -28,7 +28,13 @@
 								<ObjectList Name="Effects">
 									<Reference>
 										<Local>
-											<EffectSlot Name="" ID="{2A532F3A-7E5F-49F0-B599-1CADC2338F07}" ShortID="726611543"/>
+											<EffectSlot Name="" ID="{2A532F3A-7E5F-49F0-B599-1CADC2338F07}" ShortID="726611543">
+												<ReferenceList>
+													<Reference Name="Effect" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
+														<ObjectRef Name="Pitch_Shifter_Edo" ID="{C9128665-EC16-4DC4-BE3E-E22850AE3B80}" WorkUnitID="{184652B6-9723-4760-A254-B1D8D79DA367}"/>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
 										</Local>
 									</Reference>
 								</ObjectList>
@@ -113,11 +119,18 @@
 									<PropertyList>
 										<Property Name="BusVolume" Type="Real64">
 											<ValueList>
-												<Value>-2</Value>
+												<Value>-3</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
 									<ObjectLists>
+										<ObjectList Name="Effects">
+											<Reference>
+												<Local>
+													<EffectSlot Name="" ID="{2F47C056-2723-417D-8219-EF1BD3C5BA11}" ShortID="194818709"/>
+												</Local>
+											</Reference>
+										</ObjectList>
 										<ObjectList Name="RTPC">
 											<Reference>
 												<Local>
@@ -160,6 +173,118 @@
 													</RTPC>
 												</Local>
 											</Reference>
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{30707114-20F0-4E26-B18B-F33D9BB31FE8}" ShortID="347825043">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Volume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="MenuAttenuation" ID="{5EE17611-8EF7-48A6-B658-2E1A4710C18F}" WorkUnitID="{2776FCC4-2BF5-4920-A960-29689E030F7E}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{269F38F1-4C2E-4DB7-996B-163CC85A4A09}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																				<SegmentShape>Exp2</SegmentShape>
+																			</Point>
+																			<Point>
+																				<XPos>100</XPos>
+																				<YPos>-3</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{6D2762DA-747A-40DA-99FC-119E07ED2957}" ShortID="742027761">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Lowpass"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="MenuAttenuation" ID="{5EE17611-8EF7-48A6-B658-2E1A4710C18F}" WorkUnitID="{2776FCC4-2BF5-4920-A960-29689E030F7E}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{93314DA2-D8BC-4F4C-838C-F06385D00EF5}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="65537"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>100</XPos>
+																				<YPos>30</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{C034554E-9423-42F9-8B20-D62C9BD12F3C}" ShortID="750633597">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Volume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="MusicStartGame" ID="{835B2ABF-CB7F-4725-B2AA-94DEAB034189}" WorkUnitID="{2776FCC4-2BF5-4920-A960-29689E030F7E}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{D0D9635D-A502-4E8E-8D76-66AC45E260C5}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>-48</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																				<SegmentShape>Log2</SegmentShape>
+																			</Point>
+																			<Point>
+																				<XPos>-37.48618</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
 										</ObjectList>
 									</ObjectLists>
 								</Bus>
@@ -181,9 +306,76 @@
 										</ObjectList>
 									</ObjectLists>
 								</Bus>
+								<Bus Name="Music_StartGame" ID="{5FFEC7C9-5A99-4669-849C-EB8D53BD927C}">
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<Reference>
+												<Local>
+													<EffectSlot Name="" ID="{4BC2011A-8E97-43E9-966B-A4BA8DF1DDBC}" ShortID="248146896">
+														<ReferenceList>
+															<Reference Name="Effect">
+																<Custom CreatedFrom="{1FA39EAF-47CA-4D6C-8040-FAE42D2FFBE3}">
+																	<Effect Name="Music_SideChain (Custom)" ID="{E995A7F8-521D-4026-ADF0-0FE702679DB1}" ShortID="824231539" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+																		<PropertyList>
+																			<Property Name="MeterMode" Type="int32" Value="1"/>
+																			<Property Name="ReleaseTime" Type="Real32" Value="1.5"/>
+																		</PropertyList>
+																		<PluginData>
+	<GameParameter Name="MusicStartGame" ID="{835B2ABF-CB7F-4725-B2AA-94DEAB034189}"/>
+</PluginData>
+																	</Effect>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</Bus>
 							</ChildrenList>
 						</Bus>
 					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{CA6133DA-0409-437E-8D5F-6BE19173E442}" ShortID="27969670">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="BusVolume"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="MenuSlider_Audio" ID="{39F09487-D7D6-47D8-AFC8-8083A2B4B8BD}" WorkUnitID="{2776FCC4-2BF5-4920-A960-29689E030F7E}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{F406AE6B-D33E-42AC-AFFD-1171C36C6EEB}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>SCurve</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>

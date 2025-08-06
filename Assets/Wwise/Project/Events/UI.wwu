@@ -10,13 +10,16 @@
 								<Action Name="" ID="{7FD55DCA-8579-4EE0-AEA8-372B324F7946}" ShortID="201314968">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Button_Click" ID="{FAED9D3C-0A6B-4891-A277-95156572EC2B}" WorkUnitID="{6726047F-A115-4747-A3EB-754F447B6465}"/>
+											<ObjectRef Name="Button_Click" ID="{7061B65B-BDC2-4427-8384-F7C26DC5C60A}" WorkUnitID="{6726047F-A115-4747-A3EB-754F447B6465}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="UI_Button_Back" ID="{60F219A9-3D5A-4E1C-8AC8-10B7DEE7301E}">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool" Value="False"/>
+							</PropertyList>
 							<ChildrenList>
 								<Action Name="" ID="{773626A7-0813-4D2E-A334-30520FD0917F}" ShortID="118941050">
 									<ReferenceList>
@@ -40,10 +43,59 @@
 						</Event>
 						<Event Name="UI_Button_StartGame" ID="{47D1696A-42DD-4F2F-A16C-7710C2B2670D}">
 							<ChildrenList>
-								<Action Name="" ID="{6D9A6638-B5F0-4177-8D2B-76474A9E084D}" ShortID="506870016">
+								<Action Name="" ID="{29FEF6D7-C25D-4BAC-B3E4-7D7BB9B2A083}" ShortID="53751375">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="StartGame" ID="{85491A86-31B1-4309-8ECB-54E95A5BA3B8}" WorkUnitID="{6726047F-A115-4747-A3EB-754F447B6465}"/>
+											<ObjectRef Name="InGame" ID="{65387186-A83C-4C37-B6E6-72A7E281814B}" WorkUnitID="{EC4324C2-48F1-4C81-A9BB-9727DE7877A0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{DFD4C46F-696F-4B33-B3A1-4C9B28CB7348}" ShortID="891476037">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music_Stinger_StartGame" ID="{07055DEE-3373-4FB1-A23B-F5C4E6A00B41}" WorkUnitID="{98BF9162-79E8-4069-A9C7-B29074F5DA63}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{6D9A6638-B5F0-4177-8D2B-76474A9E084D}" ShortID="506870016">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Button_StartGame_Click" ID="{872F9E18-A70E-4685-B7ED-B323E4F4860A}" WorkUnitID="{6726047F-A115-4747-A3EB-754F447B6465}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{A8BC4DAD-81DC-4179-BBC9-0D81F14D59A0}" ShortID="586061027">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Button_StartGame" ID="{85491A86-31B1-4309-8ECB-54E95A5BA3B8}" WorkUnitID="{6726047F-A115-4747-A3EB-754F447B6465}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{B34BF32F-41A4-48A7-9581-46571B0356CF}" ShortID="1040610927">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="35"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music_StingerStartGame" ID="{BA8AE23A-32F8-4D60-8837-01E7BE53BA83}" WorkUnitID="{CDC45CAA-78C3-432A-B9A6-1D01156BDE33}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -58,17 +110,18 @@
 								<Action Name="" ID="{A4CB9DB5-B35F-4DAB-BC55-F665BD3754FD}" ShortID="635538555">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Repair" ID="{CB4BFC61-340A-4AA0-B589-5C37E66F43BA}" WorkUnitID="{6726047F-A115-4747-A3EB-754F447B6465}"/>
+											<ObjectRef Name="Repair" ID="{8CFCF5D0-C1F5-4639-8596-63FC31639F4C}" WorkUnitID="{6726047F-A115-4747-A3EB-754F447B6465}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 								<Action Name="" ID="{A14055C6-2715-4604-AAB2-058FB53505BA}" ShortID="331998040">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Repair" ID="{CB4BFC61-340A-4AA0-B589-5C37E66F43BA}" WorkUnitID="{6726047F-A115-4747-A3EB-754F447B6465}"/>
+											<ObjectRef Name="Repair" ID="{8CFCF5D0-C1F5-4639-8596-63FC31639F4C}" WorkUnitID="{6726047F-A115-4747-A3EB-754F447B6465}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -90,6 +143,7 @@
 								<Action Name="" ID="{43C51237-B6F2-4600-B3F7-7C7E3D2AF8D9}" ShortID="743071172">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -104,6 +158,28 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{8A63E7B6-CAD5-4E33-9350-74A76666990A}" ShortID="417086824">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="38"/>
+										<Property Name="GameParameterValue" Type="Real64" Value="100"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MenuAttenuation" ID="{5EE17611-8EF7-48A6-B658-2E1A4710C18F}" WorkUnitID="{2776FCC4-2BF5-4920-A960-29689E030F7E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{87F1D6E0-DD0C-4A52-8775-5DCE1CA17B24}" ShortID="619215821">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="38"/>
+										<Property Name="GameParameterValue" Type="Real64" Value="100"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MaintenanceScreenStatus" ID="{7ED8B54E-AEF4-418A-935A-46A87A91ECD3}" WorkUnitID="{2776FCC4-2BF5-4920-A960-29689E030F7E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="UI_Maintenance_Close" ID="{09D16669-4263-4829-AA9E-0DE4FDEA9625}">
@@ -111,6 +187,7 @@
 								<Action Name="" ID="{318B0EEE-4E40-40FB-A191-ECC5F4CDFB43}" ShortID="172834273">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -122,6 +199,48 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Screen_Close" ID="{9DE74771-82F1-4C5F-A14F-F71A2BC1C507}" WorkUnitID="{6726047F-A115-4747-A3EB-754F447B6465}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{361D8A2F-17D2-4C6A-8F30-FB5488087BBB}" ShortID="1064742104">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="38"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MenuAttenuation" ID="{5EE17611-8EF7-48A6-B658-2E1A4710C18F}" WorkUnitID="{2776FCC4-2BF5-4920-A960-29689E030F7E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{C214DD5C-AA56-4741-AFA2-90572519A920}" ShortID="802203639">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="38"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MaintenanceScreenStatus" ID="{7ED8B54E-AEF4-418A-935A-46A87A91ECD3}" WorkUnitID="{2776FCC4-2BF5-4920-A960-29689E030F7E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="UI_Maintenance_Denied" ID="{CED4AEBF-D0AE-44C1-ACD4-C9C0BEFCB313}">
+							<ChildrenList>
+								<Action Name="" ID="{99310F5E-910A-4ED5-9D79-2376340542E4}" ShortID="608615619">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Maintenance_Denied" ID="{3B333E6C-1857-4516-AD43-4050C98DCF5C}" WorkUnitID="{6726047F-A115-4747-A3EB-754F447B6465}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="UI_Maintenance_Click" ID="{92335E84-9587-4616-AC96-BFCEA43B30FF}">
+							<ChildrenList>
+								<Action Name="" ID="{15CA6862-2BCB-4317-8FA2-A8694935E463}" ShortID="214989840">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Maintenance_Click" ID="{71209E50-0BE7-45BD-AEBA-9E73D0BA85D4}" WorkUnitID="{6726047F-A115-4747-A3EB-754F447B6465}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -154,6 +273,7 @@
 								<Action Name="" ID="{0FCEBDAD-24F8-407D-BA6C-DE3EB02EB870}" ShortID="1013461342">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="35"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -175,10 +295,57 @@
 								<Action Name="" ID="{2E92762F-5F57-4AAA-900A-1D3ED40ECA6D}" ShortID="308621853">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="35"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Music_StingerVictory" ID="{9A46672A-0F22-4BB4-99DF-0D6C74BBEDA5}" WorkUnitID="{CDC45CAA-78C3-432A-B9A6-1D01156BDE33}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="RESET CHIUDI TUTTO" ID="{78860AEE-CF3E-43F2-9AB2-5A6249B5039E}" ShortID="423076875">
+					<ChildrenList>
+						<Event Name="ARMAGEDDON" ID="{C73800D3-1E26-4205-801B-65F55C8A6B15}">
+							<ChildrenList>
+								<Action Name="" ID="{34EC3BCB-B33F-4237-B2C3-30009A2E3945}" ShortID="101119020">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="3"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList/>
+								</Action>
+								<Action Name="" ID="{C64018DE-80FA-45D7-89ED-A93F8A49009E}" ShortID="335428371">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="38"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MenuAttenuation" ID="{5EE17611-8EF7-48A6-B658-2E1A4710C18F}" WorkUnitID="{2776FCC4-2BF5-4920-A960-29689E030F7E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{5119F470-D190-4A10-8D5E-5AA88C02665B}" ShortID="846667284">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="38"/>
+										<Property Name="GameParameterValue" Type="Real64" Value="100"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MaintenanceScreenStatus" ID="{7ED8B54E-AEF4-418A-935A-46A87A91ECD3}" WorkUnitID="{2776FCC4-2BF5-4920-A960-29689E030F7E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{AB4D4091-1520-4E0F-9297-E8B7B3F90A4D}" ShortID="835686419">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="TitleScreen" ID="{4098663B-337C-4C4F-9E4D-6CB8BD588F73}" WorkUnitID="{EC4324C2-48F1-4C81-A9BB-9727DE7877A0}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

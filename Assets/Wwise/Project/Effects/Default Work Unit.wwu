@@ -3,7 +3,47 @@
 	<Effects>
 		<WorkUnit Name="Default Work Unit" ID="{184652B6-9723-4760-A254-B1D8D79DA367}" PersistMode="Standalone">
 			<ChildrenList>
-				<Effect Name="Pitch_Shifter_Edo" ID="{C9128665-EC16-4DC4-BE3E-E22850AE3B80}" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3"/>
+				<Effect Name="Pitch_Shifter_Edo" ID="{C9128665-EC16-4DC4-BE3E-E22850AE3B80}" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{C6F59E54-C9D8-4186-B3F4-B71A8DC171B4}" ShortID="937998431">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Pitch"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="MenuAttenuation" ID="{5EE17611-8EF7-48A6-B658-2E1A4710C18F}" WorkUnitID="{2776FCC4-2BF5-4920-A960-29689E030F7E}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{AF8EC96C-A023-4A7D-8465-2A17C13ABCC2}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>-2400</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</Effect>
 				<Effect Name="Music_SideChain" ID="{1FA39EAF-47CA-4D6C-8040-FAE42D2FFBE3}" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
 					<PropertyList>
 						<Property Name="MeterMode" Type="int32" Value="1"/>

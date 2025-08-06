@@ -123,6 +123,47 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Player_Maintenance_HealthFull" ID="{4F77B0B3-49D5-4EE3-9C5F-C86CAFE5C185}">
+							<ChildrenList>
+								<Action Name="" ID="{A629E304-75C3-4560-B12A-3E50FD5B4C13}" ShortID="159998360">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="5"/>
+										<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Repair" ID="{8CFCF5D0-C1F5-4639-8596-63FC31639F4C}" WorkUnitID="{6726047F-A115-4747-A3EB-754F447B6465}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{A8680771-4BC2-4F33-8A68-18D777C9A96E}" ShortID="518899700">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="HealthRestored" ID="{69F44FB1-4A47-4789-8198-7CC4D6085A50}" WorkUnitID="{3D244E8C-9103-4ED4-B110-56E962BB6EF5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{EA5CCEB1-7564-4256-9A4B-386304322CD0}" ShortID="669627029">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="38"/>
+										<Property Name="GameParameterValue" Type="Real64" Value="100"/>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PlayerHealthValue" ID="{D76F94C3-67C5-43FF-981A-FF488ECD82E9}" WorkUnitID="{2776FCC4-2BF5-4920-A960-29689E030F7E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

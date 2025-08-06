@@ -10,15 +10,16 @@
 				</GameParameter>
 				<GameParameter Name="PlayerHealthValue" ID="{D76F94C3-67C5-43FF-981A-FF488ECD82E9}">
 					<PropertyList>
-						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="InitialValue" Type="Real64" Value="100"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
 					</PropertyList>
 				</GameParameter>
 				<GameParameter Name="MenuAttenuation" ID="{5EE17611-8EF7-48A6-B658-2E1A4710C18F}">
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
 						<Property Name="RTPCRamping" Type="int16" Value="1"/>
-						<Property Name="SlewRateDown" Type="Real64" Value="100"/>
-						<Property Name="SlewRateUp" Type="Real64" Value="100"/>
+						<Property Name="SlewRateDown" Type="Real64" Value="70"/>
+						<Property Name="SlewRateUp" Type="Real64" Value="70"/>
 					</PropertyList>
 				</GameParameter>
 				<GameParameter Name="PlayerMovementSpeed" ID="{1D3865F4-750F-42D5-BD11-FE5DD0470BAF}">
@@ -31,6 +32,25 @@
 						<Property Name="InitialValue" Type="Real64" Value="-48"/>
 						<Property Name="Max" Type="Real64" Value="0"/>
 						<Property Name="Min" Type="Real64" Value="-48"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="MenuSlider_Audio" ID="{39F09487-D7D6-47D8-AFC8-8083A2B4B8BD}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="80"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="MusicStartGame" ID="{835B2ABF-CB7F-4725-B2AA-94DEAB034189}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="-48"/>
+						<Property Name="Max" Type="Real64" Value="0"/>
+						<Property Name="Min" Type="Real64" Value="-48"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="MaintenanceScreenStatus" ID="{7ED8B54E-AEF4-418A-935A-46A87A91ECD3}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
 					</PropertyList>
 				</GameParameter>
 			</ChildrenList>
