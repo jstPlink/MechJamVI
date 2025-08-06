@@ -51,6 +51,9 @@ public class Base_Behaviour : MonoBehaviour
     [SerializeField] private bool canModifyTime;
     [SerializeField] private float _timeXLight;
 
+    public AK.Wwise.Event _looseBase;
+    public AK.Wwise.Event _winBase;
+
     private void Start()
     {
         timeLeftForCapture = timeForCapture;
@@ -144,6 +147,7 @@ public class Base_Behaviour : MonoBehaviour
                             canModifyTime = true;
                             canGenerateResource = false;
                             _gm.totalResourceXTick -= resourceGenAmmount;
+                            _looseBase.Post(this.gameObject);
                         }
                         else
                         {
@@ -175,6 +179,7 @@ public class Base_Behaviour : MonoBehaviour
                             canModifyTime = true;
                             canGenerateResource = true;
                             _gm.totalResourceXTick += resourceGenAmmount;
+                            _winBase.Post(this.gameObject);
                             if (haveProject == true)
                             {
                                 haveProject = false;

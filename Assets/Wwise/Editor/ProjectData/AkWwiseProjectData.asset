@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 33a17e047c5d6e43aaecb799cadd4a81
     GuidInternal: 
-    m_lastTime: -8584470969760124508
+    m_lastTime: -8584472124958394691
     List: []
   - PhysicalPath: Virtual Acoustics\Factory Acoustic Textures.wwu
     PathAndIcons:
@@ -37,7 +37,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Factory Acoustic Textures
     guid: 6b663d46a83ca54f8b4a5fef12b883f6
     GuidInternal: 
-    m_lastTime: -8584470969760104522
+    m_lastTime: -8584471094663631816
     List:
     - name: Acoustic_Banner
       guid: f2532d2fccda8e408b8898b1b52a26d6
@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 64fe4fde7f893d4381e284a69f3aad98
     GuidInternal: 
-    m_lastTime: -8584470969786313776
+    m_lastTime: -8584471094671056521
     List:
     - name: Ambient
       guid: 1bdf67499992164e99b3fb97ba6fc553
@@ -505,7 +505,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 258ec914a376454287ffb3421b8706bc
     GuidInternal: 
-    m_lastTime: -8584470969760203105
+    m_lastTime: -8584471094663727269
     List:
     - name: ElChapo
       guid: 7a4cedaef1ef944b88d141a771cfefcf
@@ -533,7 +533,7 @@ MonoBehaviour:
     ParentPath: Events\Ambient
     guid: 47671fed19aaf84480eaff742d677ecb
     GuidInternal: 
-    m_lastTime: -8584470969786648310
+    m_lastTime: -8584472124992977418
     List:
     - name: Ambient_EnergyField
       guid: 6fd2a3c715508f418783ac77feed77fb
@@ -603,7 +603,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 69fe29f5f6c58b4fbb65fd940784a2f5
     GuidInternal: 
-    m_lastTime: -8584470969786633595
+    m_lastTime: -8584472124992902256
     List: []
   - PhysicalPath: Events\Enemies.wwu
     PathAndIcons:
@@ -616,7 +616,7 @@ MonoBehaviour:
     ParentPath: Events\Enemies
     guid: 65b1bc0102603447858c985142756ae5
     GuidInternal: 
-    m_lastTime: -8584470969693663131
+    m_lastTime: -8584471094671474459
     List:
     - name: Enemies_FrogMinionDeath
       guid: 35bdd9304cd38a42a2bbb5abe1ee6506
@@ -706,7 +706,7 @@ MonoBehaviour:
     ParentPath: Events\Music
     guid: db1fe9e39577874cacf9c1d503741540
     GuidInternal: 
-    m_lastTime: -8584470969786619074
+    m_lastTime: -8584471094671464355
     List:
     - name: BGMLV1
       guid: ce1943480ddcbc4c862f62789592fa0c
@@ -756,7 +756,7 @@ MonoBehaviour:
     ParentPath: Events\Player
     guid: 648b2e27f41c674fbcc4efd93a3d7e05
     GuidInternal: 
-    m_lastTime: -8584470969693653087
+    m_lastTime: -8584471094671444312
     List:
     - name: Player_Attack_Heavy
       guid: a28a8ad501931444a6f13ad8f121c53a
@@ -1038,7 +1038,7 @@ MonoBehaviour:
     ParentPath: Events\UI
     guid: a09ca73b79cf8542b72e8f261f961920
     GuidInternal: 
-    m_lastTime: -8584470969786609080
+    m_lastTime: -8584471094671434283
     List:
     - name: Generic
       guid: 777d86e6d90f1a4a80e2b7bdfa536fd6
@@ -1323,7 +1323,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: c4fc7627f52b2049a96029689e030f7e
     GuidInternal: 
-    m_lastTime: -8584470969786590418
+    m_lastTime: -8584471094671414084
     List:
     - name: CameraDistance
       guid: 634514c8f2dbbb42b8c09006aadf189c
@@ -1407,7 +1407,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: c22443ecf148814ca9bb9727de7877a0
     GuidInternal: 
-    m_lastTime: -8584470969760177078
+    m_lastTime: -8584471094663687008
     List:
     - name: None
       guid: 660dc3130fd48e47b29599f708e1a878
@@ -1455,7 +1455,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: a135530b885dfc41bccc51f66abd3c5e
     GuidInternal: 
-    m_lastTime: -8584470969760159629
+    m_lastTime: -8584471094663671890
     List:
     - name: PlayerHealthSwitch
       guid: c84d57ed95a9e548aa3240359b3f9ad8
@@ -1649,7 +1649,7 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: aa5cc4cdc3782a43b9a61d01156bde33
     GuidInternal: 
-    m_lastTime: -8584470969760134510
+    m_lastTime: -8584471094663651845
     List:
     - name: Music_StingerDefeat
       guid: f4bb3a4b50703f4392ab36e58b6a3afc
@@ -1679,7 +1679,7 @@ MonoBehaviour:
         ObjectType: 14
         guid: 2a67469a220fb44b99df0d6c74bbeda5
       Path: Triggers\Default Work Unit\Music_StingerVictory
-  ExpandedFileSystemItemIds: 02000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000013000000140000001500000018000000190000002d000000370000003800000039000000
+  ExpandedFileSystemItemIds: 02000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f00000010000000110000001200000013000000140000001500000018000000190000001e0000001f0000002000000021000000220000002d000000370000003800000039000000
   ExpandedWaapiItemIds: 05000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e00000010000000110000001300000014000000150000002d000000370000003800000039000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
