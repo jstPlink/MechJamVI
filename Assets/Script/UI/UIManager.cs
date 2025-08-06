@@ -74,7 +74,7 @@ public class UIManager : MonoBehaviour
     public void StartGame()
     {
         // load level
-        SceneManager.LoadScene("S_MainLevel");
+        SceneManager.LoadScene("S_Landscape");
     }
 
     public void QuitGame()
