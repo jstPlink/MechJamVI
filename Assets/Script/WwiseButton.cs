@@ -2,9 +2,14 @@ using UnityEngine;
 
 public class WwiseButton : MonoBehaviour
 {
-    public AK.Wwise.Event clickEvent = null;
+    public AK.Wwise.Event ClickEvent;
     public void OnClick()
     {
-        clickEvent.Post(gameObject);
+        ClickEvent.Post(gameObject);
+    }
+    public AK.Wwise.Event HoverEvent;
+    public void OnHover()
+    {
+        HoverEvent.Post(gameObject);
     }
 }

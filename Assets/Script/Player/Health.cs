@@ -28,6 +28,8 @@ public class Health : MonoBehaviour
         maxHealth = health;
         maxShield = shield;
         shieldAction = InputSystem.actions.FindAction("Shield");
+
+        print(shieldAction);
         gm = FindObjectOfType<GameManager>();
 
         UpdateUI();
@@ -35,7 +37,7 @@ public class Health : MonoBehaviour
 
     private void Update()
     {
-        if (shield > 0 && shieldAction.ReadValue<float>() > 0)
+        if (shield > 0 && shieldAction.IsPressed())
         {
             shieldMesh.SetActive(true);
         }

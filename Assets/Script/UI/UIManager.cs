@@ -14,6 +14,10 @@ public class UIManager : MonoBehaviour
     public GameObject powerupPanel;
     public GameObject blueprintPanel;
 
+    // 
+    public GameObject pwpPanel;
+    public GameObject interactPanel;
+
 
 
     private void Start()
@@ -52,17 +56,25 @@ public class UIManager : MonoBehaviour
 
 
     
-
-    
-
-    // BLUEPRINTS
-    public void AddBP1()
+    // panel
+    public void ShowPowerupPanel(bool showPanel)
     {
+        if (showPanel)
+        {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
 
+        pwpPanel.SetActive(showPanel);
     }
-    public void AddBP2()
+    public void ShowInteractionPrompt(bool show)
     {
-
+        interactPanel.SetActive(show);
     }
 
 
