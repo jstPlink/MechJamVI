@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{AEED4C7A-EFF1-4B94-88D1-41A771CFEFCF}",
     "Language": "SFX",
-    "Hash": "{57301DD6-B0D5-23C8-66D2-12753D720440}",
+    "Hash": "{8D73BE93-1D45-A869-1EC9-6B92F243D256}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\ElChapo",
     "ShortName": "ElChapo",
     "Path": "ElChapo.bnk",
@@ -1670,6 +1670,6 @@
     ]
    }
   ],
-  "FileHash": "{9650CB7D-514E-9285-62F3-8FCFC3F87066}"
+  "FileHash": "{61B9FFDB-E3C7-E4C5-E138-32E25E3BFD7E}"
  }
 }
