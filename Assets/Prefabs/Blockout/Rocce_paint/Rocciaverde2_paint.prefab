@@ -66,10 +66,39 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 5a8782aa345cc284f8be856587828e3a, type: 2}
     - target: {fileID: 919132149155446097, guid: 062cc88bbd745d64baa4e59a257e9598, type: 3}
       propertyPath: m_Name
-      value: roccia2
+      value: Rocciaverde2_paint
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 062cc88bbd745d64baa4e59a257e9598, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2953496244442677895}
   m_SourcePrefab: {fileID: 100100000, guid: 062cc88bbd745d64baa4e59a257e9598, type: 3}
+--- !u!1 &2326505827186777552 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 062cc88bbd745d64baa4e59a257e9598, type: 3}
+  m_PrefabInstance: {fileID: 3208816284201721985}
+  m_PrefabAsset: {fileID: 0}
+--- !u!135 &2953496244442677895
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2326505827186777552}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 1.7156472
+  m_Center: {x: -0.16571711, y: 1.623009, z: 0.0006344302}
