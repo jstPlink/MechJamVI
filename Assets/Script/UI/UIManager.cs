@@ -20,6 +20,7 @@ public class UIManager : MonoBehaviour
 
     public AK.Wwise.Event _openMenu;
     public AK.Wwise.Event _closeMenu;
+    public AK.Wwise.Event _startGame;
 
     private void Start()
     {
@@ -91,6 +92,7 @@ public class UIManager : MonoBehaviour
     public void StartGame()
     {
         // load level
+        _startGame.Post(this.gameObject);
         SceneManager.LoadScene("S_Landscape");
     }
 
