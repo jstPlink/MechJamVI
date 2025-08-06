@@ -44,6 +44,7 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 
 Effect plug-ins	ID	Name	Type				Notes
 	266555239	Music_SideChain	Wwise Meter			
+	927044702	Pitch_Shifter_Edo	Wwise Pitch Shifter			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

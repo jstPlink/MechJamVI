@@ -173,6 +173,74 @@
 						<CurrentSwitchRef Name="Dirt" ID="{A6C5B0F6-803A-42D8-9326-1F84FFF4751C}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
+				<SoundcasterSession Name="UI2" ID="{45F72D21-FEF8-4265-B0B7-1E39FEF943D3}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="UI_Button_Back" ID="{60F219A9-3D5A-4E1C-8AC8-10B7DEE7301E}" WorkUnitID="{3BA79CA0-CF79-4285-B72E-8F261F961920}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="UI_Maintenance_Close" ID="{09D16669-4263-4829-AA9E-0DE4FDEA9625}" WorkUnitID="{3BA79CA0-CF79-4285-B72E-8F261F961920}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="UI_Mission_TargetPopUp" ID="{F33D96A2-8A80-4AB5-9374-D9B34C8BC43D}" WorkUnitID="{3BA79CA0-CF79-4285-B72E-8F261F961920}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Ambient_MainScenario" ID="{0632D8D0-0560-48BB-A7D1-09D8F4F6D66F}" WorkUnitID="{ED1F6747-AA19-44F8-80EA-FF742D677ECB}"/>
+							<Position X="0" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="UI_Button_Click" ID="{C47D20E6-AB7A-4EA5-AD0C-60F0359FE3A3}" WorkUnitID="{3BA79CA0-CF79-4285-B72E-8F261F961920}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="UI_Maintenance_Open" ID="{90B07C2A-7454-488B-8508-0D7580F278AB}" WorkUnitID="{3BA79CA0-CF79-4285-B72E-8F261F961920}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="UI_Mission_BaseWon" ID="{3F88E5CE-433A-4F0A-BF80-932FB81F4D51}" WorkUnitID="{3BA79CA0-CF79-4285-B72E-8F261F961920}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Music_MainScenario" ID="{7BE7A7C2-5EB8-43C1-962D-13A2206A67CC}" WorkUnitID="{E3E91FDB-7795-4C87-ACF9-C1D503741540}"/>
+							<Position X="1" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="UI_Button_Denied" ID="{5015B647-36F4-4B70-9BB7-D6AE3B173F02}" WorkUnitID="{3BA79CA0-CF79-4285-B72E-8F261F961920}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="UI_Maintenance_Repair" ID="{9F24FB75-8B03-4009-AE60-C03E863CCDF5}" WorkUnitID="{3BA79CA0-CF79-4285-B72E-8F261F961920}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="UI_Mission_BaseLost" ID="{49A07809-EF7C-4D69-8881-99FC36CDCFD6}" WorkUnitID="{3BA79CA0-CF79-4285-B72E-8F261F961920}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Ambient_EnergyField" ID="{C7A3D26F-5015-418F-8783-AC77FEED77FB}" WorkUnitID="{ED1F6747-AA19-44F8-80EA-FF742D677ECB}"/>
+							<Position X="2" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="UI_Button_StartGame" ID="{47D1696A-42DD-4F2F-A16C-7710C2B2670D}" WorkUnitID="{3BA79CA0-CF79-4285-B72E-8F261F961920}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="UI_Maintenance_PowerUp" ID="{660FC6E9-2ADA-4BF8-AF8F-0793B77E2A1F}" WorkUnitID="{3BA79CA0-CF79-4285-B72E-8F261F961920}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="MenuAttenuation" ID="{5EE17611-8EF7-48A6-B658-2E1A4710C18F}"/>
+							<Value>0</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundcasterSessions>

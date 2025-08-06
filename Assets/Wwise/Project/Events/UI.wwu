@@ -104,6 +104,17 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{8A63E7B6-CAD5-4E33-9350-74A76666990A}" ShortID="417086824">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="38"/>
+										<Property Name="GameParameterValue" Type="Real64" Value="100"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MenuAttenuation" ID="{5EE17611-8EF7-48A6-B658-2E1A4710C18F}" WorkUnitID="{2776FCC4-2BF5-4920-A960-29689E030F7E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="UI_Maintenance_Close" ID="{09D16669-4263-4829-AA9E-0DE4FDEA9625}">
@@ -122,6 +133,16 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Screen_Close" ID="{9DE74771-82F1-4C5F-A14F-F71A2BC1C507}" WorkUnitID="{6726047F-A115-4747-A3EB-754F447B6465}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{361D8A2F-17D2-4C6A-8F30-FB5488087BBB}" ShortID="1064742104">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="38"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MenuAttenuation" ID="{5EE17611-8EF7-48A6-B658-2E1A4710C18F}" WorkUnitID="{2776FCC4-2BF5-4920-A960-29689E030F7E}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

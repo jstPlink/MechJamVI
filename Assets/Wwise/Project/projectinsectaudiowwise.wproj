@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="Project" SchemaVersion="123" WwiseVersion="v2024.1.0" WwiseBuild="8669">
+<WwiseDocument Type="Project" SchemaVersion="123" WwiseVersion="v2024.1.6" WwiseBuild="8842">
 	<ProjectInfo>
 		<Project Name="projectinsectaudiowwise" ID="{4CE651C8-C7A5-418F-AE14-DA2E7BA1487D}">
 			<Platforms>
@@ -857,6 +857,11 @@
 							</ValueList>
 						</Property>
 						<Property Name="SoundBankGenerateMaxAttenuationInfo" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="SoundBankGeneratePrintColor" Type="bool">
 							<ValueList>
 								<Value>True</Value>
 							</ValueList>
@@ -5986,6 +5991,11 @@
 							</ValueList>
 						</Property>
 						<Property Name="SoundBankGenerateMaxAttenuationInfo" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="SoundBankGeneratePrintColor" Type="bool">
 							<ValueList>
 								<Value>True</Value>
 							</ValueList>
