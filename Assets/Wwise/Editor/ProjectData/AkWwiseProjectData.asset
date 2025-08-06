@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy/Default Work Unit
     guid: 64fe4fde7f893d4381e284a69f3aad98
     GuidInternal: 
-    m_lastTime: -8584471281731368014
+    m_lastTime: -8584471142581295888
     List:
     - name: Ambient
       guid: 1bdf67499992164e99b3fb97ba6fc553
@@ -726,7 +726,7 @@ MonoBehaviour:
     ParentPath: Events/Music
     guid: db1fe9e39577874cacf9c1d503741540
     GuidInternal: 
-    m_lastTime: -8584471192996843808
+    m_lastTime: -8584471142581304040
     List:
     - name: BGMLV1
       guid: ce1943480ddcbc4c862f62789592fa0c
@@ -796,7 +796,7 @@ MonoBehaviour:
     ParentPath: Events/Player
     guid: 648b2e27f41c674fbcc4efd93a3d7e05
     GuidInternal: 
-    m_lastTime: -8584471159112284776
+    m_lastTime: -8584471142581302555
     List:
     - name: Player_Attack_Heavy
       guid: a28a8ad501931444a6f13ad8f121c53a
@@ -1098,7 +1098,7 @@ MonoBehaviour:
     ParentPath: Events/UI
     guid: a09ca73b79cf8542b72e8f261f961920
     GuidInternal: 
-    m_lastTime: -8584471192996805370
+    m_lastTime: -8584471059614532674
     List:
     - name: ARMAGEDDON
       guid: d30038c7261e0542801b65f55c8a6b15
@@ -1266,8 +1266,8 @@ MonoBehaviour:
         guid: 6a69d147dd422f4fa16c7710c2b2670d
       Path: Events/UI/Generic/UI_Button_StartGame
       maxAttenuation: 0
-      maxDuration: 6.3157897
-      minDuration: 6.3157897
+      maxDuration: 4.0383525
+      minDuration: 4.0383525
     - name: UI_Maintenance_Click
       guid: 845e339287951646ac96bfcea43b30ff
       id: 1676855390
@@ -1460,7 +1460,7 @@ MonoBehaviour:
     ParentPath: Game Parameters/Default Work Unit
     guid: c4fc7627f52b2049a96029689e030f7e
     GuidInternal: 
-    m_lastTime: -8584471159112299338
+    m_lastTime: -8584471142581299847
     List:
     - name: CameraDistance
       guid: 634514c8f2dbbb42b8c09006aadf189c
@@ -1586,7 +1586,7 @@ MonoBehaviour:
     ParentPath: States/Default Work Unit
     guid: c22443ecf148814ca9bb9727de7877a0
     GuidInternal: 
-    m_lastTime: -8584471211087557247
+    m_lastTime: -8584471142580599442
     List:
     - name: GameState
       guid: 8cbda6d670d40743b30109c23881f48a
@@ -1860,7 +1860,7 @@ MonoBehaviour:
     ParentPath: Triggers/Default Work Unit
     guid: aa5cc4cdc3782a43b9a61d01156bde33
     GuidInternal: 
-    m_lastTime: -8584471281731248450
+    m_lastTime: -8584471142580598344
     List:
     - name: Music_StingerDefeat
       guid: f4bb3a4b50703f4392ab36e58b6a3afc
@@ -1904,7 +1904,7 @@ MonoBehaviour:
         ObjectType: 14
         guid: 2a67469a220fb44b99df0d6c74bbeda5
       Path: Triggers/Default Work Unit/Music_StingerVictory
-  ExpandedFileSystemItemIds: 02000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000013000000140000001500000018000000190000001f0000002000000021000000220000002d0000003700000038000000390000003d0000003e0000003f000000
+  ExpandedFileSystemItemIds: 02000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000013000000140000001500000018000000190000001f000000200000002100000022000000230000002d0000003700000038000000390000003d0000003e0000003f000000
   ExpandedWaapiItemIds: 05000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e00000010000000110000001300000014000000150000002d000000370000003800000039000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1

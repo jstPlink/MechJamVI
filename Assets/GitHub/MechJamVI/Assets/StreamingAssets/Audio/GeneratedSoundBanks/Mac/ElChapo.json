@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{AEED4C7A-EFF1-4B94-88D1-41A771CFEFCF}",
     "Language": "SFX",
-    "Hash": "{F7515EE9-4233-E634-4C00-E5F8D0FBD162}",
+    "Hash": "{5B15C695-4B68-4895-A351-1307FBDF9B18}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\ElChapo",
     "ShortName": "ElChapo",
     "Path": "ElChapo.bnk",
@@ -389,7 +389,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "FUI Metallic Click Reverberant.wav",
-      "CachePath": "5A/{5AEFA747-38D6-A90F-01F8-B08B8361A786}.wem"
+      "CachePath": "F1/{F16556AA-027D-43F7-E24E-CF045547C594}.wem"
      },
      {
       "Id": "644301096",
@@ -1378,26 +1378,11 @@
       "ObjectPath": "\\Events\\UI\\Generic\\UI_Button_StartGame",
       "GUID": "{47D1696A-42DD-4F2F-A16C-7710C2B2670D}",
       "DurationType": "OneShot",
-      "DurationMin": "6.3157897",
-      "DurationMax": "6.3157897",
+      "DurationMin": "4.0383525",
+      "DurationMax": "4.0383525",
       "MediaRefs": [
        {
-        "Id": "88260462"
-       },
-       {
-        "Id": "472738727"
-       },
-       {
         "Id": "641805281"
-       },
-       {
-        "Id": "776532826"
-       },
-       {
-        "Id": "813303468"
-       },
-       {
-        "Id": "957594136"
        }
       ],
       "ActionSetState": [
@@ -1407,6 +1392,14 @@
         "Name": "InGame",
         "ObjectPath": "\\States\\Default Work Unit\\GameState\\InGame",
         "GUID": "{65387186-A83C-4C37-B6E6-72A7E281814B}"
+       }
+      ],
+      "ActionTrigger": [
+       {
+        "Id": "71401061",
+        "Name": "Music_StingerStartGame",
+        "ObjectPath": "\\Triggers\\Default Work Unit\\Music_StingerStartGame",
+        "GUID": "{BA8AE23A-32F8-4D60-8837-01E7BE53BA83}"
        }
       ]
      },
@@ -1677,6 +1670,6 @@
     ]
    }
   ],
-  "FileHash": "{E6B8EF5B-D301-D6C2-49E7-4A694D4E5E86}"
+  "FileHash": "{5A53BBC8-E64A-5595-67A2-7651862B59D3}"
  }
 }

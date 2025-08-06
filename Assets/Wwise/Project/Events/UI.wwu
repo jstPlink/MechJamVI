@@ -53,22 +53,14 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
-								<Action Name="" ID="{B34BF32F-41A4-48A7-9581-46571B0356CF}" ShortID="1040610927">
+								<Action Name="" ID="{DFD4C46F-696F-4B33-B3A1-4C9B28CB7348}" ShortID="891476037">
 									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="35"/>
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Music_StingerStartGame" ID="{BA8AE23A-32F8-4D60-8837-01E7BE53BA83}" WorkUnitID="{CDC45CAA-78C3-432A-B9A6-1D01156BDE33}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{DFD4C46F-696F-4B33-B3A1-4C9B28CB7348}" ShortID="891476037">
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Music_Stinger_StartGame" ID="{07055DEE-3373-4FB1-A23B-F5C4E6A00B41}" WorkUnitID="{98BF9162-79E8-4069-A9C7-B29074F5DA63}"/>
@@ -93,6 +85,17 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Button_StartGame" ID="{85491A86-31B1-4309-8ECB-54E95A5BA3B8}" WorkUnitID="{6726047F-A115-4747-A3EB-754F447B6465}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{B34BF32F-41A4-48A7-9581-46571B0356CF}" ShortID="1040610927">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="35"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music_StingerStartGame" ID="{BA8AE23A-32F8-4D60-8837-01E7BE53BA83}" WorkUnitID="{CDC45CAA-78C3-432A-B9A6-1D01156BDE33}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -267,6 +270,7 @@
 								<Action Name="" ID="{0FCEBDAD-24F8-407D-BA6C-DE3EB02EB870}" ShortID="1013461342">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="35"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -288,6 +292,7 @@
 								<Action Name="" ID="{2E92762F-5F57-4AAA-900A-1D3ED40ECA6D}" ShortID="308621853">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="35"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
