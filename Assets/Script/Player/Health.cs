@@ -15,6 +15,8 @@ public class Health : MonoBehaviour
     public TextMeshProUGUI textShield;
     GameManager gm;
 
+    public AK.Wwise.RTPC _healthEvent;
+
     public GameObject shieldMesh;
 
     public ComboSystem comboSys;
@@ -37,6 +39,7 @@ public class Health : MonoBehaviour
 
     private void Update()
     {
+        _healthEvent.SetGlobalValue(health / maxHealth * 100.0f);
         if (shield > 0 && shieldAction.IsPressed())
         {
             shieldMesh.SetActive(true);
@@ -77,6 +80,7 @@ public class Health : MonoBehaviour
             else
             {
                 health -= damageAmount;
+                
                 comboSys.OnHit();
             }
         }

@@ -18,7 +18,8 @@ public class UIManager : MonoBehaviour
     public GameObject pwpPanel;
     public GameObject interactPanel;
 
-
+    public AK.Wwise.Event _openMenu;
+    public AK.Wwise.Event _closeMenu;
 
     private void Start()
     {
@@ -63,12 +64,14 @@ public class UIManager : MonoBehaviour
         {
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
+            _openMenu.Post(this.gameObject);
             Time.timeScale = 0;
         }
         else
         {
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
+            _closeMenu.Post(this.gameObject);
             Time.timeScale = 1;
         }
 

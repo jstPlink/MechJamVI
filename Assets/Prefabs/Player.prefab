@@ -403,6 +403,8 @@ GameObject:
   - component: {fileID: 3588919397459692989}
   - component: {fileID: 78659689699027415}
   - component: {fileID: 7823548742932519403}
+  - component: {fileID: 8660961325981722555}
+  - component: {fileID: 5020857990280726263}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -490,6 +492,10 @@ MonoBehaviour:
   barShield: {fileID: 0}
   textHealth: {fileID: 0}
   textShield: {fileID: 0}
+  _healthEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: efd046a1e42dc1847b1d0ad85985bc52, type: 2}
   shieldMesh: {fileID: 6298278880964255475}
   comboSys: {fileID: 867184144438675139}
 --- !u!114 &7128369277019818552
@@ -585,6 +591,48 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8660961325981722555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7259482422449819446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24ad31cb52ee4074c9f8dd853764c1c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiManager: {fileID: 0}
+--- !u!114 &5020857990280726263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7259482422449819446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03bb7362f7993cf429c8d855780696ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 78a95bd70be8b0c49a5d0199d6cb29fe, type: 2}
+  useCallbacks: 0
+  stopSoundOnDestroy: 1
+  Callbacks: []
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
 --- !u!1 &7933188865110693886
 GameObject:
   m_ObjectHideFlags: 0

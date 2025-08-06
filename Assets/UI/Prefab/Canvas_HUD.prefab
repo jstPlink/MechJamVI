@@ -3961,6 +3961,14 @@ MonoBehaviour:
   blueprintPanel: {fileID: 6005884079783580201}
   pwpPanel: {fileID: 4372373391748490493}
   interactPanel: {fileID: 6466431292872103292}
+  _openMenu:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 8bdc9027a82be81428bebd7d0ed4732d, type: 2}
+  _closeMenu:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: e22f6f2821f55a24789928c631d922aa, type: 2}
 --- !u!1 &7406032571644156622
 GameObject:
   m_ObjectHideFlags: 0

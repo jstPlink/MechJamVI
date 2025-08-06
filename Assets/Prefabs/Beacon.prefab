@@ -526,6 +526,14 @@ MonoBehaviour:
   _isTherePlayer: 0
   canModifyTime: 1
   _timeXLight: 0
+  _looseBase:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 165d720a54012c346ac9abf27490d3b0, type: 2}
+  _winBase:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 4d2ca1826758e0347a33edfa7b7daa9d, type: 2}
 --- !u!135 &2890891388657194812
 SphereCollider:
   m_ObjectHideFlags: 0
