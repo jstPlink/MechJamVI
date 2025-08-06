@@ -7974,10 +7974,10 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: fillOffset
+    attribute: liquidOffset
     path: 
     classID: 114
-    script: {fileID: 11500000, guid: b528e68af5e474e4b8992c22ae93ae23, type: 3}
+    script: {fileID: 11500000, guid: 9afeead73a2c11148a61515ab3a7a660, type: 3}
     flags: 0
   m_PPtrCurves: []
   m_SampleRate: 24
@@ -8178,8 +8178,8 @@ AnimationClip:
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 0
-      attribute: 3951416990
-      script: {fileID: 11500000, guid: b528e68af5e474e4b8992c22ae93ae23, type: 3}
+      attribute: 2173868612
+      script: {fileID: 11500000, guid: 9afeead73a2c11148a61515ab3a7a660, type: 3}
       typeID: 114
       customType: 0
       isPPtrCurve: 0
@@ -40023,10 +40023,10 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: fillOffset
+    attribute: liquidOffset
     path: 
     classID: 114
-    script: {fileID: 11500000, guid: b528e68af5e474e4b8992c22ae93ae23, type: 3}
+    script: {fileID: 11500000, guid: 9afeead73a2c11148a61515ab3a7a660, type: 3}
     flags: 0
   m_EulerEditorCurves:
   - serializedVersion: 2

@@ -26,6 +26,8 @@ public abstract class Boss : Enemy
     [Header("Visual setting")]
     [SerializeField] private Material liquidMat;
     [SerializeField] private float _liquidSpeed;
+    [SerializeField] private float liquidOffset;
+    private float _liquidFill;
 
     [Header("Combat settings")]
     [SerializeField] private float _attackDistance;
@@ -39,7 +41,7 @@ public abstract class Boss : Enemy
     [Min(0)]
     [SerializeField] private float _minEnergy;
     [SerializeField] private float _maxEnergy;
-    private float _currentEnergy;
+    [SerializeField] private float _currentEnergy;
 
     private EnemyBaseState _currentState;
 
@@ -74,14 +76,16 @@ public abstract class Boss : Enemy
     {
         patrolPosition = transform.position;
         ChangeState(new EnemyIdleState(this));
+
+        _liquidFill = liquidMat.GetFloat("_Fill");
     }
 
     private void Update()
     {
         _currentState.Update();
 
-        float fill = Mathf.MoveTowards(liquidMat.GetFloat("_Fill"), _currentEnergy, _liquidSpeed * Time.deltaTime);
-        liquidMat.SetFloat("_Fill", fill);
+        _liquidFill = Mathf.MoveTowards(_liquidFill, _currentEnergy, _liquidSpeed * Time.deltaTime);
+        liquidMat.SetFloat("_Fill", _liquidFill + liquidOffset);
     }
 
     public void ChangeState(EnemyBaseState newState)
