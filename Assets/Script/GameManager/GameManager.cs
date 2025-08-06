@@ -54,7 +54,7 @@ public class GameManager : MonoBehaviour
 
         // Lock and hide cursor
         Cursor.lockState = CursorLockMode.Confined;
-        // Cursor.visible = true;
+        Cursor.visible = false;
     }
 
 

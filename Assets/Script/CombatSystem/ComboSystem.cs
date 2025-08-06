@@ -24,7 +24,7 @@ public class ComboSystem : MonoBehaviour
 
     void Update() {
         if (canAttack) {
-            if (attackAction.ReadValue<float>() > 0) {
+            if (attackAction.WasCompletedThisFrame()) {
 
                 movement.isAttacking = true;
                 canAttack = false;

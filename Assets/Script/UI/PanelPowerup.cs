@@ -3,16 +3,20 @@ using TMPro;
 
 public class PanelPowerup : MonoBehaviour
 {
+    public GameManager gm;
+
+    [Header("ROBE 1")]
     public TextMeshProUGUI textName;
     public TextMeshProUGUI textDescription;
     public TextMeshProUGUI textCost;
     public TextMeshProUGUI textUpgrades;
 
+
+    [Header("ROBE 2")]
     public PanelPowerup panelAttack;
     public PanelPowerup panelHealth;
     public PanelPowerup panelSpeed;
 
-    GameManager gm;
     Vars.Powerup curStats = default;
 
 
@@ -22,7 +26,6 @@ public class PanelPowerup : MonoBehaviour
 
     private void Start()
     {
-        gm = FindAnyObjectByType<GameManager>();
 
         if (panelType != -1) RefreshPanel();
     }

@@ -635,9 +635,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 35bdd9304cd38a42a2bbb5abe1ee6506
       Path: Events\Enemies\Generic\Enemies_FrogMinionDeath
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 80
+      maxDuration: 7.530982
+      minDuration: 1.7205455
     - name: Enemies_FrogMinionMovement
       guid: be17c42c6cc5494b96436734c720cd6a
       id: 1372172665
@@ -655,9 +655,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: be17c42c6cc5494b96436734c720cd6a
       Path: Events\Enemies\Generic\Enemies_FrogMinionMovement
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 80
+      maxDuration: 0.511146
+      minDuration: 0.40569684
     - name: Enemies_FrogMinionOnHit
       guid: 834b6b3cc5c0534cb195b1b594d0376f
       id: 596226124
@@ -675,9 +675,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 834b6b3cc5c0534cb195b1b594d0376f
       Path: Events\Enemies\Generic\Enemies_FrogMinionOnHit
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 80
+      maxDuration: 3.682739
+      minDuration: 1.0005066
     - name: Generic
       guid: ab47b60a70b012418f1b146d0cfe63cb
       id: 4294388576
@@ -743,8 +743,8 @@ MonoBehaviour:
         guid: c2a7e77bb85ec143962d13a2206a67cc
       Path: Events\Music\BGMLV1\Music_MainScenario
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
   - PhysicalPath: Events\Player.wwu
     PathAndIcons:
     - ElementName: Events
@@ -799,8 +799,8 @@ MonoBehaviour:
         guid: 1f7071a30ead7b49b53685ddb5e58ba6
       Path: Events\Player\PlayerStatus\Player_Attack_Heavy\Player_Attack_Heavy_Impact
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.4289054
+      minDuration: 1.2730099
     - name: Player_Attack_Heavy_Jump
       guid: 427cb430ea26944d82b467f7dd394250
       id: 4105981504
@@ -822,8 +822,8 @@ MonoBehaviour:
         guid: 427cb430ea26944d82b467f7dd394250
       Path: Events\Player\PlayerStatus\Player_Attack_Heavy\Player_Attack_Heavy_Jump
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.0016505
+      minDuration: 1.0016505
     - name: Player_Attack_Light1
       guid: d932040c7cd93e4f820361e357b965b4
       id: 2793622033
@@ -842,8 +842,8 @@ MonoBehaviour:
         guid: d932040c7cd93e4f820361e357b965b4
       Path: Events\Player\PlayerStatus\Player_Attack_Light1
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.4545319
+      minDuration: 1.371412
     - name: Player_Attack_Light2
       guid: 196d2c7982b75a45b28dd254b0797756
       id: 2793622034
@@ -862,8 +862,8 @@ MonoBehaviour:
         guid: 196d2c7982b75a45b28dd254b0797756
       Path: Events\Player\PlayerStatus\Player_Attack_Light2
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.4545319
+      minDuration: 1.371412
     - name: Player_CautionAlarm
       guid: 55c6d03ba4ddc5468db985c10c3af250
       id: 4240862283
@@ -882,8 +882,8 @@ MonoBehaviour:
         guid: 55c6d03ba4ddc5468db985c10c3af250
       Path: Events\Player\PlayerStatus\Player_CautionAlarm
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Player_Death
       guid: d57485386de73b4bac7a80af631e61df
       id: 3083087645
@@ -902,8 +902,8 @@ MonoBehaviour:
         guid: d57485386de73b4bac7a80af631e61df
       Path: Events\Player\PlayerStatus\Player_Death
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 7.0328655
+      minDuration: 6.2655706
     - name: Player_Death
       guid: f98db82e393fa34592e5332902737032
       id: 3083087645
@@ -948,8 +948,8 @@ MonoBehaviour:
         guid: 363efe71b98bbb459663693c09dbdd43
       Path: Events\Player\PlayerStatus\Player_Death\Player_Death_Impact
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.4289054
+      minDuration: 1.2730099
     - name: Player_Engine_Idle
       guid: d8f5825e2573614d808bf7355ea529e8
       id: 3147042112
@@ -968,8 +968,8 @@ MonoBehaviour:
         guid: d8f5825e2573614d808bf7355ea529e8
       Path: Events\Player\PlayerStatus\Player_Engine_Idle
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Player_Movement
       guid: 0e8d11023ff7f343a7ad16c0bc8cf535
       id: 541470702
@@ -988,8 +988,8 @@ MonoBehaviour:
         guid: 0e8d11023ff7f343a7ad16c0bc8cf535
       Path: Events\Player\PlayerStatus\Player_Movement
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.52612376
+      minDuration: 0.4175847
     - name: Player_OnHit
       guid: c81a3d81697dad4ea7d67cd1263d8512
       id: 1842275445
@@ -1008,8 +1008,8 @@ MonoBehaviour:
         guid: c81a3d81697dad4ea7d67cd1263d8512
       Path: Events\Player\PlayerStatus\Player_OnHit
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.1230309
+      minDuration: 1.0005066
     - name: PlayerStatus
       guid: a3c12e51ea5bc94098aa460645320723
       id: 3800848640
@@ -1109,8 +1109,8 @@ MonoBehaviour:
         guid: a919f2605a3d1c4e8ac810b7dee7301e
       Path: Events\UI\Generic\UI_Button_Back
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.13866213
+      minDuration: 0.13866213
     - name: UI_Button_Click
       guid: e6207dc47aaba54ead0c60f0359fe3a3
       id: 1664509575
@@ -1129,8 +1129,8 @@ MonoBehaviour:
         guid: e6207dc47aaba54ead0c60f0359fe3a3
       Path: Events\UI\Generic\UI_Button_Click
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.17065759
+      minDuration: 0.17065759
     - name: UI_Button_Denied
       guid: 47b61550f436704b9bb7d6ae3b173f02
       id: 1098067136
@@ -1149,8 +1149,8 @@ MonoBehaviour:
         guid: 47b61550f436704b9bb7d6ae3b173f02
       Path: Events\UI\Generic\UI_Button_Denied
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.24
+      minDuration: 0.24
     - name: UI_Button_StartGame
       guid: 6a69d147dd422f4fa16c7710c2b2670d
       id: 916601097
@@ -1169,8 +1169,8 @@ MonoBehaviour:
         guid: 6a69d147dd422f4fa16c7710c2b2670d
       Path: Events\UI\Generic\UI_Button_StartGame
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 2.5119956
+      minDuration: 2.5119956
     - name: UI_Maintenance_Close
       guid: 6966d10963422948aa9e0de4fdea9625
       id: 1676561250
@@ -1189,8 +1189,8 @@ MonoBehaviour:
         guid: 6966d10963422948aa9e0de4fdea9625
       Path: Events\UI\Maintenance\UI_Maintenance_Close
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.46931973
+      minDuration: 0.46931973
     - name: UI_Maintenance_Open
       guid: 2a7cb09054748b4885080d7580f278ab
       id: 701705398
@@ -1209,8 +1209,8 @@ MonoBehaviour:
         guid: 2a7cb09054748b4885080d7580f278ab
       Path: Events\UI\Maintenance\UI_Maintenance_Open
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: UI_Maintenance_PowerUp
       guid: e9c60f66da2af84baf8f0793b77e2a1f
       id: 120049226
@@ -1229,8 +1229,8 @@ MonoBehaviour:
         guid: e9c60f66da2af84baf8f0793b77e2a1f
       Path: Events\UI\Maintenance\UI_Maintenance_PowerUp
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 2
+      minDuration: 1.002653
     - name: UI_Maintenance_Repair
       guid: 75fb249f038b0940ae60c03e863ccdf5
       id: 26115229
@@ -1249,8 +1249,8 @@ MonoBehaviour:
         guid: 75fb249f038b0940ae60c03e863ccdf5
       Path: Events\UI\Maintenance\UI_Maintenance_Repair
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: UI_Mission_BaseLost
       guid: 0978a0497cef694d888199fc36cdcfd6
       id: 620449730
@@ -1269,8 +1269,8 @@ MonoBehaviour:
         guid: 0978a0497cef694d888199fc36cdcfd6
       Path: Events\UI\Mission\UI_Mission_BaseLost
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.282585
+      minDuration: 1.282585
     - name: UI_Mission_BaseWon
       guid: cee5883f3a430a4fbf80932fb81f4d51
       id: 1175031056
@@ -1289,8 +1289,8 @@ MonoBehaviour:
         guid: cee5883f3a430a4fbf80932fb81f4d51
       Path: Events\UI\Mission\UI_Mission_BaseWon
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.7891327
+      minDuration: 1.3050572
     - name: UI_Mission_TargetPopUp
       guid: a2963df3808ab54a9374d9b34c8bc43d
       id: 2991794566
@@ -1309,8 +1309,8 @@ MonoBehaviour:
         guid: a2963df3808ab54a9374d9b34c8bc43d
       Path: Events\UI\Mission\UI_Mission_TargetPopUp
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.3084643
+      minDuration: 1.2712148
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:

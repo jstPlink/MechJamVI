@@ -14,8 +14,9 @@ public class PanelRepair : MonoBehaviour
 
     private void Start()
     {
-        healthRef = GameManager.playerStatic.GetComponent<Health>();
         gm = FindObjectOfType<GameManager>();
+        healthRef = gm.player.GetComponent<Health>();
+
     }
 
 
