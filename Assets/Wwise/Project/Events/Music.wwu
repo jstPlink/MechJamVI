@@ -15,6 +15,7 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
+										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">

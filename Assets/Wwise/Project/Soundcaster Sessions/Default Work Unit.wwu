@@ -277,7 +277,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="PlayerHealthValue" ID="{D76F94C3-67C5-43FF-981A-FF488ECD82E9}"/>
-							<Value>12</Value>
+							<Value>100</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="MusicStartGame" ID="{835B2ABF-CB7F-4725-B2AA-94DEAB034189}"/>
