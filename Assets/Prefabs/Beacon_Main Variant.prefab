@@ -21,6 +21,10 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 614035923594332870, guid: 9f06ad1b2cbba7b46a1432f4fc73c608, type: 3}
+      propertyPath: resourceGenAmmount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 614035923594332870, guid: 9f06ad1b2cbba7b46a1432f4fc73c608, type: 3}
       propertyPath: timeLeftForCapture
       value: 20
       objectReference: {fileID: 0}
