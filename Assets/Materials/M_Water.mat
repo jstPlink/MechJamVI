@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Shader Graphs_Shader_LowPolyWater
+  m_Name: M_Water
   m_Shader: {fileID: -6465566751694194690, guid: d8e0ba8d3c2645e47948b9d157efc19f, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5271322193627850625}
   - component: {fileID: 8779271395613487495}
   m_Layer: 0
-  m_Name: bubble
+  m_Name: Shield_Base_Anim
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
