@@ -10,6 +10,10 @@ public class Minion : Enemy
     NavMeshAgent agent;
     Animator animator;
 
+    public ParticleSystem hitVFX;
+    public ParticleSystem dustVFX;
+
+
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -70,6 +74,12 @@ public class Minion : Enemy
         StopAllCoroutines();
         agent.Stop();
         animator.SetBool("dead", true);
+    }
+
+
+    public void PlayDust()
+    {
+        dustVFX.Play();
     }
 
 

@@ -4,6 +4,7 @@ using System;
 public class HitBox : MonoBehaviour
 {
     public float damage = 10f;
+    public ParticleSystem[] hitEffect;
     
     private void OnTriggerEnter(Collider other) {
 
@@ -15,6 +16,13 @@ public class HitBox : MonoBehaviour
         // damage fro enemy to player
         else if (gameObject.tag == "EnemyHitbox" && other.tag == "Player")
         {
+            if (hitEffect.Length > 0) {
+                foreach (ParticleSystem ps in hitEffect)
+                {
+                    ps.Play();
+                }
+            }
+            
             other.GetComponent<Health>().ApplyDamage(damage);
         }
     }
