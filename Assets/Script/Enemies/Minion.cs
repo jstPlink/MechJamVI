@@ -10,7 +10,7 @@ public class Minion : Enemy
     NavMeshAgent agent;
     Animator animator;
 
-    public ParticleSystem hitVFX;
+    // public ParticleSystem hitVFX;
     public ParticleSystem dustVFX;
 
 
