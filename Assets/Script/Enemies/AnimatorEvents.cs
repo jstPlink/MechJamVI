@@ -14,4 +14,13 @@ public class AnimatorEvents : MonoBehaviour
     {
         enemy.Destroy();
     }
+
+
+    public ParticleSystem dustVFX;
+
+    public void PlayDust()
+    {
+        dustVFX.Play();
+    }
+
 }
