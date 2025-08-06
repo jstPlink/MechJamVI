@@ -731,6 +731,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!4 &1225338319 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8122838747740791311, guid: 06f5a00cec57e8748890e0198e6d5c28, type: 3}
+  m_PrefabInstance: {fileID: 1608536746}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1608536746
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -815,6 +820,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 06f5a00cec57e8748890e0198e6d5c28, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1696763665}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 06f5a00cec57e8748890e0198e6d5c28, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1696763669}
   m_SourcePrefab: {fileID: 100100000, guid: 06f5a00cec57e8748890e0198e6d5c28, type: 3}
 --- !u!1 &1696763664 stripped
 GameObject:
@@ -843,6 +851,8 @@ MonoBehaviour:
   _minEnergy: 0.82
   _maxEnergy: 3.4
   patrolPosition: {x: 0, y: 0, z: 0}
+  barrel: {fileID: 1225338319}
+  projectilePrefab: {fileID: 8922434675421780145, guid: fcf16ba164d2bf34f8fc48bcc0700397, type: 3}
 --- !u!195 &1696763666
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -908,6 +918,28 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1696763669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1696763664}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a119fd86cd9299e478dbbaef9bdd60b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rend: {fileID: 2033302694}
+  MaxWobble: 0.03
+  WobbleSpeed: 1
+  Recovery: 1
+  index: 3
+--- !u!137 &2033302694 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 471919061671387729, guid: 06f5a00cec57e8748890e0198e6d5c28, type: 3}
+  m_PrefabInstance: {fileID: 1608536746}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -11,7 +11,7 @@ public class EnemyChaseState : EnemyBaseState
 
     public override void Enter()
     {
-        boss.playerOutOfRange += EndChase;
+        boss.playerOutOfRangeEvent += EndChase;
 
         animator.SetBool("IsWalking", true);
     }
@@ -41,7 +41,7 @@ public class EnemyChaseState : EnemyBaseState
 
     public override void Exit()
     {
-        boss.playerOutOfRange -= EndChase;
+        boss.playerOutOfRangeEvent -= EndChase;
 
         animator.SetBool("IsWalking", false);
 

@@ -7,7 +7,7 @@ public class EnemyIdleState : EnemyBaseState
     public override void Enter()
     {
         boss.endIdleEvent += EndIdle;
-        boss.playerInRange += ChasePlayer;
+        boss.playerInRangeEvent += ChasePlayer;
 
         animator.SetTrigger(GetRandomIdle());
     }
@@ -37,6 +37,6 @@ public class EnemyIdleState : EnemyBaseState
     public override void Exit()
     {
         boss.endIdleEvent -= EndIdle;
-        boss.playerInRange -= ChasePlayer;
+        boss.playerInRangeEvent -= ChasePlayer;
     }
 }

@@ -13,21 +13,31 @@ public class EnemyAttackState : EnemyBaseState
     public override void Enter()
     {
         boss.endAttackEvent += EndAttack;
+        boss.chargedAttackEvent += OnChargedAttack;
 
-        boss.GainEnergy();
         animator.SetTrigger(GetRandomAttack());
     }
 
     private string GetRandomAttack()
     {
         int randomIndex = Random.Range(0, boss.attacks.Count);
+        if (boss.attacks[randomIndex] != "Attack_H")
+        {
+            boss.GainEnergy();
+        }
+
         return boss.attacks[randomIndex];
     }
 
-    public void EndAttack()
+    private void EndAttack()
     {
         boss.cooldownCoroutine = boss.StartCoroutine(WaitForCooldownRoutine());
         boss.ChangeState(new EnemyChaseState(boss, _target));
+    }
+
+    private void OnChargedAttack()
+    {
+        boss.OnChargedAttack(_target);
     }
 
     public IEnumerator WaitForCooldownRoutine()
@@ -40,5 +50,6 @@ public class EnemyAttackState : EnemyBaseState
     public override void Exit()
     {
         boss.endAttackEvent -= EndAttack;
+        boss.chargedAttackEvent -= OnChargedAttack;
     }
 }

@@ -6,7 +6,7 @@ public class EnemyRetreatState : EnemyBaseState
 
     public override void Enter()
     {
-        boss.playerInRange += ChasePlayer;
+        boss.playerInRangeEvent += ChasePlayer;
 
         animator.SetBool("IsWalking", true);
 
@@ -31,7 +31,7 @@ public class EnemyRetreatState : EnemyBaseState
 
     public override void Exit()
     {
-        boss.playerInRange -= ChasePlayer;
+        boss.playerInRangeEvent -= ChasePlayer;
 
         animator.SetBool("IsWalking", false);
     }

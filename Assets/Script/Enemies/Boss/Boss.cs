@@ -3,6 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
+/*
+ * Event DOC
+ *
+ * Every idle animation should call EndIdle
+ * Light Attacks animation should call EndAttack
+ * Charged Attacks animation should call StartChargedAttack, ActivateChargedAttack and EndAttack
+ */
+
 [RequireComponent(typeof(NavMeshAgent))]
 [RequireComponent(typeof(Animator))]
 public abstract class Boss : Enemy
@@ -50,8 +58,9 @@ public abstract class Boss : Enemy
     // Events
     public event Action endIdleEvent;
     public event Action endAttackEvent;
-    public event Action<Transform> playerInRange;
-    public event Action<Transform> playerOutOfRange;
+    public event Action<Transform> playerInRangeEvent;
+    public event Action<Transform> playerOutOfRangeEvent;
+    public event Action chargedAttackEvent;
 
     private void Awake()
     {
@@ -82,6 +91,7 @@ public abstract class Boss : Enemy
         _currentState.Enter();
     }
 
+    public abstract void OnChargedAttack(Transform target);
     public abstract void ActivateChargedAttack();
 
     public void GainEnergy()
@@ -89,17 +99,23 @@ public abstract class Boss : Enemy
         float gain = (_maxEnergy - _minEnergy) * _energyPercentageGaining;
         _currentEnergy = Mathf.Min(_currentEnergy + gain, _maxEnergy);
 
-        if (hasReachedMaxEnergy)
+        if (hasReachedMaxEnergy && !attacks.Contains("Attack_H"))
         {
             attacks.Add("Attack_H");
         }
     }
 
-    public void ConsumeEnergy()
+    protected void ConsumeEnergy()
     {
         _currentEnergy = _minEnergy;
 
         attacks.Remove("Attack_H");
+    }
+
+    public void StartChargedAttack()
+    {
+        ConsumeEnergy();
+        chargedAttackEvent?.Invoke();
     }
 
     public void EndAttack()
@@ -116,7 +132,7 @@ public abstract class Boss : Enemy
     {
         if (other.CompareTag("Player"))
         {
-            playerInRange?.Invoke(other.transform);
+            playerInRangeEvent?.Invoke(other.transform);
         }
     }
 
@@ -124,7 +140,7 @@ public abstract class Boss : Enemy
     {
         if (other.CompareTag("Player"))
         {
-            playerOutOfRange?.Invoke(other.transform);
+            playerOutOfRangeEvent?.Invoke(other.transform);
         }
     }
 
