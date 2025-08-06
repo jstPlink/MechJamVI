@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Wobble : MonoBehaviour
 {
-    Renderer rend;
+    [SerializeField]private Renderer rend;
     Vector3 lastPos;
     Vector3 velocity;
     Vector3 lastRot;  
@@ -18,11 +18,12 @@ public class Wobble : MonoBehaviour
     float wobbleAmountToAddZ;
     float pulse;
     float time = 0.5f;
+    public byte index;
     
     // Use this for initialization
     void Start()
     {
-        rend = GetComponent<Renderer>();
+        //rend = GetComponent<Renderer>();
     }
     private void Update()
     {
@@ -37,8 +38,8 @@ public class Wobble : MonoBehaviour
         wobbleAmountZ = wobbleAmountToAddZ * Mathf.Sin(pulse * time);
 
         // send it to the shader
-        rend.material.SetFloat("_WobbleX", wobbleAmountX);
-        rend.material.SetFloat("_WobbleZ", wobbleAmountZ);
+        rend.materials[index].SetFloat("_WobbleX", wobbleAmountX);
+        rend.materials[index].SetFloat("_WobbleZ", wobbleAmountZ);
 
         // velocity
         velocity = (lastPos - transform.position) / Time.deltaTime;
