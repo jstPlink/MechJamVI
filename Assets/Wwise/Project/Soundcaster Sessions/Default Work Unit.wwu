@@ -277,7 +277,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="PlayerHealthValue" ID="{D76F94C3-67C5-43FF-981A-FF488ECD82E9}"/>
-							<Value>9</Value>
+							<Value>12</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="MusicStartGame" ID="{835B2ABF-CB7F-4725-B2AA-94DEAB034189}"/>
@@ -296,7 +296,7 @@
 						<CurrentStateRef Name="TitleScreen" ID="{4098663B-337C-4C4F-9E4D-6CB8BD588F73}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="PlayerHealth20" ID="{2E637713-D4A1-485C-9F58-8678848C1C0B}"/>
+						<CurrentSwitchRef Name="PlayerHealth100" ID="{0DE56D8A-2075-46D7-8469-12F39C913C63}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
