@@ -15,6 +15,7 @@ namespace AK
     {
         static const AkUniqueID AMBIENT_ENERGYFIELD = 3983137402U;
         static const AkUniqueID AMBIENT_MAINSCENARIO = 263695675U;
+        static const AkUniqueID ARMAGEDDON = 2258936149U;
         static const AkUniqueID ENEMIES_FROGMINIONDEATH = 2517757688U;
         static const AkUniqueID ENEMIES_FROGMINIONMOVEMENT = 1372172665U;
         static const AkUniqueID ENEMIES_FROGMINIONONHIT = 596226124U;
@@ -27,13 +28,15 @@ namespace AK
         static const AkUniqueID PLAYER_DEATH = 3083087645U;
         static const AkUniqueID PLAYER_DEATH_IMPACT = 1610333822U;
         static const AkUniqueID PLAYER_ENGINE_IDLE = 3147042112U;
+        static const AkUniqueID PLAYER_MAINTENANCE_HEALTHFULL = 2649851296U;
         static const AkUniqueID PLAYER_MOVEMENT = 541470702U;
         static const AkUniqueID PLAYER_ONHIT = 1842275445U;
-        static const AkUniqueID UI_BUTTON_BACK = 1598004116U;
         static const AkUniqueID UI_BUTTON_CLICK = 1664509575U;
         static const AkUniqueID UI_BUTTON_DENIED = 1098067136U;
         static const AkUniqueID UI_BUTTON_STARTGAME = 916601097U;
+        static const AkUniqueID UI_MAINTENANCE_CLICK = 1676855390U;
         static const AkUniqueID UI_MAINTENANCE_CLOSE = 1676561250U;
+        static const AkUniqueID UI_MAINTENANCE_DENIED = 255884299U;
         static const AkUniqueID UI_MAINTENANCE_OPEN = 701705398U;
         static const AkUniqueID UI_MAINTENANCE_POWERUP = 120049226U;
         static const AkUniqueID UI_MAINTENANCE_REPAIR = 26115229U;
@@ -44,15 +47,17 @@ namespace AK
 
     namespace STATES
     {
-        namespace NONE
+        namespace GAMESTATE
         {
-            static const AkUniqueID GROUP = 748895195U;
+            static const AkUniqueID GROUP = 4091656514U;
 
             namespace STATE
             {
+                static const AkUniqueID INGAME = 984691642U;
                 static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID TITLESCREEN = 152105657U;
             } // namespace STATE
-        } // namespace NONE
+        } // namespace GAMESTATE
 
     } // namespace STATES
 
@@ -90,7 +95,10 @@ namespace AK
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID CAMERADISTANCE = 2835450985U;
+        static const AkUniqueID MAINTENANCESCREENSTATUS = 774538908U;
         static const AkUniqueID MENUATTENUATION = 466717960U;
+        static const AkUniqueID MENUSLIDER_AUDIO = 3013598104U;
+        static const AkUniqueID MUSICSTARTGAME = 2189156584U;
         static const AkUniqueID MUSICSTINGER = 1636576504U;
         static const AkUniqueID PLAYERHEALTHVALUE = 2774557527U;
         static const AkUniqueID PLAYERMOVEMENTSPEED = 2557281390U;
@@ -99,6 +107,7 @@ namespace AK
     namespace TRIGGERS
     {
         static const AkUniqueID MUSIC_STINGERDEFEAT = 1723656556U;
+        static const AkUniqueID MUSIC_STINGERSTARTGAME = 71401061U;
         static const AkUniqueID MUSIC_STINGERVICTORY = 1385723609U;
     } // namespace TRIGGERS
 
@@ -114,6 +123,7 @@ namespace AK
         static const AkUniqueID ENEMIES = 2242381963U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
         static const AkUniqueID MUSIC = 3991942870U;
+        static const AkUniqueID MUSIC_STARTGAME = 3113476101U;
         static const AkUniqueID MUSIC_STINGER = 721991581U;
         static const AkUniqueID NON_WORLD = 3869140995U;
         static const AkUniqueID OBJECTS = 1695690031U;

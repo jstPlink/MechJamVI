@@ -3,9 +3,11 @@
 	<States>
 		<WorkUnit Name="Default Work Unit" ID="{EC4324C2-48F1-4C81-A9BB-9727DE7877A0}" PersistMode="Standalone">
 			<ChildrenList>
-				<StateGroup Name="None" ID="{13C30D66-D40F-478E-B295-99F708E1A878}">
+				<StateGroup Name="GameState" ID="{D6A6BD8C-D470-4307-B301-09C23881F48A}">
 					<ChildrenList>
-						<State Name="None" ID="{7971BECD-C79B-455B-8998-8A2FD1D41210}"/>
+						<State Name="None" ID="{FF5B0C50-1A82-4B10-9C8A-E05A48501B83}"/>
+						<State Name="InGame" ID="{65387186-A83C-4C37-B6E6-72A7E281814B}"/>
+						<State Name="TitleScreen" ID="{4098663B-337C-4C4F-9E4D-6CB8BD588F73}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>

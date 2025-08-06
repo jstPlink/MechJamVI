@@ -47,347 +47,6 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<SwitchContainer Name="CautionAlarm" ID="{7DACEEEB-BE3D-4EDF-BF21-C08B2BD52706}" ShortID="355678854">
-									<PropertyList>
-										<Property Name="SwitchBehavior" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
-										</Reference>
-										<Reference Name="DefaultSwitchOrState">
-											<ObjectRef Name="PlayerHealth100" ID="{0DE56D8A-2075-46D7-8469-12F39C913C63}" WorkUnitID="{0B5335A1-5D88-41FC-BCCC-51F66ABD3C5E}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
-										</Reference>
-										<Reference Name="SwitchGroupOrStateGroup">
-											<ObjectRef Name="PlayerHealthSwitch" ID="{ED574DC8-A995-48E5-AA32-40359B3F9AD8}" WorkUnitID="{0B5335A1-5D88-41FC-BCCC-51F66ABD3C5E}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="Alarm Coarse Loop" ID="{DAD4B4D8-3BE9-4C35-9240-04DDC9B33BD4}" ShortID="863181176">
-											<PropertyList>
-												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Alarm Coarse Loop" ID="{D7349465-487F-44CE-8D67-525B04C1A84B}">
-													<Language>SFX</Language>
-													<AudioFile>Alarm Coarse Loop.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="809030593"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists>
-												<ObjectList Name="RTPC">
-													<Reference>
-														<Local>
-															<RTPC Name="" ID="{2DD119DB-BA47-4CD6-9728-8A36326E8F46}" ShortID="236882647">
-																<PropertyList>
-																	<Property Name="PropertyName" Type="string" Value="Volume"/>
-																</PropertyList>
-																<ReferenceList>
-																	<Reference Name="ControlInput">
-																		<ObjectRef Name="PlayerHealthValue" ID="{D76F94C3-67C5-43FF-981A-FF488ECD82E9}" WorkUnitID="{2776FCC4-2BF5-4920-A960-29689E030F7E}"/>
-																	</Reference>
-																	<Reference Name="Curve">
-																		<Custom>
-																			<Curve Name="" ID="{024E3EDB-2E9C-48BD-9769-0BC023DC5582}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="3"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>0</YPos>
-																						<Flags>5</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>20</XPos>
-																						<YPos>-1.94559</YPos>
-																						<Flags>0</Flags>
-																						<SegmentShape>Exp3</SegmentShape>
-																					</Point>
-																					<Point>
-																						<XPos>50</XPos>
-																						<YPos>-9</YPos>
-																						<Flags>0</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>100</XPos>
-																						<YPos>-200</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</Custom>
-																	</Reference>
-																</ReferenceList>
-															</RTPC>
-														</Local>
-													</Reference>
-													<Reference>
-														<Local>
-															<RTPC Name="" ID="{226F0312-A02E-4118-8C18-A26F86117210}" ShortID="716267617">
-																<PropertyList>
-																	<Property Name="PropertyName" Type="string" Value="Lowpass"/>
-																</PropertyList>
-																<ReferenceList>
-																	<Reference Name="ControlInput">
-																		<ObjectRef Name="PlayerHealthValue" ID="{D76F94C3-67C5-43FF-981A-FF488ECD82E9}" WorkUnitID="{2776FCC4-2BF5-4920-A960-29689E030F7E}"/>
-																	</Reference>
-																	<Reference Name="Curve">
-																		<Custom>
-																			<Curve Name="" ID="{05B6FAC7-4B6C-437E-8F7C-1C727AF7E849}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="65537"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>0</YPos>
-																						<Flags>5</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>50</XPos>
-																						<YPos>50</YPos>
-																						<Flags>0</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>100</XPos>
-																						<YPos>100</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</Custom>
-																	</Reference>
-																</ReferenceList>
-															</RTPC>
-														</Local>
-													</Reference>
-													<Reference>
-														<Local>
-															<RTPC Name="" ID="{A34CD7E0-1A2A-4946-8A2D-B38D4C3599D0}" ShortID="470372934">
-																<PropertyList>
-																	<Property Name="PropertyName" Type="string" Value="Pitch"/>
-																</PropertyList>
-																<ReferenceList>
-																	<Reference Name="ControlInput">
-																		<ObjectRef Name="PlayerHealthValue" ID="{D76F94C3-67C5-43FF-981A-FF488ECD82E9}" WorkUnitID="{2776FCC4-2BF5-4920-A960-29689E030F7E}"/>
-																	</Reference>
-																	<Reference Name="Curve">
-																		<Custom>
-																			<Curve Name="" ID="{1C05EA89-E618-4DE5-B348-EDEA43C7A1F9}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="65537"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>0</YPos>
-																						<Flags>5</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>20</XPos>
-																						<YPos>0</YPos>
-																						<Flags>0</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>50</XPos>
-																						<YPos>-30</YPos>
-																						<Flags>0</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>100</XPos>
-																						<YPos>-30</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</Custom>
-																	</Reference>
-																</ReferenceList>
-															</RTPC>
-														</Local>
-													</Reference>
-												</ObjectList>
-											</ObjectLists>
-											<ActiveSourceList>
-												<ActiveSource Name="Alarm Coarse Loop" ID="{D7349465-487F-44CE-8D67-525B04C1A84B}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Alarm Beep Lofi Loop" ID="{2AB519AE-B11C-4EB0-A69F-361DF2029EDB}" ShortID="1071112067">
-											<PropertyList>
-												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Alarm Beep Lofi Loop" ID="{F5B6CB86-99B7-4166-8006-6166DA273AAB}">
-													<Language>SFX</Language>
-													<AudioFile>Alarm Beep Lofi Loop.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="485250142"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists>
-												<ObjectList Name="RTPC">
-													<Reference>
-														<Local>
-															<RTPC Name="" ID="{0699F61D-5A99-42BF-82A0-5DBCAF76679C}" ShortID="871966028">
-																<PropertyList>
-																	<Property Name="PropertyName" Type="string" Value="Lowpass"/>
-																</PropertyList>
-																<ReferenceList>
-																	<Reference Name="ControlInput">
-																		<ObjectRef Name="PlayerHealthValue" ID="{D76F94C3-67C5-43FF-981A-FF488ECD82E9}" WorkUnitID="{2776FCC4-2BF5-4920-A960-29689E030F7E}"/>
-																	</Reference>
-																	<Reference Name="Curve">
-																		<Custom>
-																			<Curve Name="" ID="{08AA4935-D8A5-40E8-AC3B-35130BD1B93B}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="65537"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>15</YPos>
-																						<Flags>5</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>20</XPos>
-																						<YPos>50</YPos>
-																						<Flags>0</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>100</XPos>
-																						<YPos>100</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</Custom>
-																	</Reference>
-																</ReferenceList>
-															</RTPC>
-														</Local>
-													</Reference>
-													<Reference>
-														<Local>
-															<RTPC Name="" ID="{8B936C33-87D7-4465-AB03-9BAB1998E50C}" ShortID="601629090">
-																<PropertyList>
-																	<Property Name="PropertyName" Type="string" Value="Volume"/>
-																</PropertyList>
-																<ReferenceList>
-																	<Reference Name="ControlInput">
-																		<ObjectRef Name="PlayerHealthValue" ID="{D76F94C3-67C5-43FF-981A-FF488ECD82E9}" WorkUnitID="{2776FCC4-2BF5-4920-A960-29689E030F7E}"/>
-																	</Reference>
-																	<Reference Name="Curve">
-																		<Custom>
-																			<Curve Name="" ID="{099C59A8-311F-43C7-AF1F-FFBF98166661}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="3"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>0</YPos>
-																						<Flags>5</Flags>
-																						<SegmentShape>Exp3</SegmentShape>
-																					</Point>
-																					<Point>
-																						<XPos>20</XPos>
-																						<YPos>-6</YPos>
-																						<Flags>0</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>100</XPos>
-																						<YPos>-200</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</Custom>
-																	</Reference>
-																</ReferenceList>
-															</RTPC>
-														</Local>
-													</Reference>
-												</ObjectList>
-											</ObjectLists>
-											<ActiveSourceList>
-												<ActiveSource Name="Alarm Beep Lofi Loop" ID="{F5B6CB86-99B7-4166-8006-6166DA273AAB}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-									<GroupingInfo>
-										<GroupingBehaviorList>
-											<GroupingBehavior>
-												<ItemRef Name="Alarm Beep Lofi Loop" ID="{2AB519AE-B11C-4EB0-A69F-361DF2029EDB}"/>
-												<PropertyList>
-													<Property Name="FadeInTime" Type="Real64">
-														<ValueList>
-															<Value>0.1</Value>
-														</ValueList>
-													</Property>
-													<Property Name="FadeOutTime" Type="Real64">
-														<ValueList>
-															<Value>0.5</Value>
-														</ValueList>
-													</Property>
-												</PropertyList>
-											</GroupingBehavior>
-											<GroupingBehavior>
-												<ItemRef Name="Alarm Coarse Loop" ID="{DAD4B4D8-3BE9-4C35-9240-04DDC9B33BD4}"/>
-												<PropertyList>
-													<Property Name="ContinuePlay" Type="bool" Value="True"/>
-													<Property Name="FadeInTime" Type="Real64">
-														<ValueList>
-															<Value>0.1</Value>
-														</ValueList>
-													</Property>
-													<Property Name="FadeOutTime" Type="Real64">
-														<ValueList>
-															<Value>1</Value>
-														</ValueList>
-													</Property>
-												</PropertyList>
-											</GroupingBehavior>
-										</GroupingBehaviorList>
-										<GroupingList>
-											<Grouping>
-												<SwitchRef Name="PlayerHealth20" ID="{2E637713-D4A1-485C-9F58-8678848C1C0B}"/>
-												<ItemList>
-													<ItemRef Name="Alarm Beep Lofi Loop" ID="{2AB519AE-B11C-4EB0-A69F-361DF2029EDB}"/>
-													<ItemRef Name="Alarm Coarse Loop" ID="{DAD4B4D8-3BE9-4C35-9240-04DDC9B33BD4}"/>
-												</ItemList>
-											</Grouping>
-											<Grouping>
-												<SwitchRef Name="PlayerHealth50" ID="{DA792220-5F93-499A-9691-15F6717119EC}"/>
-												<ItemList>
-													<ItemRef Name="Alarm Coarse Loop" ID="{DAD4B4D8-3BE9-4C35-9240-04DDC9B33BD4}"/>
-												</ItemList>
-											</Grouping>
-										</GroupingList>
-									</GroupingInfo>
-								</SwitchContainer>
 								<BlendContainer Name="Death" ID="{E9D44A2A-3300-420D-8084-58EC7F6DB664}" ShortID="498810430">
 									<PropertyList>
 										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
@@ -1043,6 +702,753 @@
 										</RandomSequenceContainer>
 									</ChildrenList>
 								</BlendContainer>
+								<ActorMixer Name="Health_Status" ID="{4E76259E-6B47-4EF3-9E1E-38A158D643AF}" ShortID="396038175">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="UI" ID="{549C6616-EF25-4463-A395-48E566B18282}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SwitchContainer Name="CautionAlarm" ID="{7DACEEEB-BE3D-4EDF-BF21-C08B2BD52706}" ShortID="355678854">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{87C85C37-175F-47DC-8FFD-6EA8981C5664}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Priority" Type="int16">
+													<ValueList>
+														<Value>90</Value>
+													</ValueList>
+												</Property>
+												<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Player_General" ID="{8DEAAAA0-293A-43F0-A693-A2BFE6F56F6D}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+												</Reference>
+												<Reference Name="DefaultSwitchOrState">
+													<ObjectRef Name="PlayerHealth100" ID="{0DE56D8A-2075-46D7-8469-12F39C913C63}" WorkUnitID="{0B5335A1-5D88-41FC-BCCC-51F66ABD3C5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Player" ID="{D1ACC032-7343-4075-91F7-9C1925733023}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="PlayerHealthSwitch" ID="{ED574DC8-A995-48E5-AA32-40359B3F9AD8}" WorkUnitID="{0B5335A1-5D88-41FC-BCCC-51F66ABD3C5E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Alarm Coarse Loop" ID="{DAD4B4D8-3BE9-4C35-9240-04DDC9B33BD4}" ShortID="863181176">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Alarm Coarse Loop" ID="{D7349465-487F-44CE-8D67-525B04C1A84B}">
+															<Language>SFX</Language>
+															<AudioFile>Alarm Coarse Loop.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="809030593"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists>
+														<ObjectList Name="RTPC">
+															<Reference>
+																<Local>
+																	<RTPC Name="" ID="{2DD119DB-BA47-4CD6-9728-8A36326E8F46}" ShortID="236882647">
+																		<PropertyList>
+																			<Property Name="PropertyName" Type="string" Value="Volume"/>
+																		</PropertyList>
+																		<ReferenceList>
+																			<Reference Name="ControlInput">
+																				<ObjectRef Name="PlayerHealthValue" ID="{D76F94C3-67C5-43FF-981A-FF488ECD82E9}" WorkUnitID="{2776FCC4-2BF5-4920-A960-29689E030F7E}"/>
+																			</Reference>
+																			<Reference Name="Curve">
+																				<Custom>
+																					<Curve Name="" ID="{024E3EDB-2E9C-48BD-9769-0BC023DC5582}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>20</XPos>
+																								<YPos>-1.94559</YPos>
+																								<Flags>0</Flags>
+																								<SegmentShape>Exp3</SegmentShape>
+																							</Point>
+																							<Point>
+																								<XPos>50</XPos>
+																								<YPos>-9</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>100</XPos>
+																								<YPos>-200</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</Custom>
+																			</Reference>
+																		</ReferenceList>
+																	</RTPC>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<RTPC Name="" ID="{226F0312-A02E-4118-8C18-A26F86117210}" ShortID="716267617">
+																		<PropertyList>
+																			<Property Name="PropertyName" Type="string" Value="Lowpass"/>
+																		</PropertyList>
+																		<ReferenceList>
+																			<Reference Name="ControlInput">
+																				<ObjectRef Name="PlayerHealthValue" ID="{D76F94C3-67C5-43FF-981A-FF488ECD82E9}" WorkUnitID="{2776FCC4-2BF5-4920-A960-29689E030F7E}"/>
+																			</Reference>
+																			<Reference Name="Curve">
+																				<Custom>
+																					<Curve Name="" ID="{05B6FAC7-4B6C-437E-8F7C-1C727AF7E849}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="65537"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>50</XPos>
+																								<YPos>50</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>100</XPos>
+																								<YPos>100</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</Custom>
+																			</Reference>
+																		</ReferenceList>
+																	</RTPC>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<RTPC Name="" ID="{A34CD7E0-1A2A-4946-8A2D-B38D4C3599D0}" ShortID="470372934">
+																		<PropertyList>
+																			<Property Name="PropertyName" Type="string" Value="Pitch"/>
+																		</PropertyList>
+																		<ReferenceList>
+																			<Reference Name="ControlInput">
+																				<ObjectRef Name="PlayerHealthValue" ID="{D76F94C3-67C5-43FF-981A-FF488ECD82E9}" WorkUnitID="{2776FCC4-2BF5-4920-A960-29689E030F7E}"/>
+																			</Reference>
+																			<Reference Name="Curve">
+																				<Custom>
+																					<Curve Name="" ID="{1C05EA89-E618-4DE5-B348-EDEA43C7A1F9}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="65537"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>20</XPos>
+																								<YPos>0</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>50</XPos>
+																								<YPos>-30</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>100</XPos>
+																								<YPos>-30</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</Custom>
+																			</Reference>
+																		</ReferenceList>
+																	</RTPC>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+													<ActiveSourceList>
+														<ActiveSource Name="Alarm Coarse Loop" ID="{D7349465-487F-44CE-8D67-525B04C1A84B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Alarm Beep Lofi Loop" ID="{2AB519AE-B11C-4EB0-A69F-361DF2029EDB}" ShortID="1071112067">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Alarm Beep Lofi Loop" ID="{F5B6CB86-99B7-4166-8006-6166DA273AAB}">
+															<Language>SFX</Language>
+															<AudioFile>Alarm Beep Lofi Loop.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="485250142"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists>
+														<ObjectList Name="RTPC">
+															<Reference>
+																<Local>
+																	<RTPC Name="" ID="{0699F61D-5A99-42BF-82A0-5DBCAF76679C}" ShortID="871966028">
+																		<PropertyList>
+																			<Property Name="PropertyName" Type="string" Value="Lowpass"/>
+																		</PropertyList>
+																		<ReferenceList>
+																			<Reference Name="ControlInput">
+																				<ObjectRef Name="PlayerHealthValue" ID="{D76F94C3-67C5-43FF-981A-FF488ECD82E9}" WorkUnitID="{2776FCC4-2BF5-4920-A960-29689E030F7E}"/>
+																			</Reference>
+																			<Reference Name="Curve">
+																				<Custom>
+																					<Curve Name="" ID="{08AA4935-D8A5-40E8-AC3B-35130BD1B93B}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="65537"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>15</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>20</XPos>
+																								<YPos>50</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>100</XPos>
+																								<YPos>100</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</Custom>
+																			</Reference>
+																		</ReferenceList>
+																	</RTPC>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<RTPC Name="" ID="{8B936C33-87D7-4465-AB03-9BAB1998E50C}" ShortID="601629090">
+																		<PropertyList>
+																			<Property Name="PropertyName" Type="string" Value="Volume"/>
+																		</PropertyList>
+																		<ReferenceList>
+																			<Reference Name="ControlInput">
+																				<ObjectRef Name="PlayerHealthValue" ID="{D76F94C3-67C5-43FF-981A-FF488ECD82E9}" WorkUnitID="{2776FCC4-2BF5-4920-A960-29689E030F7E}"/>
+																			</Reference>
+																			<Reference Name="Curve">
+																				<Custom>
+																					<Curve Name="" ID="{099C59A8-311F-43C7-AF1F-FFBF98166661}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																								<SegmentShape>Exp3</SegmentShape>
+																							</Point>
+																							<Point>
+																								<XPos>20</XPos>
+																								<YPos>-6</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>100</XPos>
+																								<YPos>-200</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</Custom>
+																			</Reference>
+																		</ReferenceList>
+																	</RTPC>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+													<ActiveSourceList>
+														<ActiveSource Name="Alarm Beep Lofi Loop" ID="{F5B6CB86-99B7-4166-8006-6166DA273AAB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<GroupingInfo>
+												<GroupingBehaviorList>
+													<GroupingBehavior>
+														<ItemRef Name="Alarm Beep Lofi Loop" ID="{2AB519AE-B11C-4EB0-A69F-361DF2029EDB}"/>
+														<PropertyList>
+															<Property Name="FadeInTime" Type="Real64">
+																<ValueList>
+																	<Value>0.1</Value>
+																</ValueList>
+															</Property>
+															<Property Name="FadeOutTime" Type="Real64">
+																<ValueList>
+																	<Value>0.5</Value>
+																</ValueList>
+															</Property>
+														</PropertyList>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Alarm Coarse Loop" ID="{DAD4B4D8-3BE9-4C35-9240-04DDC9B33BD4}"/>
+														<PropertyList>
+															<Property Name="ContinuePlay" Type="bool" Value="True"/>
+															<Property Name="FadeInTime" Type="Real64">
+																<ValueList>
+																	<Value>0.1</Value>
+																</ValueList>
+															</Property>
+															<Property Name="FadeOutTime" Type="Real64">
+																<ValueList>
+																	<Value>1</Value>
+																</ValueList>
+															</Property>
+														</PropertyList>
+													</GroupingBehavior>
+												</GroupingBehaviorList>
+												<GroupingList>
+													<Grouping>
+														<SwitchRef Name="PlayerHealth20" ID="{2E637713-D4A1-485C-9F58-8678848C1C0B}"/>
+														<ItemList>
+															<ItemRef Name="Alarm Beep Lofi Loop" ID="{2AB519AE-B11C-4EB0-A69F-361DF2029EDB}"/>
+															<ItemRef Name="Alarm Coarse Loop" ID="{DAD4B4D8-3BE9-4C35-9240-04DDC9B33BD4}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="PlayerHealth50" ID="{DA792220-5F93-499A-9691-15F6717119EC}"/>
+														<ItemList>
+															<ItemRef Name="Alarm Coarse Loop" ID="{DAD4B4D8-3BE9-4C35-9240-04DDC9B33BD4}"/>
+														</ItemList>
+													</Grouping>
+												</GroupingList>
+											</GroupingInfo>
+										</SwitchContainer>
+										<BlendContainer Name="HealthRestored" ID="{69F44FB1-4A47-4789-8198-7CC4D6085A50}" ShortID="850132237">
+											<PropertyList>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{40B68715-2FB3-4C72-88DA-A2AB16705379}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="10"/>
+																	<Property Name="Min" Type="Real64" Value="-10"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Priority" Type="int16">
+													<ValueList>
+														<Value>90</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Player_General" ID="{8DEAAAA0-293A-43F0-A693-A2BFE6F56F6D}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Player" ID="{D1ACC032-7343-4075-91F7-9C1925733023}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Activate Hologram" ID="{FE4382F3-0DA2-4E18-8D5F-FE59CBC51600}" ShortID="168946658">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Activate Hologram" ID="{7533A940-DED8-4D50-A87A-07F4AE28E6F3}">
+															<Language>SFX</Language>
+															<AudioFile>Activate Hologram.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1020237840"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Activate Hologram" ID="{7533A940-DED8-4D50-A87A-07F4AE28E6F3}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<RandomSequenceContainer Name="Healing" ID="{96F56811-67F0-496F-A447-3F3BC36C0403}" ShortID="870164015">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{468AD75D-AD76-4224-9DBB-AD95CCA8BDAA}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="20"/>
+																			<Property Name="Min" Type="Real64" Value="-20"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>3</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="Old Terminal Computing-1" ID="{ACB4CFE1-FB28-44DF-8E81-757AECFBC913}" ShortID="515539794">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Old Terminal Computing-1" ID="{E2DCB788-A773-4034-BE6E-F6220250BCB6}">
+																	<Language>SFX</Language>
+																	<AudioFile>Old Terminal Computing-1.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="910951668"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Old Terminal Computing-1" ID="{E2DCB788-A773-4034-BE6E-F6220250BCB6}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Old Terminal Computing-2" ID="{91F57775-6537-4033-84DB-F31AE25EB820}" ShortID="1002252293">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Old Terminal Computing-2" ID="{36BE5708-A2EB-43B6-A63D-16442F44D530}">
+																	<Language>SFX</Language>
+																	<AudioFile>Old Terminal Computing-2.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="345115695"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Old Terminal Computing-2" ID="{36BE5708-A2EB-43B6-A63D-16442F44D530}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Old Terminal Computing-3" ID="{04FBDBD0-E736-4EE4-87FE-3DFF9E691FBD}" ShortID="18847161">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Old Terminal Computing-3" ID="{5AE805F2-543B-4854-8D6F-5332648BAB60}">
+																	<Language>SFX</Language>
+																	<AudioFile>Old Terminal Computing-3.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="798482827"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Old Terminal Computing-3" ID="{5AE805F2-543B-4854-8D6F-5332648BAB60}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Old Terminal Computing-4" ID="{CFC083E3-991D-41A8-BD8D-2C436F1D5AEC}" ShortID="519643197">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Old Terminal Computing-4" ID="{2B11F009-3B04-442A-BBEC-A36DC2608D9C}">
+																	<Language>SFX</Language>
+																	<AudioFile>Old Terminal Computing-4.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="957297643"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Old Terminal Computing-4" ID="{2B11F009-3B04-442A-BBEC-A36DC2608D9C}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Old Terminal Computing" ID="{34175EA1-999A-40F8-B295-8A477A4DA023}" ShortID="320698377">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Old Terminal Computing" ID="{67E35EDE-99EC-4EB5-A07F-695C02092A5E}">
+																	<Language>SFX</Language>
+																	<AudioFile>Old Terminal Computing.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="743503145"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Old Terminal Computing" ID="{67E35EDE-99EC-4EB5-A07F-695C02092A5E}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<Sound Name="Transition Pad Upward Sweep" ID="{75881811-BD62-4203-985B-BE9F9B6772B0}" ShortID="574958618">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Transition Pad Upward Sweep" ID="{387D148F-4010-466D-BD0F-3162711FBE45}">
+															<Language>SFX</Language>
+															<AudioFile>Transition Pad Upward Sweep.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="559071997"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Transition Pad Upward Sweep" ID="{387D148F-4010-466D-BD0F-3162711FBE45}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Rising Flurry" ID="{6BBADE91-11B7-49F6-AEAE-83AE20491782}" ShortID="1006607867">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Rising Flurry" ID="{326484BF-DE8A-48C4-B0A2-79084E2CEB7B}">
+															<Language>SFX</Language>
+															<AudioFile>Rising Flurry.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="602383622"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Rising Flurry" ID="{326484BF-DE8A-48C4-B0A2-79084E2CEB7B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Holographic Chime Positive-10" ID="{4C1468E4-83AB-4FC6-83CE-F264762319E2}" ShortID="555972095">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Holographic Chime Positive-10" ID="{C992D5A1-00B2-4CB4-AF73-25B8708C27E9}">
+															<Language>SFX</Language>
+															<AudioFile>Holographic Chime Positive-10.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="311453801"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Holographic Chime Positive-10" ID="{C992D5A1-00B2-4CB4-AF73-25B8708C27E9}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="FUI Power Up" ID="{725E0CCC-6AC5-4A35-9167-C8487D0BA0BF}" ShortID="503044467">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FUI Power Up" ID="{404CBAE8-8033-4241-A26B-FC657B3D3EE3}">
+															<Language>SFX</Language>
+															<AudioFile>FUI Power Up.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="45698637"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="FUI Power Up" ID="{404CBAE8-8033-4241-A26B-FC657B3D3EE3}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Holographic Swipe Motion Reverberant" ID="{EEFFE15B-84CD-43C1-A10A-C17BD9D38F5F}" ShortID="287683627">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Holographic Swipe Motion Reverberant" ID="{C3AE6C78-3893-4343-8E26-EBE0680A1B55}">
+															<Language>SFX</Language>
+															<AudioFile>Holographic Swipe Motion Reverberant.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="718372917"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Holographic Swipe Motion Reverberant" ID="{C3AE6C78-3893-4343-8E26-EBE0680A1B55}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Holographic Motion Bright Shimmer" ID="{CA8688E3-456D-42B5-BB2E-EFBA8C08E5D3}" ShortID="748223579">
+													<PropertyList>
+														<Property Name="Priority" Type="int16">
+															<ValueList>
+																<Value>90</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Player_General" ID="{8DEAAAA0-293A-43F0-A693-A2BFE6F56F6D}" WorkUnitID="{577DBA16-350C-4F3C-81BB-3BBFE709289C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="UI" ID="{549C6616-EF25-4463-A395-48E566B18282}" WorkUnitID="{DE4FFE64-897F-433D-81E2-84A69F3AAD98}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Holographic Motion Bright Shimmer" ID="{291821A8-9405-4AA4-83A4-EC25E212FB2E}">
+															<Language>SFX</Language>
+															<AudioFile>Holographic Motion Bright Shimmer.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="195956266"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Holographic Motion Bright Shimmer" ID="{291821A8-9405-4AA4-83A4-EC25E212FB2E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Effects">
+													<Reference>
+														<Local>
+															<EffectSlot Name="" ID="{2BF7B9D2-B33C-48D6-8346-6B85E7CCE938}" ShortID="660180590">
+																<PropertyList>
+																	<Property Name="Render" Type="bool" Value="True"/>
+																</PropertyList>
+																<ReferenceList>
+																	<Reference Name="Effect">
+																		<Custom CreatedFrom="{577F1466-A63B-47F7-98BD-C56E433F8B5D}">
+																			<Effect Name="Room_Small (Custom)" ID="{32D82B8F-A687-426E-9798-ED4E8D258799}" ShortID="582206632" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+																				<PropertyList>
+																					<Property Name="DecayTime" Type="Real32" Value="0.7"/>
+																					<Property Name="Density" Type="Real32" Value="44"/>
+																					<Property Name="Diffusion" Type="Real32" Value="46"/>
+																					<Property Name="DryLevel" Type="Real32" Value="-1.3"/>
+																					<Property Name="ERLevel" Type="Real32" Value="-23"/>
+																					<Property Name="ERPattern" Type="int32" Value="22"/>
+																					<Property Name="Filter1Freq" Type="Real32" Value="590"/>
+																					<Property Name="Filter3Freq" Type="Real32" Value="8440"/>
+																					<Property Name="Filter3Gain" Type="Real32" Value="-4.5"/>
+																					<Property Name="HFDamping" Type="Real32" Value="2.7"/>
+																					<Property Name="PreDelay" Type="Real32" Value="12"/>
+																					<Property Name="ReverbLevel" Type="Real32" Value="-40"/>
+																					<Property Name="RoomShape" Type="Real32" Value="55"/>
+																					<Property Name="RoomSize" Type="Real32" Value="15"/>
+																					<Property Name="StereoWidth" Type="Real32" Value="90"/>
+																				</PropertyList>
+																			</Effect>
+																		</Custom>
+																	</Reference>
+																</ReferenceList>
+															</EffectSlot>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</BlendContainer>
+									</ChildrenList>
+								</ActorMixer>
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="Movement" ID="{F910BD06-3F97-4509-8790-6354FFE2D7FA}" ShortID="573551782">

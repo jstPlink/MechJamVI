@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<Trigger Name="Music_StingerVictory" ID="{9A46672A-0F22-4BB4-99DF-0D6C74BBEDA5}"/>
 				<Trigger Name="Music_StingerDefeat" ID="{4B3ABBF4-7050-433F-92AB-36E58B6A3AFC}"/>
+				<Trigger Name="Music_StingerStartGame" ID="{BA8AE23A-32F8-4D60-8837-01E7BE53BA83}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Triggers>

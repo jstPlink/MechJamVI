@@ -10,11 +10,21 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{5239D2E1-B829-F3B6-0275-A0649A909E01}",
+    "Hash": "{888BDB26-1A71-9AE1-CC9D-1510B37874A4}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
     "Plugins": {
+     "Custom": [
+      {
+       "Id": "824231539",
+       "Name": "Music_SideChain (Custom)",
+       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Non_World\\Music_StartGame\\[Effect Slot [0]: (Meter)]\\Music_SideChain (Custom)",
+       "GUID": "{E995A7F8-521D-4026-ADF0-0FE702679DB1}",
+       "LibName": "Wwise Meter",
+       "LibId": "8454147"
+      }
+     ],
      "ShareSets": [
       {
        "Id": "266555239",
@@ -110,6 +120,19 @@
       }
      },
      {
+      "Id": "3113476101",
+      "Name": "Music_StartGame",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Non_World\\Music_StartGame",
+      "GUID": "{5FFEC7C9-5A99-4669-849C-EB8D53BD927C}",
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "824231539"
+        }
+       ]
+      }
+     },
+     {
       "Id": "3803692087",
       "Name": "Master Audio Bus",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus",
@@ -136,10 +159,22 @@
       "GUID": "{5EE17611-8EF7-48A6-B658-2E1A4710C18F}"
      },
      {
+      "Id": "774538908",
+      "Name": "MaintenanceScreenStatus",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\MaintenanceScreenStatus",
+      "GUID": "{7ED8B54E-AEF4-418A-935A-46A87A91ECD3}"
+     },
+     {
       "Id": "1636576504",
       "Name": "MusicStinger",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\MusicStinger",
       "GUID": "{1FB9D3B4-EA6E-4039-8D23-8F4D81199BC1}"
+     },
+     {
+      "Id": "2189156584",
+      "Name": "MusicStartGame",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\MusicStartGame",
+      "GUID": "{835B2ABF-CB7F-4725-B2AA-94DEAB034189}"
      },
      {
       "Id": "2557281390",
@@ -158,20 +193,38 @@
       "Name": "CameraDistance",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\CameraDistance",
       "GUID": "{C8144563-DBF2-42BB-B8C0-9006AADF189C}"
+     },
+     {
+      "Id": "3013598104",
+      "Name": "MenuSlider_Audio",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\MenuSlider_Audio",
+      "GUID": "{39F09487-D7D6-47D8-AFC8-8083A2B4B8BD}"
      }
     ],
     "StateGroups": [
      {
-      "Id": "748895195",
-      "Name": "None",
-      "ObjectPath": "\\States\\Default Work Unit\\None",
-      "GUID": "{13C30D66-D40F-478E-B295-99F708E1A878}",
+      "Id": "4091656514",
+      "Name": "GameState",
+      "ObjectPath": "\\States\\Default Work Unit\\GameState",
+      "GUID": "{D6A6BD8C-D470-4307-B301-09C23881F48A}",
       "States": [
+       {
+        "Id": "152105657",
+        "Name": "TitleScreen",
+        "ObjectPath": "\\States\\Default Work Unit\\GameState\\TitleScreen",
+        "GUID": "{4098663B-337C-4C4F-9E4D-6CB8BD588F73}"
+       },
        {
         "Id": "748895195",
         "Name": "None",
-        "ObjectPath": "\\States\\Default Work Unit\\None\\None",
-        "GUID": "{7971BECD-C79B-455B-8998-8A2FD1D41210}"
+        "ObjectPath": "\\States\\Default Work Unit\\GameState\\None",
+        "GUID": "{FF5B0C50-1A82-4B10-9C8A-E05A48501B83}"
+       },
+       {
+        "Id": "984691642",
+        "Name": "InGame",
+        "ObjectPath": "\\States\\Default Work Unit\\GameState\\InGame",
+        "GUID": "{65387186-A83C-4C37-B6E6-72A7E281814B}"
        }
       ]
      }
@@ -730,6 +783,6 @@
     ]
    }
   ],
-  "FileHash": "{3172A560-F1EA-11A9-E4DC-DBAD9004E84B}"
+  "FileHash": "{4D3AC4D0-BDBE-8539-32CD-FD8BD512D294}"
  }
 }

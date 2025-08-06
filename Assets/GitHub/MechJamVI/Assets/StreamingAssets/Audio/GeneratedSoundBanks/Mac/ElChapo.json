@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{AEED4C7A-EFF1-4B94-88D1-41A771CFEFCF}",
     "Language": "SFX",
-    "Hash": "{A39462F0-1116-2B87-3EF0-28A16338CB5D}",
+    "Hash": "{F7515EE9-4233-E634-4C00-E5F8D0FBD162}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\ElChapo",
     "ShortName": "ElChapo",
     "Path": "ElChapo.bnk",
@@ -40,6 +40,14 @@
       "CachePath": "66/{6624A72E-E643-7279-1D09-773A66F32F87}.wem"
      },
      {
+      "Id": "45698637",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FUI Power Up.wav",
+      "CachePath": "12/{1235AD1C-0BB4-FC78-59F5-257D2A0BEC4E}.wem"
+     },
+     {
       "Id": "64498864",
       "Language": "SFX",
       "Streaming": "false",
@@ -61,7 +69,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Error Triplet-1.wav",
-      "CachePath": "34/{3463B9E3-48B9-CDF0-5663-2E5B3CF53387}.wem"
+      "CachePath": "0D/{0DD77E65-DC79-5DCB-9951-4DA14065B631}.wem"
      },
      {
       "Id": "88260462",
@@ -69,7 +77,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "VENGEANCEPROTOCOL - 01_Stinger_Victory_APREMIX.wav",
-      "CachePath": "A0/{A039D22D-E8F9-2731-B528-98BD3C217986}.wem"
+      "CachePath": "A8/{A810CF87-13B1-0876-775D-2EC9AF5A42DD}.wem"
      },
      {
       "Id": "104298631",
@@ -93,7 +101,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "FUI Button Beep Stereo-1.wav",
-      "CachePath": "31/{31F1C8C1-2037-56C5-B4BC-66792DFF4750}.wem"
+      "CachePath": "C7/{C75BD479-61E4-7B48-F16C-28436B4AFFAF}.wem"
      },
      {
       "Id": "148497074",
@@ -109,7 +117,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "FUI Holo Mechanism Activate.wav",
-      "CachePath": "21/{21802983-B869-1FFC-861F-D6385A233073}.wem"
+      "CachePath": "8B/{8B8B348A-94DB-D3BE-C828-10D87E0360D7}.wem"
      },
      {
       "Id": "153370742",
@@ -118,14 +126,6 @@
       "Location": "Memory",
       "ShortName": "DSGNStngr_Kill Confirm Metallic_01_SFRMS_SCIWPNS.wav",
       "CachePath": "1E/{1E62735B-220E-2643-8D50-6F0FB3E4844F}.wem"
-     },
-     {
-      "Id": "159409977",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "FUI Button Toggle Mechanical.wav",
-      "CachePath": "72/{72E26C78-6FB4-D052-E58C-8E5689BA8C62}.wem"
      },
      {
       "Id": "162447182",
@@ -150,6 +150,14 @@
       "Location": "Memory",
       "ShortName": "EXPLDsgn_Explosion Impact_13_SFRMS_SCIWPNS.wav",
       "CachePath": "54/{54C5B2DD-B86B-900E-4A04-6DB5815BC785}.wem"
+     },
+     {
+      "Id": "195956266",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Holographic Motion Bright Shimmer.wav",
+      "CachePath": "D5/{D5073688-C578-8EBA-61DE-430304057C68}.wem"
      },
      {
       "Id": "196575134",
@@ -184,14 +192,6 @@
       "CachePath": "2B/{2BADDF9E-FF8E-7526-5879-6C662F4486C3}.wem"
      },
      {
-      "Id": "226300041",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "Old Hologram Activation Rumble.wav",
-      "CachePath": "B4/{B4783A23-0FF8-5271-8FF2-3FAE3E957726}.wem"
-     },
-     {
       "Id": "231570252",
       "Language": "SFX",
       "Streaming": "false",
@@ -208,12 +208,28 @@
       "CachePath": "34/{3423B36E-A257-7ACB-E98F-A8E827A96FDE}.wem"
      },
      {
+      "Id": "284939750",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FUI Erase Character.wav",
+      "CachePath": "5C/{5C808E27-E288-5B68-5FCA-60CF55B5BA51}.wem"
+     },
+     {
       "Id": "306019051",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Holographic Interaction-23.wav",
       "CachePath": "11/{11502654-C1E1-1C9C-6DCB-299DD8D1BF1D}.wem"
+     },
+     {
+      "Id": "311453801",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Holographic Chime Positive-10.wav",
+      "CachePath": "EF/{EF189E37-A787-0DA5-00B1-2FAD97BF0E79}.wem"
      },
      {
       "Id": "323913972",
@@ -232,12 +248,20 @@
       "CachePath": "41/{418D74FA-4019-DFEE-C627-5337D9CC7449}.wem"
      },
      {
+      "Id": "345115695",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Old Terminal Computing-2.wav",
+      "CachePath": "20/{20CFB9CC-3B17-0A02-1A35-BE4FDC839741}.wem"
+     },
+     {
       "Id": "370360480",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Disk Noise Loop-1.wav",
-      "CachePath": "1F/{1F6A87F5-4BF6-AA01-500D-76949B36A2AB}.wem"
+      "CachePath": "97/{97508FD0-7D1E-5BB1-CC5E-8576CA08E6BC}.wem"
      },
      {
       "Id": "401044624",
@@ -269,7 +293,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "VENGEANCEPROTOCOL - 02_Stinger_Defeat_APREMIX.wav",
-      "CachePath": "1E/{1E7AF815-C761-8791-16A7-E41ABAD20B13}.wem"
+      "CachePath": "39/{399762B4-26FB-04C2-EA6F-185EA01469A0}.wem"
      },
      {
       "Id": "481396576",
@@ -304,6 +328,14 @@
       "CachePath": "9E/{9EDCF468-101D-9146-CCA4-71061021FAFD}.wem"
      },
      {
+      "Id": "524636756",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FUI Navigation Synthetic-1.wav",
+      "CachePath": "06/{06AC14A3-18CC-4E6F-563E-BA8ACF19B776}.wem"
+     },
+     {
       "Id": "529049141",
       "Language": "SFX",
       "Streaming": "false",
@@ -320,6 +352,14 @@
       "CachePath": "8E/{8E65963B-BB4D-88E6-C25B-44B629265892}.wem"
      },
      {
+      "Id": "559071997",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Transition Pad Upward Sweep.wav",
+      "CachePath": "DC/{DC1F54E0-7DFE-E368-FC54-C931920867E9}.wem"
+     },
+     {
       "Id": "571316792",
       "Language": "SFX",
       "Streaming": "false",
@@ -328,12 +368,28 @@
       "CachePath": "4E/{4E1DA346-771E-E932-B56D-3746253221DD}.wem"
      },
      {
+      "Id": "602383622",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Rising Flurry.wav",
+      "CachePath": "68/{681C5DAE-A1F3-7816-58AC-A57ED4ADFF6D}.wem"
+     },
+     {
       "Id": "604315611",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "DSGNStngr_Kill Confirm Metallic_02_SFRMS_SCIWPNS.wav",
       "CachePath": "6E/{6E42ADFA-9B4B-0152-DADD-AA38255F9DE4}.wem"
+     },
+     {
+      "Id": "641805281",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FUI Metallic Click Reverberant.wav",
+      "CachePath": "5A/{5AEFA747-38D6-A90F-01F8-B08B8361A786}.wem"
      },
      {
       "Id": "644301096",
@@ -349,7 +405,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "FUI Holo Mechanism Activate-1.wav",
-      "CachePath": "7A/{7A120C93-6F1F-D38B-5AC2-E4B0856DF40E}.wem"
+      "CachePath": "D3/{D30F8F91-D8E7-41A4-9F99-67D887F9B2A0}.wem"
      },
      {
       "Id": "655008111",
@@ -357,7 +413,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Hologram Menu Open-1.wav",
-      "CachePath": "DC/{DC773FDE-1079-FCEB-2186-A77823FDCA52}.wem"
+      "CachePath": "CD/{CDC8B4BF-E2BA-81E3-00D7-FA64C96E6120}.wem"
      },
      {
       "Id": "658069730",
@@ -373,7 +429,15 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Hologram Menu Close-1.wav",
-      "CachePath": "BA/{BABB6C18-AB5D-BF7C-D951-C2E79F4469C4}.wem"
+      "CachePath": "94/{94C58F67-524A-F83A-09E7-99E221268127}.wem"
+     },
+     {
+      "Id": "664235466",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Computer Whirr Loop Deep.wav",
+      "CachePath": "A2/{A2D47542-2348-48E6-A070-D67EC1C74EEB}.wem"
      },
      {
       "Id": "691099798",
@@ -424,6 +488,14 @@
       "CachePath": "C7/{C783BB46-CA49-2173-CC2A-411C6660B4A0}.wem"
      },
      {
+      "Id": "718372917",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Holographic Swipe Motion Reverberant.wav",
+      "CachePath": "28/{28C8F1BF-5067-D1C4-9456-1F4812A8E14F}.wem"
+     },
+     {
       "Id": "720227983",
       "Language": "SFX",
       "Streaming": "false",
@@ -448,6 +520,14 @@
       "CachePath": "E6/{E6E09DA6-7B0E-5E6F-3A71-92869A459D4C}.wem"
      },
      {
+      "Id": "743503145",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Old Terminal Computing.wav",
+      "CachePath": "D7/{D73E1069-8539-7E67-845D-CFD1A77B0B75}.wem"
+     },
+     {
       "Id": "749220280",
       "Language": "SFX",
       "Streaming": "false",
@@ -462,6 +542,22 @@
       "Location": "Memory",
       "ShortName": "EXPLDsgn_Implode_16_SFRMS_SCIWPNS.wav",
       "CachePath": "D2/{D29C2D94-9257-100C-7AB9-57E280CD797A}.wem"
+     },
+     {
+      "Id": "776532826",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "VENGEANCEPROTOCOL - 03_Stinger_StartGame_PREMIX.wav",
+      "CachePath": "61/{61CB3AC9-E620-0124-9240-A781193EDEC2}.wem"
+     },
+     {
+      "Id": "798482827",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Old Terminal Computing-3.wav",
+      "CachePath": "A9/{A98F3DF8-D2D9-37F9-638F-949CBBEDD3B1}.wem"
      },
      {
       "Id": "800918408",
@@ -488,12 +584,20 @@
       "CachePath": "7A/{7A71F9FF-2CD7-1746-8B7D-1E855B1D8482}.wem"
      },
      {
+      "Id": "810397308",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FUI Navigation Synthetic.wav",
+      "CachePath": "C0/{C0349EFA-ED23-C314-0B0F-AF656D57C75C}.wem"
+     },
+     {
       "Id": "813303468",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "VENGEANCEPROTOCOL - 01_Stinger_Victory_BPREMIX.wav",
-      "CachePath": "01/{01DB12BB-82F8-B423-DD43-00074DDA42E2}.wem"
+      "CachePath": "73/{731725A0-8E77-8B39-75E2-4E92B175CCBF}.wem"
      },
      {
       "Id": "824443533",
@@ -517,7 +621,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Data Jumble Loop.wav",
-      "CachePath": "7B/{7BFA8B64-52A6-5D0F-C540-9EAAB36EB95F}.wem"
+      "CachePath": "D8/{D865136B-6215-D917-E3FC-F57C2E611339}.wem"
      },
      {
       "Id": "871062797",
@@ -536,6 +640,22 @@
       "CachePath": "9D/{9DCF8580-C0E6-A11D-DD37-546FD3BC6308}.wem"
      },
      {
+      "Id": "902838034",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FUI Navigation Tone Stereo Flutter.wav",
+      "CachePath": "D5/{D5FD0D93-4127-91D5-C755-DA3720D2658D}.wem"
+     },
+     {
+      "Id": "910951668",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Old Terminal Computing-1.wav",
+      "CachePath": "59/{59900534-87B2-1762-60FA-B49F7D213D5B}.wem"
+     },
+     {
       "Id": "931901667",
       "Language": "SFX",
       "Streaming": "false",
@@ -544,12 +664,20 @@
       "CachePath": "0A/{0AC8CF0C-3E55-EC4D-5E20-7A9EB51E7828}.wem"
      },
      {
+      "Id": "957297643",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Old Terminal Computing-4.wav",
+      "CachePath": "C6/{C6BC3523-BC0B-2C5F-0360-3E606B6552BD}.wem"
+     },
+     {
       "Id": "957594136",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "VENGEANCEPROTOCOL - 02_Stinger_Defeat_BPREMIX.wav",
-      "CachePath": "B8/{B8D08DE5-2AE2-5CC9-231E-94F0961C7318}.wem"
+      "CachePath": "3C/{3C8907A8-F244-9A91-D6CD-5D240E75215F}.wem"
      },
      {
       "Id": "960516792",
@@ -584,6 +712,14 @@
       "CachePath": "33/{33E61F87-FBD7-424A-242F-603939D81C95}.wem"
      },
      {
+      "Id": "975327785",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FUI Holographic Button Light Echoed.wav",
+      "CachePath": "06/{060CF26C-DFAC-ABB3-FB90-E27D0163D05D}.wem"
+     },
+     {
       "Id": "988191268",
       "Language": "SFX",
       "Streaming": "false",
@@ -606,6 +742,14 @@
       "Location": "Memory",
       "ShortName": "Particle Scanner Loop.wav",
       "CachePath": "B5/{B5C81069-9EA4-A7FE-0529-1F23E38B6FC0}.wem"
+     },
+     {
+      "Id": "1020237840",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Activate Hologram.wav",
+      "CachePath": "D7/{D76EC5CC-012B-2C42-4C43-4333E870955A}.wem"
      },
      {
       "Id": "1073724749",
@@ -662,6 +806,25 @@
        },
        {
         "Id": "966446192"
+       }
+      ]
+     },
+     {
+      "Id": "2258936149",
+      "Name": "ARMAGEDDON",
+      "ObjectPath": "\\Events\\UI\\RESET CHIUDI TUTTO\\ARMAGEDDON",
+      "GUID": "{C73800D3-1E26-4205-801B-65F55C8A6B15}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetState": [
+       {
+        "GroupId": "4091656514",
+        "Id": "152105657",
+        "Name": "TitleScreen",
+        "ObjectPath": "\\States\\Default Work Unit\\GameState\\TitleScreen",
+        "GUID": "{4098663B-337C-4C4F-9E4D-6CB8BD588F73}"
        }
       ]
      },
@@ -805,6 +968,9 @@
         "Id": "472738727"
        },
        {
+        "Id": "776532826"
+       },
+       {
         "Id": "813303468"
        },
        {
@@ -815,15 +981,63 @@
        {
         "SwitchValue": {
          "GroupType": "State",
-         "GroupId": "748895195",
+         "GroupId": "4091656514",
          "Id": "0",
-         "GUID": "{13C30D66-D40F-478E-B295-99F708E1A878}"
+         "GUID": "{D6A6BD8C-D470-4307-B301-09C23881F48A}"
         },
         "MediaRefs": [
          {
           "Id": "196575134"
          }
         ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "4091656514",
+         "Id": "748895195",
+         "GUID": "{FF5B0C50-1A82-4B10-9C8A-E05A48501B83}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "196575134"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "4091656514",
+         "Id": "152105657",
+         "GUID": "{4098663B-337C-4C4F-9E4D-6CB8BD588F73}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "664235466"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "4091656514",
+         "Id": "984691642",
+         "GUID": "{65387186-A83C-4C37-B6E6-72A7E281814B}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "196575134"
+         }
+        ]
+       }
+      ],
+      "ActionSetState": [
+       {
+        "GroupId": "4091656514",
+        "Id": "152105657",
+        "Name": "TitleScreen",
+        "ObjectPath": "\\States\\Default Work Unit\\GameState\\TitleScreen",
+        "GUID": "{4098663B-337C-4C4F-9E4D-6CB8BD588F73}"
        }
       ]
      },
@@ -1026,6 +1240,53 @@
       ]
      },
      {
+      "Id": "2649851296",
+      "Name": "Player_Maintenance_HealthFull",
+      "ObjectPath": "\\Events\\Player\\PlayerStatus\\Player_Maintenance_HealthFull",
+      "GUID": "{4F77B0B3-49D5-4EE3-9C5F-C86CAFE5C185}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.890151",
+      "DurationMax": "2.923733",
+      "MediaRefs": [
+       {
+        "Id": "45698637"
+       },
+       {
+        "Id": "195956266"
+       },
+       {
+        "Id": "311453801"
+       },
+       {
+        "Id": "345115695"
+       },
+       {
+        "Id": "559071997"
+       },
+       {
+        "Id": "602383622"
+       },
+       {
+        "Id": "718372917"
+       },
+       {
+        "Id": "743503145"
+       },
+       {
+        "Id": "798482827"
+       },
+       {
+        "Id": "910951668"
+       },
+       {
+        "Id": "957297643"
+       },
+       {
+        "Id": "1020237840"
+       }
+      ]
+     },
+     {
       "Id": "541470702",
       "Name": "Player_Movement",
       "ObjectPath": "\\Events\\Player\\PlayerStatus\\Player_Movement",
@@ -1078,30 +1339,22 @@
       ]
      },
      {
-      "Id": "1598004116",
-      "Name": "UI_Button_Back",
-      "ObjectPath": "\\Events\\UI\\Generic\\UI_Button_Back",
-      "GUID": "{60F219A9-3D5A-4E1C-8AC8-10B7DEE7301E}",
-      "DurationType": "OneShot",
-      "DurationMin": "0.13866213",
-      "DurationMax": "0.13866213",
-      "MediaRefs": [
-       {
-        "Id": "159409977"
-       }
-      ]
-     },
-     {
       "Id": "1664509575",
       "Name": "UI_Button_Click",
       "ObjectPath": "\\Events\\UI\\Generic\\UI_Button_Click",
       "GUID": "{C47D20E6-AB7A-4EA5-AD0C-60F0359FE3A3}",
       "DurationType": "OneShot",
-      "DurationMin": "0.17065759",
-      "DurationMax": "0.17065759",
+      "DurationMin": "0.22799893",
+      "DurationMax": "0.41839617",
       "MediaRefs": [
        {
-        "Id": "121838931"
+        "Id": "524636756"
+       },
+       {
+        "Id": "810397308"
+       },
+       {
+        "Id": "902838034"
        }
       ]
      },
@@ -1111,11 +1364,11 @@
       "ObjectPath": "\\Events\\UI\\Generic\\UI_Button_Denied",
       "GUID": "{5015B647-36F4-4B70-9BB7-D6AE3B173F02}",
       "DurationType": "OneShot",
-      "DurationMin": "0.24",
-      "DurationMax": "0.24",
+      "DurationMin": "0.63631386",
+      "DurationMax": "0.6437075",
       "MediaRefs": [
        {
-        "Id": "78534883"
+        "Id": "284939750"
        }
       ]
      },
@@ -1125,11 +1378,49 @@
       "ObjectPath": "\\Events\\UI\\Generic\\UI_Button_StartGame",
       "GUID": "{47D1696A-42DD-4F2F-A16C-7710C2B2670D}",
       "DurationType": "OneShot",
-      "DurationMin": "2.5119956",
-      "DurationMax": "2.5119956",
+      "DurationMin": "6.3157897",
+      "DurationMax": "6.3157897",
       "MediaRefs": [
        {
-        "Id": "226300041"
+        "Id": "88260462"
+       },
+       {
+        "Id": "472738727"
+       },
+       {
+        "Id": "641805281"
+       },
+       {
+        "Id": "776532826"
+       },
+       {
+        "Id": "813303468"
+       },
+       {
+        "Id": "957594136"
+       }
+      ],
+      "ActionSetState": [
+       {
+        "GroupId": "4091656514",
+        "Id": "984691642",
+        "Name": "InGame",
+        "ObjectPath": "\\States\\Default Work Unit\\GameState\\InGame",
+        "GUID": "{65387186-A83C-4C37-B6E6-72A7E281814B}"
+       }
+      ]
+     },
+     {
+      "Id": "1676855390",
+      "Name": "UI_Maintenance_Click",
+      "ObjectPath": "\\Events\\UI\\Maintenance\\UI_Maintenance_Click",
+      "GUID": "{92335E84-9587-4616-AC96-BFCEA43B30FF}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.17065759",
+      "DurationMax": "0.17065759",
+      "MediaRefs": [
+       {
+        "Id": "121838931"
        }
       ]
      },
@@ -1144,6 +1435,20 @@
       "MediaRefs": [
        {
         "Id": "660477324"
+       }
+      ]
+     },
+     {
+      "Id": "255884299",
+      "Name": "UI_Maintenance_Denied",
+      "ObjectPath": "\\Events\\UI\\Maintenance\\UI_Maintenance_Denied",
+      "GUID": "{CED4AEBF-D0AE-44C1-ACD4-C9C0BEFCB313}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.24",
+      "DurationMax": "0.24",
+      "MediaRefs": [
+       {
+        "Id": "78534883"
        }
       ]
      },
@@ -1188,6 +1493,9 @@
       "MediaRefs": [
        {
         "Id": "848998426"
+       },
+       {
+        "Id": "975327785"
        }
       ]
      },
@@ -1270,6 +1578,12 @@
       "GUID": "{5EE17611-8EF7-48A6-B658-2E1A4710C18F}"
      },
      {
+      "Id": "774538908",
+      "Name": "MaintenanceScreenStatus",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\MaintenanceScreenStatus",
+      "GUID": "{7ED8B54E-AEF4-418A-935A-46A87A91ECD3}"
+     },
+     {
       "Id": "2557281390",
       "Name": "PlayerMovementSpeed",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\PlayerMovementSpeed",
@@ -1284,16 +1598,28 @@
     ],
     "StateGroups": [
      {
-      "Id": "748895195",
-      "Name": "None",
-      "ObjectPath": "\\States\\Default Work Unit\\None",
-      "GUID": "{13C30D66-D40F-478E-B295-99F708E1A878}",
+      "Id": "4091656514",
+      "Name": "GameState",
+      "ObjectPath": "\\States\\Default Work Unit\\GameState",
+      "GUID": "{D6A6BD8C-D470-4307-B301-09C23881F48A}",
       "States": [
+       {
+        "Id": "152105657",
+        "Name": "TitleScreen",
+        "ObjectPath": "\\States\\Default Work Unit\\GameState\\TitleScreen",
+        "GUID": "{4098663B-337C-4C4F-9E4D-6CB8BD588F73}"
+       },
        {
         "Id": "748895195",
         "Name": "None",
-        "ObjectPath": "\\States\\Default Work Unit\\None\\None",
-        "GUID": "{7971BECD-C79B-455B-8998-8A2FD1D41210}"
+        "ObjectPath": "\\States\\Default Work Unit\\GameState\\None",
+        "GUID": "{FF5B0C50-1A82-4B10-9C8A-E05A48501B83}"
+       },
+       {
+        "Id": "984691642",
+        "Name": "InGame",
+        "ObjectPath": "\\States\\Default Work Unit\\GameState\\InGame",
+        "GUID": "{65387186-A83C-4C37-B6E6-72A7E281814B}"
        }
       ]
      }
@@ -1331,6 +1657,12 @@
     ],
     "Triggers": [
      {
+      "Id": "71401061",
+      "Name": "Music_StingerStartGame",
+      "ObjectPath": "\\Triggers\\Default Work Unit\\Music_StingerStartGame",
+      "GUID": "{BA8AE23A-32F8-4D60-8837-01E7BE53BA83}"
+     },
+     {
       "Id": "1385723609",
       "Name": "Music_StingerVictory",
       "ObjectPath": "\\Triggers\\Default Work Unit\\Music_StingerVictory",
@@ -1345,6 +1677,6 @@
     ]
    }
   ],
-  "FileHash": "{0A8818BD-A6CA-3D37-891A-301C687E2F5C}"
+  "FileHash": "{E6B8EF5B-D301-D6C2-49E7-4A694D4E5E86}"
  }
 }
