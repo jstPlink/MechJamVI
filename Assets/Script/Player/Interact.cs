@@ -4,13 +4,9 @@ using UnityEngine.InputSystem;
 public class Interact : MonoBehaviour
 {
 
-    public float interactionDistance = 20f;
-
-
     InputAction interaction;
+    public UIManager uiManager;
 
-    public UIManager interactionPanelScreen;
-    public GameObject promptScene;
 
     private void Start()
     {
@@ -18,27 +14,12 @@ public class Interact : MonoBehaviour
     }
 
 
-    private void OnTriggerStay(Collider other)
+    private void Update()
     {
-        if (other.CompareTag("Player"))
+        if (interaction.WasPerformedThisFrame())
         {
-            promptScene.SetActive(true);
+            uiManager.ShowPowerupPanel(true);
 
-            if (interaction.WasPerformedThisFrame())
-            {
-                interactionPanelScreen.ShowPowerupPanel(true);
-
-            }
         }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Player")) {
-            promptScene.SetActive(false);
-        }
-
-
-
     }
 }

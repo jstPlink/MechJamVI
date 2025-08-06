@@ -7,17 +7,17 @@ public class PanelRepair : MonoBehaviour
     public TextMeshProUGUI textCost;
     public bool isHealth = true;
     Health healthRef;
-    GameManager gm;
+    public GameManager gm;
 
     public PanelRepair panelHealth;
     public PanelRepair panelShield;
 
-    private void Start()
+    private void Awake()
     {
-        gm = FindObjectOfType<GameManager>();
         healthRef = gm.player.GetComponent<Health>();
 
     }
+
 
 
 
@@ -30,6 +30,9 @@ public class PanelRepair : MonoBehaviour
 
     public void RefreshPanel()
     {
+        if (healthRef == null) print("NOOOOOOOO");
+
+
         if (isHealth) {
             float perToRestore = 1 - (healthRef.health / healthRef.maxHealth);
             textCost.SetText((perToRestore * gm.maxHealthCost).ToString());
