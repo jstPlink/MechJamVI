@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
@@ -26,7 +27,8 @@ public abstract class Boss : Enemy
     [Header("Visual setting")]
     [SerializeField] private Material liquidMat;
     [SerializeField] private float _liquidSpeed;
-    [SerializeField] private float liquidOffset;
+    [SerializeField] private float _liquidOffset;
+    // [SerializeField] private float _disappearTime;
     private float _liquidFill;
 
     [Header("Combat settings")]
@@ -85,7 +87,7 @@ public abstract class Boss : Enemy
         _currentState.Update();
 
         _liquidFill = Mathf.MoveTowards(_liquidFill, _currentEnergy, _liquidSpeed * Time.deltaTime);
-        liquidMat.SetFloat("_Fill", _liquidFill + liquidOffset);
+        liquidMat.SetFloat("_Fill", _liquidFill + _liquidOffset);
     }
 
     public void ChangeState(EnemyBaseState newState)
@@ -131,6 +133,29 @@ public abstract class Boss : Enemy
     {
         endIdleEvent?.Invoke();
     }
+
+    public override void OnDeath()
+    {
+        ChangeState(new EnemyDeathState(this));
+        enabled = false;
+    }
+
+    // NOTE - Se avete voglia potete fare che sparisca nel tempo
+    // public override void Destroy()
+    // {
+    //     StartCoroutine(Desappear());
+    // }
+
+    // private IEnumerator Desappear()
+    // {
+    //     float elapsedTime = 0;
+
+    //     while (elapsedTime < _disappearTime)
+    //     {
+
+    //         yield return null;
+    //     }
+    // }
 
     private void OnTriggerEnter(Collider other)
     {

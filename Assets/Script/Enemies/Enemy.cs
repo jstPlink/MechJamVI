@@ -25,7 +25,7 @@ public class Enemy : MonoBehaviour
         _currentBase = newBase;
     }
 
-    public void Destroy()
+    public virtual void Destroy()
     {
         Destroy(gameObject);
     }
