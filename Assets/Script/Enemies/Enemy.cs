@@ -4,6 +4,7 @@ public class Enemy : MonoBehaviour
 {
     public float health = 100f;
     public Base_Behaviour _currentBase;
+    public GameManager _gm;
 
     private bool doOnce = true;
 
@@ -33,5 +34,13 @@ public class Enemy : MonoBehaviour
     public virtual void CustomUpdate()
     {
         // print("updt");
+    }
+
+    public virtual void IncreseHealth()
+    {
+        if (GameManager._minute % 5 == 0) // se sono passati 5min
+        {
+            health *= _gm._healthMult;
+        }
     }
 }
