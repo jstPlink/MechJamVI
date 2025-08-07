@@ -22,6 +22,12 @@ public class UIManager : MonoBehaviour
     public AK.Wwise.Event _closeMenu;
     public AK.Wwise.Event _startGame;
 
+
+    [Header("ANIM DEATH")]
+    public Animator anim;
+    public GameObject deathPanel;
+
+
     private void Start()
     {
         ShowSettings(false);
@@ -30,6 +36,12 @@ public class UIManager : MonoBehaviour
     }
 
 
+
+    public void OnDeath()
+    {
+        deathPanel.SetActive(true);
+        anim.SetTrigger("onDeath");
+    }
 
     // GAME - PANELS
     public void OpenRepair()

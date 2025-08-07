@@ -2450,6 +2450,11 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 43.91411, y: 12.394846, z: 16.424524}
   m_Center: {x: -13.78049, y: 5.697423, z: 4.770915}
+--- !u!1 &572321055 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4858788286393446187, guid: 8c3096b9c1b7530449dc3c594c0efbf1, type: 3}
+  m_PrefabInstance: {fileID: 1576359991}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &597685851
 GameObject:
   m_ObjectHideFlags: 0
@@ -5144,6 +5149,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1576359995}
     - target: {fileID: 7139730805484780333, guid: 5e1bff75215b1974c9f72de1982e9e0e, type: 3}
+      propertyPath: uimanager
+      value: 
+      objectReference: {fileID: 1576359992}
+    - target: {fileID: 7139730805484780333, guid: 5e1bff75215b1974c9f72de1982e9e0e, type: 3}
       propertyPath: textHealth
       value: 
       objectReference: {fileID: 1576359994}
@@ -5431,6 +5440,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2287942255856426753, guid: 8c3096b9c1b7530449dc3c594c0efbf1, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4280820211
+      objectReference: {fileID: 0}
     - target: {fileID: 2526186368398399479, guid: 8c3096b9c1b7530449dc3c594c0efbf1, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -5539,6 +5552,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4858788286393446187, guid: 8c3096b9c1b7530449dc3c594c0efbf1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5128088034182384960, guid: 8c3096b9c1b7530449dc3c594c0efbf1, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -5563,6 +5580,14 @@ PrefabInstance:
       propertyPath: gm
       value: 
       objectReference: {fileID: 1822111257}
+    - target: {fileID: 6636870512949042903, guid: 8c3096b9c1b7530449dc3c594c0efbf1, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 2131546349}
+    - target: {fileID: 6636870512949042903, guid: 8c3096b9c1b7530449dc3c594c0efbf1, type: 3}
+      propertyPath: deathPanel
+      value: 
+      objectReference: {fileID: 572321055}
     - target: {fileID: 7175875871699604080, guid: 8c3096b9c1b7530449dc3c594c0efbf1, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -7531,6 +7556,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &2131546349 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7467017725336662632, guid: 8c3096b9c1b7530449dc3c594c0efbf1, type: 3}
+  m_PrefabInstance: {fileID: 1576359991}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2131680033
 PrefabInstance:
   m_ObjectHideFlags: 0

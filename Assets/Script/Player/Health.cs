@@ -20,8 +20,8 @@ public class Health : MonoBehaviour
     public GameObject shieldMesh;
 
     public ComboSystem comboSys;
-    
 
+    public UIManager uimanager;
 
     InputAction shieldAction;
 
@@ -92,6 +92,7 @@ public class Health : MonoBehaviour
         if (health <= 0f)
         {
             comboSys.OnDeath();
+            uimanager.OnDeath();
             Time.timeScale = 0.5f;
             // Application.Quit();
         }
@@ -106,7 +107,6 @@ public class Health : MonoBehaviour
         if (health <= 0f)
         {
             Time.timeScale = 0f;
-            Application.Quit();
 
         }
     }

@@ -37,6 +37,7 @@ public class GameManager : MonoBehaviour
 
     [Header(" ## CAMERA ##")]
     public static CameraShake camShake;
+    public UIManager uimanager;
 
 
     [Header(" ## DEBUG ##")]
@@ -89,6 +90,11 @@ public class GameManager : MonoBehaviour
     }
 
 
+
+    public void OnDeath()
+    {
+        uimanager.OnDeath();
+    }
 
     public static void PlayCameraShake()
     {
