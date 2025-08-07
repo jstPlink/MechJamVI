@@ -8,9 +8,12 @@ public class GameManager : MonoBehaviour
     [Header(" -- Tick Timer (s) --")]
     [Tooltip("This value regulate how seconds pass for activate the next tick")]
     public float tickTimer;
+    [Header(" -- Enemies Var--")]
+    [SerializeField] public float _healthMult;
     [Header(" -- Pointer --")]
     [Tooltip("Attach here every base of the game")]
     [SerializeField] private static Base_Behaviour[] bases;
+    [SerializeField] private TextMeshProUGUI _timerText;
     [Tooltip("Match the number of the map with the pin")]
     [SerializeField] private MeshRenderer[] basesMapPin;
     [SerializeField] private Material enemyMaterial;
@@ -41,6 +44,10 @@ public class GameManager : MonoBehaviour
     [SerializeField] public float ResourceQty;
     [SerializeField] private bool canAdd = true;
     [SerializeField] public bool somethingChanged = true;
+    [SerializeField] public float _timer;
+    [SerializeField] public static byte _hours;
+    [SerializeField] public static byte _minute;
+    [SerializeField] public static byte _seconds;
 
     public GameObject player;
     public static GameObject playerStatic;
@@ -54,6 +61,7 @@ public class GameManager : MonoBehaviour
         camShake = FindObjectOfType<CameraShake>();
         player = FindFirstObjectByType<SimpleMovement>().gameObject;
         playerStatic = player;
+        _timer = 0;
 
         // Lock and hide cursor
         Cursor.lockState = CursorLockMode.Confined;
@@ -75,7 +83,12 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    
+    private void FixedUpdate()
+    {
+        StartCoroutine(Timer());
+    }
+
+
 
     public static void PlayCameraShake()
     {
@@ -180,5 +193,17 @@ public class GameManager : MonoBehaviour
             }
             else return false;
         }
+    }
+
+    public IEnumerator Timer()
+    {
+        _timer += Time.deltaTime;
+        _seconds = (byte)(_timer % 60);
+        _minute = (byte)(_timer % 3600 / 60);
+        _hours = (byte)(_timer / 3600);
+        
+
+        _timerText.text = ("Time: " + _hours + ":" + _minute + ":" + _seconds);
+        yield return new WaitForSeconds(Time.deltaTime);
     }
 }

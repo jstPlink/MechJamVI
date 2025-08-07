@@ -11,6 +11,7 @@ public class Spawner : MonoBehaviour
     [Header("Tempi di spawn")]
     public Vector2 spawnTimeRange = new Vector2(10f, 20f);
     public float spawnInterval = 3f;
+    public byte lastMinute;
 
     private Coroutine spawnCoroutine;
 
@@ -18,6 +19,7 @@ public class Spawner : MonoBehaviour
     {
         _bh = GetComponentInParent<Base_Behaviour>();
         spawnCoroutine = StartCoroutine(SpawnRoutine());
+        lastMinute = 0;
     }
 
     IEnumerator SpawnRoutine()

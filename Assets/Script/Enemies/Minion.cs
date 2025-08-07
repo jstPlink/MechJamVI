@@ -21,7 +21,11 @@ public class Minion : Enemy
         StartCoroutine(TickLoop());
     }
 
-
+    private void Awake()
+    {
+        base._gm = GameObject.FindAnyObjectByType<GameManager>();
+        IncreseHealth();
+    }
 
     private void Update()
     {
@@ -82,7 +86,10 @@ public class Minion : Enemy
         dustVFX.Play();
     }
 
-
+    public override void IncreseHealth()
+    {
+        base.IncreseHealth();
+    }
 
     public void SetMySpawner(GameObject newSpawner) {
         mySpawner = newSpawner.GetComponent<Spawner>();
