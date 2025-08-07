@@ -1539,6 +1539,10 @@ PrefabInstance:
       propertyPath: enemyMaterial
       value: 
       objectReference: {fileID: 2100000, guid: fd1dc05f115556f41a84575dea16e54a, type: 2}
+    - target: {fileID: 1015799593645700018, guid: 9f06ad1b2cbba7b46a1432f4fc73c608, type: 3}
+      propertyPath: minion
+      value: 
+      objectReference: {fileID: 7259482422449819446, guid: 55b0e012ba5dbd342bc8b2a30c3749c3, type: 3}
     - target: {fileID: 1104988651345460087, guid: 9f06ad1b2cbba7b46a1432f4fc73c608, type: 3}
       propertyPath: m_LocalPosition.x
       value: -16.55
@@ -1551,6 +1555,22 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.05
       objectReference: {fileID: 0}
+    - target: {fileID: 2813014667700431230, guid: 9f06ad1b2cbba7b46a1432f4fc73c608, type: 3}
+      propertyPath: minion
+      value: 
+      objectReference: {fileID: 7259482422449819446, guid: 55b0e012ba5dbd342bc8b2a30c3749c3, type: 3}
+    - target: {fileID: 3273109085242818554, guid: 9f06ad1b2cbba7b46a1432f4fc73c608, type: 3}
+      propertyPath: minion
+      value: 
+      objectReference: {fileID: 7259482422449819446, guid: 55b0e012ba5dbd342bc8b2a30c3749c3, type: 3}
+    - target: {fileID: 3290908500524541240, guid: 9f06ad1b2cbba7b46a1432f4fc73c608, type: 3}
+      propertyPath: minion
+      value: 
+      objectReference: {fileID: 7259482422449819446, guid: 55b0e012ba5dbd342bc8b2a30c3749c3, type: 3}
+    - target: {fileID: 3463019822336176035, guid: 9f06ad1b2cbba7b46a1432f4fc73c608, type: 3}
+      propertyPath: minion
+      value: 
+      objectReference: {fileID: 7259482422449819446, guid: 55b0e012ba5dbd342bc8b2a30c3749c3, type: 3}
     - target: {fileID: 3687918123263426058, guid: 9f06ad1b2cbba7b46a1432f4fc73c608, type: 3}
       propertyPath: m_LocalPosition.x
       value: 170
@@ -1603,6 +1623,30 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.77
       objectReference: {fileID: 0}
+    - target: {fileID: 3859625347309746289, guid: 9f06ad1b2cbba7b46a1432f4fc73c608, type: 3}
+      propertyPath: minion
+      value: 
+      objectReference: {fileID: 7259482422449819446, guid: 55b0e012ba5dbd342bc8b2a30c3749c3, type: 3}
+    - target: {fileID: 4357494512918526264, guid: 9f06ad1b2cbba7b46a1432f4fc73c608, type: 3}
+      propertyPath: minion
+      value: 
+      objectReference: {fileID: 7259482422449819446, guid: 55b0e012ba5dbd342bc8b2a30c3749c3, type: 3}
+    - target: {fileID: 5933055489935840827, guid: 9f06ad1b2cbba7b46a1432f4fc73c608, type: 3}
+      propertyPath: minion
+      value: 
+      objectReference: {fileID: 7259482422449819446, guid: 55b0e012ba5dbd342bc8b2a30c3749c3, type: 3}
+    - target: {fileID: 6085468615029433171, guid: 9f06ad1b2cbba7b46a1432f4fc73c608, type: 3}
+      propertyPath: minion
+      value: 
+      objectReference: {fileID: 7259482422449819446, guid: 55b0e012ba5dbd342bc8b2a30c3749c3, type: 3}
+    - target: {fileID: 6162088478508256281, guid: 9f06ad1b2cbba7b46a1432f4fc73c608, type: 3}
+      propertyPath: minion
+      value: 
+      objectReference: {fileID: 7259482422449819446, guid: 55b0e012ba5dbd342bc8b2a30c3749c3, type: 3}
+    - target: {fileID: 6215587301831923529, guid: 9f06ad1b2cbba7b46a1432f4fc73c608, type: 3}
+      propertyPath: minion
+      value: 
+      objectReference: {fileID: 7259482422449819446, guid: 55b0e012ba5dbd342bc8b2a30c3749c3, type: 3}
     - target: {fileID: 6263400025489375562, guid: 9f06ad1b2cbba7b46a1432f4fc73c608, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.35
@@ -1631,6 +1675,42 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -13.25
       objectReference: {fileID: 0}
+    - target: {fileID: 6907298004252181673, guid: 9f06ad1b2cbba7b46a1432f4fc73c608, type: 3}
+      propertyPath: minion
+      value: 
+      objectReference: {fileID: 7259482422449819446, guid: 55b0e012ba5dbd342bc8b2a30c3749c3, type: 3}
+    - target: {fileID: 7570559039991904318, guid: 9f06ad1b2cbba7b46a1432f4fc73c608, type: 3}
+      propertyPath: minion
+      value: 
+      objectReference: {fileID: 7259482422449819446, guid: 55b0e012ba5dbd342bc8b2a30c3749c3, type: 3}
+    - target: {fileID: 8079935989832548901, guid: 9f06ad1b2cbba7b46a1432f4fc73c608, type: 3}
+      propertyPath: minion
+      value: 
+      objectReference: {fileID: 7259482422449819446, guid: 55b0e012ba5dbd342bc8b2a30c3749c3, type: 3}
+    - target: {fileID: 8355674459637318308, guid: 9f06ad1b2cbba7b46a1432f4fc73c608, type: 3}
+      propertyPath: minion
+      value: 
+      objectReference: {fileID: 7259482422449819446, guid: 55b0e012ba5dbd342bc8b2a30c3749c3, type: 3}
+    - target: {fileID: 8386678118777319231, guid: 9f06ad1b2cbba7b46a1432f4fc73c608, type: 3}
+      propertyPath: minion
+      value: 
+      objectReference: {fileID: 7259482422449819446, guid: 55b0e012ba5dbd342bc8b2a30c3749c3, type: 3}
+    - target: {fileID: 8465824884145461834, guid: 9f06ad1b2cbba7b46a1432f4fc73c608, type: 3}
+      propertyPath: minion
+      value: 
+      objectReference: {fileID: 7259482422449819446, guid: 55b0e012ba5dbd342bc8b2a30c3749c3, type: 3}
+    - target: {fileID: 8724090913259523345, guid: 9f06ad1b2cbba7b46a1432f4fc73c608, type: 3}
+      propertyPath: minion
+      value: 
+      objectReference: {fileID: 7259482422449819446, guid: 55b0e012ba5dbd342bc8b2a30c3749c3, type: 3}
+    - target: {fileID: 8748185199549062338, guid: 9f06ad1b2cbba7b46a1432f4fc73c608, type: 3}
+      propertyPath: minion
+      value: 
+      objectReference: {fileID: 7259482422449819446, guid: 55b0e012ba5dbd342bc8b2a30c3749c3, type: 3}
+    - target: {fileID: 8809008617489297015, guid: 9f06ad1b2cbba7b46a1432f4fc73c608, type: 3}
+      propertyPath: minion
+      value: 
+      objectReference: {fileID: 7259482422449819446, guid: 55b0e012ba5dbd342bc8b2a30c3749c3, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
