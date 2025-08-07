@@ -198,16 +198,10 @@ public class GameManager : MonoBehaviour
     public IEnumerator Timer()
     {
         _timer += Time.deltaTime;
-        _seconds = (byte)Mathf.Round(_timer % 60);
-        if (_seconds == 60)
-        {
-            _minute++;
-        }
-        if (_minute == 60)
-        {
-            _minute = 0;
-            _hours++;
-        }
+        _seconds = (byte)(_timer % 60);
+        _minute = (byte)(_timer % 3600 / 60);
+        _hours = (byte)(_timer / 3600);
+        
 
         _timerText.text = ("Time: " + _hours + ":" + _minute + ":" + _seconds);
         yield return new WaitForSeconds(Time.deltaTime);
