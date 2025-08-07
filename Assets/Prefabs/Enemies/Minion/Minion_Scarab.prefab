@@ -186,7 +186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38f94702bcf078d47837324752219036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 80
+  health: 100
   _currentBase: {fileID: 0}
   _gm: {fileID: 0}
   updateIntervalRange: {x: 2, y: 7}

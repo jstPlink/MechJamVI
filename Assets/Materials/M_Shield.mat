@@ -40,7 +40,7 @@ Material:
     m_Floats:
     - _DepthOffset: 0.32
     - _DisplacementStrength: 0.85
-    - _Dissolve: -0.2
+    - _Dissolve: -100
     - _DissolveEdgeThickness: 0.05
     - _DissolveStartHeight: 1.2
     - _DistortionStrenght: 2.56

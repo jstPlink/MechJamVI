@@ -184,17 +184,17 @@ public class GameManager : MonoBehaviour
     {
         if (percToRestore == -1f)
         { // shield
-            if (ResourceQty >= shieldRepairCost) {
-                ResourceQty -= shieldRepairCost;
+            if (ResourceQty >= shieldRepairCost * (int)(_timer / 60)) {
+                ResourceQty -= shieldRepairCost * (int)(_timer / 60);
                 return true;
             }
             else return false;
         }
         else
         { // health
-            if (ResourceQty >= maxHealthCost * percToRestore)
+            if (ResourceQty >= maxHealthCost * percToRestore * (int)(_timer/60))
             {
-                ResourceQty -= maxHealthCost * percToRestore;
+                ResourceQty -= maxHealthCost * percToRestore * (int)(_timer / 60);
                 return true;
             }
             else return false;
