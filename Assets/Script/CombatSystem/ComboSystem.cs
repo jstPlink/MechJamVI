@@ -9,6 +9,8 @@ public class ComboSystem : MonoBehaviour
     InputAction attackAction;
     Animator animator;
 
+    public CameraShake cam;
+
     // ROBE COMBO
     public bool canAttack = true;
     public int comboStep = 0;

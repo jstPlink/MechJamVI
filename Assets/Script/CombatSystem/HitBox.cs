@@ -12,6 +12,7 @@ public class HitBox : MonoBehaviour
         if (gameObject.tag == "PlayerHitbox" && other.tag == "Enemy") {
             float newDamage = damage * GameManager.playerStatic.GetComponent<PlayerState>().curAttackMultiplier;
             other.GetComponent<Enemy>().ApplyDamage(newDamage);
+            GameManager.PlayCameraShake();
         }
         // damage fro enemy to player
         else if (gameObject.tag == "EnemyHitbox" && other.tag == "Player")

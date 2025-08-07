@@ -32,6 +32,10 @@ public class GameManager : MonoBehaviour
     [SerializeField] public Vars.Powerup speedPowerup;
 
 
+    [Header(" ## CAMERA ##")]
+    public static CameraShake camShake;
+
+
     [Header(" ## DEBUG ##")]
     public float totalResourceXTick;
     [SerializeField] public float ResourceQty;
@@ -41,14 +45,13 @@ public class GameManager : MonoBehaviour
     public GameObject player;
     public static GameObject playerStatic;
 
-
-
+    
 
 
     private void Start()
     {
         bases = FindObjectsByType<Base_Behaviour>(FindObjectsSortMode.None);
-
+        camShake = FindObjectOfType<CameraShake>();
         player = FindFirstObjectByType<SimpleMovement>().gameObject;
         playerStatic = player;
 
@@ -73,6 +76,12 @@ public class GameManager : MonoBehaviour
     }
 
     
+
+    public static void PlayCameraShake()
+    {
+        camShake.Shake();
+    }
+
 
     public bool CheckResourcesAvailability(int resourcesRequest)
     {
